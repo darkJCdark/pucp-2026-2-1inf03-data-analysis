@@ -1,0 +1,918 @@
+# Análisis de Datos S1
+
+  Meeting started: 23/8/2026, 6:28:42 p. m.
+  Duration: 107 minutes
+  Participants: Speaker, Speaker 1, Speaker 2
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/nxDAC9DTCwTxeRWZAO0X?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Speaker 1: ¡Suscríbete!
+00:10 Speaker: los temas o términos no les van a ser muy extraño. Por ejemplo, ¿cómo podríamos definir un dato? Tú sabías tener un clase con los estudios de estadística también, y se diferenciaban como tres etapas. La etapa de, o la definición de variable, la definición de variable aleatoria y la definición de datos, que serían como tres etapas de una misma cosa. Por ejemplo, si decimos variable, porque nosotros cuando hacemos análisis de datos, analizamos variables. Entonces, ¿qué sería una variable?
+00:53 Speaker 1: El peso. El peso es una
+00:56 Speaker 2: variable. cantidad de créditos matriculados es una variable todo lo que se puede medir
+01:05 Speaker 1: correcto, es una característica medible en un individuo
+01:10 Speaker 2: o en un objeto una característica que puedo observar y puedo medir es
+01:14 Speaker 1: una variable entonces
+01:17 Speaker 2: tengo mi concepto de variable ¿cuándo le llamo variable aleatoria? ¿Se acuerdan de su curso de estadística? ¿O de estadística
+01:24 Speaker 1: para ingeniería? ¿Me llevó a estadística para ingeniería? Probabilidad y estadística. ¿Ya viste la definición de variable aleatoria? Sí. ¿Por qué no me queda? Variable aleatoria es este concepto de variable que le tengo aquí en el aire,
+01:40 Speaker 2: ¿cierto? Digo, yo tengo un cuadro. Imaginen colección de estudiantes. La colección de estudiantes del curso
+01:45 Speaker 1: de análisis de datos. Hay dos horarios. La población de todos los estudiantes con licencia de datos este año es mi
+01:53 Speaker 2: población. Entonces yo digo, voy a medir la
+01:56 Speaker 1: variable edad.
+01:57 Speaker 2: La variable edad en mi población. Edad está como que en el aire, si es un concepto, la tengo como idea, sé que es, no tiene valor, no tiene nada, es una variable, está ahí. Cuando yo digo, voy a medir esa variable de mi población de estudiantes en el horario 1802. Esa variable aterriza en mi muestra, que es esta. Cuando la variable aterriza en una muestra de tamaño n, ¿qué es lo que pasa? Esta variable queda denotada como una x, al aterrizarla en una muestra de tamaño n, se convierte en un vector de tamaño n. Al ser un vector de tamaño n, genera n posiciones, ¿cierto? En este caso, ¿cuántos somos en este horario?
+02:44 Speaker 1: 16. Ya.
+02:45 Speaker 2: Tendríamos un vector de tamaño 16. Pero ese vector está vacío todavía. Es como que he generado el espacio para
+02:54 Speaker 1: esas 16 valores, pero me quedo ahí.
+02:58 Speaker 2: Eso es mi variable aleatoria. ¿Por qué aleatoria? ¿Qué idea les da lo de aleatorio? ¿Qué es algo aleatorio?
+03:05 Speaker 1: Razón.
+03:07 Speaker 2: Algo random, ¿cierto? ¿De dónde proviene el random? Por ejemplo, mi término, población y muestra.
+03:14 Speaker 1: ¿Cuál es el random? La muestra, ¿verdad? Porque la población siempre. En cambio, yo digo una muestra de 16. Si yo selecciono aleatoriamente, esta sería mi muestra de 16.
+03:27 Speaker 2: ¿Pero qué pasa si yo regreso la muestra y vuelvo
+03:30 Speaker 1: a realizar y saco otro 16? Cambia, ¿cierto? Puede ser los mismos n igual 16, pero
+03:39 Speaker 2: los valores de cada uno va a cambiar porque son diferentes individuos.
+03:42 Speaker 1: Ahí sale el tema de
+03:44 Speaker 2: aleatoriedad. Entonces, si mi variable estaba acá en la nebulosa, la aterriza en una muestra, al ver que se me queda una muestra, como la muestra es aleatoria, le hereda el término aleatorio de la variable. Entonces, la variable
+03:56 Speaker 1: cuando aterriza en una muestra, variable aleatoria
+03:59 Speaker 2: de tamaño L. Pero todavía no tengo los valores. Cuando yo ya voy a los individuos de la muestra y les pregunto, yo registro recién, obtengo el dato. El dato viene a ser esos valores que llenan mi vector de la variable aleatoria.
+04:14 Speaker 1: Para eso muestra. Que
+04:15 Speaker 2: si yo mañana tomo otra muestra tamaño 16, esa variable aleatoria va a tomar otros datos, como se llama aleatorios. Porque en esta muestra A tomo unos datos y en la muestra B otros datos, a pesar que sean del mismo tamaño.
+04:29 Speaker 1: Entonces ahí tenemos tres conceptos. Variable,
+04:31 Speaker 2: variable aleatoria y el dato.
+04:35 Speaker 1: Y bueno, hay dos datos respecto al dato, ¿cierto?
+04:38 Speaker 2: El dato es la representación simbólica
+04:40 Speaker 1: de la variable. Cuando ya tengo un número,
+04:43 Speaker 2: en caso de la variableras, y en caso de la variable categórica, podría ser, por ejemplo, no sé, carrera profesional.
+04:53 Speaker 1: ¿Cierto?
+04:53 Speaker 2: Sería una variable categórica o cualitativa. ¿Qué más? Los vídeos de información científica porque es un solo
+05:00 Speaker 1: numerito, no te dice nada. Por ejemplo, si hay que me diga, tengo el promedio 20 años.
+05:05 Speaker 2: Ya, nada más. No, no me da más información. Aplicando una hipótesis se transforma en información.
+05:12 Speaker 1: Esto lo vamos a ver. Tiene sentido el parte de la hipótesis que va a quedar un poco extraño,
+05:17 Speaker 2: pero lo vamos a desarrollar en el camino. El preprocesamiento de los datos se transforma en información. Este preprocesamiento o procesamiento hace referencia a mis métricas de resumen. Si yo tengo mi varía aleatoria, tengo la edad, no sé, ¿en promedio cuántos años tendrá?
+05:35 Speaker 1: Aprox,
+05:36 Speaker 2: en promedio.
+05:38 Speaker 1: ¿21 o 22? ¿21
+05:42 Speaker 2: o 22? Ya 21 y medio, pongamos.
+05:45 Speaker 1: Imagínense que tienen el promedio
+05:47 Speaker 2: 21 años y medio.
+05:51 Speaker 1: Ese 21 años y medio es una
+05:55 Speaker 2: métrica de resumen, ¿cierto? Pero cuando yo tengo el vector B, 21, 20, 19, 23, 21, 22, ese vector de datos en sí solito no merece nada. Pero cuando yo lo resumo y lo proceso, ya empiezo a obtener el propósito, con las métricas a resumen.
+06:15 Speaker 2: Entonces, eso respecta a
+06:17 Speaker 1: nuestro valor. Vamos a empezar primero el valor.
+06:20 Speaker 2: También es importante ver este tema de... Ya tenemos que ver datos y datos y información. ¿Es igual
+06:26 Speaker 1: a información o datos igual a conocimiento? ¿Qué
+06:29 Speaker 2: dice? ¿Hay diferencias? ¿Es lo mismo?
+06:34 Speaker 1: ¿Cuál
+06:35 Speaker 2: es primero? Primero dato, después.
+06:39 Speaker 1: Información. Información. ¿Y luego? Conocimiento. ¿Cómo un dato pasa a información? La procesas. ¿Cuándo lo resumes? No tiene contexto. Cuando lo resumes y tiene un contexto
+06:52 Speaker 2: al menos cercano, ¿cierto?
+06:55 Speaker 1: ¿Y cuándo pasa conocimiento? Cuando lo almacenas, tal vez. Ya, puede ser. Cuando generas un razonamiento. Cuando
+07:04 Speaker 2: generas un razonamiento y ya puedes tomar decisiones con esa información, ¿cierto? Exacto, correcto. Entonces, han resumido
+07:11 Speaker 1: perfectamente todos los métodos que lo tienen.
+07:13 Speaker 2: Entonces, podemos saltar esa boca porque le tiene intensidad. Ahora, que ya sabemos esa diferencia en los procesos, que hay pasos para llegar de un lado a otro, la metodología KDD busca eso. Empieza con los datos,
+07:27 Speaker 1: con un sumo,
+07:28 Speaker 2: realiza una secuencia de pasos, ¿para qué? Para llegar a conocimiento, a generar conocimiento. Esa es la idea de la metodología KDD. Entonces nos van a dar los pasos para llegar desde el dato hacia conocimiento, de manera ordenada.
+07:43 Speaker 1: Ahora, yo les he colocado por aquí diferentes definiciones que han ido cambiando el tiempo de
+07:49 Speaker 2: qué es la metodología
+07:51 Speaker 1: KDB. Les he colocado referencias, algunas definiciones.
+07:56 Speaker 2: Por ejemplo, aquí nos hablan de un proceso no trivial para poder validar,
+08:02 Speaker 1: poder
+08:04 Speaker 2: encontrarle un uso a datos en base a los patrones que podamos entender de ello.
+08:11 Speaker 1: Como que la descripción
+08:13 Speaker 2: está un poquito sencilla. Otra definición que tenemos. Acá ya es un poquito más compleja. Acá ya nos hablan de selección, preprocesamiento, el subsampling, transformaciones. Luego nos hablan de algoritmos, nos hablan de evaluación de los productos y... Identify.
+08:38 Speaker 1: The subset of the enumerated patterns nos
+08:41 Speaker 2: hablan de patrones. ¿Para qué? Para generar el conocimiento final. ¿Cierto? Entonces, acá hay como que se ponen un poquito más detallados en
+08:49 Speaker 1: ampliar o abrir esos pasos. Y acá tenemos una definición final. A ver si no me equivoco. No, acá hay una definición final. Otra definición intermedia.
+09:00 Speaker 2: Ya nos habla de estadísticas, nos habla de bases de datos. Vamos a hablar un poco ya con la inteligencia
+09:06 Speaker 1: artificial, que está en el 97, que nos habla de inteligencia artificial. Y la definición final que tendríamos
+09:13 Speaker 2: que entrar en el 2001 sería que la metodología CAD para nosotros va a ser la extracción trivial de información potencialmente
+09:23 Speaker 1: útil a partir de un gran volumen de datos. Esto de gran volumen de datos es un poco relativo, porque no siempre se tiene un gran
+09:29 Speaker 2: volumen de datos, e igual se puede hacer análisis de datos. En el código de información está inquisita. La información es inquisita, tenemos que
+09:38 Speaker 1: sacarla. Donde se trata de interpretar qué era la cantidad de datos y encontrar relaciones o patrones. Para conseguirlo, habrá que usar técnicas de revisaje, estadística y base de datos.
+09:51 Speaker 2: Son definiciones que han ido cambiando y evolucionando en el tiempo. Esa definición, si bien trata de resumir toda la idea, se divide en etapas. Estas etapas son las que vamos a tener clarísimas desde
+10:07 Speaker 1: ahorita hasta la exposición final del grupo. Las etapas.
+10:12 Speaker 2: Estas etapas las
+10:14 Speaker 1: vamos a ver por aquí.
+10:16 Speaker 2: Ahí está evolucionando también la presentación. Por ejemplo, este gráfico es el que acompañaba la aplicación de nuestro metodología KDD
+10:25 Speaker 1: en el 96. Por acá puede ver que
+10:28 Speaker 2: tiene un poco de sentido, es decir, los datos, selección, el documento,
+10:32 Speaker 1: la promoción de los demás y la interpretación de los datos. Y
+10:35 Speaker 2: termina el que es el conocimiento. Lo que veíamos es cuando pasamos de los datos hacia conocimiento
+10:41 Speaker 1: a través de diferentes pasos y etapas.
+10:46 Speaker 2: Como pueden ver, los pasos están conectados entre sí.
+10:51 Speaker 1: Los pasos están conectados.
+10:53 Speaker 2: No son individuales, no están agitados. Esta es una versión anterior. Una de las primeras versiones respecto a la métrica
+10:59 Speaker 1: izquierda. Pero el resto como el que nos vamos a quedar va a ser el que está por aquí.
+11:05 Speaker 2: Entonces, al final nosotros vamos a trabajar con nueve
+11:09 Speaker 1: pasos. en la metodología.
+11:12 Speaker 2: 9 pasos por detrás de nuestra metodología.
+11:15 Speaker 1: Algunos pasos son más amplios, otros son
+11:17 Speaker 2: más cortitos, pero 9 en total. Entonces los nodos tendrían que estar enumerados. En nueve. Si les parece demasiado normal, pueden trabajar solo en un nobu y ya ustedes se organizan bien, pero
+11:32 Speaker 1: la idea es que estén bien organizados. Cuando deben realizar el nobu, yo sé para dónde empieza la etapa cinco y luego termina la etapa ocho. Por dónde empieza el nobu, yo voy a terminar la etapa nuevamente.
+11:44 Speaker 2: Tengo que al intercambio media voy a
+11:46 Speaker 1: encontrar el nobu y cada uno.
+11:48 Speaker 2: Entonces, nueve etapas en total. Y ahora vamos a ver un poquito la descripción de cada una de ellas. La primera es el entendimiento, el documento es la selección, la tercera es el reprocesamiento, la transformación. Y la etapa 5, 6 y
+12:04 Speaker 1: 7 la estamos ejecutando como Dining, ahora vamos a ver bien. Porque las 5 y 6 son negróticas y las 3 son las más amplias. Entonces, las 3 las podemos agarrar como Dining.
+12:15 Speaker 2: Luego tenemos evaluación e interpretación de los
+12:19 Speaker 1: resultados. Y al final, el...
+12:23 Speaker 2: Conocimiento. Descubrir nuevo conocimiento en base a la visuación y la integración.
+12:28 Speaker 1: Ya con contexto del negocio de la empresa.
+12:32 Speaker 2: Esta visualización, en esencia, la vamos a realizar en visualismo nuevo, o sea, con imágenes, diferentes formas de visualizar, y ya ustedes pueden ponerse creativos para encontrar la mejor forma de
+12:45 Speaker 1: visualizarlo. No es necesario que usen
+12:47 Speaker 2: Power BI o cosas así. Si quieren hacerlo, tienen el tiempo y la mano sin energía. Bienvenido sea. Pero si no, al menos las partes de visualizaciones creativas en los mismos nodos.
+13:01 Speaker 1: Si quieren hacer algún extra, algún plus, algún
+13:04 Speaker 2: aplicativo, lo que quieran, obviamente son bienvenidos. Pero al menos mínimo visualizaciones en el mundo. Entonces, como pueden ver, las etapas están
+13:13 Speaker 1: conectadas entre sí. ¿Eso qué significa? Que
+13:16 Speaker 2: yo puedo estar en la etapa
+13:18 Speaker 1: de data mining.
+13:19 Speaker 2: Estoy analizando cosas y me sale
+13:21 Speaker 1: algo que me hace ruido.
+13:23 Speaker 2: ¿Eso qué significa? Que algo me pasó. Puedo regresar a transformación o si quiero regreso otra vez a ver el procesamiento. Vuelvo a limpiar y sigo avanzando. Entonces,
+13:35 Speaker 1: este ciclo KDB...
+13:37 Speaker 2: Lo que me permite y lo que me facilita
+13:40 Speaker 1: o me da tranquilidad es que no es que yo ya estoy en una etapa y ya fui porque
+13:45 Speaker 2: si lo hice mal, se me aluró todo o no. Tenemos la posibilidad de siempre regresar. Obviamente en OMEN, si trabajan con versionamiento de código, también está bien. Haciendo solamente
+13:54 Speaker 1: sobre escribir su código, ya está.
+13:58 Speaker 2: Pero siempre tenemos que regresar. Siempre tenemos que regresar. Y lo digo como tenemos que, porque en realidad tenemos que ir. No podemos asumir que desde el inicio hemos hecho todo
+14:08 Speaker 1: bien. Tenemos que avanzar con ilusión y ver cosita
+14:11 Speaker 2: por cosita. Si algo hizo ese ruido, regresamos. En el transcurso de los días, vamos a ir viendo ejemplos de cuándo tenemos que regresar y cosas así, que van a ir saliendo naturalmente. Pero es importante que ustedes
+14:25 Speaker 1: se toman como bastante poco,
+14:28 Speaker 2: no solamente el modelamiento, que yo sé que es interesante, novedoso y todo, sino el resto de etapas también tienen sus cositas interesantes. Hay cositas
+14:36 Speaker 1: por descubrir y que más en los próximos días. Ya. Entonces, estas serían las nueve etapas. Este
+14:43 Speaker 2: diagrama lo vamos a tener como nuestra preferencia para todos los desarrollos y ahora vamos a ver un poco de descripción de cada una de ellas antes de
+14:51 Speaker 1: arrancar con nuestras primeras etapas. Yo creo que varias de ellas son bastante distintivas, ¿cierto? Por ejemplo, la primera. La primera etapa, por aquí,
+15:04 Speaker 2: nos habla de el intento. El entendimiento de que
+15:09 Speaker 1: hay dos tipos de entendimiento.
+15:10 Speaker 2: Vamos a hablar del entendimiento del negocio.
+15:14 Speaker 1: En estos términos, en estos temas
+15:16 Speaker 2: de metodología, sanitario, se suele aplicar para temas de negocio. La palabra negocio está ahí como que siempre. Pero sabemos que no se aplica solo para negocio. Es más, este tema de instituciones aliadas, la
+15:31 Speaker 1: diversidad lo suele...
+15:34 Speaker 2: La universidad no suele trabajar
+15:36 Speaker 1: con instituciones que
+15:38 Speaker 2: no son privadas. El tema de instituciones aliadas, ¿qué significa una institución aliada? Ellos van a confiar en nosotros, nos van
+15:47 Speaker 1: a apuntar con sus problemas, y
+15:51 Speaker 2: nosotros, con el conocimiento que vamos a tener en el curso, vamos a devolver a personas.
+15:57 Speaker 1: Las
+15:58 Speaker 2: instituciones privadas tienen financiamiento para eso. Contratan gente, tienen. Pero hay instituciones del Estado o instituciones como ONGs, quizás, que no tienen las mismas herramientas que una
+16:13 Speaker 1: privada, ¿cierto? Un banco puede contratar al
+16:15 Speaker 2: consultor su poseño de Austria, pero una ONG no siempre. O una entidad del Estado o la municipalidad no siempre, ¿cierto? Esa es la idea de la universidad con instituciones alianas. Ayudarles con el conocimiento que nosotros tenemos para que solucionen problemas y no tengan que recurrir a recursos
+16:35 Speaker 1: que no tienen.
+16:38 Speaker 2: Entonces, ¿por qué digo esto? Porque
+16:40 Speaker 1: hay un término que se suele utilizar en estos entornos de KDD que es negocio. Se
+16:45 Speaker 2: habla del entendimiento del negocio, el dueño del negocio, no sé qué del negocio, y todo es negocio. Pero sabemos que la vida no todo es negocio. Podemos aplicar análisis de datos en todo el rubro y no siempre es negocio. Entonces, a veces vamos a decir entendimiento del negocio,
+17:00 Speaker 1: a veces vamos a decir entendimiento del caso, entendimiento de la casuística, entendimiento de
+17:04 Speaker 2: la problemática, pero ya sabemos a qué nos referimos.
+17:07 Speaker 1: Este primer paso es
+17:09 Speaker 2: entendimiento del negocio de la casuística y consiste,
+17:13 Speaker 1: como ven en este imagen, en una primera reunión con los
+17:18 Speaker 2: dueños de los datos. de los dueños de la institución. Eso es esencial. Eso siempre se tiene que dar en todos los equipos de ciencia de datos, los equipos de análisis de datos. No se puede asumir un proyecto solamente y que me ha querido,
+17:35 Speaker 1: no me ha dejado que pase, que a veces vienen así. ¿Saben qué es el equipo de ciencia de datos? Sí.
+17:41 Speaker 2: Y dicen, ya, yo tengo estos datos. Te vengo y me mandas la respuesta y tus resultados.
+17:50 Speaker 1: Cuando queremos hacer metodología
+17:52 Speaker 2: de este tipo, tiene que haber sido una primera reunión con los dueños de los datos y los interesados en el resultado. No podemos ir de frente mediando los dos y empiezo a construir y modela y todo el tiempo. No, eso no puede pasar. Porque podemos equivocarnos. El primer paso es entendimiento del negocio o entendimiento del caso. Reuniones con los dueños de los datos, con los dueños del negocio, ¿para qué? Para entenderlos. En esas reuniones, nuestra idea o nuestra función es dejarlos a ellos que hablen. Dejarlos a ellos que nos cuenten cuál es su problema,
+18:29 Speaker 2: ¿cierto? ¿Qué es lo que les
+18:31 Speaker 1: preocupa? ¿Qué problemas
+18:34 Speaker 2: están teniendo día a día? ¿Qué es lo que esperan recibir también de nosotros?
+18:39 Speaker 1: ¿Qué soluciones les gustaría si a repente ellos le tienen
+18:42 Speaker 2: idea de análisis de datos? ¿Qué es lo que ellos imaginan que les vamos
+18:45 Speaker 1: a dar? Entonces, es una conversación,
+18:48 Speaker 2: una reunión en la que varias cosas, ¿no? Primero, ellos explican el problema. También, ellos quieren explicarnos los datos. Aparte de que nos van a dar un diccionario de datos, si es que lo tienen, por favor, no tienen diccionario de datos. Tienen que explicarnos los datos y nosotros tenemos que asegurarnos de que estamos entendiendo todas las preguntas que vamos a analizar.
+19:09 Speaker 1: ¿Qué
+19:10 Speaker 2: otras cosas más? Restricciones. Ahora les voy a dar una lista de algunas cositas que me suele ver. Pero se suelen ver restricciones de tiempo, restricciones de espacio. Una cosa
+19:21 Speaker 1: importante en estas reuniones es
+19:23 Speaker 2: la data. Los datos. Ha pasado, me ha pasado veces en las que una
+19:30 Speaker 1: institución o un área, dice, sí, yo quiero hacer, o yo quiero que me ayuden a hacer un modelo de
+19:35 Speaker 2: clasificación o de generación. Y ya, entre la conversación, o sea,
+19:40 Speaker 1: sale la conversación y dice, sí, sí, puedo hacerlo, puedo hacerlo. ¿Quieres
+19:43 Speaker 2: hacerlo? Sí, lo vamos a hacer para acá. Llegamos a esta reunión y le decimos, ya, acá, sí, tengo este problema, quiero hacer esto, me gustaría tener esto, un daño, no sé qué, ya. ¿Cuáles son los datos que tienes? Y te dan sus datos. Y cuando los ven en esta reunión, esos datos no se pueden analizar con un modelo. ¿Por qué? Porque no tienen las variables necesarias. Por ejemplo, si ellos quieren hacer un modelo predictivo, ¿cuál sería una de las cosas mínimas necesarias en sus datos? La variable predecible, ¿cierto?
+20:15 Speaker 1: Si no le tiene, o a veces me ha pasado, me dice, queremos hacer un modelo preventivo
+20:20 Speaker 2: para los casos de riesgo y no riesgo. Y ya, a ver, ¿qué datos tienes? No, solamente tengo los de riesgo. Y los de no riesgo, no los tengo. ¿Se puede construir un modelo ahí? Entonces, en esta reunión salen esas cosas. Es muy importante dedicarle tiempo y como les digo,
+20:39 Speaker 1: darle espacio a que los
+20:42 Speaker 2: reyes de los datos y los interesados del blogger nos cuenten su vida prácticamente. Como verla, ¿qué es lo que quieren hacer? ¿Qué es lo que no quieren hacer? Y nosotros nos dedicamos a preguntar y a entender bien todo
+20:54 Speaker 1: lo que nos está queriendo transmitir.
+20:56 Speaker 2: Ahora, esa es la primera reunión. Obviamente a lo largo de todo KDD se recomienda tener más reuniones también. Pero esta es la súper básica para ver si están alineados o si no van a poder proceder.
+21:06 Speaker 1: ¿Sí? Esa es la primera. Entendimiento del negocio,
+21:12 Speaker 2: de la logística, sí. Y lo que nosotros queremos buscar es al final poder entender cuál es la vista de nuestro usuario, de la persona a la que llevamos a abrir el servicio. ¿Qué es lo que, cómo es que esa
+21:27 Speaker 1: persona está viendo nuestro análisis?
+21:30 Speaker 2: Segundo paso. La creación, esto, subiendo cada vez el tagget, no estamos hablando de la variable tagget en sí, sino estamos hablando del dataset tagget,
+21:42 Speaker 1: o sea, del dataset con el que vamos a trabajar el cliente. Porque si bien nos van a dar muchos archivos de datos o
+21:47 Speaker 2: una población gigante, no significa que vamos a trabajar con toda la población, ¿cierto? Porque de repente algunas variables no están bien registradas.
+21:58 Speaker 1: Algunas son ya registradas, algunas no tienen que
+22:01 Speaker 2: estar ahí ya. Tenemos que identificar cuál va a ser nuestra data tag. Esto de data tag aplica tanto a filas como a columnas. En cuanto a columnas, tenemos que ver cuáles son
+22:12 Speaker 1: las variables que nos van a salir para
+22:14 Speaker 2: ese objetivo que nos estamos viendo. Porque si nos dan 50 variables, puede que de las 50 variables, 40 sean unos indicadores. o puros ID, el ID de ingreso, de egreso, de hora, de revisión, y al final solamente tengan tres variables para modelar, que ha pasado también. Dice, sí, tengo como 100 variables, ya, acá, vas a ver tus 100 variables,
+22:39 Speaker 1: y cuando uno las ve, de esas
+22:42 Speaker 2: 100 variables, solo 10 son para modelar, y el resto son etiquetas y cosas que no se pueden modelar,
+22:48 Speaker 1: o ID.
+22:50 Speaker 2: Entonces, esta es una selección
+22:52 Speaker 1: tanto a nivel de filas, a nivel de variables,
+22:55 Speaker 2: como a nivel de las variables que están en
+22:58 Speaker 1: las columnas y los ambos serían como nuestras filas. Entonces, esto sería el segundo paso, identificar bien los
+23:07 Speaker 2: datos con los que vamos a trabajar una vez que ya no nos han blindado.
+23:11 Speaker 1: Una vez que los hemos definido, ya podemos pasar a la parte de limpieza
+23:16 Speaker 2: y preprocesión. En esta parte de limpieza y prevelozamiento vamos a aplicar operaciones básicas como ven acá para que, para remover el ruido y algunas cosas raras como de repente datos perdidos, manejar el tema de los datos perdidos, que ahora
+23:30 Speaker 1: vamos a tener opciones también para manejar.
+23:33 Speaker 2: No hay una sola forma de manejar datos perdidos y varía de acuerdo al contexto.
+23:39 Speaker 1: Si tengo este contexto, hago esta solución. Si tengo este otro, hay otra forma de trabajar.
+23:46 Speaker 2: Limpieza y reemplazamiento son operaciones básicas para remover el ruido y ver
+23:51 Speaker 1: como manejo en temas de iluminación. Ese sería nuestro paso tres. ¿Sí?
+23:58 Speaker 2: ¿Qué más? Paso cuatro. En el paso cuatro tenemos la reducción de nuestras dimensiones o también la transformación
+24:11 Speaker 1: de variables. Esta reducción, si veis el gráfico que está muy
+24:20 Speaker 2: chiquito, este gráfico en el paso 4 le dice transformación. Y por aquí en el texto
+24:25 Speaker 1: dice reducción. ¿Por qué reducción abarcaría el término transformación? ¿Por qué creen?
+24:32 Speaker 2: ¿Por qué el término reducción de
+24:35 Speaker 1: dimensiones abarcaría
+24:36 Speaker 2: también transformación?
+24:43 Speaker 1: Y el orden se estaría cambiando, ¿no? Se estaría reduciendo las columnas o las filas y eso haría que cambie la información inicial. Exacto, porque cuando
+24:52 Speaker 2: nos referimos a transformación, por ejemplo, de variables, hay dos tipos de transformación. Yo transformo una variable en sí misma, de ella misma saco una separación, pero
+25:03 Speaker 1: también puedo hacer transformaciones
+25:04 Speaker 2: combinando variables, combinando columnas y ahí estaría reduciendo las columnas.
+25:09 Speaker 1: Y esto de reducción de condiciones, puedo
+25:12 Speaker 2: reducir las filas o puedo reducir las columnas, de acuerdo a mi objetivo de análisis.
+25:18 Speaker 1: Hay diferentes formas de reducir.
+25:21 Speaker 2: Entonces, esta reducción estaría abarcando las etapas también de
+25:25 Speaker 1: transformación. Mi forma de
+25:28 Speaker 2: transformación. Porque como les digo, vamos a ver, yo puedo transformar una variable en sí mismo, por ejemplo, tengo la variable X y saco el logaritmo de X. Es la misma variable transformada. Pero yo también puedo transformar una variable combinando cinco variables en una. Tengo cinco variables, las combinan y genero una nueva.
+25:47 Speaker 1: Entonces ahí también estoy haciendo una transformación.
+25:49 Speaker 2: Y estoy reduciendo mis dimensiones con las naciones. ¿Qué más hay acá? Tenemos dos etiquetas. Vamos a utilizar métodos de reducción en un medio de variables. Ahora, podemos hacer como...
+26:07 Speaker 1: Un poco a esto de
+26:08 Speaker 2: métodos de reducción. Porque los métodos de reducción que se utilizan
+26:13 Speaker 1: son varios. Hay muchos tipos de métodos de reducción. Pero vamos a ver que aquí en métodos de reducción ya vamos a empezar a usar modelos.
+26:22 Speaker 2: ¿Han escuchado de los modelos para reducción? ¿Reducción de dimensiones? Sí. Entonces, esos modelos que bien pueden estar en la etapa de data mining, también pueden entrar aquí para reducción de variables, pero con un signo de exclamación grande. No es la misma forma, o no se usa de la misma manera. los modelos de reducción de dimensiones aquí que en la etapa de data mining. Si yo ya uso un modelo de reducción de dimensiones aquí, no puedo utilizar de la misma manera en mi etapa de data mining.
+27:01 Speaker 1: Vamos a tener que ver las diferencias. Entonces,
+27:04 Speaker 2: en la etapa 4 de transformación de reducción, se puede utilizar el modelo ya, pero hay una cláusula,
+27:11 Speaker 1: algo a tener en cuenta y que lo vamos a ver en su momento. Eso es la etapa 4. Entonces, etapa 4, ya entran
+27:17 Speaker 2: modelos. No es obligatorio usar modelos para transformar porque no es necesario siempre transformar, pero si es necesario
+27:25 Speaker 1: realizarlo, vamos a ver qué pasos tenemos. Entonces,
+27:28 Speaker 2: la etapa 4, transformación
+27:30 Speaker 1: o reducción,
+27:32 Speaker 2: recorremos, no es obligatoria, siempre se tiene que hacer, depende de la casuística. Tenemos que evaluarlo nosotros.
+27:41 Speaker 1: Eso es la reducción de
+27:42 Speaker 2: dimensiones y transformación. Paso 5, entonces acá entramos en el bloque que les decía aquí, donde
+27:51 Speaker 1: agrupamos 5, 6 y 7. Esos 5, 6 y 7 ahora vamos a ver por qué están agrupados.
+27:58 Speaker 2: El paso 5, ¿qué es lo que me dice? Tengo que hacer un match, ¿entre qué? Entre mis objetivos
+28:06 Speaker 1: del proceso KDB, con
+28:11 Speaker 2: mis objetivos del negocio.
+28:17 Speaker 1: Vamos a tener nuestra ficha
+28:19 Speaker 2: técnica donde vamos a diferenciar objetivos del negocio y nuestros objetivos de análisis de datos, que no van a ser los mismos. Objetivos del negocio y objetivos del caso están en términos de la institución, en palabras que ellos entienden que ellos han planteado. Los objetivos de análisis de datos son
+28:37 Speaker 1: cosas que nosotros establecemos traduciendo
+28:40 Speaker 2: lo que ellos nos han dicho como necesidad. Entonces, de acuerdo a lo que ellos nos digan, nosotros vamos a poder identificar si se va a tratar de un problema solamente para resumir información, o si se va a tratar de un problema en clasificación, o de regresión, o de clasering, o de alguna otra cosa más como, no sé, optimización. Entonces, ¿qué es lo que tenemos que hacer acá? Hacer nuestro match entre los objetivos, lo que la institución nos ha pedido,
+29:09 Speaker 2: lo que nosotros hemos visto con los datos disponibles y las opciones que nosotros tendríamos
+29:17 Speaker 1: para movernos en el análisis de datos.
+29:21 Speaker 2: Estos dos
+29:22 Speaker 1: los establecemos nosotros, con
+29:25 Speaker 2: toda la información anterior del negocio
+29:27 Speaker 1: y una vez que hemos visto los datos. Una vez que hemos visto los datos. Entonces, el paso 5 es bastante corto porque solamente es la toma de
+29:39 Speaker 2: decisiones en base a la información. En este paso, ¿qué es lo que debemos decidir? Si voy a hacer modelos de clasificación o de clasificación.
+29:47 Speaker 1: Entonces, en este paso, ustedes después de ver sus datos, me
+29:50 Speaker 2: dicen, pues ahora, esto es para clasific. Solamente clasific y van a entrenar puros modelos de clasificación. Y otras personas dicen, no, estos datos son para regresiones.
+30:00 Speaker 1: Entonces, solo vamos a ver modelos de revisión.
+30:03 Speaker 2: Como que de repente ven que sus datos pueden hacer dos cosas. Pueden hacer clustering y pueden hacer revisión.
+30:09 Speaker 1: También puede pasar.
+30:11 Speaker 2: Entonces, en este paso se toma la decisión de cuál va a ser el camino hacia el cual nos vamos a dirigir.
+30:19 Speaker 1: O con el cual
+30:21 Speaker 2: vamos a empezar a desarrollar.
+30:24 Speaker 1: Entonces, paso 5 es decidir cuál es nuestro camino que vamos a tomar. Paso 6. Una vez que
+30:36 Speaker 2: hemos decidido cuál es nuestro camino, cuál va a ser la puerta que vamos a ver, si vas a resumen,
+30:42 Speaker 1: clasificación, regresión o clasering,
+30:45 Speaker 2: cuando nosotros decimos ya, por ejemplo yo estoy acá y veo mis datos y digo ya, a mí con los datos me voy a ir por esta puerta de clasificación, perdón, de clasering.
+30:55 Speaker 1: Entonces decidí
+30:57 Speaker 2: en el paso 5 irme por esa puerta, abro esa puerta y cuando estoy adentro
+31:01 Speaker 1: me encuentro con un montón de herramientas.
+31:04 Speaker 2: Y todas estas herramientas vendrían
+31:06 Speaker 1: a ser mis algoritmos.
+31:07 Speaker 2: Entonces, en el paso 6, lo que hacemos es, una vez que ya hemos abierto la puerta del paso 5, en el paso 6 tengo que ver cuáles son los algoritmos disponibles solo en esa puerta. Y con esos disponibles, yo tengo que elegir más o menos cuáles son los que voy a querer desarrollar.
+31:25 Speaker 1: ¿Sí? Entonces paso 5, elijo cuál puerta voy
+31:28 Speaker 2: a abrir. Y en el paso 6, una vez que he abierto esa puerta, tengo que decir cuáles modelos o cuáles
+31:36 Speaker 1: algoritmos voy a utilizar.
+31:39 Speaker 2: Al menos a priori. Luego ya cuando estén entrenando, pueden decir, no, al final este modelo está muy feo, voy a usar otro algoritmo que no
+31:47 Speaker 1: le gustó. O encontré en el camino otro más interesante y voy a cambiar el algoritmo.
+31:53 Speaker 2: Entonces, el paso 6 es la elección de los algoritmos que voy a usar en esa forma que elegí.
+32:02 Speaker 1: Si se escoge resumen, ¿usted se refiere a estos gráficos? Sí, en el caso resumen
+32:10 Speaker 2: más es descripción de la foto de los datos. Mediante resumen en general, que ahora justo los vamos a ver, que serían gráficas. combinaciones de las variables, o sea, análisis univariado, análisis bivariado, y algún análisis multivariado de manera gráfica.
+32:27 Speaker 1: ¿Pero para eso se analiza algoritmos o algo? En ese caso ya no habría algoritmos. ¿Saltaría ese paso? Claro, o sea, en ese caso,
+32:33 Speaker 2: por ejemplo, si fuera la primera puerta, nuestras herramientas en ese caso serían las medidas de resumen, los gráficos, y ahí sería univariado, bivariados y multivariados. Serían nuestras
+32:44 Speaker 1: funciones, nuestras herramientas.
+32:47 Speaker 2: Y algoritmos más serían para las otras formas.
+32:59 Speaker 1: Y
+32:59 Speaker 2: esta parte de, por ejemplo, si vamos a elegir modelos para datos categóricos,
+33:08 Speaker 1: también tenemos que decidirlo aquí. Al
+33:12 Speaker 2: inicio del curso, los primeros bloques, sobre todo para recibir la información, vamos
+33:17 Speaker 1: a refrescarles un poco estas
+33:20 Speaker 2: diferenciaciones y algunas ideas básicas, donde vamos a diferenciar el tema de categóricos
+33:27 Speaker 1: y otros tipos de variables.
+33:31 Speaker 2: Porque de acuerdo a eso, el algoritmo que vamos a elegir cambios,
+33:34 Speaker 1: ¿cierto? Hay unos algoritmos que son más fuertes cuando
+33:36 Speaker 2: trabajan con datos numéricos que con datos categóricos o cualitativos. Hay otros que me permiten trabajar
+33:44 Speaker 1: con ambos tipos. Hay
+33:46 Speaker 2: otros que solo aceptan numéricos y cualitativos no me aceptan para nada.
+33:50 Speaker 1: Hay otros que son fuertes para trabajarlos solo con cuales. Entonces, hay varios tipos.
+33:55 Speaker 2: Para poder elegir bien nuestros algoritmos, tenemos que identificar el tipo de variables, si son categóricos, si son numéricos, si son el tipo de razón, el tipo de intervalo y eso es posible. Eso lo vamos a repasar acá también antes de empezar a avanzar. Ok, entonces ya tenemos paso 5, paso
+34:13 Speaker 1: 6 y el paso 7 dentro del bloque de data mining
+34:16 Speaker 2: sería data mining propiamente.
+34:19 Speaker 1: Aquí ya le dedicamos un tiempo, ya sabemos
+34:22 Speaker 2: cuáles son los algoritmos que vamos a construir. Empezamos a entrenarlos y empezamos a entrenarlos con ya los que vamos a poder evaluarlos también de manera interna para ir ajustando los superparámetros. Todo lo que ya conocemos es entrenamiento de modelos.
+34:39 Speaker 1: Eso y ya aquí, en el paso 7. Ya es la parte de la tamaño, entrenamiento de modelos. Esta es la parte que pesaría un poco más. Las partes que suelen demorar más son
+34:57 Speaker 2: preprocesamiento y entrenamiento. Incluso preprocesamiento más que entrenamiento podrían decir. Que es algo que no se suele hacer. Por ejemplo, en las
+35:06 Speaker 1: experiencias que han tenido entrenando modelos,
+35:08 Speaker 2: ¿le han dedicado bastante tiempo al preprocesamiento de datos?
+35:12 Speaker 1: ¿Alguien que siquiera preprocesamiento de datos? ¿Bastante? ¿Exaustidamente? No se haustido.
+35:18 Speaker 2: ¿Qué han hecho en preproceso?
+35:22 Speaker 1: Los nulos. Los outliers también. Los nulos los han sacado y los han tratado. Tratado, a veces con el promedio, la moda o a veces sí eliminado cuando es muy atípico.
+35:33 Speaker 2: Los atípicos también, correcto. ¿Ya? Ya, entonces sí han avanzado con preproceso. Vamos a ver algunas preguntas extras quizás. Lo que sucede y la experiencia que he tenido también es, el propio movimiento es lo que me ha tomado siempre más tiempo. El modelo aportado, el modelo sale rápido. Si ya tienes los algoritmos, tienes guías
+35:55 Speaker 1: que te expliquen cómo se tiene la
+35:57 Speaker 2: función, las operaciones y todo.
+36:00 Speaker 1: Claro, eso es aclaro a que tenga el gran volumen de datos y el tiempo de que se utilice el modelo. Eso se va a parar. Pero el entrenamiento en sí demora
+36:10 Speaker 2: menos que el pre-procentual.
+36:13 Speaker 1: Y ahora vamos a ver. Entonces, este sería el paso 7. Y luego tenemos nuestro paso
+36:19 Speaker 2: 8, que es la interpretación. La interpretación que va de la mano con nuestro entrenamiento. En realidad, este paso 8 no es solo la
+36:27 Speaker 1: interpretación final. Esta es una interpretación
+36:30 Speaker 2: que se hace en paralelo con el entrenamiento.
+36:32 Speaker 1: Voy interpretando cosas, voy ajustando. Sigo entrenando, voy interpretando y sigo ajustando.
+36:38 Speaker 2: Esta interpretación va de la mano con el entrenamiento que yo voy a realizar. Entonces
+36:46 Speaker 1: acá tengo que combinar con visualizaciones de diferentes
+36:49 Speaker 2: tipos. para poder analizar la data que voy a
+36:52 Speaker 1: obtener y los resultados del mismo día. Esta interpretación, si bien es un paso a parte, yo la coloco de la mano y va a dar como en bucle. En bucle, en bucle trae un 2 hasta que sale el resultado final.
+37:06 Speaker 2: Esa es la proposición que nosotros tenemos que hacer internamente
+37:08 Speaker 1: antes de exponerla fuera al
+37:11 Speaker 2: dueño del datos o del negocio.
+37:14 Speaker 1: Y ya luego la final, la final final, ya es la parte de reporte, la parte de documentación.
+37:21 Speaker 2: Y al momento de realizar estas documentaciones
+37:24 Speaker 1: ya se tiene que describir.
+37:28 Speaker 2: y dar sugerencias en términos del negocio o de la casuística. O sea, ya la parte de interpretación, o sea, el paso 8, para nosotros es interpretación numérica, interpretación con algoritmos, todo el que quiero ver números, algoritmos, modelos,
+37:42 Speaker 1: esa es interpretación. Pero esta de acá
+37:45 Speaker 2: es interpretación desde el punto de vista de la casuística, con términos del caso, términos de la empresa, de la institución. y respondiendo las preguntas que
+37:56 Speaker 1: ellos tenían a los mismos.
+37:58 Speaker 2: ¿Qué es la diferencia? Ambos son como interpretaciones, pero uno de los datos no trae la
+38:03 Speaker 1: práctica de sí. ¿Sí? Entonces, ese sería el paso nueve.
+38:09 Speaker 2: ¿Hasta aquí? ¿Está claro? Sí, ¿verdad?
+38:13 Speaker 1: Tenemos nueve pasos. Ahora.
+38:19 Speaker 2: Justo que habíamos hablado del tema de resumen, que era la primera parte donde decíamos que no teníamos algoritmos, ¿cierto? Es importante siempre
+38:29 Speaker 1: mencionar que
+38:32 Speaker 2: dentro de Data Mining tenemos como dos grandes ramas. Sacando la parte de... La parte de actualización no
+38:43 Speaker 1: está... O sea, no estamos viendo acá. Tiene
+38:45 Speaker 2: también su mundo, es súper interesante. Pero si nos centramos en como las dos grandes manos que vemos en nuestra propia ingeniería de datos, ¿qué tendríamos? Tenemos dos caminos que no siempre uno de ellos es el más importante o el mejor, el más cargaste, sobre todo. A veces se cree que presentar o entregar un modelo proyectivo es la mejor solución que le
+39:06 Speaker 1: puedo dar a alguien, a una empresa o a una empresa.
+39:08 Speaker 2: Y no siempre es así. Hay algunos problemas que vienen a nosotros y donde la mejor solución que podemos dar es una descripción de los datos. Una descripción de la casuística de lo que estamos observando, de cómo están los datos, de qué nos dicen los datos, de la descripción de la distribución
+39:33 Speaker 1: de los datos. Cómo se están moviendo, qué tienen, qué no tienen. Caracterizar los datos. A veces esa es la mejor solución que
+39:39 Speaker 2: podemos entregar. ¿Por qué les digo esto? Porque
+39:42 Speaker 1: me han pasado varias veces.
+39:44 Speaker 2: en proyectos donde ellos saben y dicen ya, ellos son el equipo de ciencia de datos. Acá. Entonces ustedes creen que hacemos como magia, ¿no? Como que, ah, ya, ellos nos dan datos y nos vamos a entregar algo que previste siempre.
+39:57 Speaker 1: Entonces, algunas personas que de repente son un poco
+39:59 Speaker 2: nuevas en estos entornos, piensan ingenuamente eso. Y tienen datos que nos van a entregar, siempre nos
+40:06 Speaker 1: vamos a dar un modelo de predición. Y a veces vienen con ese diario, estudiate y hazme una predicción. Y ahí nuestra
+40:15 Speaker 2: función es explicar que al realizar una predicción no siempre es lo mejor.
+40:21 Speaker 1: Se realizan modelos predictivos
+40:23 Speaker 2: cuando esa solución va a responder el objetivo principal del problema, ¿cierto? Pero hacer un predictivo, un modelo de predicción
+40:32 Speaker 1: no siempre es ideal. Tenemos que forzar en
+40:37 Speaker 2: construir un modelo predictivo si no tenemos los últimos para hacerlo. Es mejor decir, no procede a un predictivo por aquí, lo que sí puede solucionar
+40:45 Speaker 1: tu problema es una descripción.
+40:48 Speaker 2: Claro, restricción no me refiero a solamente texto, sino resumen estadístico y gráficos y todo, pero no siempre la predicción es lo ideal, o lo mejor de todo.
+41:00 Speaker 1: Siempre tenemos esos dos caminos en los medios. Ya. Ahora.
+41:10 Speaker 2: Bueno, este es un gráfico referencial que andré en internet. Hay un montón de gráficos, incluso más bonitos, quizás.
+41:18 Speaker 1: Hay
+41:19 Speaker 2: algunos gráficos interesantes de acuerdo al objetivo. Al objetivo queremos... ¿Qué queremos abordar? ¿Cierto?
+41:31 Speaker 1: A veces nuestro objetivo es la
+41:33 Speaker 2: protección de atípicos y hay modelos exclusivos para
+41:36 Speaker 1: protección de atípicos. A veces queremos especificar
+41:38 Speaker 2: clustering, a veces queremos de frente a regresión. Regres de asociación. Esto de predicción
+41:44 Speaker 1: agruparía tanto clasificación
+41:46 Speaker 2: como regresión. Ambos estarían dentro de predicción. Clasificación
+41:52 Speaker 1: y regresión están dentro de predicción.
+41:55 Speaker 2: Y luego identificar para
+41:57 Speaker 1: poder hacer este tema. Hay muchas más opciones que tenemos. En este curso específicamente nos vamos a centrar en estos tres.
+42:06 Speaker 2: en las de predicción, que sería clasificación y regresión, y en las de clustering, que no es predicción.
+42:13 Speaker 1: En esas tres nos vamos a centrar. Vamos a ver un poco de lección de típicos también,
+42:18 Speaker 2: pero hay muchos nuevos modelos para esto.
+42:21 Speaker 1: En estos dos,
+42:22 Speaker 2: no sé si nos va a dar tiempo, si nos da tiempo lo incluimos, y si no, nos centramos en esos tres modelos. ¿Cuál era? ¿Predicción? ¿Predicción, clasificación? No, perdón. ¿Predicción
+42:34 Speaker 1: y clasificación son predicciones? Ah, ya. ¿Y clasificación en esa parte? Ah, bueno.
+42:40 Speaker 2: Entonces tengo predicción o tengo clasificación. Y dentro de predicción tengo clasificación
+42:46 Speaker 1: y regreso. Ok. Gracias. Ok.
+42:50 Speaker 2: Entonces, esos serían como los principales para nosotros.
+42:54 Speaker 1: Y ahora, también es decir que existen otras metodologías,
+42:57 Speaker 2: ¿de acuerdo? Dependiendo de la institución o la empresa, a ver si ya tienen una metodología y eso van a llegar a ustedes y decir, no, yo trabajo como un CADD, si no, no trabajo.
+43:08 Speaker 1: Entonces, ¿qué es lo que vamos a hacer?
+43:11 Speaker 2: Compararlas y ver qué cosas tienen como para que cuando salgan de otra metodología, no nos
+43:15 Speaker 1: guarden el trabajo. Otra metodología que se usa bastante es la
+43:20 Speaker 2: CISDM. ¿Cuál es la diferencia con CISDM? Que CISDM considera
+43:35 Speaker 1: seis etapas, seis fases.
+43:38 Speaker 2: ¿Para ver cuál sería?
+43:40 Speaker 1: CISDM tiene seis. Y su gráfico es de esta manera.
+43:46 Speaker 2: Acá pueden ver que, claro, empiezan con entendimiento del negocio, entendimiento de los datos. ¿Se acuerdan que les decía que es diferente? Una cosa entre el negocio y otra cosa
+43:57 Speaker 1: entre los datos. Luego,
+43:59 Speaker 2: preprocesamiento. Y acá después pasan a modelización. No pasan por transformación porque
+44:05 Speaker 1: lo asumen a veces dentro del preprocesamiento.
+44:08 Speaker 2: Modelización, luego evaluación de los modelos. Y si por aquí les hace algo de ruido y demás, regresan el rendimiento de los datos. Y en este PISDM consideran un despliegue de modelos, de modelos de solución.
+44:24 Speaker 1: Que también, o sea, nota la
+44:27 Speaker 2: similaridad, o sea, no es que sea algo súper diferente,
+44:30 Speaker 1: sino que tiene un enfoque adicional. Por ejemplo, en KDD no tenemos despliegue, tenemos
+44:37 Speaker 2: la entrega final. Pero durante el final podríamos implementar un despliegue, entendiendo si tenemos la formación.
+44:44 Speaker 1: Entonces, estos serían los pasos de Chris DM.
+44:48 Speaker 2: Tenemos otro que se llama SEMA.
+44:50 Speaker 1: ¿Había escuchado antes de Chris DM o de SEMA? No.
+44:53 Speaker 2: Por ejemplo, en este caso SEMA, ¿cuántos tiene? Tiene dos, cuatro, cinco. Cinco pasos. Tiene el paso de Sample, de Sampling, de Exploring, de Modifying,
+45:05 Speaker 1: Modeling y Access. Les suena familiar, por ejemplo, el sampling que
+45:10 Speaker 2: tiene. Sería la selección de su muestra. En su muestra de análisis,
+45:15 Speaker 1: en sus datos que lo van a analizar.
+45:17 Speaker 2: Y luego, para la exploración, pueden realizar visualizaciones. Con estas visualizaciones, ¿qué es lo que pueden hacer?
+45:27 Speaker 1: Seleccionar variables y crear variables.
+45:29 Speaker 2: Es parte de transformación,
+45:31 Speaker 1: por ejemplo. Si voy a crear variables. ¿Qué
+45:36 Speaker 2: más allá? Si lo vemos como partes, o sea, si ya empezamos a aplicar modelos en esta parte, ¿qué tenemos? Modelos para hacer clustering, concretarlos de frente. ¿Qué más puedo hacer? Transformaciones, les decía que podemos utilizar modelos para las transformaciones, sobre todo en la reducción de distinciones.
+45:52 Speaker 1: Y ya hay modelos que están en estos sitios, ya tenemos
+45:55 Speaker 2: otra variedad. Tenemos las redes, tenemos árboles, las revisiones
+46:01 Speaker 1: y por ahí otros modelos que están. Y ya cuando nuestro paso final ya
+46:06 Speaker 2: sería para nuestra versión final del modelo y ya para la utilización de este modelo en sí. Entonces, yo no pensé que hay como una vista diferente, pero si lo vemos de lejos, es
+46:19 Speaker 1: la misma variación.
+46:22 Speaker 2: Entonces, si lo colocamos en paralelo, en comparativo, sería más o menos así. Y si queremos hacer un igual o diferente, por ejemplo, el SEMA no asume el término de datos o
+46:36 Speaker 1: asume que ya los entendimos y después estamos ampliando. Pero esto no es
+46:42 Speaker 2: algo que nos
+46:44 Speaker 1: limite, ¿cierto? ¿Qué
+46:46 Speaker 2: más? El sample y el exploring estarían dentro de la selección de datos, prevenzamiento. La parte de Modifying estaría en transformación y preparación. La parte de modelamiento abarcaría todo esto que KDM separa en tres bloques, que serían acá modelamiento de las dos. La parte de evaluación y este es el deployment, acá que tiene el uso del conocimiento final ya con
+47:14 Speaker 1: la información de los datos y cualquier semana no a su vez.
+47:17 Speaker 2: El SEMA es como que es puro código y no asume nada de negocio ni de uso.
+47:22 Speaker 1: Entonces,
+47:23 Speaker 2: por ahí comparaciones, similitudes, diferencias, que es importante tener, al menos como cultura general, para que cuando salgamos y nos sale del XM, de SEMA,
+47:33 Speaker 1: de KDD, ya sepamos de qué nos está hablando.
+47:35 Speaker 2: Todos serían metodologías para el análisis de datos, desde diferentes estados. Sí, hasta aquí estamos claros.
+47:46 Speaker 1: ¿Una duda sobre la última etapa? Porque entiendo que al momento de que nosotros hacemos el modelo le entregamos los resultados con información real. Pero Chris cuando hace el despliegue, entiendo que es más porque no nos han dado la información completa y ellos quieren el modelo para aplicarlo recién a sus datos. ¿Cómo funciona esa parte?
+48:06 Speaker 2: La parte del deployment suele ser, por ejemplo, los cuentos. En Zonal hicimos varios
+48:11 Speaker 1: modelos que terminaba en el deployment.
+48:15 Speaker 2: ¿Cómo era eso? A nosotros nos daban un corte de datos para entender los modelos. Por ejemplo, uno de los modelos que se utiliza hasta ahorita en Deployment ha sido el modelo para identificar contribuyentes con alto riesgo de emitir facturas.
+48:42 Speaker 2: O te pedí boletas no deducibles.
+48:45 Speaker 1: ¿Cómo traducimos eso en español? Aquellas empresas, ¿cierto? Es como que yo tengo una empresa que fabrico mesas. La empresa fabrica mesas. Entonces, en este número de tributos existe esa
+49:01 Speaker 2: figura en la que si yo soy una empresa que fabrico mesas para el bienestar del Perú, yo puedo decirle a ZUNAT. ZUNAT, yo soy una empresa que hago mesas que le va a servir a los peruanos, entonces, ayúdame. No me cobres tantos impuestos, redúscenme el impuesto porque yo estoy gastando en comprar los materiales y los insumos para construir mesas, gasto en los trabajadores a los que les voy a... Entonces yo estoy gastando cosas y como ya gasté cosas para construir algo que le va a servir al Perú, considérame y bájame los impuestos. Y la zona que se llama acá, yo te bajo los impuestos.
+49:40 Speaker 1: Como evidencia, tú dame las boletas o
+49:43 Speaker 2: facturas que has pedido al momento de comprar tu madera para las pesas. Tus pierros para las pesas, el pegamento, los clavos, todo. Entonces, yo compro, por ejemplo, yo compro un clavo, pido mi factura
+49:55 Speaker 1: y la deduzco, se llama.
+49:58 Speaker 2: La paso a deducir una factura y yo estoy pidiendo un pedazo. Entonces, es una figura que sí. Pero sabemos que siempre hay
+50:08 Speaker 1: gente que le da boleta a estas cosas.
+50:10 Speaker 2: ¿Qué es lo que estuvo pasando? Que sigue pasando y que sigue pasando quizás. Que las empresas, para deducir más impuestos, ¿qué hacen?
+50:19 Speaker 1: Deducen más boletas y facturas.
+50:21 Speaker 2: Sobre todo facturas cuando una empresa presenta. ¿Qué significa deducir? Yo presento, cuantas más boletas o más fondos yo presente, más impuestos me van a bajar. Entonces, ¿qué es lo que han hecho? Lo que hacían antes, porque ahora ya hay más, poco, hay modelos, ¿no? Pero lo que hacían antes de que saquemos modelos, ¿qué era lo que hacían las empresas? Como sabían que SUNAP en ese momento, hace cuántos años?
+50:47 Speaker 1: Antes del 18. En esos años sabían que SUNAP
+50:51 Speaker 2: no tenía modelos en cidad o en la empresa artificial. La gente sabía que yo le voy a dar a Asunar
+50:56 Speaker 1: 500 boletos de facturas,
+50:58 Speaker 2: Asunar los va a pasar y me va a deducir, no les voy a revisar.
+51:02 Speaker 1: Porque tiene 50 mil empresas, 5 mil facturas por empresa, nadie va a saber que me he pasado unas facturas escondidas por ahí.
+51:10 Speaker 2: Eso es lo que pasaba antes. Hasta que abrieron el área de ciencia de datos y llegamos. ¿Qué hicimos ahí? Dijimos ya,
+51:18 Speaker 1: bacán.
+51:19 Speaker 2: Vamos a analizar el detalle de las facturas. Porque en la factura, ustedes han visto que tiene un rubro, incluso una boleta, un rubro que es ese detalle. En el detalle colocan, no sé, madera, labos, etc. Entonces, ¿qué es lo que se hizo así? Hay una combinación de text mining con modelos de riesgo para
+51:39 Speaker 1: poder
+51:40 Speaker 2: identificar
+51:41 Speaker 1: cada contribuyente cuál es el riesgo de
+51:44 Speaker 2: que estén viendo facturas no negocibles analizando su histórico de facturas. Veíamos el texto de las facturas y analizamos entre ellos por actividad empresarial y veíamos esta empresa que se dedica al grupo de construcción de mesas.
+52:04 Speaker 1: Tiene alto riesgo de ser no
+52:06 Speaker 2: deducible. ¿Por qué? Porque ha presentado facturas por compra
+52:11 Speaker 1: de canchita y vacíos en el cine.
+52:14 Speaker 2: Entonces, ¿cuándo una boleta es deducible? Cuando lo que yo he entregado son de clavos, madera, fierros. Pero había gente que entregaba sus
+52:23 Speaker 1: facturas. ¿Se fue a Saga? Factura.
+52:25 Speaker 2: ¿Se fue a Cineplanet?
+52:27 Speaker 1: Factura. ¿Se fue a comer pollo con su familia o con sus empleados? Factura.
+52:31 Speaker 2: Entonces, ahí iban saliendo las facturas analizando el texto de las volantes. ¿Por qué les digo toda esta historia? Porque ese modelo se entrenó, por ejemplo, con
+52:42 Speaker 1: todos
+52:45 Speaker 2: los datos hasta diciembre del año pasado, con todas las facturas históricas que tenemos, ¿quién sabe qué año? No me acuerdo. Ponte que sea el 2010. Desde el 2010 hasta el 2025,
+52:57 Speaker 1: diciembre.
+52:58 Speaker 2: Toda esa información nos dan. entrenándose el modelo, todos los pasos de acá,
+53:03 Speaker 1: hasta aquí entrenándose un
+53:05 Speaker 2: modelo para predicción de
+53:07 Speaker 1: contribuyentes a riesgo.
+53:10 Speaker 2: Entonces, el deployment en qué va a consistir. Este modelo ya está listo, muy ejecutable. Está listo, te lo doy al área encargada que en el caso de una se llama INSI. Y los de INSEE que se encargan del deployment del modelo. Lo llevan a ejecutar para utilizarlo en el día a día o semanalmente o mensualmente como la institución del modelo. Entonces, en el caso del deployment, tienen
+53:34 Speaker 1: que accionar el modelo. ¿Cómo accionaban el modelo en este caso? Mensualmente.
+53:40 Speaker 2: Esta persona me ha mandado en este mes todas las facturas, le analizo y saco su red. Y empiezo a rankear desde los
+53:49 Speaker 1: más riesgosos hasta los menos riesgosos.
+53:51 Speaker 2: ¿Y qué es lo que empezó a solucionar? A los súper riesgosos les
+53:54 Speaker 1: empezaba a notificar.
+53:56 Speaker 2: Y la persona cuando empezó a recibir notificaciones en su celular, se empezaba a buscar. Entonces, al momento, ustedes saben que los modelos tienen versiones, ¿cierto? Sale el primer modelo, pero luego uno entiende con
+54:07 Speaker 1: más datos, se va afinando y se va afinando,
+54:10 Speaker 2: y el modelo empieza a tener mayor precisión. Y empieza a tener mejores variables de sí. Entonces, ¿les gustó tanto la primera versión del modelo? Dijeron, lo sacamos, porque lo sacamos. Pero como todavía era una fase de prueba porque éramos nuevos, en la primera licencia de datos no saben ni qué era lo que estábamos haciendo, entonces tenían dudas todavía, y válidas, obviamente, porque era algo muy nuevo. Entonces, ¿qué dijeron? Lo queremos sacar igual, pero vamos a lanzar alertas que no sean muy agresivas, que no sean punitivas, sino, cuidado, puede que estés realizando gastos no evoscibles porque tal cosa, tal cosa.
+54:47 Speaker 1: Caso contrario, omita este mensaje.
+54:49 Speaker 2: Entonces, así se asustaba el que se tenía que asustar y el que no tenía que asustarse, no se asustaba. Y eso fue evolucionando. Entonces,
+54:57 Speaker 1: en este caso, para
+54:58 Speaker 2: construir el modelo, se establece un corte, se entrena el modelo y el deployment ya es el uso de ese modelo en el futuro con los datos que se van a empezar a registrar. Y ya en este deployment se considera la actualización del modelo periódicamente. Entonces, eso es lo que se considera, ya el uso para el futuro o para
+55:20 Speaker 1: el después. En este caso, más que todo
+55:22 Speaker 2: es resultados con la figura de tiempo de este momento y
+55:27 Speaker 1: decisiones para el futuro, pero
+55:28 Speaker 2: no necesariamente un deployment. Puede haber un deployment como que puede quedar ahí nada más,
+55:33 Speaker 1: en la presentación de los resultados. Pero
+55:35 Speaker 2: acá sí ya se hace énfasis en el deployment para que el modelo se use.
+55:40 Speaker 1: ¿Sí? ¿Muchas? Sí, gracias. Creo que me extendí mucho por ahí. Estuvo chévere, estuvo chévere.
+55:45 Speaker 2: Pero sí, o sea, era parte B, ¿no?
+55:49 Speaker 1: Ya después le contaré a otros modelos que salieron también.
+55:54 Speaker 2: Bueno, en el proceso de programación ya decidimos que vamos a usar Python. Y hasta ahí tenemos la primera parte
+56:00 Speaker 1: de nuestros temas. La parte
+56:02 Speaker 2: de la metodología. La siguiente
+56:05 Speaker 1: va a ser sobre nuestras variables.
+56:07 Speaker 2: Pero para que no se me cansen, ¿qué ves?
+56:10 Speaker 1: Las cinco, ¿le parece si tomamos un minuto? Para que no se me cansen,
+56:15 Speaker 2: ¿qué ves? Las cinco, ¿le parece si tomamos un minuto? Para que no se me cansen, ¿qué ves?
+56:17 Speaker 1: Las cinco,
+56:20 Speaker 2: ¿le parece si tomamos un minuto para que no se me cansen? Voy a entrar al código del paso 2 y también al siguiente. El paso 1 ya hemos ido conversando un
+56:28 Speaker 1: poquito, solamente voy a mostrarles,
+56:31 Speaker 2: mencionarles algunas características, puntos
+56:34 Speaker 1: interesantes para saber sobre el paso 1. Aquí no tenemos
+56:37 Speaker 2: código. Para el paso 2 ya tenemos
+56:39 Speaker 1: nuestro código para trabajar.
+56:44 Speaker 2: ¿Qué cosas tenemos que recordar
+56:46 Speaker 1: sobre el paso 1 de la metodología?
+56:48 Speaker 2: Ya dijimos que en el medio del negocio, en
+56:51 Speaker 1: el medio del caso del problema, en el paso
+56:53 Speaker 2: 1, está aquí. Primero tenemos que definir el problema, eso se parece un montón a lo de estos. Recuerda que los
+57:01 Speaker 1: puntos han llevado, eso es la metodología de la
+57:04 Speaker 2: investigación. ¿Han llevado puntos así?
+57:07 Speaker 1: Sí, sí. Puso la letra. Puso la tesis. Y ahí, claro, la tesis se dice, definan el problema, ¿cierto? Definan los objetivos.
+57:16 Speaker 2: Ya, acá otra vez, definan el problema. Es muy importante definir problemas con la institución o con todos los que están solos de ustedes mismos. Porque...
+57:27 Speaker 1: Por acá les he colocado un texto que es muy interesante y bonito, tanto para temas
+57:31 Speaker 2: académicos, como en los que estamos ahora, como para la empresa y los institutos de vida. Un problema correctamente planteado está parciadamente resuelto.
+57:42 Speaker 1: Ambos de exactitud correspondemos
+57:45 Speaker 2: posibilidades de obtener una
+57:46 Speaker 1: solución satisfactoria.
+57:49 Speaker 2: Esto nos lo dijo nuestro amigo Ako. Por ahí les he colocado esa cita de su libro bastante conocido sobre los temas de
+57:57 Speaker 1: la nette.
+58:02 Speaker 2: Este autor es uno como de los pioneros que hice en el 2009, me parece.
+58:08 Speaker 1: No ha pasado mucho tiempo.
+58:10 Speaker 2: Es uno de los pioneros en todo este tema de administración, gestión de empresas, todo lo que tiene que ver con la parte de misas. Ciertos temas de gerentes, temas de esas cosas muy empresariales.
+58:24 Speaker 1: Por ejemplo, otra cosa que él decía es,
+58:27 Speaker 2: la gente cree que
+58:29 Speaker 1: los
+58:31 Speaker 2: gerentes necesitan más datos
+58:33 Speaker 1: para tomar mejores decisiones.
+58:36 Speaker 2: Y él lo que decía es que eso no es cierto. Si nosotros le damos demasiados datos a los gerentes, los abrumamos con datos innecesarios, con ruido, y al final no deciden más que nada.
+58:51 Speaker 1: Entonces,
+58:52 Speaker 2: él es una de las personas que empezó a decir que no es cierto que necesitemos muchos datos para que la gerencia o las empresas funcionen bien. Hay una lista de cositas, hay una lista de cositas un poco novedosas que ahora los grupos del emprendimiento y de gestiones empresariales retienen,
+59:18 Speaker 1: pero es que uno de los primeros se empezó a romper
+59:20 Speaker 2: paradigmas buscando
+59:24 Speaker 1: el mejor manejo
+59:26 Speaker 2: de las empresas, el mejor manejo y la zona de decisión.
+59:29 Speaker 1: Gracias.
+59:55 Speaker 2: Consideraciones. Por acá les he colocado dos factores que nos dicen tres cosas importantes para poder plantear
+01:00:02 Speaker 1: adecuadamente nuestro problema. Uno, el
+01:00:05 Speaker 2: problema debe expresar una relación entre dos o más variables. No necesariamente relación de dependencia o independencia, no necesariamente, pero
+01:00:15 Speaker 1: tenemos que tener mínimo dos variables
+01:00:17 Speaker 2: para poder decir que hay manalidad. Si tenemos una sola variable, Entonces mínimo, cierta relación, no necesariamente dependencia, pero alguna relación entre dos variables sonales. ¿Qué más? Y tenemos que identificar esas variables sonales. ¿Qué más necesitamos para plantear el problema? Este problema que vamos a plantear debe estar formulado
+01:00:45 Speaker 1: claramente, sin ambigüedad y como una pregunta. Esto
+01:00:50 Speaker 2: también se va a dar relativo. El problema se
+01:00:52 Speaker 1: plantea como una pregunta.
+01:00:56 Speaker 2: ¿Qué más? Debe implicar la posibilidad de realizar una prueba o una recolección de datos. Esta parte de prueba hace referencia a la prueba científica, a la experimentación. La experimentación, por eso hablamos de laboratorio de ciencia de datos, que son lugares de experimentación,
+01:01:13 Speaker 1: construcción, pruebas, etc. Entonces,
+01:01:15 Speaker 2: este problema me debe permitir espacios de recolección de datos, construcción. ¿Por qué eso es invocable? Porque un
+01:01:23 Speaker 1: problema planteado no tiene sentido
+01:01:25 Speaker 2: si no voy a poder recolectar a uno. ¿De qué me sirve plantear un trabajo de nuevo moderno
+01:01:30 Speaker 1: para poder experimentar? Entonces, un problema bien planteado debe también darme
+01:01:36 Speaker 2: la posibilidad de experimentar con datos que puedo
+01:01:39 Speaker 1: recolectar. Si no, ese problema nunca se va a poder utilizar, ¿cierto? Si no, podemos aprovechar de ese problema.
+01:01:46 Speaker 2: Entonces, tres características importantes a recordar. Relación de las variables, realidad y forma de pregunta, y la posibilidad de recolectar y experimentar con datos. Si no, no es un problema adecuado, al menos para este
+01:01:58 Speaker 1: tipo de pruebas. ¿Qué se refiere con pruebas empíricas?
+01:02:02 Speaker 2: Pruebas empíricas se refieren a las experimentaciones. Por ejemplo, a las construcciones de nuestro modelo inicial. Todas las construcciones de nuestro modelo son como experimentación.
+01:02:11 Speaker 1: Entonces, estas pruebas empíricas hacen referencia
+01:02:14 Speaker 2: a ese mecanismo de
+01:02:15 Speaker 1: entrenar, probar, mejorar. Entonces, como que
+01:02:20 Speaker 2: aterrizamos, hacemos concreto lo que queremos evaluar. para responder la pregunta. Porque si no, nos quedamos solamente en temas teóricos
+01:02:29 Speaker 1: y de ahí no puede ser una respuesta a esa pregunta.
+01:02:33 Speaker 2: Entonces, esas tres cositas para el entendimiento de nuestra pregunta. ¿Qué más? Lo otro que también
+01:02:39 Speaker 1: es diferente es, definan bien los objetivos. Importante era también definir bien los objetivos.
+01:02:45 Speaker 2: Ahí vamos a diferenciar dos tipos de objetivos. No los generales específicos, pero
+01:02:50 Speaker 1: vamos a identificar objetivos del negocio o del caso. y objetivos de análisis de datos. Los vamos a
+01:02:59 Speaker 2: separar, no es la misma. Objetivos
+01:03:01 Speaker 1: del negocio son con la visión
+01:03:04 Speaker 2: de las personas, de los sueños de los brazos, con los términos que ellos usan, con las
+01:03:08 Speaker 1: finalidades que ellos van a
+01:03:11 Speaker 2: necesitar, con toda su visión y sus causas de vida. Y nosotros tenemos como chamba esto que ellos nos van a decir,
+01:03:18 Speaker 1: traducirlo a objetivos de análisis de datos.
+01:03:21 Speaker 2: Los objetivos de análisis de datos ya se traducen en datos. Datos, pruebas al oírnos, hipótesis, cómo son datos. Puede que respondan ustedes objetivos de análisis de datos.
+01:03:32 Speaker 1: Nacen
+01:03:33 Speaker 2: de los objetivos de negocio, pero no son los mismos. Debemos diferenciarlos.
+01:03:40 Speaker 1: Eso es respecto a definir nuestros objetivos. Ahora sí. ¿Cómo yo sé cuáles serían los objetivos del negocio? Si hay
+01:03:47 Speaker 2: gente que viene de la institución y son de una temática que nosotros no conocemos. Es una
+01:03:53 Speaker 1: temática nueva. No es una temática, por ejemplo, de banco. No es una temática de
+01:03:58 Speaker 2: clientes de banco. Es una temática de seguro, de clientes de seguro. Es una temática nueva.
+01:04:07 Speaker 1: Cuando es algo nuevo, a veces es un poco
+01:04:09 Speaker 2: difícil entender lo que nos está diciendo la persona en los medios de los datos y atravesar sus objetivos. Y acá hay unas preguntas claves. Por ejemplo, ¿qué es lo que desea la persona lograr? Estas preguntas son dándonos ideas para cuando estemos con una persona, con un tema que conocemos, ¿qué es lo que podemos preguntar? En ese momento ya van a ser que quieran cosas más, pero por ejemplo, ¿podemos decir qué es lo que desea lograr? Luego, es todo este proyecto,
+01:04:35 Speaker 2: los resultados, ¿cómo van a llevar a su negocio? Cosas concretas que ellos no nos puedan explicar. Principales áreas interesadas, eso también es importante preguntar, porque la idea cuando realizamos proyectos, análisis y datos es comunicación
+01:04:48 Speaker 1: constante con el área interesada. No puede ser
+01:04:51 Speaker 2: posible que nos den el rato y nos dejan a nuestra suerte. Siempre tiene que haber un experto en el tema, que es el experto en el negocio.
+01:05:00 Speaker 1: Y tiene que llevar, no de la mano,
+01:05:02 Speaker 2: pero siempre tiene que dar retroalimentación. ¿Por qué? Porque a veces nos vamos a encontrar con variables que no entendemos y no sabemos cómo les han definido, les han creado. Entonces, tiene que ser el experto o el área interesada o el experto de los datos que nos explique y nos vaya ayudando a tener
+01:05:18 Speaker 1: mayor calidad.
+01:05:21 Speaker 2: Otros objetivos a tener en cuenta, algunas cosas adicionales que ellos quieran decirnos. Características que deben tener para ser considerado factible. Es muy importante. ¿Por qué? Porque es en donde nosotros con nuestra emoción y nuestras múltiples herramientas podemos empezar a proponer un montón de cosas.
+01:05:39 Speaker 1: Pero es muy diferente a que lo que nosotros les vamos a proponer
+01:05:44 Speaker 2: sea factible. Por ejemplo, No sé, por ejemplo, a nosotros se nos puede ocurrir construir un modelo para detección en tiempo real de transporte de mercancías peligrosas. Entonces, nosotros podemos querer construir o tener las herramientas para construir un modelo de detección en tiempo real, pero no es factible porque la institución no tiene una forma para desplegar ese modelo. ¿De qué nos va a servir matarnos tres meses construyendo un modelo para detección indígena si no lo van a poder utilizar?
+01:06:19 Speaker 1: Entonces, tenemos
+01:06:20 Speaker 2: que ver de mucha facilidad para ver qué es lo que ellos sí van a utilizar. Les hago gracias en todo esto, por si es que se llega a dar el tema de las instituciones aliadas, vamos a tener una reunión presencial. Bueno, acá les adelanto a los que han ido llegando después, esto respecto a la tarea académica. En la tarea académica estamos manejando dos opciones. La primera opción es trabajar con datos de una institución aliada. Ahora, si nos llegan a validar esa opción, que nos van a continuar con máximas el 5 de septiembre, si nos van a validar la opción es tener una reunión. No sé si ellos van a poder venir o si no va a ser por su...
+01:07:00 Speaker 1: pero en esa reunión van a tener que hacerle
+01:07:03 Speaker 2: preguntas. Obviamente algunas cosas ellos ya les van a contar porque les van a presentar el caso, pero por ahí hay cosas que no les han dicho que ustedes van a poder hacer algunas de estas preguntas
+01:07:12 Speaker 1: u otras que tengan comprimientos en ese momento.
+01:07:15 Speaker 2: Por eso es que les estoy haciendo las cosas en estas partes. Porque se da ese escenario para que sepamos qué preguntar, por ejemplo, respecto a factibilidad,
+01:07:24 Speaker 1: respecto a algunas áreas adicionales que pueden ayudar.
+01:07:28 Speaker 2: ¿Qué más? ¿Qué esperan recibir? Esto también es súper importante, porque es muy diferente. Algunos esperan recibir una lista de categorías, de etiquetas. Por ejemplo, si tengo clientes,
+01:07:40 Speaker 1: quiero recibir mi cliente y la etiqueta,
+01:07:43 Speaker 2: regozco, no regozco, regozco, no regozco. Otra persona, otra que me dice, no, eso no me sirve, yo quiero el cliente y su probabilidad de riesgo. No quiero la etiqueta, quiero la probabilidad de riesgo. Entonces, es importante saber qué es lo que esperan. Para nosotros no entender una cosa y ellos están esperando otra cosa y perdemos un poco de tiempo.
+01:08:03 Speaker 2: ¿Qué más? ¿Cómo están pensando utilizar el resultado? Es también importante. ¿Cómo van a hacer el despliegue? Si tienen chance para hacer despliegue, si lo van a usar en oficinas, si lo van a mandar a un área para despliegue, todas esas cosas que tenemos que prender. Y con cuándo tiempo contamos también es importante adaptar. En este caso, el tiempo como lo contamos para nuestra tarea académica es todo el sitio, ¿cierto?
+01:08:26 Speaker 2: Cuando estamos en entorno de trabajos en equipo, proyectos, ya en instituciones.
+01:08:32 Speaker 1: Esa parte a veces se salta y luego
+01:08:35 Speaker 2: nos ponemos los sobrecuellos. Porque aceptamos proyectos que ellos quieren que los hagamos en dos
+01:08:40 Speaker 1: semanas y a veces no es factible aceptar un proyecto en
+01:08:42 Speaker 2: dos semanas. Tenemos que ser más responsables en eso también.
+01:08:45 Speaker 1: Por emocionarnos no podemos aceptar
+01:08:47 Speaker 2: un proyecto en dos semanas y entregar algo incompleto o algo malo. Entonces tenemos que conversar muy bien el tema de tiempo
+01:08:55 Speaker 1: para saber si estamos alineados en esa parte. Entonces, esas son algunas preguntas que
+01:09:01 Speaker 2: podemos revisar a la pantalla.
+01:09:05 Speaker 1: Ahora, respecto a los objetivos del análisis de datos, ¿qué hemos dado en cuenta?
+01:09:10 Speaker 2: Tenemos que traducir, esto ya lo vemos, del negocio hacia análisis de datos. ¿Qué más? Es importante establecer
+01:09:16 Speaker 1: métricas y criterios de evaluación. Cuando planteemos los objetivos de análisis de datos, ya tenemos que identificar
+01:09:22 Speaker 2: métricas. Creo que en este punto a un nivel inicial, porque cuando ya entremos a las etapas 5, 6 y 7,
+01:09:31 Speaker 1: ya vamos a poder tener métricas exactas, de repente algunos criterios adicionales o
+01:09:36 Speaker 2: puntuales. Pero igual, al establecer los objetivos, debemos tener al menos algunas ideas de métricas para poder validar si estamos llevando a resultado o no. y
+01:09:49 Speaker 1: negociarles siempre en un plan de energía que
+01:09:51 Speaker 2: va a considerar tiempos, hitos,
+01:09:54 Speaker 1: responsables y precios para la presentación usando todo lo anterior tenemos que
+01:10:01 Speaker 2: ofrecer un plan algo así como cuando salen los PDR
+01:10:06 Speaker 1: y luego se presenta respuestas de ADRs y que es un plan de trabajo. Algo así. Entonces este plan de análisis de datos es como si fuera un plan de trabajo donde
+01:10:16 Speaker 2: tenemos que usar las fechas que nos han dicho que tenemos disponibles y
+01:10:20 Speaker 1: establecer estos hitos.
+01:10:22 Speaker 2: Y también los responsables de cada hito, porque cuando
+01:10:25 Speaker 1: son políticos de análisis de datos... Si el equipo que analiza tiene la mayor carga, es importante que los responsables dentro del plan de análisis también sean gente de la institución.
+01:10:39 Speaker 2: Que las instituciones también tengan chamba, chaman las tareas. durante todo el desarrollo para
+01:10:45 Speaker 1: que se sientan parte de ello. Si alguien se siente parte de un proyecto, pone de su tiempo,
+01:10:52 Speaker 2: de su interés y la fuerza a la mejor. Esto es responsable, no solamente nosotros,
+01:10:57 Speaker 1: sino también gente experta en los datos.
+01:11:00 Speaker 2: Lo de los sitios es importante.
+01:11:02 Speaker 1: Por ejemplo, cuando se hablaba del sistema de los product
+01:11:04 Speaker 2: owners y todo eso, en este tipo de metodologías,
+01:11:08 Speaker 1: se establece la idea de algo
+01:11:11 Speaker 2: así como los productos mínimos viables, ¿cierto? Se trabaja por hitos donde se
+01:11:15 Speaker 1: espera el medio del producto final, sino avances, empezar a entregar avances y
+01:11:20 Speaker 2: sobre los avances ir evaluando los resultados, ¿no? Esta parte de datos es importante, no solamente la entrega final, sino hacer entrega asociada. Y bueno, la validación con
+01:11:33 Speaker 1: la gente del negocio es importante para eso, para verlos como responsables, para tenerlos siempre cerca y de seguro. Ok, algunos términos importantes.
+01:11:46 Speaker 2: Delimitación de la población. ¿Cómo creen que se delimita una población?
+01:11:51 Speaker 1: Hago un paréntesis aquí. Esta parte es importante
+01:11:55 Speaker 2: porque cuando voy a construir un modelo, tengo que siempre a la gente que le voy a entregar el modelo, que ese modelo funciona solamente para las características de mi profesión.
+01:12:07 Speaker 1: Para eso significa que yo la tuve
+01:12:09 Speaker 2: que haberme limitado antes. Entonces, si yo entrené un modelo solamente para estudiantes de ingeniería, con
+01:12:17 Speaker 1: datos de estudiantes de ingeniería,
+01:12:19 Speaker 2: Y yo entrego ese modelo a la PUC, por ejemplo. ¿La PUC va a poder aplicar ese modelo para estudiantes de educación? No, no, porque soy entrenado con datos de
+01:12:28 Speaker 1: estudiantes de ingeniería. Algo similar es eso.
+01:12:31 Speaker 2: Yo tengo que definir la población para saber sobre quién va a funcionar ese modelo. No se puede generalizar. Y acá siempre hay un ejemplo que les menciono, un ejemplo real. En uno de estos modelos que les mencionaba que hemos construido, hicimos un modelo, por ejemplo, para
+01:12:49 Speaker 1: personas
+01:12:54 Speaker 2: naturales. Serían las personas normales que también deducen impuestos y todo, pero que no tienen negocio. Y hay otros modelos que se hacen solamente para
+01:13:05 Speaker 1: empresas con RUB20, que son los que tienen negocios.
+01:13:08 Speaker 2: Entonces, había un modelo que hicimos con boletas y facturas. No sé si tiene claro
+01:13:14 Speaker 1: un poco la diferencia boleta-factura.
+01:13:17 Speaker 2: Factura es empresa-empresa, ¿cierto?
+01:13:19 Speaker 1: Boleta es con persona, con RUB10.
+01:13:22 Speaker 2: O también puede ser boleta de empresa-factura. Hay mix, pero lo vamos a diferenciar. Boletas para personas, facturas-empresa. Lo que tienen en conjunto es, ambos tienen la parte de descripción, text.
+01:13:35 Speaker 1: Yo quiero hacer text mining, puedo
+01:13:37 Speaker 2: usar insumos de ambos lados, ¿cierto?
+01:13:40 Speaker 1: Porque tienen la misma estructura acá, las boletas
+01:13:42 Speaker 2: y las facturas. Entonces, con mi insumo como datos, tengo para los dos lados lo mismo. ¿Cuál es el ejemplo en este caso?
+01:13:50 Speaker 1: Se había construido este modelo que yo les decía, por
+01:13:53 Speaker 2: ejemplo, para empresas de un grupo específico.
+01:13:56 Speaker 1: Entonces, se tiene el modelo listo y le ajusta el modelo
+01:14:00 Speaker 2: y quieren aplicar ese modelo también para personas
+01:14:02 Speaker 1: naturales, por ejemplo. Entonces,
+01:14:06 Speaker 2: si nosotros no les hemos explicado previamente que ese modelo funciona solamente para esta población determinada, ellos pueden erróneamente querer aplicar ese modelo en otros contextos, pero no necesariamente obtener resultados negativos, sino que pueden ser positivos, pero no están los positivos.
+01:14:25 Speaker 1: porque el modelo no sea adecuado. Entonces, esta parte de delimitar la población es importante para
+01:14:30 Speaker 2: eso, para saber con qué estoy funcionando y sobre
+01:14:33 Speaker 1: quiénes van a poder utilizarse ese modelo.
+01:14:36 Speaker 2: Criterios para poder definir bien mi población. Espacio y tiempo.
+01:14:41 Speaker 1: Una población correctamente definida
+01:14:44 Speaker 2: tiene que estar delimitada en el espacio y en el tiempo.
+01:14:48 Speaker 1: Si yo delimito en el espacio y en el tiempo, ya tengo mi población.
+01:14:53 Speaker 2: Además de esta población, ¿qué es lo que tengo que ver? ¿Quiénes serían mis
+01:14:57 Speaker 1: individuos de observación?
+01:14:59 Speaker 2: O sea, aquellas personas o cosas sobre las que voy a medir las variables, ¿cierto? Y las variables que voy a medir acá.
+01:15:09 Speaker 1: Creo que esto es bastante claro,
+01:15:11 Speaker 2: delimitación en el espacio y en el tiempo. Sí, ¿verdad? Entonces hay
+01:15:17 Speaker 1: dos criterios para delimitar una foto. ¿Qué más? ¿De qué manera también se
+01:15:25 Speaker 2: puede limitar cosas que se suelen considerar en proyectos y en las tesis también? Estos criterios. Criterio de inclusión, criterio de exclusión y criterio de eliminación.
+01:15:34 Speaker 1: ¿La tienen clarísima? ¿Los tres? ¿De inclusión? Sí, ¿verdad? ¿Cuál sería la criterio de inclusión? Aquí hay características que deben tener los individuos para
+01:15:45 Speaker 2: ser considerados dentro del estudio. Los de exclusión serían... criterios que no deben generar las personas, o que si lo tienen, lo retiro del estudio.
+01:15:55 Speaker 1: Y los de eliminación se parecen un poco a los de
+01:15:57 Speaker 2: exclusión, pero eliminación es
+01:16:00 Speaker 1: un
+01:16:02 Speaker 2: retiro que se realiza, pero cuando ya ingresaron a
+01:16:05 Speaker 1: mi estudio.
+01:16:07 Speaker 2: Eliminación es cuando ya ingresaron, o sea, cumplieron los de inclusión, pero por algunos resultados que voy a ir encontrando en el camino, los voy a tener que quitar. Y en el caso de proyectos históricos y no longitudinales,
+01:16:23 Speaker 1: hay veces en que ingresa con criterio de inclusión,
+01:16:26 Speaker 2: conecto, pero en el camino alguna variable cambia y tengo que eliminarlo por una variable pero en el camino.
+01:16:33 Speaker 1: Entonces son diferentes niveles.
+01:16:36 Speaker 2: Escripción es no ingresa y eliminación es ingreso, pero por
+01:16:40 Speaker 1: determinados criterios lo tengo que subir.
+01:16:48 Speaker 2: Bueno, estos son los ejemplos,
+01:16:50 Speaker 1: pero yo creo que están bastante graves, ¿cierto? Las definiciones
+01:16:52 Speaker 2: de inclusión, inclusión y inclusión. Ya se los he dejado para que a la gente nos lo vean con
+01:16:58 Speaker 1: calma. Son un par de ejemplos.
+01:17:02 Speaker 2: Y de las últimas cosas que debemos tener en cuenta en el entendimiento de los
+01:17:07 Speaker 1: casos es la inclusión de recursos. Ahí ponen el 3 en el 3.
+01:17:13 Speaker 2: Recursos en cuanto a personas, en cuanto a disponibilidad de datos y en cuanto a
+01:17:17 Speaker 1: herramientas que vamos a utilizar.
+01:17:19 Speaker 2: ¿Personas por qué? Porque necesitamos siempre
+01:17:21 Speaker 1: especialistas en el tema.
+01:17:24 Speaker 2: Necesitamos un líder en el proyecto,
+01:17:26 Speaker 1: pero aquí asumiendo que tenemos un equipo y todo. A veces todo lo tenemos que hacer con una sola persona, pero vamos a ver que tenemos un equipo. Equipos especialistas en datos y también
+01:17:36 Speaker 2: se recomienda, si es que se puede, tener equipos de ingeniería de datos aparte. ¿Por qué? Porque se ha visto que cuando tenemos equipos de ingenieros de datos, aparte de los que realizan el entrenamiento de los modelos,
+01:17:52 Speaker 1: tenemos personas especializadas
+01:17:55 Speaker 2: en algo como. Los que se encargan de la ingeniería de datos se dedican al 100% en la parte, puede ser incluso de procesamiento,
+01:18:05 Speaker 1: pero también la parte de transformación. Cuando tu empresa muy grande tiene sentido lo de
+01:18:10 Speaker 2: ingeniería de datos, porque como tienen tantas fuentes de datos y tantas bases de datos, el ingeniería de datos es el responsable o el que te permite, te puede explicar y decir,
+01:18:20 Speaker 1: este dato que necesitas está en esta base,
+01:18:23 Speaker 2: y lo hay transformado así, y está más actualizado. El ingeniería de datos se encarga de eso. El analista no tanto. El analista comerse con el
+01:18:31 Speaker 1: ingeniero para que el ingeniero te dé ya la tabla que
+01:18:33 Speaker 2: necesitas o al menos las tablas que vas a necesitar para
+01:18:36 Speaker 1: tu tabla final.
+01:18:39 Speaker 2: Eso sí que se puede. Ahora, si hay mucha gente, uno mismo tiene que usar todo.
+01:18:43 Speaker 1: Tiene que ahí defenderse. Un instante, un instante.
+01:18:52 Speaker 2: Ha pasado, me ha pasado por eso. Depende de diferentes
+01:18:58 Speaker 1: instituciones, entidades, funciona muy diferente.
+01:19:01 Speaker 2: Ahora, respecto a datos, tenemos que identificar las fuentes y muy importante los dueños de los datos. Si tenemos un
+01:19:07 Speaker 1: infinito de datos, va acá, porque a ellos ya le preguntamos
+01:19:09 Speaker 2: todo. Es más, uno de los JPs...
+01:19:12 Speaker 1: que tenemos aquí, que vamos a tener, ha
+01:19:17 Speaker 2: sido, ha trabajado conmigo, es uno de los equipos de Ciencias de Datos, es UNAR, y era mi ingeniero de datos de confianza, o decirlo así. O sea, era mi mano derecha, quien yo sabía que él sabe, si yo necesito la variedad de los contribuyentes declarados en el 2020, él sabe que me va a preguntar cuáles son las columnas, porque obviamente no le sabía todo. Él sabía dónde conseguían los datos, él era mi ingeniero de datos. Él también es el estado de informática de la PUC y justo
+01:19:45 Speaker 1: en este ciclo va a poder ser donde lo va a pasar. Entonces, hay veces en donde sí existe un ingeniero de datos que viene
+01:19:55 Speaker 2: a las redes del dueño de datos o al menos el que conoce bien fuentes. Y descripción de variables, en general y variables exclusivas
+01:20:04 Speaker 1: que en esta obra tienes.
+01:20:07 Speaker 2: Luego preguntar por la calidad de datos que recibieron. Esto es
+01:20:12 Speaker 1: obvio, creo yo.
+01:20:14 Speaker 2: A veces solo nos dan los datos y
+01:20:17 Speaker 1: nosotros tenemos que ver datos de calidad o de
+01:20:19 Speaker 2: calidad, pero importante. Y bueno, las herramientas también varían dependiendo del entorno. Algunas necesidades te dan todo. Otra vez tú mismo tienes que apreciarte con tus
+01:20:31 Speaker 1: cositas. Pero bueno, ya, eso es respecto a los recursos. Y un punto de limitaciones. Importantes también mencionarlas
+01:20:41 Speaker 2: desde el inicio. En la ficha que yo les voy a brindar, en la ficha técnica,
+01:20:50 Speaker 1: Esa pequeña técnica que yo les voy a brindar, por ejemplo, es una ficha real.
+01:20:53 Speaker 2: Esta ficha, la primera versión de la ficha que lanzamos en ese tipo de sociedad de los estudios. Es una ficha real, la lanzamos para proyectos de verdad, y yo se las voy a compartir obviamente sin información sensible, pero es la misma estructura que la que les voy a pasar. En esa estructura vimos que era importante agregar un bloque de limitaciones. ¿Por qué? Porque si nosotros no identificamos limitaciones al inicio, es un problema explicar al final
+01:21:20 Speaker 1: los problemas que tuvimos por hacer. Entonces es mucho mejor que las limitaciones estén
+01:21:26 Speaker 2: clarísimas desde que aceptamos el proyecto. Y no solamente entenderlas y luego tratar de explicarlo. En el negocio,
+01:21:36 Speaker 1: respecto a las acciones,
+01:21:38 Speaker 2: a cómo utilizar los datos y normativas. Esto es súper importante. Nos ha pasado que había modelos interesantísimos que queríamos hacer, pero cuando preguntábamos a la gente del negocio, salía un abogado y le decía, no hay una norma que nos permita hacer un modelo para eso. o si hay una norma que nos dice que esos datos no los pueden usar para entrenar.
+01:22:04 Speaker 1: Entonces es importante preguntar antes de hacer algunos movimientos, sobre
+01:22:08 Speaker 2: todo en empresas muy grandes, donde manejan datos sencillos,
+01:22:13 Speaker 1: temas de normación.
+01:22:15 Speaker 2: Dificaciones en datos, si tendremos acceso a los datos, odio, y luego, eso también es importante, es el tener acceso a toda la población definida, a veces no podemos llegar a todos. Y en este corte de datos también es si
+01:22:29 Speaker 1: vamos a poder tener los datos disponibles para el futuro. Porque hay veces en donde
+01:22:34 Speaker 2: se entiende un modelo porque tenemos los datos ahorita, pero para hacer predicciones nos quedamos cortos porque ya no hay forma de recuperar el resultado. Por ejemplo, modelos que se puedan construir con imágenes de drones de las calles, de irnos, por ejemplo. Imagínense que hay un proyecto que empieza a tomar fotos de todas las partes.
+01:22:55 Speaker 1: Pero ese proyecto solo va a funcionar en
+01:22:57 Speaker 2: el 2026. Se acaba el 26 y esos drones los devuelven a
+01:23:02 Speaker 1: quien los haya prestado. Entonces alguien se le puede publicar. Hay
+01:23:05 Speaker 2: que entrenar un modelo con esas imágenes de drones.
+01:23:08 Speaker 1: Le entrenamos bien para acá.
+01:23:10 Speaker 2: Y luego, ¿qué son? Se acaba porque llegan y se acaba, o sea, 27, 27 y ya no tenemos imágenes para poder usar ese modelo, ¿cierto? Entonces, ahí que había habido disponibilidad de datos. Los cubrimos para entrenar y para cáncer es muy interesante, pero luego, más allá de
+01:23:27 Speaker 1: interpretar todos los resultados, ya no podemos utilizar. Entonces, quedamos un poco cortos ahí también. Esas cosas también se tienen que preguntar.
+01:23:36 Speaker 2: Y bueno, lo del tiempo es lo que ya habíamos visto. Si
+01:23:38 Speaker 1: tenemos reflexiones en el tiempo, así va a haber un tiempo
+01:23:41 Speaker 2: específico para el despliegue. Porque el despliegue del modelo se debe considerar aparte. Aparte del análisis de datos. Porque algunos de mis amigos creen que el análisis de datos implica que el despliegue es un modelo bastante.
+01:23:54 Speaker 1: Ya.
+01:23:56 Speaker 2: Ok, entonces, toda esta primera parte. Este es el paso 1, ¿cierto? El paso 1 se termina o se cierra, se concluye con la
+01:24:06 Speaker 1: ficha técnica del proyecto de la universidad.
+01:24:09 Speaker 2: En esa ficha técnica tenemos
+01:24:11 Speaker 1: que escribir todas
+01:24:13 Speaker 2: las construcciones a las que hemos llegado de todo lo
+01:24:16 Speaker 1: que hemos conversado en el proyecto que vamos a trabajar. Esta ficha técnica es el Excel, acá se lo voy a abrir. Y más, creo que no la he puesto en la carpeta. ... ... ... ... ... ... ... ... ...
+01:25:13 Speaker: Bueno, respecto a ese tipo de trabajo, siempre se recomienda, como les dije, involucrar negocio y analistas. Gente del negocio, sus nombres para que se vean comprometidos, el rol que cumplen y el área donde vienen. Y la gente que va a hacer análisis de datos, sus nombres, el rol que va a tener, por ejemplo, ingeniería de datos
+01:25:35 Speaker 1: en la lista de datos,
+01:25:37 Speaker: y las áreas a los que partan. Eso para que quede súper claro quiénes son los integrantes de los equipos a la invención. Y luego ya datos para el desarrollo. Una descripción de la situación, qué
+01:25:50 Speaker 1: es lo que estamos recibiendo, cómo está funcionando
+01:25:52 Speaker 2: el negocio o el caso actualmente. Aquí ya cuál es la problemática en
+01:25:57 Speaker 1: términos de pregunta,
+01:25:59 Speaker 2: los objetivos que se van a tener. Estos objetivos son del negocio, los objetivos del negocio en términos de negocio.
+01:26:09 Speaker 1: Nuestros criterios de inclusión y fusión, las
+01:26:11 Speaker 2: limitaciones que les decíamos, cosas que ya vemos que no se van a dar, o problemas que desde el inicio vemos que se van a tener. Expectativas del negocio, luego qué acciones del negocio se
+01:26:25 Speaker 1: compromete a hacer o nos dice qué
+01:26:27 Speaker 2: va a hacer con el mercado que no vamos a dar. Y las métricas. De evaluación, pero que son métricas del
+01:26:33 Speaker 1: negocio, que no es lo mismo de las métricas que
+01:26:35 Speaker 2: vamos a usar para entrenar los modelos.
+01:26:38 Speaker 1: En métricas de negocio ellos tienen sus propios, no sé, API o cosas que ellos manejen, diferentes métricas que pueden ellos ver si interesados para. Bueno, las métricas que van a poder obtener con los resultados que les vamos a dar.
+01:26:51 Speaker 2: Y ya, la fecha de inicio y
+01:26:54 Speaker 1: alguna fecha de interactiva del fin es especial. Esa sería la estructura para
+01:26:58 Speaker 2: la ficha técnica.
+01:27:02 Speaker 1: La ficha técnica tendría ese contenido.
+01:27:05 Speaker 2: Esa ficha técnica también la vamos a ver la idea y la idea es que la pueden llenar como una primera etapa de los proyectos.
+01:27:14 Speaker 1: Eso
+01:27:15 Speaker 2: sería el primer paso. Y el segundo paso
+01:27:19 Speaker 1: es la parte de
+01:27:22 Speaker 2: selección de recursos y la parte de entendimiento de datos.
+01:27:28 Speaker 1: Dentro de ese segundo paso, ya vamos a ver.
+01:27:31 Speaker 2: Ese segundo paso se suele abrir en él. El primer paso, el 2.1, sería la parte de selección y la identificación de la construcción de nuestro data set. Y el 2.2 sería empezar
+01:27:44 Speaker 1: a entender los datos hacia
+01:27:46 Speaker 2: una primera exploración. Entonces, para el 2.2 ya
+01:27:50 Speaker 1: tenemos que ir.
+01:27:53 Speaker 2: Ya estamos acá en la etapa 2. Esta parte de datos estructurados y no estructurados, igual que lo pago para este tipo de proyectos. Trabajamos directamente ya con datos estructurados para este tipo.
+01:28:11 Speaker 1: Puede ser también que tengamos no estructurados
+01:28:13 Speaker 2: y los estructuramos para trabajar, pero ya puede ser un paso un poquito más alto. Para
+01:28:18 Speaker 1: este punto, definitivamente hemos trabajado con datos que ya estaban estructurados. Si alguno
+01:28:23 Speaker 2: de ustedes tuviera datos con los que
+01:28:26 Speaker 1: les interesa trabajar, la
+01:28:29 Speaker 2: verdad es que han estructurado datos y quieren hacer el análisis de los datos, pueden utilizarlo para su periodismo,
+01:28:35 Speaker 1: si es que desean. Eso sería una idea, si es que fue. Y si no, dejen que vamos a trabajar nosotros con estructurados. Yo creo que esto les puedo dejar con perdón. En mi caso no es algo muy claro, sino solamente ejemplos de estructurados y los otros. Pero parece que es bastante claro.
+01:28:54 Speaker 2: Ahora, tipos de variables. Esta parte es importante recordarles antes de ir a código, porque como les decía, de
+01:29:00 Speaker 1: acuerdo al tipo de variable va a cambiar las
+01:29:04 Speaker 2: métricas que voy a usar para resumirlo y las gráficas que voy a usar para representarlo. ¿Por qué? Porque ahora vamos a
+01:29:11 Speaker 1: ver que existen métricas que
+01:29:13 Speaker 2: se usan solo para variables
+01:29:15 Speaker 1: cuantitativas,
+01:29:17 Speaker 2: que no se usan con las cualitativas.
+01:29:21 Speaker 1: Existen gráficas que
+01:29:22 Speaker 2: se usan solo para Qualys y no hay como que se usen gráficas para las cuantitativas.
+01:29:28 Speaker 1: Incluso dentro de las cuantitativas hay
+01:29:31 Speaker 2: unas gráficas reservadas para las discretas y gráficas para variables
+01:29:36 Speaker 1: continuas.
+01:29:37 Speaker 2: Eso sí es importante recordar un poco. Pues claro, es como un software de poder hacer todo, yo puedo hacer todo, pero de que debo hacer todas las combinaciones no. Debo reservar las prácticas para el tipo de variable
+01:29:53 Speaker 1: que tengo. Vamos a ver cuál sería.
+01:29:58 Speaker 2: Los tipos de variables pueden ser...
+01:30:00 Speaker 1: Según la naturaleza de la variable, según la escala de la variable. Puede ser también según nivel de influencia
+01:30:07 Speaker 2: de la variable. Estos son diferentes tipos de clasificación.
+01:30:11 Speaker 1: Según la naturaleza, es la típica clasificación que escuchamos. Cuantitativas y cuantitativas. Eso está claro, ¿cierto?
+01:30:18 Speaker 2: ¿Las cual y cuáles serían?
+01:30:21 Speaker 1: ¿Cómo definimos una cualitativa?
+01:30:37 Speaker 2: Describe una cualidad textual. Que me permite listar las categorías de la variable. Una variable que tiene
+01:30:45 Speaker 1: categorías. Y me permite
+01:30:48 Speaker 2: obtener un listado de esas categorías. Esas categorías las puedo sumar propiedades.
+01:30:56 Speaker 1: No, son solo categorías. ¿Qué pasa si las categorías me las listan como 1, 2, 3 y 4?
+01:31:04 Speaker 2: Igual tengo que tratarlo como texto. Por más que estén con un número, les debo tratarlo. Ok. Esa sería la cualitativa. Dentro de las cuantitativas, ya sabemos que existen las discretas y continuas. ¿Cuál es la definición de las discretas? Valores enteros. Valores enteros y continuas.
+01:31:23 Speaker 1: Valores que aceptan fracciones.
+01:31:28 Speaker 2: Esa sería mi clasificación según la naturaleza. Luego tendré clasificación según la escala de medida.
+01:31:36 Speaker 1: ¿Se acuerdan de estos términos?
+01:31:39 Speaker 2: ¿Y los cuatro? No. Podemos decir, por ejemplo, que estaban desde la variable más simple hasta la variable más compleja. La nominal sería la más simple porque ¿cómo
+01:31:50 Speaker 1: definiríamos una variable fenomenal?
+01:32:02 Speaker 2: ¿Cómo sería una nominal? En sentido de la variable más simple desde la cuatro.
+01:32:16 Speaker 1: Nombres, sí. Correcto. Nombres. Una
+01:32:19 Speaker 2: lista, ¿cierto? De nombres, de categorías.
+01:32:22 Speaker 1: Que no tienen alguna relación entre ellos. Solo es una lista.
+01:32:25 Speaker 2: Una lista que la puedo escribir de la manera que quiero. Una lista de categorías de una variable. Una variable que tiene categorías y las puedo listar. Entonces... El segundo nivel de complicidad tendríamos la ordinal.
+01:32:40 Speaker 1: ¿Qué sería entonces una ordinal? Que tiene una ordinal y una jerarquía. Que tiene una jerarquía interna. Entonces sería una nominal que tiene una jerarquía, ¿cierto?
+01:32:51 Speaker 2: Esta nominal,
+01:32:53 Speaker 1: perdón, esta ordinal, yo la puedo
+01:32:55 Speaker 2: etiquetar como uno, dos, tres y cuatro. Por ejemplo, no sé, el nivel de satisfacción.
+01:33:04 Speaker 1: O... Grado de instrucción. Si
+01:33:08 Speaker 2: yo registro el grado de instrucción y coloco 1, cuando es sin estudios.
+01:33:12 Speaker 1: 2, cuando es estudios primarios. 3, cuando es estudios secundarios. 4, cuando es superiores. 5, cobrados. Esto es mitad de 1, 2, 4, 5. Esa sería una mitad, ¿cierto?
+01:33:27 Speaker 2: Estos números yo los puedo operar. Puedo sacar promedio.
+01:33:49 Speaker: ¿Por qué? Porque en esencia son nominales. Son nominales como la jerarquía, y al ser nominales no se pueden operar. Se mantienen como nominales. Entonces, tanto los nominales como los ordinales, ambos son cualitativos. Nominal y ordinal, ambos son cualitativos. Eso significa que los intervalos y intervalos serían los cuantitativos. Ahora, tanto el intervalo como el tabazón, en ambos lados yo puedo tener respetas en los tiempos.
+01:34:20 Speaker: ¿Se acuerda cuál es la diferencia entre intervalo y la razón? El típico ejemplo de variable de intervalo es la temperatura. Y un ejemplo de variable de razón sería cantidad de tarjetas de vehículos privados o cantidad de hijos que tienen. Otro ejemplo de intervalo puede ser las notas y los animales en un examen. Entonces, si lo establecemos así, ¿cuál sería esa diferencia marcada entre intervalo y la razón?
+01:34:59 Speaker: Y hago un paréntesis. ¿Por qué es importante diferenciarlas? Porque vamos a ver que van a existir, por ejemplo, tablas. No sé si les voy a poner ahí, si no se las comparto después. Esta es una tabla. ¿Ustedes se acuerdan los coeficientes de correlación? ¿Se acuerdan el nombre del coeficiente de correlación que hemos usado con más frecuencia?
+01:35:21 Speaker: Pero si se acuerdan, ¿verdad? Ya. Existe una tabla, que se la voy a compartir en algún momento, dice ahorita o después, pero que me
+01:35:30 Speaker 2: dice que, de acuerdo al tipo de
+01:35:32 Speaker 1: variable, existen diferentes
+01:35:34 Speaker 2: coeficientes de correlación. En otras palabras, el que siempre hemos utilizado en la mayoría del tiempo de la secundaria, no es el único coeficiente de correlación. Este que hemos utilizado, se usa cuando tenemos variable cuantitativa con cuantitativa. Pero cualquier cosa si tenemos una hormigada.
+01:35:56 Speaker: ¿Qué es lo que queremos comparar nominales? Ya no podemos usar el mismo proficiente de correlación. ¿Qué es lo que queremos trabajar con la nominal y de intervalo? Existe una tabla que nos va a decir, existen otros tipos de proficientes de correlación de acuerdo al tipo de variables que tenemos que hablar de ellas. Entonces tenemos que saber cuál es la diferencia entre ellas para que cuando necesitemos alguna herramienta sepamos elegir. Si no, nos va a permitir que no se pueda hacer. Entonces, diferencia entre intervalos y razones. Si ejemplos de intervalos son temperatura, nota vigesimal y de razones, cantidad de género de reyes, cantidad de hijos que tiene alguien, ¿qué es lo que ven que las diferencia? ¿Cuál sería la diferencia fuerte entre ellos?
+01:37:01 Speaker: es respecto a la interpretación del valor que toma la variante. La interpretación cambia. No interpreta iguales, las de intervalo y las de razón. Y hay un valor en particular que las diferencias, que es la interpretación del cero. ¿Cómo interpretar un cero en estos ejemplos que les he mencionado de temperatura y de 39? ¿Cómo interpretar un cero de cantidad de hijos también? ¿Cuál sería la diferencia de la interpretación?
+01:37:51 Speaker: El cero es un valor, el cero indica que no tiene propuesta con el cero. Correcto. En el caso de la razón, el cero se interpreta como un cero absoluto. ¿Qué significa ser absoluto? Ausencia de la variante. En cambio, en el intervalo, es un cero relativo. ¿Relativo a qué? Al instrumento de medición. O avivaremos de referencia con un largo definición. Por ejemplo, un cero en una nota vigesimal. Para que, primero, para que continuemos que estamos en la primera práctica, en el primer laboratorio criticado y tenemos notas. Tenemos un don de 20, 20, 20, 20, y hay un cero.
+01:38:36 Speaker: ¿Qué significa ese cero? Ausencia de conocimientos. ¿Ausencia de rendimiento? No, ¿verdad? De repente se concluyó, no le correctó, jugaba un valor activo, mandó un archivo vacío. Entonces, ese cero no es un valor activo, sino es relativo al límite inferior de mi escala en la que estoy midiendo el tratamiento. ¿De ver que el cero significa ausencia de tendencia? No, ¿verdad? Es un cero, un valor relativo a un intervalo que estoy considerando. ¿Por qué? Porque ese cero, si lo mido en otra escala, toma otro valor, ¿cierto? ¿Se acuerdan cuál es otro valor? Es el equivalente al cero. ¿Cuánto?
+01:39:45 Speaker: 273 273 y las dos pueden ser o disfierran como aquí. ¿Sí? Entonces, estos serían mis tipos de variables, los tipos de variables que tenemos aquí. Bueno, esto lo puedo hacer también porque, claro, en Python se hablan de tipos de datos que son otras cosas. Se puede parecer un poco, por ejemplo, en R también se tiene tipos de datos en R, tipos de datos en Python. Algunas se pueden parecer, pero son cosas completamente diferentes, ¿cierto? Son formas como Python guarda o entiende estos datos y como los... Son muy diferentes, pero igual que lo coloque aquí para tratar la cosa.
+01:40:33 Speaker: Ahora que sabemos cuáles son los tipos de variables que tenemos, para empezar con el entendimiento de los datos, una de las cosas principales que debemos recordar son las medidas de resumen. ¿Qué son medidas de resumen? Son esas métricas, que generalmente son valores, métricas y promes mayores, que me van a representar un conjunto de datos. Por ejemplo, el promedio de la edad es un solo valor que representa a todo mi valor de edad. Y así con cada uno. Una métrica es una sola medida que resume, que representa a un conjunto de elementos.
+01:41:14 Speaker: van a ser diferentes a si yo tengo unas variables cualitativas y si yo tengo unas cuantitativas. ¿Recuerdan ese papel de su curso de estadísticas prioridades? ¿Cuáles serían mis métricas de resumen de una variable cualitativa?
+01:41:31 Speaker 1: ¿Qué métricas de resumen le posan? La moda. La moda, correcto. ¿Qué más podría sacar de una cualitativa?
+01:41:48 Speaker: Imagínense que tiene la variable especialidad de acá, de los estudiantes de este horario, la especialidad. Es mi variable cualitativa. ¿Cómo la puedo resumir? ¿Qué métricas puedo sacar de resumen de esa variable cualitativa? Porcentaje, correcto, esa es una métrica. ¿Qué más?
+01:42:26 Speaker 2: Frecuencia, correcto. Frecuencia como conteo, ¿cierto? Y una cosa intermedia entre la frecuencia y el porcentaje.
+01:42:35 Speaker 1: Hay una métrica intermedia entre ambos. Es una versión del presentado. Empieza con P. Ah, percentil. Suena eso, pero no
+01:42:54 Speaker 2: es. Percentil es para las cuantitativas. Y ahora estamos en las cuatro. Pero
+01:42:59 Speaker 1: entiendo que va por ahí. Empieza con P.
+01:43:06 Speaker 2: Eso es de las cuantas. Es un paso antes del porcentaje.
+01:43:14 Speaker 1: Más o menos. Porción.
+01:43:19 Speaker 2: La probabilidad se mide en el mismo rato.
+01:43:22 Speaker 1: Pero no se llama probabilidad. Maldita. ¿En qué se coge? Es el hermano de nombre del porcentaje. Es más, el porcentaje no existiría si no existe esta otra vez. Proporción. Proporción, muy bien. Un poco más pronto.
+01:43:52 Speaker 2: La proporción. Entonces, los niveles de existencia es primero el conteo, el absoluto. La frecuencia absoluta es un
+01:44:02 Speaker 1: conteo. Frecuencia absoluta porque existe y cuando existe. Frecuencia absoluta es el conteo. En un segundo nivel tengo la
+01:44:10 Speaker 2: frecuencia relativa. Relativa siempre respecto a algo, ¿cierto? ¿Relativa por qué? Porque es ese conteo que ya calculé respecto a quién. Respecto a quién. ¿Cómo calculo una proporción? Es ese conteo respecto a quién.
+01:44:28 Speaker 1: Total. Entonces
+01:44:30 Speaker 2: la frecuencia relativa es el conteo
+01:44:32 Speaker 1: respecto a un total.
+01:44:34 Speaker 2: Y ahí tengo mi proporción. Y si esa proporción la multiplico por 100, tengo...
+01:44:39 Speaker 1: Porcentaje. Y ahí está la frecuencia. Luego esas tres las puedo acumular y tengo
+01:44:46 Speaker 2: frecuencia absoluta acumulada, frecuencia volatil
+01:44:48 Speaker 1: acumulada, porcentaje acumulado.
+01:44:51 Speaker 2: Pero eso ya son derivados.
+01:44:52 Speaker 1: Cosas que derivan de 3. Pero son las tres principales. Esa y la moda.
+01:44:57 Speaker 2: Que la moda es la frecuencia que vas a recibir.
+01:45:00 Speaker 1: Esas cuatro son mis únicas métricas de resumen de una variable cualitativa.
+01:45:05 Speaker 2: Que son tan pequeñitas cuatro que ya ni la he colocado acá. Porque son solamente cuatro. Frecuencia absoluta, frecuencia relativa y porcentaje.
+01:45:16 Speaker 1: Son mis métricas y moda. Mis métricas se resumen de una cualitativa.
+01:45:21 Speaker 2: Y ya no hay más.
+01:45:23 Speaker 1: Ahora, antes de pasar acá.
+01:45:24 Speaker 2: ¿Cuáles son los gráficos que yo puedo hacer solamente con cualitativas? Porque acá yo tengo más diapos para quanti, que son más cositas. Pero primero vamos a hablar de las qualis. ¿Qué gráficos yo puedo utilizar solamente para qualis? Y no hay forma que los use para las cuantitativas.
+01:45:42 Speaker 1: El de barras.
+01:45:43 Speaker 2: El de barras, correcto. El
+01:45:46 Speaker 1: de pavi. Y los primos de los
+01:45:48 Speaker 2: de pavi, ¿cierto? Los sectores, el de pastel y todas las derivadas que salgan de esos. Estos son los gráficos que yo voy a reservar solamente para las cualitativas. No hay forma que yo haga un gráfico de
+01:46:02 Speaker 1: barras, por ejemplo, con una variable
+01:46:05 Speaker 2: numérica discreta. Porque para la numérica discreta tenemos otro, que
+01:46:10 Speaker 1: es el gráfico de bastones.
+01:46:13 Speaker 2: Ahora, de que lo puedo hacer, el software me lo va a aguantar. Pero de que debe hacerlo no. Porque lo correcto es, gráficas de las cualis son unas, gráficas de cuantos son otras.
+01:46:23 Speaker 1: Entonces,
+01:46:24 Speaker 2: ya vamos a ver todo lo de cualis. Recuerdosolutas, frecuencias relativas, presentaje, moda, gráfico de balas, gráfico de sectores, gráfico de pastel y subverivadas. Ahora que terminamos de las cualis, nos
+01:46:37 Speaker 1: toca las cuantitativas.
+01:46:41 Speaker 2: Dentro de las cuantitativas ya tenemos un poquito más.
+01:46:45 Speaker 1: Este gráfico siempre me gusta mostrarlo porque ya lo he visto.
+01:46:52 Speaker 2: Ah, ya son las 6. Ya, gracias.
+01:46:54 Speaker 1: Gracias. Gracias. Gracias. Gracias. Ya,
+01:47:03 Speaker 2: les sumo todo este material a parir de ellas y nos estaríamos viendo el siguiente día. Este sábado también que tiene su primera ley.
+01:47:10 Speaker 1: ¿Sí? Gracias. Sí, acá.
+  

@@ -1,0 +1,278 @@
+. INTRODUCCION{
+	. Poblacion
+	. Variable aleatoria
+	. Muestra
+	. Dato: Valor del vector de la variable aleatoria en la muestra
+	. Informacion: Resumes los datos
+	. Conocimiento: Generas un razonamiento y te permite tomar desiciones
+}
+
+. Metodologias para el analisis de datos
+
+. METODOLOGIA KDD{
+	. Desde el Dato al Conocimiento
+	. ETAPAS METODOLOGIA KDD{
+		. Los pasos son secuenciales; se tiene la flexibilidad de siempre regresar en orden si algo hace ruido
+		. Se va a trabajar con 9 pasos <- 9 notebocks
+		. 1. Dominio, entendimiento y KDD goals{
+			. Hay 2 tipos de entendimiento: entendimiento o dueño de negocio de la causistica de los dueños de los datos
+			
+			. Institucion aliada: Nos dan sus datos y nosotros les damos una solucion
+			. Se tiene que tener una primera reunion con los dueños de los datos
+			. Debemos dejar que ellos nos hablen del problea, deben explicar los datos, que esperan de nosotros, que imaginan que les vamos a dar
+			. Nosotros debemos entender todas las columnas
+				
+			. Si se quiere hacer un modelo predictivo, se necesita la variable objetivo			
+		}
+		. 2. Seleccion y Adicion{
+				. target: no es la variable objetivo, sino es el dataset que vamos a usar
+				. No siempre usaremos toda la poblacion porque algunas variables no van a estar registradas
+				. De 100 variables puede que la mayoria sean etiquetas o IDs y solo 10 sirvan para modelar
+				. samples: son las filas
+		}
+		. 3. Preprocesamiento: limpieza de datos{
+			. Depende del contexto
+			. Suele demorar este paso
+		}
+		. 4. Transformacion{
+			. Reduccion de las dimension o transformacion de variables
+			. transformacion de variables: en si misma ó combinando columnas <- esto para reducir filas o columnas de acuerdo al objetivo de analisis{
+				. X es lo mismo que log(X)
+				. X e Y -> X.Y
+			}
+			. Metodos de reduccion{
+				. Ya son modelos que estan en el paso de Data Mining, pero no se usa de la misma manera en la etapa de Data Mining
+				. No es obligatoria
+			}
+		}
+		. 5.,6.,7. Data Mining{
+			. 5. {
+				. Se tiene que hacer un match entre los objetivos del proceso KDD con los objetivos de negocio con las opciones disponibles segun los datos
+				. Los objetivos de analisis de datos disponibles son la traduccion de la necesidad del cliente
+				. Se decide si se hace modelo de clasificacion o clustering o regresion para asi ver los medelos respectivos
+				. Se toma el camino con el cual vamos a dirigir nuestro analisis
+				. Elijo que puerta voy a abrir
+			}
+			. 6. {
+				. Te encuentras un monton de herramientas o algoritmos disponibles solo en esa puerta
+				. Elijo los modelos apriori que usare
+				. Para resumen de informacion, se va a diferenciar los categoricos
+				. Hay modelos que pueden aceptar numericos o cualitativos
+				. Hay varios tipos de algoritmos
+				. Hay que identificar el tipo de variable
+			}
+			. 7. DATA MINING{
+				. Se empieza a entrenar los modelos
+				. Se ajusta los hiperparametros
+				. Suele demorar este paso
+			}
+		}
+		. 8. Interpretacion{
+			. Va en bucle con el paso anterior
+			. Interpretacion internamente antes de exponerlo a los datos del negocio
+		}
+		. 9. {
+			. Documentacion en terminos del negocio
+			. Interpretacion numerica con terminos del caso o institucion
+		}
+	}
+	. DATA MINING METHODS{
+		. 2 caminos: descripcion o prediccion
+		. No siempre un modelo predictivo es la mejor solucion
+		. Una descripcion de la causistica o como se mueven los datos es una buena solucion a veces
+		. Descripcion: Resumen estadistico o grafico
+		
+		. Prediccion: Clasificacion y regresion
+		. Clustering
+	}
+
+	. Tiene entrega final y no despliegue
+}
+
+. OTRAS METODOLOGIAS{
+	. CRISP-DM{
+		. Considera 6 fases
+		
+		. Tiene despliegue{
+			. Modelo para identificar clientes que emite boletas no deducibles
+			. Las empresas para deducir mas impuestas ellos deducen mas boletas
+			. Se ejecuta o acciona el modelo para el dia a dia
+			. 
+		}
+	}
+	. SEMMA{
+		. Asume que ya entendiste los datos
+		. Tiene 5 fases
+	}
+}
+
+. PROBLEMA{
+	. OJO: "Un problema correctamente planteado esta parcialmente resuelto; a mayor exactitud corresponden mas posibilidades de obtener una solucion satisfactoria"
+	. Esto tiene que ver en temas de gerentes o punto de vista del negocio
+	. La gente cree que los gerentes necesitan mas datos para tomar desiciones, pero eso los abruma porque hay ruido
+	
+	. PLANTEAMIENTO{
+		. El problema se plantea como una pregunta
+		. El problema debe ser una pregunta
+		
+		. Un problema planteado debe tener datos que se van a analizar
+		
+		. Prueba empirica: Construcciones del modelo inicial
+	}
+}
+
+. OBJETIVOS{
+	. Definir los objetivos{
+		. Objetivo del negocio
+		. Objetivos de analisis de datos: Es la traduccion del objetivo del negocio, pero no es lo mismo
+	}
+	. OBJETIVOS DEL NEGOCIO{
+		. A veces es dificil aterrizar los obejtivos
+		
+		. Hay que usar las preguntas{
+			. ¿Que se debe lograr?
+			. ¿Como ayudara al negocio?
+			. Principales areas interesadas o experto de los datos que nos ayude
+			. ¿Que caracteristicas debe tener para ser considerado factible?{
+				. Queremos un modelo de deteccion mundial, pero no es factible porque no sera desplegado en una empresa
+			}
+			. ¿Que esperan recibir?{
+				. Algunos quiere una etiqueta y otros una probabilidad de riesgo
+			}
+			. ¿Como estan pensando utilizar el resultado del analisis de datos?
+			. ¿Con cuanto tiempo contamos?
+		}
+	}
+	. OBJETIVOS DE ANALISIS DE DATOS{
+		. Se debe establecer metricas y criterios de evaluacion a nivel inicial para validar si llegamos al resultado
+		. Diseñar un Plan de Analisis de Datos que es como un plan de trabajo
+	}
+}
+
+. Delimitar poblacion de analisis{
+	. Se define la poblacion para saber sobre quienes va a funcionar el modelo
+	. El modelo va a servir solo para las caracteristicas de mi poblacion
+	. Boleta: Personas
+	. Factura: Empresa
+	
+	. Uso Text Mining para la descripcion de la boleta y factura
+	
+	. 2 criterios para delimitar una poblacion: En el espacio y tiempo
+	. Mediante identificacin{
+		. Inclusion: Ingresa
+		. Exclusion: Criterios que no debe tener las personas
+		. Eliminacion: Cuando cumplieron los de inclusion, pero los quito por algunos resultados que encontre en el camino
+	}
+}
+
+. IDENTIFICAR RECURSOS NECESARIOS{
+	. Personas{
+		. Especialista
+		. Lider
+		. Equipo especialista de analisis de datos: 
+		. Equipos de ingenieria de datos: Se centran en el preprocesamiento y transformacion <- Suele ser el dueño de los datos. El ingeniero le da la tabla final al analista
+	}
+	. Datos{
+		. Fuentes y dueños de los datos
+		. JP del curso: Fue Ingeniero de Datos de confianza en SUNAT
+	}
+}
+
+. IDENTIFICAR LIMITACIONES{
+	. Hay Ficha Tecnica
+	. Es mejor tener las limitaciones desde que aceptamos el proyecto
+	. Negocio{
+		. Normativas donde se maneja datos sensibles
+	}
+	. Datos{
+		. A veces no se puede llegar a todos
+		. Hay datos que se puede usar ahora para entrenar, pero para proyecciones ya no se puede usar en el futuro
+		. 
+	}
+	. Tiempo{
+		. El despliegue es aparte del modelo
+	}
+}
+
+. STEP 1: FICHA TECNICA DEL PROYECTO DE ANALISIS DE DATOS{
+	. Es un archivo excel
+	
+	. Metricas del negocio != Metricas para entrenar el modelo
+}
+
+. STEP 2: Seleccion y Entendimiento de los datos{
+	. 2.1: Seleccion
+	. 2.2: Entender los datos haciendo una exploracion
+}
+
+. Datos: Estructurados o No Estructurados
+
+. TIPOS DE VARIABLES{
+	. Naturaleza{
+		. Cualitativa{
+			. Permite obtener un listado de categorias que no se puede promediar
+			. Si tienen 1,2,3 siguen siendo textos
+		}
+		. Cuantitativa{
+			. Discreta
+			. Continua
+		}
+	}
+	. Escala de medida{
+		. Nominal{
+			. Lista de nombres de categorias que no tiene relacion entre ellas
+			. Variable de categorias que se puede listar
+			
+			. Es cualitativo
+		}
+		. Ordinal{
+			. Nominal que tiene una jerarquia internamente
+			. Se le puede etiquetar como 1,2,3,4
+			
+			. Grado: 1,2,3 <- No se le puede operar (promedio)
+			
+			. Es cualitativo
+		}
+		. De Intervalo{
+			. Ejemplo: Temperatura
+			
+			. Es cuantitativo
+			
+			. OJO{
+				. De acuerdo al tipo de variable, hay un coeficiente de correlacion
+				
+				. El 0 es relativo de acuerdo al instrumento
+			}
+		}
+		. De Razon{
+			. Ejemplo: Cantidad de hijos
+			. 0 es absoluto: Ausencia de la variable
+			
+			. Es cuantitativo
+		}
+	}
+}
+
+. Tipos de dato en Python{
+	. Es diferente
+}
+
+. MEDIDAS DE RESUMEN{
+	. Una metrica es una sola medida que resume y representa
+	
+	. Metricas de resumen de una variable cualitativa{
+		. Variable: Especialidad
+		. Metricas: Moda (frecuencia absoluta que mas se repite), porcentaje (frecuencia relativa * 100%), frecuencia absoluta(conteo), frecuencia relativa (conteo/total), proporcion
+	}
+	. Graficas de las cualitativas{
+		. Graficos de pie: pastel
+		. Grafico de barras <- No sirve para numerica discreta
+	}
+	
+	. Metricas de resumen de una variable cuantitativa{
+		. 
+	}
+	. Graficas de las cuantitativas{
+		. 
+	}
+}

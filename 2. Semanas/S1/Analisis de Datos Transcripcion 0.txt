@@ -1,0 +1,410 @@
+Speaker 2
+También soy magíster en estadística, también de la PUC, soy licenciada en estadística de la Pedro Ruiz Gallo, que es una universidad nacional de Lambayeque. Y también he llevado el diplomado de aplicaciones en inteligencia artificial de la PUC y por ahí algunos otros cursos adicionales que ya les iré contando. De toda esta trayectoria he ido recopilando información. respecto a la parte teórica. Entonces, he armado dos presentaciones. Mi formación académica es toda la información teórica que yo les voy a compartir. Entonces, en esta trayectoria tengo información teórica, datos, tips, las claves de lo que vamos a hacer en su vida profesional respecto al análisis de datos y a la estadística. Como podrán ver, tengo las bases en
+Speaker 1
+estadística. Es mi fuerte.
+Speaker 2
+Entonces, la idea de este curso de análisis de datos es mostrarles la construcción
+Speaker 1
+o el desarrollo de un proyecto de
+Speaker 2
+análisis de datos, reforzándoles la parte estadística.
+Speaker 1
+Porque ustedes van a ser como ingenieros en informática, ¿cierto?
+Speaker 2
+Pero es importante que para la parte de análisis de datos refuerzen bastante estadística. Entonces, eso es respecto a la parte teórica que les voy a compartir. Respecto a las experiencias o a los tips ya propios de las cosas que se van a ir encontrando en el camino. en proyectos, en el trabajo,
+Speaker 1
+en las prácticas, les
+Speaker 2
+voy a ir compartiendo respecto a estas experiencias de mi parte, de la parte profesional. Les he colocado como una línea de tiempo desde lo más antiguo hasta lo más reciente de las cositas que he hecho relacionadas a temas de estadística, análisis de datos, proyectos de Machine
+Speaker 1
+Learning y cosas parecidas.
+Speaker 2
+Igual en el camino, en el curso, en el trayecto, por ahí les iré contando más detalles. Pero como podrán ver, la mayoría está bastante relacionada a siempre temas de ciencia de datos, estadísticas, modelos, proyectivos y todo lo que vamos a ver en el curso. Por eso es que me gusta mucho este curso.
+Ya, entonces eso es respecto a mí un poquito. Y ahora respecto al curso en sí. Sabemos que es un electivo, ¿cierto? Se llama análisis de datos. Tiene tres créditos, vamos a tener tres. tres horas de clases semanales y este 0,5 es por las horas de laboratorio. En el laboratorio vamos a tener algunas sesiones de laboratorio que son como si fueran unas dirigidas, ¿cierto? Los JPs cuando ustedes van a desarrollar ejercicios y algunos laboratorios son calificados.
+Ahora les voy a contar cuántos calificados y cuántos dirigidos. Eso, eso sería respecto a la información general. Ahora, respecto a la currícula, ha ido cambiando en los años, desde que empecé a dictarlo, creo que empecé a dictarlo en el 22, y ha ido cambiando un poco ahora. Este lectivo lo tenemos para tres especialidades, mecatrónica, informática y telecomunicaciones. Sin embargo, a pesar que está como lectivo en estas tres especialidades, también en estos años he tenido estudiantes. de otras carreras, de otras especialidades, que me comentan que hay un trámite, ¿cierto?, en donde piden convalidación, no sé muy bien cuál es el nombre del trámite, pero he tenido alumnos de sociales, de física también, de ambiental, entonces he tenido alumnos también de otros rubros,
+Speaker 1
+del
+Speaker 2
+cual es interesante porque al momento que trabajan en grupos, porque hay trabajo en grupo aquí,
+Speaker 1
+van
+Speaker 2
+teniendo retroalimentación de diferentes
+Speaker 1
+especialidades.
+Speaker 2
+Y eso se visualiza en la interpretación que da resultados.
+Speaker 1
+Entonces, eso está bonito.
+Speaker 2
+Y bueno, cada especialidad tiene sus requisitos, ¿no? Está esto en el sílabos igual, pero les voy a ir comentando detalles adicionales. Ahora, respecto a la descripción del curso, esta es la descripción que está en el sílabos, pero lo que yo les puedo decir a priori es así, lo que se desarrolla en el curso. de manera global, es la metodología clave, que es la metodología KDD, que es una metodología para desarrollar un proyecto de ciencia de datos desde el inicio, que es recolección de datos, hasta el final, que es ya la parte de reportear, entregar los resultados.
+Speaker 1
+Entonces,
+Speaker 2
+la idea del curso es esa. Que vean todo este ciclo de vida de un proyecto de ciencia de datos. que en realidad no tiene un fin porque va a tener un ciclo de actualización y cosas así, pero es eso, ver el ciclo de vida del desarrollo de un proyecto y dentro, en cada una de las etapas, ver, resaltar los fundamentos estadísticos necesarios, ya que nuestros insumos son los datos,
+Speaker 1
+y
+Speaker 2
+aplicar todo esto que vamos a ir desarrollando a un proyecto con datos reales. que le vamos a llamar tarea académica. Tenemos laboratorios,
+Speaker 1
+laboratorios
+Speaker 2
+evaluados y laboratorios
+Speaker 1
+tipo dirigidas, donde
+Speaker 2
+van a poder desarrollar. Esa sería la idea general del curso. Respecto a los objetivos, tendríamos tres bloques. Los objetivos relacionados con fundamentos de metodología análisis, el objetivo aquí es que ustedes puedan dominar conceptos claves de estos proyectos, de estos proyectos de análisis de datos, conceptos claves. Respecto al aporte y identificación de patrones, el objetivo es que puedan aplicar modelos de minería de datos.
+para descubrir información valiosa, ya sea la parte predictiva o la parte de segmentación. Y luego, respecto a la aplicación de la metodología, la idea es que al finalizar el curso, ustedes puedan conocer primero esta metodología, conocer otras similares, porque dependiendo del lugar donde vayan a hacer prácticas o trabajo, ellos pueden haber adoptado alguna otra metodología, de repente la misma KED o de repente otra similar.
+Y en el curso vamos a ver KDD y las similares y las cosas en común y las diferencias. Pero al final van a ver que es la misma idea. Tienen diferentes nombres, pero es la misma idea. Mismos pasos similares y cosas así. Entonces, esos serían esos objetivos. Y bueno, aparte de resultados esperados relacionados con esos objetivos, que también los tenemos en el cielo, pero bueno, ya los podemos ir viendo
+Speaker 1
+en el curso también. ¿Qué más?
+Speaker 2
+Ahora, respecto a los temas que vamos a abordar en nuestro plan analítico, los tenemos divididos en cinco bloques. Este primero se está llamando Introducción a KDD, que es nuestra metodología
+Speaker 1
+base.
+Speaker 2
+Entonces, en este primer bloque vamos a ver conceptos iniciales, generales, como tema de datos, información, conocimiento, y luego vamos a centrar... de lleno a las etapas de la metodología KDD, que tiene una serie de etapas. Vamos a ver las otras metodologías similares y vamos a sentar las bases de KDD. Entonces KDD va a ser como nuestro esqueleto, nuestro esqueleto de la estructura del proyecto que vamos a hacer. Entonces una vez que tenemos KDD,
+según KDD se va a basar incluso las evaluaciones de los laboratorios, y según las etapas de KDD se van a basar los avances de la tarea académica que van a presentar, siguiendo esas etapas. Entonces, esa va a ser nuestra base. Acá les he colocado entre paréntesis las etapas, ya haciéndoles un spoiler de qué es lo que se va a hacer.
+Speaker 1
+Entonces,
+Speaker 2
+la siguiente unidad
+Speaker 1
+es la unidad 2.
+Speaker 2
+En esta unidad vamos a ver de las primeras etapas de KDD, que sería la selección y la parte de preprocesamiento de datos. Vamos a hablar un poco de los estructurados y no estructurados, pero finalmente para este curso vamos a trabajar directamente con los datos estructurados. ¿Qué más vamos a ver aquí? A la parte de limpieza. La parte de limpieza de datos, si bien... He visto en algunos, no sé, talleres o algunas otras ofertas que se dan de, no me refiero a estos cursos, sino ofertas afuera de, no sé, talleres que se dan por ahí, a veces veo que la parte de limpieza de datos la pasan muy rápido. Es como, ah, sí, limpiamos datos, sacamos,
+Speaker 1
+no sé,
+Speaker 2
+manejamos vacíos y limpiamos los datos raros y de frente me voy a modelar.
+Speaker 1
+Entonces,
+Speaker 2
+La idea no es tan así. La idea es que la parte de pre-procesamiento de datos le dediquemos una buena cantidad de tiempo. Generalmente los proyectos de ciencia de datos en limpieza se demoran más que en la construcción de modelos. Entonces, la idea aquí es ver algunos errores usuales que se pueden realizar, errores que he visto en algunos lugares.
+Luego, algunos retos con los que nos podemos encontrar y opciones de solución. Algo así como una lista de soluciones. Si tengo este escenario con este escenario y estas características, mi mejor solución es esta. En cambio, si tengo este otro escenario, la mejor solución sería esta otra. Cosas así, respecto a la limpieza.
+Speaker 1
+¿Qué más?
+Speaker 2
+Ya, y nos centramos en los estructurados. En la tercera unidad tenemos la parte de transformación de datos. Entonces, una vez que ya tenemos seleccionados los datos que vamos a trabajar, ya los hemos limpiado bien limpios, vamos a transformarlos. En el curso vamos a ver que esta transformación... Va a depender de los datos, no siempre es necesario transformarlos, va a depender del objetivo final, de qué datos tenemos y cosas así, pero aquí vamos a ver todas las transformaciones que podemos hacer, al menos las principales, las
+Speaker 1
+más usadas.
+Speaker 2
+Transformaciones, y dentro de estas transformaciones está la parte de reducción de dimensiones, que también luego vamos a ver que se trabaja como unos tipos de modelos,
+Speaker 1
+aparte.
+Speaker 2
+Pero estos modelos también se usan en la etapa 3, que es reducción de dimensiones. Entonces ahí van a ver como algo que está relacionado. Les voy a mostrar ahí unas listas, unos modelos, que usualmente se conocen como modelos, pero van a decir, pero estos no son modelos porque los uso en transformación. Y en esta etapa 3, de la unidad 3, también se utilizan modelos, pero como métodos de transformación de datos.
+Y ahí hay que hacer una separación. Es diferente las variables que uso para estos modelos como transformación que las variables que uso para estos modelos como modelamiento en sí en la siguiente etapa. Entonces, ahí vamos a hacer algunas diferencias, algunos ejemplos y obviamente en todo este trayecto, estas unidades y las siguientes, les voy a ir contando experiencias que he tenido en la trayectoria profesional, en proyectos que he desarrollado, en equipos en los que he participado para construcción de estos modelos. Y luego tenemos la unidad 4, que es la unidad que tiene más horas en nuestro programa, que es la parte de minería de datos.
+Respecto a modelos, ya habrán visto que existe un abanico gigante, ¿cierto? A estos modelos, por ejemplo, que estamos listando acá, se les conoce ahora como modelos clásicos, luego tienen los modelos de redes neuronales y cositas un poco más profundas. En este caso, para este curso, nos vamos a centrar en los que conoceríamos como modelos clásicos o tradicionales, los de regresión y los de clasificación. No van a ser, bueno, acá nos están mencionando, solo mencionamos clasificación, regresión y clustering. No se mencionan algunos específicos, pero serían los que conocemos como clásicos.
+Speaker 1
+Aquí
+Speaker 2
+no entrarían muchos redes neuronales, sin embargo, sí haremos énfasis que las regresiones que vamos a ver serían la base de las redes neuronales que luego van a manejar. Entonces, ¿por qué nos centramos en los clásicos? Porque la idea de este curso, como les decía, es reforzar la parte estadística y los modelos clásicos son una buena oportunidad para poder abrir un poco más el modelo y entender qué es lo que hace detrás. No solamente cuál es la función,
+en Python que se usa y cuáles son los superparámetros y correrlo, no solamente así, sino entrar un poquito más y ver no tanto tampoco la parte matemática,
+Speaker 1
+¿cierto?
+Speaker 2
+Pero sí entender un poco más qué es lo que hace dentro y cuáles serían las implicancias de los parámetros que vamos a utilizar. Por eso es que nos centramos en los clásicos para poder abrirlos un poquito más y entenderlos mejor. Entonces, en minería de datos nos vamos a centrar en la parte de predicción
+Speaker 1
+o
+Speaker 2
+en la parte de descripción. Vamos a ver que existen diferentes enfoques de la metodología CADE de acuerdo al objetivo, algunos de acuerdo a los objetivos de nuestros proyectos. Algunos van a buscar predecir cosas. Pero hay otros que van a buscar solamente describir cosas. Y con solamente no me refiero a que sea algo menos o algo más fácil. La parte de descripción también tiene sus
+Speaker 1
+retos. Entonces,
+Speaker 2
+a lo que voy es que no siempre entregar un modelo de predicción es la mejor solución para un problema. Hay veces en que cuando el usuario viene con un problema, la mejor solución es entregar modelos descriptivos. Y hay bastantes buenos resultados y bastante importancia en eso también.
+Entonces, nos vamos a centrar en la parte de minería de datos en modelos predictivos y modelos descriptivos. Dentro de los predictivos vamos a dividir en modelos de regresión y modelos de clasificación. Y dentro de los descriptivos nos vamos a quedar con los modelos de clustering. Luego podría haberse otra rama en la parte de optimización. Las vamos a mostrar solamente como cultura general con algunas opciones de modelos, pero en este caso, en este curso, no vamos a entrar a la parte de
+Speaker 1
+optimización.
+Speaker 2
+Pero igual les voy a mencionar algunas cosas interesantes y les voy a contar algunas experiencias también que
+Speaker 1
+he tenido desarrollando esos modelos.
+Speaker 2
+¿Qué más podemos ver aquí?
+Speaker 1
+Reconocimiento de patrones, extracción de conocimientos.
+Speaker 2
+Eso sería respecto a la parte de minería.
+Y luego, la última unidad, que es la unidad 5, es respecto a la visualización e interpretación. Entonces, esta parte de visualización e interpretación, de acuerdo a las veces anteriores que se ha dictado el curso, he visto que la mejor forma de... de presentarlo no es como una unidad al final, sino que vamos a ir distribuyendo la parte de visualización e interpretación en todas las unidades, para no dejarla solo al final. Y en todas las unidades ir viendo la mejor forma de presentar la visualización, porque desde el preprocesamiento ya podemos presentar visualizaciones. Desde la transformación ya hay visualizaciones para presentar. Entonces, en cada etapa hay opciones de visualización diferentes, no los típicos gráficos de barras y PAI y se acabó, no. Hay visualizaciones importantes y diferentes formas de interpretar esas visualizaciones. Entonces, esa última unidad... La vamos a distribuir en todos los bloques con la visualización gráfico correspondiente y la interpretación correspondiente de cada una de ellas. Entonces va a ser algo transversal.
+Y también les voy a comentar la forma de presentarlo. Si bien lo que se suele hacer son informes
+Speaker 1
+y una
+Speaker 2
+diapositiva, una presentación, La idea de este curso es, como vamos a desarrollar un proyecto con KDD, la idea es que la exposición final que vamos a realizar, que vamos a realizar para que yo
+Speaker 1
+los escuche,
+Speaker 2
+sería enfocada a la parte, o sería como una presentación ejecutiva. En el transcurso del curso, yo quisiera tener reuniones con ustedes para que me expliquen el avance. dudas, cosas técnicas del código, modelos, parámetros, funciones, cosas así, pero ya la exposición final final la vamos a centrar, vamos a simular que sería una presentación ejecutiva. Sería una presentación que la van a realizar ante sus supervisores, sus gerentes. sus intendentes y personas que quizás no necesariamente tienen que estar relacionadas a temas de programación, pero que sí les va a interesar los outputs que ustedes obtengan. Y sobre todo, además de los resultados numéricos que les den los modelos, también las recomendaciones que ustedes den desde la posición que van a tener.
+Dependiendo de las posiciones en la parte laboral, no siempre uno tiene poder de decisión, pero sí poder de recomendación. Entonces, no nos vamos a quedar solamente en el modelo me dio esto y le entrego mis resultados, sino en cómo yo interpreto ese resultado de acuerdo a lo que me ha contado el negocio, la institución, del problema que tenía y qué recomendaciones puedo dar yo independientemente de que yo pueda aplicar esas recomendaciones. Pero sí tengo la responsabilidad de recomendar y ayudarle a la persona encargada de la toma de decisiones a entender estos resultados y a poder, no sé, tomar políticas mejores o resultados o poder, de acuerdo a la segmentación de mis clientes o usuarios, diferenciar aplicaciones o tratamientos. Entonces vamos a enfocar el último punto a la parte de...
+Speaker 1
+ejecutiva,
+Speaker 2
+una presentación ejecutiva. Entonces, el curso tiene estas cinco unidades, como les he ido comentando. La parte de visualización e interpretación va a ser transversal y en cada uno de los puntos la idea es que según nosotros vayamos avanzando la parte teórica y los ejercicios que hagamos en clase y en los laboratorios, en paralelo En equipos van a tener que ir desarrollando los mismos pasos, las mismas etapas de KDD, pero con sus equipos de trabajo, porque vamos a formar equipos de trabajo para la tarea académica.
+Speaker 1
+Entonces,
+Speaker 2
+trabajamos en clase, trabajan en laboratorios y en paralelo ustedes aplican lo mismo, pero con sus datos del proyecto que van a trabajar. De tal manera que en paralelo van avanzando y al final del curso no se les acumula todo y quieran en dos días aplicar todas las técnicas. Porque la idea es que en paralelo que van a ir desarrollando, van a ir obteniendo dudas y puedan realizarme preguntas a mí y a los JPs también.
+Ah, eso es un dato importante. Los JPs que están ingresando para los laboratorios, los que han ido ingresando en el transcurso de los ciclos que han pasado de este curso, son JPs que han trabajado ya o están trabajando ya con estos modelos.
+Speaker 1
+en
+Speaker 2
+alguna empresa, en alguna institución,
+Speaker 1
+y
+Speaker 2
+conozco los resultados que han obtenido y por eso tienen bastante experiencia para ir orientándolos, para orientarlos y decirles esto sí va a funcionar, esto de repente no, mejor intenta esto o hay que hacerlo de esta manera. Entonces esa también es la idea con los JPLES de aquí, que van a tener esa capacidad de dar recomendaciones porque ellos también ya han trabajado estos modelos en diferentes rubros. Ok. Entonces, esto es respecto a nuestro plan.
+Speaker 1
+No sé si hay consultas por acá. ¿Todo bien?
+Speaker 2
+Ya. Respecto al plan de trabajo. Luego, respecto a la metodología. Hice esta hipografía con las herramientas que tenemos de guía ya que nos ayudan un montón. Pero la idea es en sí que
+Speaker 1
+la
+Speaker 2
+metodología que vamos a utilizar va a ser la KDD.
+Speaker 1
+¿Cierto? Que
+Speaker 2
+ya les van mencionando desde el inicio. Con la metodología KDD vamos a estructurar todos los pasos, tanto del curso como de su proyecto que va a ser evaluado. Acá hay algunos pasos clave, pero ya luego vamos a ver los pasos completos. Luego, esta metodología KDD la van a aplicar con proyectos con datos reales. Hasta ahora, como se ha venido trabajando esto de proyectos con datos reales, Esto está relacionado directamente con la tarea académica. Entonces, esta tarea académica se trabaja en grupos, en equipos,
+Speaker 1
+y
+Speaker 2
+lo que hemos estado haciendo es que cada equipo decide los datos con los que quiere trabajar y, por ende, el objetivo al que va a ir a apuntar, ya sea clasificación, regresión o clasificación. Y algunas fuentes de las que han sacado sus datos son las que les coloco por aquí,
+Speaker 1
+pero
+Speaker 2
+cabe resaltar que para este ciclo estoy evaluando, porque sigue en evaluación, poder contar con algunas, mínimo unas, vamos a ver cómo se da porque ahorita estamos en conversaciones con eso, pero con instituciones aliadas. que nos brinden sus datos y sus problemas reales en este momento. O sea, problemas que tienen en este momento, datos que ya tienen en este momento y que sean aliados con nosotros en este curso para que nos brinden los datos y nos brinden el conocimiento del negocio, el conocimiento específico que necesitamos de ellos. O sea, que ellos sean como nuestros dueños de los datos, ¿cierto? No necesariamente nuestros product owners, pero... nuestros dueños de los datos a quienes vamos a recurrir para alguna pregunta para que nos vayan validando el proceso.
+Entonces, ya estuve en conversaciones con tres instituciones aliadas, que todavía no les voy a hacer spoiler, acá tengo como su material, todavía no les voy a hacer spoiler porque tenemos que ver si se llega a concretar. Depende mucho de los datos que tenga la institución, porque al menos estas instituciones con las que he hablado, o sea, ni bien les comenté el curso y todo, El token nos dijeron, sí, vamos a hacer, hay que trabajar. Sí, quisiéramos desarrollar esto con ustedes. Pero claro, es un proceso. Entonces, primero tenemos que ver si ellos cuentan con los datos que necesitamos para el curso. La universidad tiene que validar unas cosas y darnos la luz verde. Hay un proceso que debemos seguir en estas siguientes semanas para ver si se da. Si se da, sería un golazo, ¿cierto? Porque tendríamos datos reales.
+de problemáticas de instituciones que las tienen en este momento. O sea, hay problemáticas que se tienen en este momento de instituciones que están interesadas en que ustedes les den soluciones. Entonces, si se llega a dar de esa manera para este ciclo, cambiaría un poco la dinámica en la que hemos ido trabajando la tarea académica. Si ya la institución nos da los datos, los equipos igual se agruparían, pero ya ustedes no buscarían sus propios datos y no les asignaríamos alguno.
+Dependiendo de la cantidad de datos que tengamos y la cantidad de instituciones con las que trabajemos. Y ahí ya cambiaría un poco la dinámica. Podemos hacer que los equipos construyan modelos de acuerdo al objetivo. Y dependiendo cómo lleguemos, ya no les voy a hacer tanto spoiler porque hay que tener información clara, pero podríamos llegar a estructurar una especie de competencia al final para ver quién construye el modelo con mejor ajuste.
+Si es que llegamos a tener un solo dataset y así, entonces podría haber variaciones. Igual les tendría que confirmar eso en las siguientes semanas porque como les digo estamos en conversaciones. Pero ese sería un twist que tendría la parte de tarea académica. Eso respecto al proyecto, a los datos
+Speaker 1
+para los proyectos. ¿Qué más? Sí,
+Speaker 2
+eso. Eso es lo que se está conversando ahora. Esto ha salido como una oportunidad por, no sé si han escuchado, el Conecta RCU de la PUC. Entonces ellos conectan instituciones. con cursos de la universidad, pero hay todo un proceso que hay que seguir, evaluaciones, conversaciones, reuniones, validación de los datos, ¿cierto? Porque, claro, la institución puede tener todas las ganas y ánimos de trabajar con nosotros, pero si no tienen los datos en la estructura que necesitamos para el curso, de repente no se podría dar en esta oportunidad y sería la siguiente, pero la cosa es que está ahí, está la oportunidad y ya tenemos el interés explícito de tres instituciones
+Speaker 1
+para trabajar.
+Speaker 2
+Esas tres instituciones, como Spore les puedo decir, son instituciones del Estado, sí, son tres instituciones del Estado, pero las tres son de diferentes rubros. Son tres rubros súper diferentes, pero
+Speaker 1
+interesantes.
+Speaker 2
+Ya, esa sería la información que tengo como medio actualizada de esto. Esto sería respecto a la tarea académica. Luego, respecto a la herramienta que vamos a utilizar, vamos a programar, se ha ido trabajando en Python. Al inicio siempre les preguntaba si quieren Python, si quieren R, pero siempre gana Python, porque obviamente yo sé que más trabajan en Python. R se suele utilizar más para programación en aspectos estadísticos, pruebas de hipótesis y así, pero yo sé que vamos a ir por Python. Igual si tienen dudas con R o quieren material sobre R, también los puedo compartir porque también trabajo con R, pero vamos a trabajarlo...
+principalmente con Python. Respecto a la evaluación, tenemos esta división de los porcentajes, 30% para las prácticas que van a ser los laboratorios en sí. La tarea académica, que son estos proyectos grupales que les he comentado, serían el 30% del año total y vamos a tener exámenes, un examen obviamente del parcial y el final, y los dos exámenes van a pesar 40% del
+Speaker 1
+total.
+Speaker 2
+Entonces, esos serían los puntos clave a recordar.
+Speaker 1
+¿Qué más?
+Speaker 2
+Ahora, sobre la evaluación. Esto está en el sílabos también, pero les comento. Estas tres prácticas tipo B son laboratorios. Estaríamos teniendo tres laboratorios evaluados. Vamos a tener más laboratorios. Creo que en total van a ser seis laboratorios, si no me equivoco. Pero tres serían evaluados. Igual les voy a dar el cronograma con las fechas para que no se les pase nada, pero serían tres evaluados. La tarea académica va a ser una sola nota, pero van a ser tres entregas.
+Los avances y vamos a tener una más de avance en laboratorio.
+Speaker 1
+En
+Speaker 2
+nuestro examen parcial, el examen 1,
+Speaker 1
+Es una cosa y
+Speaker 2
+en la entrega de avance de la tarea académica es otra, que va a ser en fechas cercanas, pero son notas diferentes.
+Speaker 1
+Entonces,
+Speaker 2
+respecto a la tarea académica, que ahora les voy a explicar un poco más de detalle sobre la tarea académica, van a tener tres entregas y de las cuales van a salir estas tres notas, ¿cierto? Pero las tres, en promedio, van a tener el 30% de la nota total. Y bueno, los exámenes, que en este caso la modalidad de evaluación es dos, porque es exámenes, parcial y final. Y esa sería la fórmula para el cálculo de su nota final.
+Y eso sería respecto a las evaluaciones. Y luego, bueno, hay siempre dos temas importantes que se colocan en todos los sílabos, me parece ya, que es la de uso de IA y las políticas de plagio. Las actualizaciones que está haciendo la universidad es que cuando se permite el uso de IA generativa, lo que se pide al alumno es que declare este uso al momento de entregar sus informes o el resultado que se le esté pidiendo. Tiene que declarar el uso.
+Y hay algunas veces, dependiendo del docente, en el que se les puede pedir los prompts que han utilizado
+Speaker 1
+para los
+Speaker 2
+resultados o las ayudas
+Speaker 1
+que
+Speaker 2
+han usado con guía generativa. Entonces, es una variación que se está haciendo. Otro cambio que tenemos para este curso es que en este ciclo, según lo que estaba viendo, nos han asignado tanto para clase como para laboratorios. laboratorios, o sea, máquinas. En ciclos anteriores, por la cantidad, no se había podido conseguir laboratorio, me parece. No sé cómo fue. Pero ya este ciclo tenemos las clases en laboratorios y los laboratorios, obviamente, en laboratorio, ¿cierto? Y los exámenes también en laboratorio. ¿Por qué? Porque vamos a trabajar con Python todo el tiempo.
+Entonces, al ya tener máquinas para las clases, Ya no es necesario que lleguen sus propias máquinas si no vamos a poder ir trabajando juntos ahí. Pero claro, la idea es que trabajen en paralelo conmigo
+Speaker 1
+y
+Speaker 2
+para que vayan saliendo las dudas que tengan en clase o en laboratorios y no una semana antes de las entregas. Porque eso sí, les digo a todos mis cursos, tanto ese curso como los otros cursos que edito, Una semana antes o dos días antes de la entrega final, no hay correos, no. Todas las preguntas son durante el semestre, por algo tenemos 16 semanas para evaluar, estudiar y repasar. Pero un día antes de la entrega final, ya sea parcial o final, un día antes de la entrega de proyectos, no se puede aceptar esto de preguntas infinitas a última hora o solicitudes de reuniones la noche antes de la entrega. Esos niveles de estrés tenemos que evitar, para ustedes y para mí.
+Speaker 1
+Entonces,
+Speaker 2
+lo vamos desarrollando con calma, organizadamente todo, desde el inicio hasta el final. ¿Sí? Para no quedarnos, porque se nota mucho. En las presentaciones parciales o finales, se nota cuando el equipo ha trabajado todo la noche anterior. Porque se les pasan varias cosas importantes. preguntas que les hagan en ese momento no se les ocurrió en el momento anterior, entonces hay que evitar esas cositas para aprender sobre todo bien y las cosas interesantes que tenemos en cada uno de los temas, desarrollarlo con calma, con tiempo en las sesiones anteriores.
+Speaker 1
+Eso
+Speaker 2
+sería respecto al curso, respecto al sílabo que tenemos, tenemos también bibliografía recomendada. que se ha colocado al momento de la elaboración del sílago, que como podrán ver este sílago no se ha creado recién para este curso, es un sílago que ya se viene utilizando antes. Entonces es la bibliografía recomendada para este curso. Igual en el transcurso yo les voy a ir compartiendo algunas otras opciones de bibliografía, ya sea libros que puedan sacar de biblioteca o algunos materiales libres que se encuentren en internet que estén validados obviamente para que los puedan utilizar.
+Eso respecto al sílabos del curso y respecto a la tarea académica que como pueden recordar es el 30% de la evaluación. Esta tarea académica es un proyecto, un proyecto grupal en el que van a tener que desarrollar todas las etapas de la metodología KDD. Esa es la idea de este proyecto, de análisis de datos para desarrollar toda la metodología KDD. Como les decía, principalmente van a tener dos
+Speaker 1
+avances,
+Speaker 2
+dos entregas. Una entrega de avance, que suele ser una semana antes del parcial, y una entrega final, que también suele ser una semana antes del examen final. Porque acuérdense que las entregas son diferentes a los exámenes. Entonces tenemos esas entregas.
+Y acá les estoy colocando más o menos qué es lo que se espera. Obviamente vamos a seguir la metodología KDD. En el avance se va a entregar hasta, con prioridad, dependiendo de cómo vamos a ir avanzando, pero el primer avance se entrega hasta la propuesta de modelos que se van a desarrollar, pero todas las etapas anteriores de selección, preprocesamiento, limpieza realizadas con los datos que van a trabajar en su proyecto y algunas propuestas de modelos a desarrollar. Y ya la exposición final ya es todo, ya es la parte de propulsamiento y limpieza y ya las propuestas de modelos que hicieron en la primera etapa ya desarrolladas. Y obviamente actualizadas y ahí comentan cosas, si después cambiaron y dijeron ya nosotros propusimos estos modelos, pero luego hemos ido evaluando y han salido estos otros o adicionalmente hemos agregado, todo eso se puede hacer en la etapa final.
+Y claro, todo este desarrollo va a ser con los datos asignados para su equipo, que como les decía, vamos a ver si ustedes eligen los datos o si les llegamos a asignar datos con estas instituciones salidas. Y al final, el promedio de estas notas sería el 30%. Y algo que no está todavía acá sería la tercera evaluación, la tercera entrega, que es un avance, se realizaría... en uno de los laboratorios con los JPs. Entonces, cada JP va a tener asignada una cantidad de equipos y ellos van a evaluar el avance y les van a dar, obviamente, retroalimentación. Entonces, esa va a ser otra evaluación que vamos a tener, además de estas dos.
+Speaker 1
+Van a ser tres notas de la tarea académica.
+Speaker 2
+Otra cosa más a tener en cuenta, otros detalles más a tener en cuenta. Estos equipos idealmente se construyen con cinco integrantes, va a depender de la cantidad de inscritos, pero usualmente se manejan de cinco, cuatro o seis integrantes, dependiendo de cuántos tengamos al final. Se ha trabajado como tema libre y conjunto de datos a elección por el equipo, pero como les digo, si llegamos a tener este visto bueno y se llega a dar el tema de las instituciones aliadas, ya tendríamos datos que serían asignados a los equipos.
+¿Qué más? Tenemos que considerar todos los pasos de la metodología. Obviamente la participación tiene que ser de todos los integrantes. No se puede dar eso de que solo uno trabaja y los demás se exponen. No, tiene que ser todos. Y eso se va a ver en las reuniones que tengan conmigo para preguntarme cosas y ver a bases. Luego otra cosa que se suele manejar es este diagrama de GAN para que ustedes vayan haciendo seguimiento y vean cuánto se están demorando en cada etapa y puedan ir ajustando tiempos y viendo más o menos la realidad de este tipo de proyectos. Y la otra recomendación es que puedan registrar sus notebooks de manera ordenada.
+Esto es libre, o sea, ustedes pueden elegir si en un solo notebook trabajan todo. o si prefieren trabajar diferentes notebooks y que uno esté vinculado con el otro. O sea, un notebook me da un output y luego ese output lo uso para mi siguiente notebook, trabajo, tengo un segundo output y así. Depende de ustedes, de cómo se sientan más cómodos. Pero sí lo que les recomiendo es orden en los notebooks. Ya sea que tengan varios notebooks ordenados, numerados, o si tienen todo en una sola sábana de notebook, que es el notebook, también esté ordenado. Dentro tenga como subsecciones para yo poder ir avanzando en su notebook para ir revisando o viendo algunas cosas que se tengan que actualizar o
+Speaker 1
+verificar.
+Speaker 2
+Eso sería sobre algunas consideraciones. Y sobre, bueno, esto sería sobre el conjunto de datos en el caso que ustedes tengan que buscarlos.
+Si ustedes buscan los datos, es necesario que nos digan la fuente. Algunas veces se ha dado que algunos chicos o algunos equipos están realizando prácticas y en el lugar de prácticas les dan permiso para que usen datos. Obviamente anonimizados y así, pero ya la fuente de datos la tienen que decidir. No es que yo estoy haciendo prácticas y agarro unos datos y los trabajos no. Si quieren que sea esa figura de alguien que está haciendo prácticas o alguien que está trabajando y quiere usar datos del lugar donde está trabajando, tiene que tener el permiso explícito de su supervisor o de alguien que va a la institución. Siempre tiene que ser con permiso. Y en caso sean datos que encuentren en internet en algunos de estos repositorios, tienen que colocarme el link de donde lo sacaron y los datos descriptivos de las variables y cosas así.
+Debe ser un tema que les interese a todos para que estén motivados a desarrollarlo. Otra cosa importante es que los datos deben tener tanto variables numéricas como variables categóricas. Deben tener ambos tipos. Si tienen solo numéricas, se podría trabajar. Si tienen solo numéricas, se podría trabajar. Podríamos construir algunas categóricas. Pero si tienen solamente variables categóricas, ahí sí no se
+Speaker 1
+podría trabajar con esos datos. Necesitamos tener
+Speaker 2
+numéricas y categóricas. Solo categóricas no. Solo numéricas podría ser, pero tendríamos que transformar y compartir algunas categóricas para tener de ambas.
+Speaker 1
+¿Qué más?
+Speaker 2
+Describir el tema, bueno, el tema que se elija, en caso lo elijan, tienen que conocerlo todos o llegar a ser de interés para todos porque tienen que tener la posibilidad de decir cuál es el problema que van a solucionar con estos datos. No es solamente encontrar estos datos en internet y qué hago, sino tienen que encontrar los datos y entender de qué van los datos, cuál era el problema, cuáles son las variables, qué objetivos se quieren resolver y todo eso.
+Luego, respecto a la cantidad de filas, le he colocado acá una cantidad interesante de filas para no tener un número exacto, para no cortar posibilidades, pero eso de cantidad interesante me refiero a una cantidad que al momento que hagamos las particiones de entrenamiento, test, validación, no se reduzca mucho esos conjuntos de datos, porque se reduce mucho. aumenta nuestro error y no tenemos mucho margen de movimiento ahí. Entonces, ya iremos conversando en el transcurso del curso para evaluar posibilidades, pero sí sería interesante que tengan una cantidad considerable de filas. Tampoco les voy a pedir millones, pero ya iremos viendo las opciones que tengan para ver si son viables o no. Y les coloco algunos repositorios donde pueden sacar datos.
+pero vamos a ir viendo si se habla de las instituciones aliadas. Y como punto final tenemos las rúbricas de evaluación. Como les mencioné antes del examen parcial, la semana anterior vamos a tener la presentación de la tarea académica en avance y antes del examen final la presentación de la tarea académica en avance final o entrega final. Entonces tenemos rúbricas para esas dos exposiciones.
+Creo que esto no está en el sílabo todavía, esto es parte de la tarea académica, pero se colocaba acá algunos pesos referenciales y algunos criterios referenciales también para el avance, que igual se pueden ir ajustando según cómo vamos a ver que van a ir avanzando, pero estos serían como los puntajes máximos y de costado les vamos a poner los obtenidos y van a tener... la rúbrica con los puntajes obtenidos y al costado de cada criterio, yo les suelo colocar comentarios u observaciones. Ya sea para que lo mejoren para la siguiente entrega, en el caso del parcial, o ya si es el caso del final y todavía tuvieran observaciones, igual se los coloco para que lo tengan en cuenta ya para la
+Speaker 1
+vida, para el futuro.
+Speaker 2
+Entonces, la primera rúbrica que podrán ver... Se espera que entreguen toda la parte de selección, preprocesamiento, limpieza, transformación y que expliquen algunas propuestas de modelos, dependiendo si se están yendo por la parte de predicción o por la parte de segmentación, que sería la parte de clustering, o por la parte de clasificación. Dependiendo de las ramas, tienen que elegir. Yo siempre les pido mínimo tres modelos.
+Porque si dos empatan, ya con tres tienen el desempate, ¿cierto? Entonces, mínimo tres modelos dentro de la rama que están trabajando. No vamos a comparar clasificación con regresión y ponerlos a compartir, eso no se puede hacer. Entonces, dentro de la rama elegiríamos mínimo tres. Y como pueden ver, también se evalúa el código que van a presentar. Que esté limpio, que no se hayan saltado... Errores garrafales, ¿cierto? O sea, obviamente podemos tener errores porque estamos aprendiendo varias cosas. Algunos temas van a ser nuevos para ustedes, algunos temas de repente ya los han visto en otros cursos. Vamos a tener errores, obviamente, pero la idea es que no se nos pasen errores grandes que durante las clases yo ya les voy a poder ir.
+adelantando ¿cierto? porque en la clase yo les voy a decir por si acaso pueden confundirse en esto pero si consideran esto ya no se van a confundir o si se encuentran en esto la mejor solución es hasta para que eviten errores pero si ya incurren en errores que yo les repito y repito en la clase ya eso significa o que no me han prestado atención o
+Speaker 1
+no sé o no sé entonces
+Speaker 2
+Esa es la idea, ¿no? Que entreguen código ordenado. Obviamente pueden haber errores normales del aprendizaje, pero no errores grandes que
+Speaker 1
+ya
+Speaker 2
+les voy explicando en
+Speaker 1
+la clase.
+Speaker 2
+Y en la segunda etapa, en la entrega final, ya queremos la construcción final de mínimo tres modelos. Si quieren hacer más, lo pueden hacer, no hay problema, pero mínimo tres modelos. Y le vamos a dar énfasis a la presentación que van a realizar, la presentación ejecutiva, y a todos los resultados que pueden ir sacando, ya las interpretaciones, recomendaciones ya aplicadas a la temática. Si llegamos a tener el visto bueno de la colaboración estratégica con instituciones,
+esta exposición final. o podría ser una final de la final, ahí tendríamos que ver de acuerdo a las conclusiones que hayan, sería directamente con alguno, si hay uno o más, de los representantes de esta institución. Sería ya una presentación ejecutiva, pero ya con alguien de la institución que les puede hacer preguntas desde el punto de vista de usuario, quizás. Sería algo muy interesante. Si lo llevamos a estructurar como equipos que van a construir y el mejor modelo se va a quedar para la entrega al usuario, en estas exposiciones previas también para la comparación o como una competencia en equipos, también se podría contar de acuerdo a la disponibilidad de las instituciones con algún representante para que nos vaya dando feedback.
+viendo si está entendiendo lo que estamos haciendo o alguna recomendación que nos dé. ¿Qué es lo que usualmente se hace en estos proyectos de análisis de datos o de ciencia de datos en general? Siempre necesitamos de un mínimo un experto en el tema para que nos dé este feedback que tenemos, porque claro, nosotros podemos saber mucho de modelos, mucha estadística y todo,
+Speaker 1
+pero...
+Speaker 2
+La expertise en el tema la tiene siempre alguien del negocio, de la institución. Entonces necesitamos trabajar de la mano con ellos para que nos vayan validando paso a paso y no al final cuando les entreguemos el resultado nos digan, no, ya acá es lo que has hecho, pero no me sirve. Entonces imagínense toda la chamba para que luego digan, no, no voy a usar tu resultado porque no lo quería así, lo quería de otra manera. Entonces necesitamos siempre la validación en el transcurso.
+Entonces, esto sería respecto a las rúbricas de evaluación de la tarea académica. Y me parece que eso sería todo. No sé si tienen preguntas.
+Speaker 1
+Voy a ver
+Speaker 2
+el chat. Me dicen, es como estadística. Ay, perdón, no vi
+Speaker 1
+en qué momento fue esto.
+Speaker 2
+Es como estadística. Hay una pregunta aquí, pero no sé a qué se refería. La persona que me preguntó esto de es como estadística, ¿a qué se refiere como es como estadística? Por favor, un poquito de contexto para saber. Esta siguiente pregunta, ¿los integrantes de los grupos son a libre elección? Suelo dar dos bloques de tiempo. Una fecha, un deadline, para que los que quieren agruparse me den su lista, su lista de integrantes. Pero tengo un segundo deadline que si no llegaron a agruparse porque se olvidaron o porque son nuevos en el curso y no se conocen, yo los agrupo también. Y les doy la lista final después de pasar los dos deadlines. Entonces se puede manejar de ambos, de ambos aspectos.
+para dos intereses, ¿no? Si ya tienen su equipo con el que quieren trabajar y siempre trabajan, bueno, pueden hacerlo. Pero si de repente quieren entrar al curso y conocer gente nueva de otras especialidades y quieren entrar así, para que yo los agrupe y los agrupe de diferentes especialidades y diferentes perfiles, también se quedan sin elegir grupo en la primera etapa y en la segunda yo los agrupo todos los que queden libres, ¿no?
+Speaker 1
+Trabajamos de esas dos maneras. ¿Qué más? ¿Va enfocado
+Speaker 2
+en parte a Data Analytics solamente o
+Speaker 1
+parte de Data Science?
+Speaker 2
+Sí, más lo enfocamos en la parte de Data Science, que igual saben que todo esto Data Analytics, Data Science, está relacionado en sí, ¿cierto? Tiene sus diferencias, pero sí, lo enfocamos hacia los perfiles de ciencia de datos. Pero, claro, eso no nos limita a poder ver otros aspectos, ¿no? Porque... O sea, en sí, la ciencia es en general una sola.
+Las diferencias con estos nombres es que se les da más peso en una parte, más peso en la otra, pero durante las clases, durante las sesiones, si tienen dudas en algunos aspectos, me pueden realizar las preguntas, yo les puedo comentar experiencias en estos lugares donde he trabajado, experiencias de todos estos aspectos. Entonces, igual les podemos conversar, pero claro. Ya para la parte de evaluación y la parte de desarrollo de las temáticas, sí tenemos que ceñirnos en el programa analítico del sílabos. Pero claro, eso no nos impide que en la clase podamos hablar de algún otro tema extra que salga, que obviamente está relacionado con nuestro curso.
+Speaker 1
+¿Qué más? Una pregunta.
+Speaker 2
+¿Los labs dirigidos sin nota en qué consisten? ¿Se usará Power BI?
+Speaker 1
+Ya, los labs que
+Speaker 2
+no son con nota, que serían como dirigidas. Hay tres laboratorios que son con nota, pero los otros laboratorios que son sin nota serían como dirigidas. Ustedes van a estar en el laboratorio, los JPs van a llevar, van a mostrarles ejercicios de los temas que se han ido desarrollando, les van a dar tiempo para que ustedes propongan sus resultados y luego ellos les van a hacer seguimiento o les van a dar recomendaciones de cómo se desarrollarían cada una de las preguntas para prepararlos para el examen final y el examen parcial. Estos laboratorios calificados serían como las calificadas, ¿cierto? Y los no calificados serían como dirigidas que los preparan o bien para los laboratorios calificados o bien para el examen final o el parcial. Esa sería la metodología. Serían como dirigidas ejercicios
+Speaker 1
+que
+Speaker 2
+los JPs van a ir dando las recomendaciones de solución. En cambio, la calificada solo se les da la pregunta si ustedes tienen que dar la solución. Esa sería la diferencia, como las calificadas y las dirigidas. Eso respecto a los laboratorios.
+Speaker 1
+¿Qué más? Encuesta de satisfacción. Luego...
+Speaker 2
+¿Se va a ver estadística bayesiana dentro del curso? Ah, bayesiana, no, no tenemos bayesiana, no tenemos bayesiana en nuestros sílabos. Podríamos tratar de darle un poco de tiempo de repente en la parte de modelos, la parte de modelos de regresión, podemos ver si entraría algún bayesiano ahí,
+Speaker 1
+pero no es un tema de
+Speaker 2
+nuestros sílabos. Por ejemplo, los temas,
+Speaker 1
+los voy a colocar acá.
+Speaker 2
+Los temas que se van a abarcar son estos, son todos los que están aquí, estas cinco unidades. Entonces, temas vallesianos no tendríamos en realidad aquí. Hay un electivo, me parece, en estadística, que sí es estadística vallesiana, y hay un curso de estadística vallesiana en la maestría estadística también, que lo ven a profundidad. Aquí no estaría contemplado, pero podríamos ver si podríamos, dependiendo de cómo avanzamos. ¿Se puede dar un espacio a regresiones para ver alguna bayesiana ahí? Como una idea nada más, ¿no? Pero sí, no estaría
+Speaker 1
+en todo la planificación. ¿Veo qué más? Creo que esas serían las preguntas.
+Speaker 2
+Aparte de KDD, ¿cuáles son
+Speaker 1
+las otras metodologías que
+Speaker 2
+usan las empresas? Ah, ya. Bueno, en el curso igual lo vamos a ver con detalle, pero hay otra que se llama CRISP-DM, no sé si la han escuchado, que también es bastante utilizada. Que al momento que las comparemos y veamos, van a ver que tienen muchas cosas en común. O sea, por eso es que se ha elegido esta KDD. Bueno, esta metodología KDD...
+Ya la propusieron para este curso, no es que yo la elegí, o sea, cuando ya yo lo dictaba ya estaba cada vez seleccionada. Y entiendo que sea seleccionado porque es una de las que le da más profundidad a los... bloques de la metodología, pero en el momento que se compara con CRISDM o con alguna otra más, vamos a ver que tiene muchas cosas en común, si no es el 100% en común. Solo que las otras metodologías lo agrupan de manera diferente, les dan unos nombres diferentes, pero es lo mismo en realidad.
+Speaker 1
+Siempre es desde la
+Speaker 2
+recolección de datos, preprocesamiento, transformación, minería, presentación. Entonces, si ya manejan, llegan a manejar KDD, si en el lugar donde hagan prácticas o trabajen, cambian la metodología, no es un cambio drástico, porque si ustedes ya manejan esto, las otras solamente se adaptan a los bloques, a los pasos, y es lo mismo, las mismas ideas son. Entonces no son cambios muy
+Speaker 1
+radicales, nada radicales en realidad.
+Speaker 2
+Son solo cambios de nombre, cambios de agrupamiento, pero la esencia de estos pasos están en todas las otras metodologías.
+Speaker 1
+Ok, eso es sobre las metodologías.
+Speaker 2
+En esa línea, ¿qué cursos de estadística recomienda para profundizar en una línea de
+Speaker 1
+carrera de ciencia de datos?
+Speaker 2
+Ah, ya, ¿qué cursos de estadística de
+Speaker 1
+la
+Speaker 2
+universidad o cursos en general? Porque sí, hay un montón. Por ejemplo, ¿en estadística o cursos de la carrera de estadística? Creo que, no sé si hay. varios ahorita en oferta. Pero bueno, en sí, si se refieren a estadística, estadística, les podría decir, si pueden todos, todos los que se puedan,
+Speaker 1
+pero
+Speaker 2
+claro, yo sé que hay temas de tiempos, tienen otros cursos y otras cosas, pero si ya se enfocan en una línea de ciencia y datos de aquí hasta el futuro,
+Speaker 1
+yo
+Speaker 2
+les diría primero la parte de... que igual les voy a hacer un refresh. Siempre arranco la parte de preprocesamiento con un refresh de estadística. Entonces, en estadística, lo esencial, esencial para análisis de datos son tipos de variables,
+Speaker 1
+métricas
+Speaker 2
+de diferentes tipos, porque hay métricas de diferentes tipos, pero todo esto es estadística descriptiva. Es un curso de estadística que suele haber. El curso de estadística descriptiva... Sería como la base de todo, estadística descriptiva. Después de esa estadística,
+Speaker 1
+tenemos
+Speaker 2
+la estadística inferencial.
+Speaker 1
+Entonces,
+Speaker 2
+dentro de nuestra estadística inferencial, podemos abrir... Dos ramas, quizás. En este caso, de la estadística inferencial, nosotros nos interesa la parte predictiva, la parte de construcción de modelos. En estadística se ven los modelos en esencia que se ven son los de regresión. Primero el de regresión lineal simple y luego el de regresión lineal múltiple. Es la base para todos los modelos de regresión que podemos ver acá, por ejemplo, en la unidad 4.
+Speaker 1
+Entonces...
+Speaker 2
+la parte diferencial en la parte de modelos de regresión. Saber bien bien las bases de esos modelos nos ayudan a luego poder surfear en todas las opciones de regresiones que vamos a tener, que van a ver que hay un montón de regresiones en realidad. Pero la esencia son la simple y la múltiple, que como les decía, la regresión simple y múltiple son las bases también para las redes neuronales. No sé si lo han llegado a ver. Pero cuando ven... La base, la unidad más indivisible de una red neuronal es una regresión prácticamente. Entonces, si ya manejan la idea de regresiones y las variaciones y consideraciones en regresión, ya pueden surgir en el resto del universo de esas regresiones. Luego también en la parte diferencial tenemos todo lo que es prueba de hipótesis, intervalos de confianza, que es un curso aparte a veces.
+que tiene también su profundidad y sus cosas interesantes, para esta parte de ciencia de datos no es muy usual aplicar pruebas de hipótesis, no es muy usual, siempre es como el modelo y ya,
+Speaker 1
+pero
+Speaker 2
+me ha tocado veces en las que si bien no es necesario plantear la hipótesis, y hacer todo el proceso, sí es necesario entender el resultado de un planteamiento de hipótesis, que esto ya está más relacionado a, por ejemplo, cuando van a leer papers y quieren entender los resultados. Cuando van a ver papers, siempre hay resultados que se interpretan con algunos resultados de prueba de hipótesis, temas de intervalos de confianza, el tema del p-value, por ejemplo. Entonces, por ejemplo, dentro de la regresión, cuando tenemos nuestro resultado final, Hay unas columnas en la tabla de resultados de todos nuestros coeficientes de regresión. Hay unas columnas con p-value. No sé si han llegado a ver, sino igual lo vamos a ver acá. Pero hay p-value, hay estadístico de confianza y unas cositas más. Intervalo de confianza también para los coeficientes de regresión. Entonces, ese cuadrito nada más, que a veces se reporta en papers, ese cuadrito para entender estas dos columnas necesito prueba de hipótesis, por ejemplo. No necesito para todo mi trayecto, pero para entender ese cuadrito y poder tener más de dónde interpretarlo, prueba de hipótesis de estadística inferencial me sirve un montón ahí.
+Speaker 1
+Entonces,
+Speaker 2
+esos temas de estadística yo los recomendaría. Y lo otro en la parte de estadística es la parte de representación, la parte gráfica, ¿no? Gráfica, estadística. Igual yo también les voy a comentar acá algún resumen de los mejores gráficos de acuerdo al tipo de variables. Entonces, en estadística, el tipo de variable es muy importante para que cuando vengan y trabajen con datos, digan ya, estos datos son numéricos, estos son cualitativos. Dentro, los subtipos de datos son estos. Entonces, mis tratamientos, tanto de transformación de datos como preprocesamiento, van a cambiar de acuerdo al tipo de dato que tengo. No a todos le puedo aplicar el mismo... El mismo pipeline de preprocesamiento. Tengo que variarlo de acuerdo al tipo de datos. ¿Y dónde vemos tipos de variables, tipos de datos? En estadística también. Igual en programación también sé que diferencian tipos de datos y así, pero en estadística vemos bastante tipos de datos y modelos de acuerdo al tipo de datos, gráficas de acuerdo al tipo de datos. Eso sería respecto a estadística. Y luego, ¿qué más? Esos serían los esenciales de estadística para... para tener más herramientas. Igual en el curso les voy a ir comentando cositas, pero si quieren material, igual si no se llegan a inscribir al curso, pero quieren material de estadística o alguna referencia, igual me pueden escribir el correo y les puedo compartir algo de
+Speaker 1
+eso también.
+Speaker 2
+Luego, ¿qué más en esa línea? Ya, me parece que no hay más consultas. Sí, no veo más. No sé si tienen alguna otra duda. O hasta ahí estamos bien. Sí, eso sería por mi lado.
+Speaker 1
+No sé qué dicen, chicos. Muchas gracias, profesora, por su tiempo. Ha sido muy grato compartir con usted y que nos pueda absorber un montón de dudas. Nos vamos más tranquilos con este curso. Muchísimas gracias.
+Speaker 2
+Gracias, gracias, chicos. Si tienen ahí mi correo para cualquier duda sobre estos temas, me avisan.
+Speaker 1
+Con gusto.
+Speaker 2
+Nos vemos entonces pronto.
+Speaker 1
+Gracias.
