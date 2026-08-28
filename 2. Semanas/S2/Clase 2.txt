@@ -1,11 +1,250 @@
-. {
-	. {
-		. 
+MEDIDAS CUALITATIVAS{
+	. Razon: Cero absoluto
+	
+	. Medidas de reumen: Frecuencia, proporcion, porcentaje y moda
+}
+
+. MEDIDAS CUANTITATIVAS{
+	. Se describe bien una variable con medidas de tendencia central y de dispersion
+	. Un plus es con las 4 tipos y un grafico
+	
+	. Se tiene que elegir las medidas que sean compatibles
+	. MATCH{
+		. Media con Desviacion Estandard
+		. Mediana con Rango Intercuantil
+	}
+	
+	. DE TENDENCIA CENTRAL{
+		. Me da la informacion de centro y posicion
+		. Mediana{
+			. Independientemente de la simetria separa el 50%
+			
+			. Tienes una columna y ¿que haces? la ordenas de mayor a menor y buscas la posicion de medio
+			. Cantidad par: Promedio de las 2 centrales
+			. Cantidad impar: Es ese valor
+		}
+		. Media{
+			. Punto de equilibrio de la distribucion
+		}
+		. Moda{
+			. Es el punto mas alto
+		}
+		
+		. Distribucion normal donde las 3 metricas son iguales
+		
+	}
+	. DE DISPERSION{
+		. Que tanto se alejan los datos de un punto y entre si mismo
+		. Son complementarias a las de tendencia central
+		. CUANTILES{
+
+		. Cuartiles: Q{
+			. Si el dato es 100%, se divide en 4 partes iguales
+			. El cuartil es la linea que divide
+			. Hay 4 cuartiles: Q1, Q2, Q3, Q4
+			. Q_2: Mediana
+			. Cuartil 2 = Decil 5 = Percentil 50
+		}
+		. Deciles{
+			. Hay 9 deciles
+			. Decil 5: D_5
+		}
+		. Percentiles{
+			. Hay 99 percentiles
+			. Percentil 50: P_50
+		}
+		}
+		
+		. VARIABILIDAD{
+			. ICR: Rango Intercuantil{
+				. Es el rango del 50% central de mis datos
+			}
+			. Varianza{
+				. Se esta sumando distancias entre "n" que se entiende como un promedio
+				. Es el promedio de las distancias al cuadrado
+			}
+			. Desviacion estandard{
+				. Es el promedio de las distancias de los puntos respecto a la media
+				. Te dice que tanto se alejan los datos entre la media
+				
+				. Probabilidad{
+					. mu = (sumatoria de x de la poblacion) / n
+					. sigma = (algo) / n
+					. sigma^2 = (algo)^2 / n
+				}
+				. Muestra{
+					. x_ = (sumatoria de x) / n
+					. sigma = (algo) / (n-1)
+					. sigma^2 = (algo)^2 / (n-1)
+					
+					. Es "n-1" para que sea insesgado el estimador converja hacia el nivel poblacional
+				}
+			}
+			
+			. EJEMPLO{
+				. Media: x_=22 años
+				. Desviacion estandard: s=2 años <- Metrica como resumen para explicar informacion
+				. Varianza: s=4 años^2
+			}
+			
+			. Coeficiente de variacion: CV(x){
+				. La desviacion estandard cuanto representa de la propia media
+				
+				. Esto me sirve para comparar variables de interes
+				
+				. ¿Como comparo "años" con "soles"?{
+					. Z{
+						. x_=15 mil soles
+						. s=780 soles
+						. CV=0.052
+					}
+					. Y{
+						. x_=22 años
+						. s=3 años
+						. CV=0.136
+					}
+					. Compara las variables y dime cual tiene mas dispersion
+					. s_Z > s_Y => Es erroneo decir que s_1 tiene mas dispersion que s_2
+					
+					. Se elimina las unidades de medida{
+						. Se puede medir tmb variables con la misma unidad de medida, pero diferente media porque tienen diferentes muestras
+						. CV_Z<CV_Y => Y tiene mas dispersion
+					}
+				}
+			}
+		}
+	}
+	. DE ASIMETRIA{
+		. Ve asimetria horizontal
+		
+		. Las 3 marias
+		
+		. Simetrica{
+			. AS=0
+		}
+		. Asimetria negativa{
+			. Se deforma o estira hacia el infinito negativo
+			. AS<0
+		}
+		. Asimetria positiva{
+			. Se deforma o estira hacia el infinito positivo
+			. AS>0
+		}
+
+		. La media es la mas sencible a estimulos atipicos o externos porque se mueve un monton
+		. La moda le da la contra al lado de deformacion
+		. La mediana se mueve poco, por lo que es la medida de resumen mas robusta a datos atipicos
+		. De esta manera, eliges que datos son atipicos o no
+		
+		. Modelo que detecta anomalias: Diagrama de cajas{
+			. Cuando la distribucion es asimetrica, conviene encontrar atipicos con la mediana que me llevara al Diagrama de cajas
+			. Pero la mediana funciona bien para ambos casos
+			
+			. Si llena mas de una cantidad, saca algo
+			. Los umbrales para atipicos  se determinan con la media y mediana con sus respectivo complemento de dispersion
+			
+			. "Linea de guia" o umbral teorico
+			. Si me quiero mover a la izquierda, mi referencia es Q1: Q1 - 1.5*RIC
+			. Si me quiero mover a la derecha, mi referencia es Q3: Q3 + 1.5*RIC
+			. Son teoricos porque los tengo que ajustar a la realidad de los datos
+			. El diagrama de cajas se ajusta
+			. El limite izquierdo teorico lo ajusto hasta encontrar un valor real a la derecha
+			. El limite derechi teorico lo ajusto hasta encontrar un valor real a la izquierda
+			
+			. Sistema de alertas: Todos los registros que pasan por el diagrama de cajas{
+				. Para encontrar los datos atipicos, se obtiene aquellos que estan fuera del limite real
+			}
+		}
+		. Modelo que detecta anomalias: Normal{
+			. Cuando la distribucion es simetrica, conviene encontrar atipicos con la media que me llevara a la Normal
+			
+			. x_
+			. x_ - 3*s <- Limite inferios
+			. x_ + 3*s <- Limite superior
+		}
+
+		. ¿Cual es el mejor metodo para mis variables?
+		. A veces hay formulas que usan la media o mediana asi que va a depender si la variable es simetrica o asimetrica
+	}
+	. DE APUNTAMIENTO{
+		. Ve asimetria vertical u hortogonal para arriba o abajo
+		
+		. Tipos de curtica
+		. Platicurtica{
+			. Si de la normal, la aplasto
+		}
 	}
 }
 
-. {
-	. {
-		. 
+. STEP 3: Limpiar datos{
+	. DATOS DUPLICADOS{
+		. Duplicados parciales: Solo elimina si tienen el mismo valor en ID y fecha
+	}
+	. DATOS VACIOS{
+		. " ": A veces significa una categoria nueva
+		. Si no tiene interpretacion, las paso a NaN
+	}
+	. OJO{
+		. Hay que entender porque hay vacios, por lo que no hay que tratarlos de la misma manera
+	}
+	. DATOS FALTANTES{
+		. MCAR: Completamente aleatorios{
+			. No hay una explicacion para esos datos
+			. Los completamente aleatorios son random
+			. No hay preocupacion
+			. No hay patron ni en filas ni columnas
+			
+			. Preguntar al Ingeniero de Datos el porque de esos aleatorios
+			. Puede que fallo el instrumento de medicion
+			. ¿Que hacemos?{
+				. Imputacion simple o univariada: Imputamos media o mediana o moda
+			}
+		}
+		. MAR{
+			. Hay poca preocupacion
+			. Un vacio puede depender de otras variables que explican el vacio
+			. El vacio es random si la veo a ella sola
+			
+			. Tenemos una columna con vacios que dependen de otras 4 columnas que estan completas
+			
+			. ¿Que hacemos?{
+				. Variable flag{
+					. Creo una nueva columna con 0s y 1s que reemplace a la columna con vacios
+					. Es informativo para no perder la columna
+				}
+				
+				. Imputacion condicional{
+					. Imputacion de una respecto a otra
+				}
+				. Imputacion multivariada{
+					. Usaremos varias variables para la imputacion
+					
+					. Modelos predictivos{
+						. Si el vacio es categorica, uso modelos predictivos categoricos
+						. KNN-imputer
+					}
+				}
+				. Modelos bayesianos o EM
+			}
+		}
+		. MNAR{
+			. Hay mucha preocupacion
+			. Que falte el dato si depende de su propio valor, por lo que no hay forma de recuperarlo => No se puede hacer nada
+			
+			. El vacio depende de si mismo
+			. EJEMPLO{
+				. Debido a que tiene menor edad, no me da sus datos
+			}
+			. ¿Que hacemos?{
+				. Columna flag{
+					. Creo una nueva columna con 0s y 1s que reemplace a la columna con vacios
+					. Es informativo para no perder la columna
+				}
+			
+				. Recuperar valores de fuentes externas
+				. Heckman imputation
+				. Mejorar mecanismos de recoleccion de datos
+			}
+		}
 	}
 }
