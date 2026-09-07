@@ -1,11 +1,163 @@
-. {
-	. {
-		. 
+. Se ve el grafico de la distribucion normal en tratamiento de vacios y atipicos
+
+. DATOS ATIPICOS{
+	. Simulacion de outlier value{
+		. Regresion lineal: Describir el comportamiento de los datos
+		. La existencia de atipicos sí evidencia el efecto en una regresion lineal
+		. Se tiene que descubrir el atipico porque sino el modelo esta sesgado
+		. Cuando es multivariado no es muy evidente si el modelo esta sesgado
+	}
+	. OPCIONES DE TRATAMENTO PARA DATOS ATIPICOS{
+		. Trimming: Eliminar los atipicos
+		. Capping{
+			. En el grafico, si veo X, no hay atipicos
+			. En el grafico, si veo Y, hay un dato muy alto
+			
+			. Corte: En Y, se establece el limite inferior y superior de datos normales
+			. Reasigno: Borro el dato anterior en Y y lo reasigno en el limite superior
+			
+			. La idea del capping es disimular el atipico, por lo que no puedo hacer esto muchas veces
+			
+			. Analizo el grafico del antes y grafico del despues, y si veo que el comportamiento ha cambiado se cambia de tratamiento
+			
+			. Capping with IQR{
+				. Se tiene los limites teoricos que se reajustan hasta encontrar un valor real
+				
+				. ¿Por que 1.5 o 3?{
+					. Distribucion normal estandard{
+						. mu=0
+						. varianza=1
+						. Eje X se llama Z
+						. Lo que esta como probabilidad es un area que esta desde la izquierda hasta Z_0
+						
+						. Tabla de Z{
+							. Cada columa es el centesimo
+							. Cada fila es el decimo
+						}
+						. 1.5 casi llega al 95%
+						. 3.0 casi llega al 99%
+						
+						. Mediana: +-1.5 => P(Z=1.5)-P(Z=-1.5) => Abarca el 95%
+						. Media: +-3 => Recontra atipicos porque estan fuera del 99%
+					}
+				}
+				. ¿Cual uso?{
+					. Diagrama de cajas{
+						. La mediana es robusta
+						. Sirve para las asimetricas
+					}
+					. Z-score{
+						. Sirve para las simetricas
+						. La media es sensible en la asimetria
+					}
+				}
+			}
+		}
+		. Imputation{
+			. Univariado
+			. Variada
+			. Multivariada
+			
+			. KNN{
+				. Es iterativo
+				. Va de fila en fila
+				. En una fila, identifica el bastante
+				. Identifica la columna
+				. Va a imputar un valor sin considerar los vacios
+			}
+			. Miss Forest{
+				. Modelo
+			}
+		}
+		. Transformation{
+			. Transformaciones de logaritmo
+			
+			. Atipico teorico{
+				. Establezco mis limites y el atipico sale de los limites
+				. No siempre se eliminan atipicos que estan en un extremo porque son observaciones con sentido
+			}
+			. Se aplica el logaritmo
+			. Todos las observaciones que estaban en un extremo se acercan mas
+			. Si se hace prediccion, se predice el logaritmo asi que se tiene que sacar la inversa para encontrar recien el valor de Y por si me interesa
+			
+			. Cuando transformo Y, no es lo mismo que transformar X
+			. Comparo entre modelos con X normal y X transformada
+			. Si se transforma Y, se mantiene hasta el final
+			
+			. Normalizar{
+				. Puede ser normal y con media 20, etc
+				
+				. Normalizacion: Min-Max scaler
+				. La variable puede estar dispersa y tener un rango
+				. Al normalizar la variable el rango pasa de 0 a 1
+				. La normalizacion hace cortes
+				. Si una variable tenia demasiada compresion, la comprime
+				
+				. La usaras dependiendo de los objetivos{
+					. Modelos que se basan en distancias
+					. Se usa para variables que estan en rangos
+					
+					. No me sirve cuando quiero mantener la variabilidad
+				}
+			}
+			. Standarizar{
+				. Solo ella usa la Normal Estandard de media 0 y varianza 1
+				
+				. Se transforma a la normal estandard para variables con diferentes unidades de medida
+				. Dataset{
+					. ID
+					. X_1: Millones de soles -> Tiene su propia distribucion y media=7millones
+					. X_2: Años de edad -> Tiene su propia distribucion y media=22años
+				
+					. La estandarizacion me permite que estas variables que no siguen una distribucion normal 
+					
+					. Propiedad{
+						. Si tengo una variable original X que tiene cualquier distribucion, pero conozco su media y desviacion estandard
+						. Se puede hacer una nueva distribucion Z=(X-X_)/s
+					}
+					
+					. X_1 => Z_1 con media 0 y varianza 1
+					. X_2 => Z_2 con media 0 y varianza 1
+					
+					. Puedo centrar las distribuciones con medias en 0
+					
+					. Cuando construyo un modelo con variables centradas en 0, puedo ver que variable influye mas en Y (se puede comparar Z_1 y Z_2)
+				}
+				. La normal estandar tiene un centro 0
+				. La desviacion estandard no te dice ni el limite inferior ni superior
+				. La desviacion estandard es una unidad de medida y no un corte
+				
+				. El dato la centra, pero no la corta
+				. De 1 desviacion estandard hay el 70% aprox de los datos
+				
+				. La usaras dependiendo de los objetivos{
+					. Mantiene la informacion de la variabilidad y la dejo ser
+				}
+			}
+
+			. Si no te desides{
+				. Modelo 1: Variable X original
+				. Modelo 2 y 3: Uso el X_1 normalizado y el X_2 estandarizado
+				
+				. Como voy a predecir en todos sobre el logaritmo de Y
+				
+				. Se compara escenarios
+			}
+		}
+	}
+	
+	. How to handle outliers{
+		. Flag
 	}
 }
 
-. {
-	. {
-		. 
-	}
+. OUT PUT: Reporte de pro-procesamiento
+
+. PYTHON{
+	. string != objecto != categorical
 }
+
+. Si se aplica tratamiento de manera masiva, ya se ha analizado antes variable por variable
+
+. Si veo que una variable tiene un atipico me hace entender que en otros lados tenga el mismo atipico
+. Sin embargo, no todos son datos atipicos
