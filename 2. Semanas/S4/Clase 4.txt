@@ -1,11 +1,54 @@
-. {
-	. {
+. STEP 4: TRANSFORMACIONES{
+	. Analisis Factorial Exploratorio{
+		. Originales
 		. 
 	}
-}
-
-. {
-	. {
-		. 
+	. ANALISIS DE COMPONENTES PRINCIPALES (PCA){
+		. Tienen un metodo mas general y simplificado
+		. Reduce las dimensiones en columnas
+		. Regresion{
+			. Multiconealidad
+			. De Y respecto a X, siempre se espera correlacion
+		}
+		. PCA no espera correlacion entre Y e X, pero que pasa si X_1 y X_2 estan correlacionadas
+		. Estas 2 componentes principales pueden ser reemplazadas por un W
+		. Esto medara para obtener un nuevo modelo
+		. LA DIMENSION IDEAL{
+			. Se quiere encontrar el angulo de la dimension fantasma con el menor error
+			. Coeficiente de correlacion: Mide el buen ajuste entre 2
+			. R^2 (Coeficiente de determinación){
+				. Buen ajuste de una regresion lineal
+				. Es la variabilidad que explica el modelo respecto al total
+			}
+			. ESTIMACION{
+				. estimador_a
+				. estimador_b
+			}
+		}
+		. AUTOVECTORES{
+			. Nos dice la direccion
+		}
+		. AUTOVALORES{
+			. Valores de la variabilidad de cada una de las componentes
+			. Matrices de varianzas y covarianzas
+			
+			. La suma de la variabilidad de las originales es igual a la suma de variabilidad de las finales
+		}
+		. R^2 acumula la variabilidad
+		. Variabilidad de cada componente respecto a la variabilidad total
+		. Me quedo con el PCA si el primer componente tiene alta variabilidad, sino descarto el PCA
+		. GRAFICO DE CODO{
+			. Si no veo el codo, la componente principal no es importante
+			
+			. Punto de inflexion: Para elegir la cantidad de dimensiones
+			
+			. De la variabilidad total, se puede aceptar perder 15%
+			. Se debe identificar cuanta perdida de informacion hay
+		}
+	}
+	. OUT PUT{
+		. Se pierde interpretabilidad
+		. Se reduce las dimensiones sobre los que considero
+		. Uno las columnas nuevas y las antiguas que no se modifican
 	}
 }

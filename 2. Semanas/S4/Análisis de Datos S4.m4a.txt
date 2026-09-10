@@ -1,0 +1,749 @@
+# Analisis de Datos S4
+
+  Meeting started: 9/9/2026, 6:30:05 p. m.
+  Duration: 136 minutes
+  Participants: Speaker, Speaker 1, Speaker 2, Speaker 3
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/k8uiEucK4Xzf3cz1m5Vg?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Speaker 1: de coordinación, sobre todo practicar los datos en
+00:04 Speaker 2: los que van a trabajar y ver que las variables
+00:07 Speaker 1: sean útiles, ¿cierto?, para poder modelar. Ahora,
+00:10 Speaker 2: la institución pertenece a la
+00:13 Speaker 1: beneficencia de Lima, como es
+00:15 Speaker 2: un proyecto que se desarrolló la oficina de R2. responsabilidad social universitaria,
+00:25 Speaker 1: se suelen trabajar con
+00:28 Speaker 3: entidades estatales.
+00:30 Speaker 1: ¿Es cierto? Porque generalmente las entidades públicas,
+00:33 Speaker 2: las entidades
+00:34 Speaker 1: privadas, tienen sus propios recursos para contratar profesionales. En
+00:40 Speaker 3: este caso,
+00:43 Speaker 1: RSU trabaja con entidades del Estado, nuestra entidad pertenece a la beneficencia de Lima.
+00:49 Speaker 2: y es el Policultorio Pérez Saraníba.
+00:52 Speaker 1: ¿Han escuchado por él?
+00:54 Speaker 3: ¿Sobre esta institución?
+00:56 Speaker 1: Si quieren la pueden enviar.
+00:59 Speaker 2: El Policultorio Pérez Saraníba tiene una cantidad de existencia.
+01:04 Speaker 3: Su
+01:05 Speaker 1: función principal, bueno ya la gente cuando venga de la misma institución no va a tocar, pero... La función principal del puricultorio es albergar a niños, niñas y adolescentes, generalmente de 0 hasta los 18 años. Y tienen entonces datos sobre estos niños, sobre esta población. Generalmente es una población vulnerable. Todos niños y adolescentes han llegado a esta institución debido a que en sus familias, las familias de procedencia,
+01:35 Speaker 3: por determinados, por
+01:37 Speaker 1: determinados problemas, cosas que pueden haber en las familias, problemas de los padres o de los hijos. Existen determinadas denuncias en cosas legales por las cuales los padres
+01:56 Speaker 3: pierden la custodia de los hijos. A los
+01:59 Speaker 1: niños que quedan desprotegidos pasan al cuidado del policultorio y ellos los albergen. Obviamente los tienen divididos por edades y todo eso. Y el objetivo en sí es que el policultorio y el albergen les brinde los servicios necesarios. educación, asistencia
+02:20 Speaker 2: psicológica y todo,
+02:22 Speaker 1: esperando a que los temas legales de los padres se solucionen y los niños puedan regresar. Hay algunos casos en donde esa realización de los niños no se dan y los niños se quedan en el jorecultorio hasta que cumplen los 18 años. Cuando cumplen los 18 años, hay que hacer que ellos les ayudan a poder insertarse laboralmente y bueno, ahí termina el laboratorio. En algunos casos se reintegra un hijo de ella y
+02:50 Speaker 2: en algunos casos no y tiene que ser un pan
+02:53 Speaker 3: efectivo.
+02:56 Speaker 1: Entonces el público que tiene datos
+02:58 Speaker 3: de estos niños.
+03:01 Speaker 1: De diferentes nombres de edad, seguro que me han contado, tienen datos de ellos, de una especie de ficha, historia, como una historia con la que tienen. Luego tienen datos de temas nutricionales de ellos, temas de medicación, temas psicológicos. Prácticamente me hablan de la salud, la parte médica, nutricional, que es la parte, datos psicológicos también de los niños y
+03:27 Speaker 3: muchos de los niños.
+03:31 Speaker 1: Entonces, lo que nos han indicado es que trabajaremos con su dato y ellos nos van a explicar qué es lo que esperarían que les entreguemos. ¿Cómo tienen
+04:03 Speaker 2: sus datos registrados? Porque de eso va a depender si
+04:07 Speaker 1: de repente también
+04:08 Speaker 2: tendríamos... una tarea extra previa de estructurar la data bonito.
+04:14 Speaker 1: O sea, ellos lo tienen en archivos, pero esos archivos no son directamente analizables. A lo que me refiero es que no están en filas y columnas. Por ahí he visto un poco algunos archivos que me han mostrado. como vista previa, y no son estructuras, filas y columnas de frente para modelar. Entonces, esos archivos tenemos que estructurarlos en filas y columnas y luego pasarlos.
+04:35 Speaker 2: En teoría, ellos me han entendido y
+04:37 Speaker 1: hemos quedado que ellos mismos van a organizarlo, vamos a ver si es que mejoran. Si no, podríamos
+04:45 Speaker 2: ofrecerles ayudarlas en esas
+04:46 Speaker 1: cámaras, ¿cierto? Porque la mayoría del curso son informáticos, ¿cierto? Entonces, como que ustedes serían los más idóneos, esos skills para
+04:56 Speaker 2: poder optimizar
+04:58 Speaker 1: los tiempos en el horario. Como somos varios, cada vez es cierto que tenemos dos horarios, podríamos ilusionarlos si es que ellos no lo logran estructurar. Ya, esas son las variables. Ahora, hay un tema adicional. Respecto al beneficio o a la ayuda que les vamos a dar. Si bien el objetivo en el curso es que podamos aplicar algunos de los modelos y podamos
+05:26 Speaker 2: seguir todos los pasos de la
+05:28 Speaker 1: metodología de ADD, para ellos como institución, obviamente les van a servir los outputs que les vamos a dar. Adicionalmente, para tomar decisiones en su institución, seguro que me han comentado, ustedes han sido emocionalizados, ¿cierto? ¿Cuál es el presupuesto? ¿Cuál es el presupuesto?
+05:50 Speaker 2: ¿Cuál
+05:51 Speaker 1: es el presupuesto?
+05:58 Speaker 3: ¿Cuál
+05:59 Speaker 1: es el presupuesto? ¿En qué les ha perjudicado? En que ya no les, desde cierto año en adelante, no les han permitido recibir nuevos niños. Es como que ya tienes una cantidad de niños, te voy a dar tu respuesta para tus niños y síguelos alargando hasta que se. Pero obviamente sabemos que todos los años, todos los meses hay niños que quieren y necesitan ingresar. Para que puedan bien recuperar. otra vez tener ese visto bueno, necesitan demostrar con números, con cifras, lo que ellos están teniendo, la situación que ellos están recibiendo
+06:44 Speaker 3: y los resultados que están obteniendo.
+06:47 Speaker 1: Entonces ellos nos han comentado eso, que los resultados que les daríamos también les ayudaría para sustentar que
+06:54 Speaker 2: la actividad que
+06:55 Speaker 1: están haciendo es buena,
+06:57 Speaker 2: o tener buenos frutos.
+07:00 Speaker 1: Y bueno, si ya es un tema aparte que ellos no harían, pero nos han dicho que es difícil
+07:05 Speaker 3: en ese sentido.
+07:08 Speaker 1: Entonces, esa es la información sobre la tarea académica. Se esperaría,
+07:14 Speaker 2: como les digo, que para la semana del
+07:16 Speaker 1: laboratorio, el siguiente laboratorio es 19, ya tengamos los datos y se pueda hacer la entrega con ustedes. Va a depender un poco de los tiempos de ellos también. Entonces, vamos a ir realizando con tiempo, si el mismo laboratorio que se inscreve, ellos se presentarían, o si sería la semana siguiente. Ojalá que sea la semana. Y ya, esa era la buena noticia, porque nos han dado registro buenas y ya vamos a poder trabajar con los datos de ellos. Entonces, la dinámica va a ser de esta manera. Cada equipo va a recibir los datos y va a realizar todas las etapas de la metodización. Y la idea es, al final, dependiendo si la situación nos brinda un objetivo o dos, vamos a ver qué tipos de modelos necesitaríamos. Y la idea sería, al final, elegir el modelo que se ajuste mejor a los datos que nos van a dar. Voy
+17:55 Speaker: a saber que en realidad estamos ordenados de menor a mayor. O sea, de alguna manera los ingresos van a estar ordenados desde sueldos de personas menores a sueldos de personas mayores. Y esa imputación va a estar asesgada a la otra variable. Es como que tuviera, tengo acá abierto el archivo,
+18:27 Speaker: comédica acá, horas a la semana, horas trabajadas a la semana y la variable era.
+18:49 Speaker: ¿Cierto? Y queremos imputarlo. Si yo aplico el método del backward, o backward propagation, o forward propagation, lo que voy a utilizar es, este que era vacío, lo voy a rellenar por el valor anterior o por el valor posterior. Eso es lo que hace esa imputación. Pero ahora, ¿qué pasa si esta variable es la que me interesaba imputar?
+19:17 Speaker: No está distribuida aleatoriamente, sino que la tabla la ordenó por edad de menor a mayor. Cuando ordeno de menor a mayor, imaginemos que aquí que tenía un vacío, en edad sí está completo. Entonces sí voy a poder ordenar de menor a mayor. ¿Qué es lo que va a pasar? Toda mi información va a estar ordenada también indirectamente por edad. Porque al inicio voy a tener todos los datos de las variables de personas menores. Y al final, los datos de personas mayores. Entonces, de alguna manera, las horas trabajadas por semana van a tener ese sesgo, ¿cierto? De las personas menores y de las mayores. Entonces, imaginemos que esto me ha salido por abajo. Porque la edad es 52. Y la más chiquita es 38. No, 28. Entonces, esto me ha salido al final.
+20:11 Speaker: Imaginemos que la última hora... Las personas mayores la bajan entre más horas y las menores menos horas. Entonces, ¿eso qué significa? Que al vacío que yo voy a llenar, le va a corresponder ese entorno ordenado por edad. Entonces, al ser llenado de esa manera, siempre va a haber un sesgo y llenada de la variante. Si hago por Forward Propagation.
+20:36 Speaker: Entonces, me conviene el Forward Propagation si aseguro que sea un llenado aleatorio. Pero si no es aleatorio y ya estás asesgado por alguna otra variable, es peor, ¿no? Es peor. Incluso, si es que no me doy cuenta y la misma variable que quiero imputar está ordenada de menor a mayor, ¿qué pasa si todo lo hemos obtenido al final?
+21:04 Speaker: Y le digo que empiece a llenar con el anterior. Entonces llena con el anterior y ese es el último lleno, ¿cierto? Todos estos son vacíos. Entonces, este vacío lo voy a llenar con el anterior. Este vacío con el anterior, este con el anterior y todos van a tomar el valor mínimo. Que es como si hubiera hecho un capital.
+21:26 Speaker: Entonces, va a haber... Es un poco peligroso ese método si es que no asegura la autoridad en el momento de llenar. Entonces se puede hacer, supongo que ya sí, existe, sí, está validado, sí, pero controlando que se mantenga la aleatoriedad para llevarlo. Sí, hasta ahí estamos claros, entonces existe, pero deben ser un modo cuidadoso para aplicarlo. Ya, ya estamos contidos,
+21:55 Speaker: ya vimos que tenemos que estar con cero. En este caso vamos a hacer un ratito, es importante verlo antes de lo que fuera, para que no se dé forma de la distribución como aquí se ha reformado. El nuevo localization, que lo vimos, vamos a poner una segunda, un cuarto data set, que es nuestra invitación.
+22:27 Speaker: Y las otras imputaciones son las que había mencionado la vez anterior. Imputación de vacíos o de perdidos mediante la media. ¿Cómo sería? Utilizo la misma función de TIR, TIR, NA, solamente para las numéricas, y voy a considerar la media. La media de TIR de las mismas numéricas. Ahora, esta línea de código, ¿se acuerdo que yo les decía? El código que les muestro acá es solo una referencia de líneas de código que se puede usar, pero no es que tal cual lo que está acá lo puedan copiar y pegar y repetir en su proyecto. ¿Por qué es lo que está haciendo esta línea? Esta línea está tomando a qué? Solo los tipos, las variables numéricas, ¿cierto? Y a ellas las está rellenando a todas con la media de estas mismas. Entonces, ¿qué es lo que estoy haciendo? A todas las leyendo por la media. ¿Esto en teoría es válido? Seguro que hemos visto antes en la teoría.
+23:35 Speaker: No, ¿verdad? O sea, de que me va a correr, me va a correr. Y de que va a llenar, lo va a llenar. Pero de que deba hacerlo, no. Porque lo que hemos visto es que a cada variable, a las n numéricas que haya, a cada variable le puede corresponder un tipo de imputación específica. ¿Cuándo haríamos esto? Si es que estamos segurísimos que todas las numéricas que están acá son normales o simétricas y puede corresponder a su materia. Y otra cosa que tendríamos que ver para que esto tenga sentido es que el porcentaje de vacíos de todas las numéricas sea chiquito. Porque si los porcentajes son altos de los vacíos y yo de repente le aplico mil, ¿qué es lo que va a pasar? Les va a crecer un cachito adicional en la distribución. Si el porcentaje es muy alto.
+24:22 Speaker: ¿Se acuerdan? ¿Qué les mencioné? Si yo hago esto así indiscriminadamente, sin ver el porcentaje de vacíos, y si es simétrico o no, le va a crecer un cachito en el centro a la distribución. Son muchos, sobre todo. Es válido si es que ya verifique que corresponde a ese tipo de imputación. Lo mismo pasa con la mediana. Tenemos imputación para la mediana. Gracias.
+24:55 Speaker: Miren, por ejemplo, ¿qué pasó acá? Lo de la deformación que les decía. Por eso es importante comparar el antes con el después. Bueno, ahí está la etiqueta, perdón, la leyenda para que esté formalmente bonito, pero ya se pueden imaginar que el celeste es la distribución después de la imputación, ¿cierto?
+25:16 Speaker: ¿Qué es lo que hemos visto? La imputación, la variable normalmente es la de color verde, se distribuye así. Pero al imputarlo indeterminadamente por la media, la media está a esa altura y ha crecido un poquito enorme en realidad. Se da una deformación. Entonces cuando vemos deformación de este tipo, esa imputación está mal seleccionada. Tenemos que probar otro tipo de imputación. Si es que no hubiéramos hecho el
+25:42 Speaker 2: gráfico del antes y después,
+25:44 Speaker 3: nos saltábamos esto y seguíamos con nuestra vida y nunca nos dábamos cuenta. Entonces
+25:49 Speaker 2: una buena práctica es hacer el antes y el después para verificar que la imputación está bien seleccionada. Si no, si me sale algo así o se deforma, ya sé que hay otras opciones para probar.
+26:00 Speaker 1: Este es un ejemplo de que
+26:03 Speaker 2: esa imputación no está correcta.
+26:06 Speaker 1: Deberíamos probar otra.
+26:08 Speaker 2: Igual en el anterior, cuando imputábamos por el
+26:12 Speaker 3: anterior,
+26:14 Speaker 1: es una imputación por el
+26:16 Speaker 2: forward propiedad. Ya por ejemplo aquí el antes y el después es medio imperceptible, que ni tanto, ¿no? Acá sale un cachito por aquí. Pero el resto lo mantiene un poco urgente. Puede ser, podría ser que aquí esté pasando algo. Por eso la imputación ha crecido mucho acá.
+26:37 Speaker 1: Algo puede haber estado pasando.
+26:38 Speaker 2: Pero aquí se ven las diferencias. En el anterior nos hicimos comparado el antes y el después.
+26:44 Speaker 1: No, no, no, no, no, no, no, no, no, no,
+26:46 Speaker 2: no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no. Esta es que lo vimos ahora por mediano. Igual, si imputamos indiscriminadamente, ¿qué vamos a hacer?
+27:19 Speaker: Incluso acá estoy la final otra vez. El
+27:24 Speaker 3: anterior también.
+27:25 Speaker 2: El anterior, este es 5
+27:27 Speaker 3: -2.
+27:31 Speaker 2: El 5 y hay un 5-2. El 5-2 es la mediana,
+27:34 Speaker 3: ¿no? Sí, el 5 es la mediana.
+27:40 Speaker 1: El 5, el verde es la mediana. Y el rojo es la referencia.
+27:48 Speaker 2: El rojo es la normalidad. que el verde era la mediana, o sea, el de la media era la filita, ¿de acuerdo? Entonces, imputando por la mediana, supuestamente que la
+28:04 Speaker 1: mediana es la más robusta, ¿no? Que nos había engañado la mediana, que sí, confía en mí.
+28:10 Speaker 2: ¿Cierto? Confía en mí para los científicos, o eso, bacán para los científicos nos funciona, pero aquí no
+28:15 Speaker 1: necesariamente es el método óptimo para imputar filita. Y lo vemos en el ámbito de tu escuela. ¿Sí? Entonces, en adelante, cuando tengas
+28:29 Speaker 3: que imputar tarde,
+28:34 Speaker 1: si viene a su mente imputar por la mediana,
+28:36 Speaker 2: sí, es cierto, porque es la más robusta, pero depende mucho del porcentaje que vamos a imputar. Esto ha pasado cuando tenemos demasiados datos aquí, demasiados datos hacia este lado. Aquí yo creo que se está duplicando las imputaciones. Ya era alta y ha crecido mucho.
+29:04 Speaker 3: ¿Sí? Rosara, ¿qué porcentaje consideras necesario para que valga la pena realmente imputar por el valor de la baiana? ¿Un 10% del total? Por
+29:13 Speaker 1: ejemplo, yo siempre establezco como
+29:16 Speaker 2: máximo ni siquiera 20, a veces 15. Pero ni siquiera un
+29:22 Speaker 1: 15 redondo me sirve. ¿Sabes por qué? Porque va a depender mucho de la distribución. Por ejemplo, no es igual un 15 de vacíos para una distribución así. Que un 15 de vacíos para una distribución así.
+29:37 Speaker 2: O un 15 de vacíos para una distribución de este tipo. Claro. Porque la altura, ¿cierto? Si mi mediano sale acá, el 15 no me va a
+29:46 Speaker 1: subir mucho. Pero si mi mediano me sale acá y la cola la baja, el 15 me va a subir.
+29:52 Speaker 2: Entonces como que dar un porcentaje también es un poco trillado porque depende de la distribución. Pero igual es buena, es buena práctica establecer un máximo. Entonces de ahí voy a evaluar y yo tengo
+30:03 Speaker 3: que bajar otra, otra.
+30:05 Speaker 2: Pero sí, yo también te baso del 20 como
+30:08 Speaker 3: máximo. Más de 20 no, menos de 20 sí sería el ideal.
+30:12 Speaker 1: Para vacíos.
+30:13 Speaker 3: Por variable o en general.
+30:19 Speaker 2: Valores que he tomado han sido 15. 20 lo uso como referencia, pero en la práctica raro a veces pongo
+30:24 Speaker 1: 20. 15 suelo colocar. 15 suelo
+30:30 Speaker 2: colocar.
+30:32 Speaker 1: Y acuérdense que el porcentaje lo
+30:34 Speaker 2: sacamos a nivel de fila y
+30:36 Speaker 3: a nivel de columna.
+30:39 Speaker 2: A nivel de columna para imputar una columna, pero también a nivel de fila para decidir si la fila se queda.
+30:49 Speaker 1: Porque no me conviene imputar como la mitad de valor a otra misma.
+30:55 Speaker 3: Y la persona yo ni como lo mismo hacía, mejor la metí.
+31:01 Speaker 2: Ok, entonces ahí ya vimos funciones para imputar y errores que podemos cometer. Y ahora decíamos que tenemos otras opciones también para aprobar. Las anteriores serían
+31:13 Speaker 1: imputaciones univariadas, ¿cierto? Porque desde el momento en todas las anteriores tomamos cárcel solo de una variable. Para la media
+31:22 Speaker 2: de esa misma variable y para la mediana de esa misma variable. Entonces sería univariado.
+31:29 Speaker 1: Acá no hay ejemplos delivariado, pero delivariado sería un poco condicional. En el caso del forward,
+31:42 Speaker 2: usaba solamente una variable, pero les decía que teníamos que ver si
+31:46 Speaker 1: no estaba sesgada por otras. El caso de la condicional que quería antes
+31:51 Speaker 2: entrar al multivariado,
+31:53 Speaker 3: el condicional es imputo
+31:54 Speaker 2: los valores de la
+31:57 Speaker 1: variable ingresos, por ejemplo, condicionado a propósito a la edad. O sea, yo puedo condicionarla y sesgar o segmentar mi distribución. y decir, la edad la falta en 2, y
+32:10 Speaker 2: solamente para
+32:12 Speaker 1: edades, no sé, menores a 30,
+32:15 Speaker 2: calculo su media y imputo ese grupo. No sé si me entienden. Ya me respondo que ya no lo calculo con la media total, sino la media condicionada a otra variable.
+32:31 Speaker 1: ese sería mi variado
+32:33 Speaker 2: condicional tendría mis datos mis datos los tengo tengo el ID y tendría dos variables variable 1 que sería la edad y variable 2 que sería
+32:49 Speaker 3: la edad
+32:56 Speaker 2: Entonces, imaginemos que aquí están los vacíos. Ahí hay vacíos. Entonces, una importación univariada sería, de todo esto, calculo la media,
+33:10 Speaker 3: ¿cierto?
+33:11 Speaker 2: Y la media la ingreso acá, y la media la ingreso acá. Esa sería univariada, ¿cierto? Para que sea mi variada, ingreso después la segunda variable, cualquier otra segunda variable. Y lo que haría sería, por ejemplo, digo, para edades, incluso
+33:31 Speaker 3: lo puedo perfeccionar acá.
+33:36 Speaker 2: Digo, para edades de 30 a más, perfecciono mis datos. Entonces, de aquí hasta allá tengo edades mayores o iguales a 30. años y de aquí a aquí tengo menores a 30 años entonces ¿qué hago? solamente con esta parte calculo la media y acá también solamente a esta parte le calculo una segunda media entonces este valor lo imputo aquí y este valor lo imputo aquí No es la misma, sino está condicionada a otra variable. Esa sería la idea. De condicional, que sería el bivariado.
+34:24 Speaker 1: Ya no lo puse acá, pero esa es la idea.
+34:27 Speaker 3: Y luego del bivariado ya vendría el multivariado,
+34:30 Speaker 2: ¿cierto? Que sería la misma idea, relleno un valor vacío, pero ya condicionada a una y a n más variables. Eso ya tendría forma de modelo, ¿cierto? de los modelos que hemos visto en otros lados y que también vamos a ver por acá. Entonces, lo que tenemos aquí, estas dos, esta que está aquí y esta que está acá, serían imputaciones multivariadas. ¿Cuál es la diferencia? Por ejemplo, aquí, esta que está, esta primerita se llama KNN Curva. Le suena
+35:07 Speaker 1: KNN, igual la vamos a ver, pero también
+35:09 Speaker 3: la han utilizado en otros lados. ¿La de? La de vecinos. Ajá,
+35:14 Speaker 2: la de vecinos, ¿cierto? Entonces, ¿se
+35:17 Speaker 1: imagina la idea de vecinos utilizada
+35:20 Speaker 2: para imputar? ¿Cómo sería la norma?
+35:22 Speaker 3: Claro, de los valores cercanos. Exacto.
+35:26 Speaker 1: ¿Cercanos en qué sentido? ¿Cercanos
+35:28 Speaker 2: así como por cuartos promediosas?
+35:31 Speaker 3: ¿O cercanos en qué sentido? De
+35:34 Speaker 2: características, ¿cierto? O sea, perfiles similares. Entonces...
+35:41 Speaker 1: ¿Qué es lo que sería? Si acá tengo un vacío, lo que miro es un nivel de fila. Miro este perfil que me falta
+35:47 Speaker 2: y veo cómo se comporta. En su resto de variables saco un perfil, ¿cierto? Y ese perfil busco en todos los demás perfiles parecidos y encuentro unas cuantos
+35:57 Speaker 3: parecidos. Y entre
+36:01 Speaker 1: ellos, identifico cómo se comporta su variable que me interesa y solamente con eso está relleno el valor. Y así de manera similar para todos los que te parecen.
+36:13 Speaker 2: Busco perfiles similares y relleno
+36:15 Speaker 1: solo los cuales están similares. Esta sería la idea para este KMM.
+36:23 Speaker 3: Sí. Entonces, cuando pasamos ahí, por ejemplo, esas tres columnas, ¿eras son las que están imputando o son las que están considerando para esa evaluación de la fila? Estas que están aquí. Ajá. A cada una se le
+36:34 Speaker 2: aplica... Sí. Esto de aquí, la imputaría considerando las otras. Esta la imputo considerando las otras dos y esta la imputo considerando esas. Ah,
+36:44 Speaker 3: ok. No es que esas tres, o sea, consideran también el resto de...
+36:52 Speaker 1: Sí, empresas tres. Por lo que este
+36:54 Speaker 2: KNN imputer me acepta, según lo que me acuerdo, no les he aprobado nada. Pero según lo que me acuerdo,
+37:00 Speaker 1: solamente trabajo con valores numéricos.
+37:03 Speaker 2: Y como estas son nuestras únicas tres numéricas, se lo puede imputar a ellas. Es más, sí es solamente con numéricos porque justo estas se las he puesto dentro del tratamiento de vacíos en
+37:15 Speaker 3: numéricos.
+37:18 Speaker 1: ¿Por qué? Porque trabaja con distancias. Aunque, haciendo un asterisco, se puede calcular distancias de iguales también. ¿Han escuchado? Hay otras métricas para calcular distancias de iguales. ¿Cuál se puede adaptar para algoritmos que trabajan distancias y poder meterle
+37:44 Speaker 3: cuáles? ¿Alguno por ahí? ¿Las recuerdan algo? No, no recuerdo. Por ahí tengo batallones. Pero
+37:52 Speaker 2: acá nos estamos entrando también en distancias, pero de cuantos partidos. Solamente de los medios. Entonces, ¿cómo vamos a organizar nuestra función? Solamente estamos pidiendo que utilicen los cinco más cercanos.
+38:06 Speaker 1: y los precios están trabajando con el autor, no
+38:10 Speaker 3: hay mucho que cambiar.
+38:21 Speaker 2: Se dan cuenta que tiene la mera estructura del fit y el transform.
+38:26 Speaker 3: ¿De acuerdo?
+38:28 Speaker 2: Yo el modelo con
+38:29 Speaker 3: las tres.
+38:30 Speaker 2: Y luego lo aplico también usando las tres.
+38:35 Speaker 1: En este caso. En este caso funciona así.
+38:38 Speaker 2: Y lo que va a ser es sobre escribir los valores. ¿Cierto?
+38:43 Speaker 3: Entonces ya lo ejecuté. Y
+38:45 Speaker 2: ahora voy a contabilizar vacíos. Y me quedan de los, estos variables que eran las cuanti. Pero las cuanti eran edad,
+38:56 Speaker 3: educación,
+38:59 Speaker 2: y ahora por semana ya estarían.
+39:01 Speaker 1: Educación, number y
+39:03 Speaker 3: hours per week.
+39:06 Speaker 2: Ya estarían llenados. Pero, y acá por ejemplo falta, no sé por qué no está. El gráfico de antes y después, hasta
+39:14 Speaker 3: aquí. Vamos a completarlo.
+39:18 Speaker 1: Vamos a copiarlo de arriba. En
+39:27 Speaker 2: este caso nuestros datos son los mismos, ¿no?
+40:08 Speaker: ¿Qué es lo que vemos? ¿En otro sentido? Menos que las otras, pero igual hay cierta información. ¿Cierto? Entonces, ¿eso qué mediría? Puedo seguir probando con otra opción. De repente la siguiente. Y ver si la siguiente se mantiene o no.
+40:25 Speaker: Entonces, seguimos con el antes y el después. Ahora, el siguiente es imputación también de vacíos, pero ahora por este método interativo. Entonces, este otro algoritmo de imputación, a diferencia del anterior, el anterior tiempo que hacía, similar al forward, pero con perfiles, ¿cierto? El KNN era como el forward, pero con perfiles, pero solamente utilizaba tres parecidos. ¿Qué significa eso? Que si tengo más frecuencia de justo esos tres que se repiten muy seguido, siempre los voy a imputar ahí, ahí, ahí, en ese mismo rango, ¿cierto? En cambio, este iterativo, ¿qué es lo que hace? Como dice su mismo nombre. Voy a identificar los vacíos que puedan tener en cada uno de mis variables de interés. Y lo que voy a hacer en realidad va a ser predecir.
+41:22 Speaker: KNN en teoría predecía, pero utilizando solamente 3 o solamente 5, ¿cierto? Pero el iterativo va a predecir utilizando toda la información de las otras columnas que son no vacías. Porque si son vacías, esa es la ceja para... O sea, si es el iterativo, ¿por qué? Porque va imputando... según va recorriendo los datos. Entonces, la imputación la va a realizar de manera predictiva, o sea, va a rellenar un valor, no considerando los símbolos cercanos, sino todo el perfil que puede abarcar de las variables no vacías, del resto de variables no vacías. Entonces, no es que sea mejor, no es que sea peor, solamente es diferente. En algunos escenarios me funciona, en otros escenarios no me va a funcionar como otros.
+42:11 Speaker: Como es iterativo, solamente tengo que darle mi semilla aleatoria. No hay, al menos por mejor, no necesito más parámetros. Igual después pueden experimentar un poco más si gustan con las funciones y probar otros parámetros. Pero por mejor, solamente necesitaría una semilla aleatoria y ya está. Y voy a entrenar mi modelo con las tres numéricas y voy a preparar mi formación también para las personas.
+42:37 Speaker 2: Lo que adicioné aquí es colocarle nombre a las columnas porque me parece que hay un punto, sobre todo cuando le aplico el transform que genera una matriz. Me parece que por eso le he colocado la columna.
+42:49 Speaker 1: A diferencia de la anterior, esta después del transform le quita los nombres de las columnas. En otro caso no. Acá me acuerdo
+43:00 Speaker 3: de que sí.
+43:02 Speaker 1: Entonces vamos a ejecutarlo.
+43:17 Speaker: ¿Cómo se llama?
+43:39 Speaker 1: ¿Cuándo hemos
+43:40 Speaker 2: reemplazado la imputación anterior, hemos
+43:46 Speaker 1: sobrescrito en nuestros datos anteriores o siguen libres? ¿Cómo se llaman los anteriores? Eso significa que... Ah, ya no sé si está bien, ¿verdad? Que ya hemos tomado los detalles para... para
+44:08 Speaker 2: imputar, para... Uy, ya no sé si está bien.
+44:13 Speaker 3: Buenísimo, comisionado.
+44:32 Speaker: Y ahora de... Ya
+56:50 Speaker 1: si las regrupan un continente, de repente cambia la situación.
+57:39 Speaker 2: Eh, cambia. ¿Nada también lo vamos también?
+57:51 Speaker 1: Gracias.
+57:57 Speaker 2: Gracias.
+58:10 Speaker 3: Gracias. Gracias. Gracias. era para cambiar las dimensiones
+58:44 Speaker 2: Pero si todo esto tiene relación con estructuras necesarias para el cliente de dentro de un barco. Ok.
+58:58 Speaker 1: Vamos ahí. Conjuntando después.
+59:07 Speaker 3: En teoría
+59:11 Speaker 1: se ha llenado solamente con los simples de arriba de
+59:14 Speaker 2: moda. Y crear una nueva categoría.
+59:19 Speaker 3: ¿Qué otros tipos de importación de parte de cualitativos tenemos?
+59:26 Speaker 2: Nada más, hasta ahí se acababa con la
+59:27 Speaker 1: formuda de nueva categoría. Ah, y la imputación multivariada que les di en el Payload. Sería como tres opciones que manejamos aquí. Porque no habría más de un nivel. Más ahí para imputar en numérica.
+59:40 Speaker 2: Y lo que estaríamos colocando en estas dos celdas sería separar
+59:45 Speaker 1: mis
+59:49 Speaker 2: variables numéricas de mis variables categorías. Porque les decía que es una voluntad para tratamientos futuros o para decisiones de algoritmos
+01:00:02 Speaker 3: futuros. Si
+01:00:04 Speaker 1: yo ya tengo mis variables
+01:00:05 Speaker 2: separadas y
+01:00:09 Speaker 1: después voy a autorizar un modelo que solo usa son pintas,
+01:00:13 Speaker 2: yo ya voy a tener mi archivo donde guardo mis datos solo de las numéricas.
+01:00:19 Speaker 1: Ya no me confundo, ya en la parte de entendimiento de datos, limpieza de datos, ya limpie los numéricos y ya los separé, ya los tengo listos
+01:00:27 Speaker 2: para modificar. Igual que los categóricos, ya le hice todo el tratamiento, acá hay ese propio tratamiento y los separé y ya tengo los categóricos listos para modificar.
+01:00:40 Speaker 1: Ya ustedes son libres de ver cómo lo pueden distribuir, la idea es que...
+01:00:45 Speaker 2: Si van a separarlo en dos, como aquí, mantengan el orden de las filas igual para que luego puedan volver a unirlos. Porque se imaginan que
+01:00:56 Speaker 1: los separan y luego uno lo ordena y pierden la probabilidad. Porque hay algunos modelos que sí trabajan con numéricas y con categóricas. Entonces, algunas veces vamos a necesitar ambos, algunas
+01:01:11 Speaker 3: veces solo uno, algunas veces solo el otro.
+01:01:13 Speaker 1: Entonces es importante que mantenga esa
+01:01:15 Speaker 2: atrasabilidad para no necesitar información.
+01:01:18 Speaker 1: Ya, entonces ahí habríamos visto las
+01:01:21 Speaker 3: noticias para la invitación.
+01:01:25 Speaker 2: Y lo último sería guardar
+01:01:27 Speaker 3: los archivos. Guardar los datos.
+01:01:31 Speaker 2: Estamos guardando en
+01:01:33 Speaker 3: datos. Ya. Ya está. En
+01:01:43 Speaker 2: teoría, después del paso 3,
+01:01:45 Speaker 1: nuestro auto es un tipo de ayuda. Y este sería el que pasaría para el siguiente nodo. La recomendación de sus trabajos,
+01:01:54 Speaker 3: sus proyectos también conmigo.
+01:01:57 Speaker 1: Igual, los que no son libres de organizar sus ideas, no quieran, pero si es que quieren tomar la recomendación
+01:02:02 Speaker 2: sería, hacen un nodo o al menos un bloque de nodo. genera su output y ese
+01:02:08 Speaker 1: output luego ingresa al siguiente paso. Por lo que queremos tener
+01:02:13 Speaker 3: diferenciados los pasos de la
+01:02:15 Speaker 1: metodología CADD, sería ideal tener outputs diferenciados por cada paso. En un único momento es que quiero rehacer todo, pero si ya no sé dónde termina y dónde empieza todo, se complica un poquito lo del retorno dentro de la metodología. Entonces, hasta ahí sería la parte del paso 3. ¿Dudas? ¿Comentarios? Todo sería el paso 3, las opciones que tendríamos y ahora entraríamos al paso 4.
+01:02:56 Speaker 2: ¿Hasta ahí todo bien?
+01:03:23 Speaker: Entonces, como podrán ver, ya estamos en el paso 4 y ya sigue nuestra, eh, nuestro factor de data online, del entrenamiento que nos tomamos. Eh, vamos a hacer el paso 4. Paso 4 es transformaciones, que ya vimos un poco de transformaciones en la clase pasada también. Eh, y dentro de transformaciones tenemos reducción de disminución. Porque la reducción de dimensiones es una transformación de dimensiones, ¿cierto? De varias géneras de dimensiones las puede ir todo y bajando. O puede producirlo dentro de cada dimensión. Entonces estamos en transformación. Ahora, decíamos que nuestro análisis de componente principal es una de las que más se utiliza para reducir dimensiones. Y también se acuerda que les llegué a mencionar y lo de la análisis factorial. Sancioné la relación de análisis de componentes principales con análisis para proyectos.
+01:04:22 Speaker: Esa referencia a esa historia, creo que es una historia real, que pasó en los ochentas, setentas, ochentas, con un grupo que se llamaba Milly Vanilli, algo así. Manini.
+01:04:53 Speaker: ¿Se acuerdan de...? Hay una canción de... algo de A.I.S. Manila A.I.S. ¿Se acuerdan? ¿Se acuerdan? ¿Se acuerdan por ella? Hay una historia de esa época, o sea, de real. Era un grupo. Imagínense que se formó un grupo. Ya saben, ya salió un grupo y les hacen su imagen y los venden como un jugo de... un jugo de... un jugo de... un jugo de... un jugo de... entonces se hacen tan famosos... que empiezan a contratar los paraconsciertos. Y ya empiezan a hacer sus vidas. Y salen, cantan todo, hay merchandise, todo lo que... todo un negocio. Y un tiempo después, se entera la gente, los fans, que todo el tiempo lo que ellos habían estado viendo era como un playback. Y que detrás de ellos había gente que cantaba todas las canciones. Entonces, ahí hay esa sensación de los fake, mil y mil y mil y mil y mil, que eran los que cantaban siempre detrás de los ciudadanos. Cantaban, o sea, ellos hacían touch out, atrás la gente cantaba normal, así como todo, y los de adelante solo hacían el playback. Imagino que por la tecnología de aquel entonces no había red social, no había nada, la gente se iba a los conservos y no tenía ni celular para grabar y para hacerle zoom y ver que tenían ni celular.
+01:06:24 Speaker: ¿Por qué hago referencia a eso? Porque en el tema de, sobre todo, reducción de dimensiones, el análisis de componentes principales tendría que ser como Einstein, Billy Vanilli, y los meros originales sería el análisis de componentes principales. ¿Por qué? Porque los componentes principales son... Perdón, ahora es. Los componentes principales, lo que tenemos acá, serían como el fake, y los reales serían el análisis factorial. El análisis factorial son los que crearon la esencia, y después estos fake mil maníricos, pero estos buenos también no se fallan. vinieron a tomar, lo simplificaron y mostraron, sacaron un método un poquito más simplificado y un poco más generalizado. Por eso es que al final este PCA son los que se hicieron famosos. ¿Por qué se hicieron famosos? Porque se simplificaron a un nivel de que se podía aplicar con tranquilidad en varios autónomos. Y por eso se hicieron famosos. Pero en realidad nacieron con una simplificación del análisis factorial. En las redes culturales tenemos cosas. Entonces, les espero que les haya contado. Entonces,
+01:07:44 Speaker: igual vamos a ver PCA, pero yo no sé si lo han visto en otros lados también porque suena bastante. Y no sé si han visto el factorial también. Si es que no han visto factorial, igual tengo una diálogo sobre factorial, igual se las paso, igual si no da tiempo les explico un poco, y se las paso como para que tengan de ambos puntos, la simplificación que se aplica siempre, pero también de dónde proviene y cuál es esa otra complejidad que el mundo quiso evitar para poder sacar eso. Pero si el otro es un poquito más complejo, es más aplicable en otros entornos, sobre todo de variables latentes. Pero ya sigamos ahí, lo veo, lo veo.
+01:08:24 Speaker: Vamos a ver un poquito esta parte de componentes principales, pero esencial, tampoco la idea es de la teoría pura, ¿cierto? Pero al menos las cosas es esenciales que deberíamos recomendar. Y por ahí algunos datos extras y curiosos. Entonces, decimos que... Este análisis de columnas principales es para reducir dimensiones. Las dimensiones habíamos visto que en nuestra tabla de datos son dos, ¿cierto? Y las columnas. Estas reducciones se pueden dar en qué sentido, por ejemplo. Las aplicaciones que han visto en columnas principales. ¿Me reduce a qué nivel? ¿De filas o de columnas?
+01:09:09 Speaker: ¿Lo que han visto? Columnas. Se agrupa columnas. Entonces, me van a reducir las dimensiones en columnas y lo que hacen es reducir un conjunto de variados. O sea, de columnas a un conjunto neta. O sea, que si tengo cada columnas, voy a reducir, no necesariamente acá menos uno, dependiendo si tengo cuatro y quiero reducir entre los varios también. Pero generalmente se usa cuando tengo demasiadas columnas. Gracias.
+01:09:41 Speaker: a reducirlas. Ahí salen varios criterios, por ejemplo, para yo poder agrupar estas columnas, de alguna manera entre ellas deberían estar, deberían presentar cierta relación, porque si entre ellas no están relacionadas de alguna manera, va a ser un poco complicado que yo las agrupe en componentes principales. Ahora, ustedes se fueron de la regresión. ¿Cierto? ¿Qué pasa en el caso de regresión?
+01:10:16 Speaker: ¿Se acuerdan que era el que se buscaba? Yo se inscribo acá, se ve allá. ¿Se inscribo acá, se ve? ¿Hasta allá se ve aquí? No. ¿Qué pasa en el caso de regresión? Tenemos un Y.
+01:10:40 Speaker: Tenemos Y, imaginemos que tenemos 3X. ¿Qué es lo que nosotros esperamos para que nuestra regresión sea válida? Si tenemos Y, va a ser igual a beta 0 más beta 1, x1 más beta 2, x2, supongamos que no más, beta 3, x3. ¿Qué es lo que nosotros asumimos para que una regresión sea válida?
+01:11:13 Speaker: ¿Qué? Yo nunca cambié
+01:11:54 Speaker: Ahí está de manera multivariada, pero si la veíamos de manera bivariada, tendríamos algo así. X, Y. Y era lo que esperábamos ver acá. Una recta. Una recta, ¿cierto? Entonces, esperamos una relación lineal entre ellas, ¿cierto? Para X1, para X2, para X3. Entonces, analizando de a pares, esperamos que estén correlacionadas, ¿cierto? Porque acá sale el coeficiente de correlación, ¿cierto? Entonces, cada par tiene que estar correlacionada. ¿Pero qué pasa si yo hago mi gráfica de X1 con X2? ¿Qué era lo que esperaba entre ellas? Para una regresión lineal. ¿Se acuerdan? En su puesto.
+01:12:53 Speaker: ¿También esperaría una asociación lineal? ¿O qué esperaba entre ellas? ¿Dónde debería tener relación? No debería tener relación. Se espera siempre relación de X, de Y con todas sus X, pero entre las X no se asume correlación. Si es que hay correlación entre ellas, se le llama multicolinealidad. No sé si se acuerda.
+01:13:31 Speaker: Son supuestos. Por ejemplo, para que una regresión sea válida, se tiene que verificar la no multicolinealidad, la homos, la elasticidad, el múltiple de equivalencia y un montón de cositas que no sé si le voy a hablar. Pero lo que iba es que de Y respecto a X, siempre espero una asociación, una correlación.
+01:13:55 Speaker: Tiene que existir correlación de moderada a alta, para que tenga sentido que exista esta relación. Pero entre ellas, no... Entre ellas no hubo eso. Entonces, ahí es donde viene a salvarme BCAA. Porque ¿qué es lo que hace BCAA? BCAA dice, ya, yo no espero correlación entre ellas. Igual la canción.
+01:14:20 Speaker: Yo no espero correlación entre ellas. Pero ¿qué pasa? Si la naturaleza ni variable hace que estas dos sí están correlacionadas. Acá sí hay correlación.
+01:14:41 Speaker: Si estas dos sí están correlacionadas, valoran mi modelo. Imagínense que este no es solo una relación, sino un modelo predictivo X. Con un, no sé, con un exibus. Es cualquier modelo predictivo. Yo asumo que estas no deberían estar correlacionadas para un predictivo. Pero sí están. ¿Qué es lo que hacen? ¿Qué componentes principales viene y trabaja con las que están correlacionadas para reducirlas? Imagínense que las tres están correlacionadas. Pero obviamente yo tengo otras X acá, pero justo tres de ellas están correlacionadas. Tienen componentes principales y de tres dimensiones la podría reducir a solamente una. Entonces, estas que eran tres, pueden ser reemplazadas por una nueva X, una X4. Y aquí puedo utilizar la misma Y, no sé, 50, 0, y la segunda para que tenía más. ¿Qué te diría? Venta, cinco veinticinco
+01:15:43 Speaker: Le coloco aquí un nuevo beta, un beta 4 para esta que está ingresando y de repente había otra beta 6. Estas dos están colesionadas, pero esta ha ingresado de arriba. Y entra con un bloque nuevo. Entonces todas las 1, 2 y 3 ya no entran, se reemplazan por la cuarta y la cuarta ingresa a operar con las otras que no están colesionadas.
+01:16:08 Speaker: Entonces, ¿qué es lo que hace PCA? Me soluciona que exista correlación cuando no la necesito y la reduce a solamente una. Esa una obtendría información de las de arriba, ¿cierto? Pero ya no estaría correlacionada con las demás y me permite continuar con mi trabajo. Entonces, es un modelo que me soluciona para poder trabajar otro modelo. Por eso es que lo vemos en este paso, el paso 2, para menos un 4, que es transformación. Hago transformaciones de aquí a aquí para poder luego modelar. Es un modelo en sí, sí, pero también la puedo trabajar como transformación.
+01:16:55 Speaker: Entonces, ¿cómo es que paso de aquí hacia acá? Eso es lo que tenemos que evaluar. ¿Qué ejemplo les he colocado hoy? Ejemplo, un análisis de relación con pocas observaciones n. con relación al número de variables K. Por ejemplo, situación de over tipping donde el R cuadrado es artificialmente alto, pero el R cuadrado estimado es bajo negativo. ¿Qué nos estaría pasando ahí? Es otro caso. Se tiene, entonces se han escuchado también esos escenarios, donde tengo poquitas cantidades de filas, pero un montón de colinas. ¿Han escuchado un caso así?
+01:17:55 Speaker: Pero hay veces en donde tengo mi tabla y puedo tener, no sé, 80 columnas. Pero al final tengo solamente 50 filas. Entonces, voy a tener overfitting fijo. Si es que yo entre en un modelo, ya sea regresión o lo que sea, con las 80 columnas, pero tengo menos, igual o menos cantidad de filas. Eso, por ejemplo, no está permitido para el traslado modelo. Siempre, la cantidad de filas tiene que ser mayor a la cantidad de columnas. Siempre. Muchísima mayor. Ni siquiera igual. Pero hay veces en donde algunos escenarios tienen ese grupo de datos, porque ya vienen así, porque esa es su naturaleza. Entonces no podemos decirles, no, contigo no puedo trabajar, no podemos decir eso, y es lo que tenemos que hacer solucionar. ¿Cómo solucionamos? Aplicaríamos componentes principales a todo ese bloque.
+01:19:01 Speaker: ¿Cierto? Y de las 80 variables reduciríamos a cuantas. Nosotros tendríamos que decidir, cada vez que reducimos a 3 variables. Trabajo tres columnas y cincuenta filas. ¿Y qué es lo bueno? Que no es que de ochenta elijo tres, sino de ochenta las comprimo en tres. No es lo mismo. No es lo mismo decir de ochenta elijo las tres más importantes que las ochenta las cipeo en solo tres columnas. Entonces lo que hace componentes principales es cipear. Reducir las columnas en menos, no seleccionando, sino reduciéndolas.
+01:20:05 Speaker: Entonces hasta aquí la idea que debemos de probar qué es, que se reducen las variables y que tenemos dos ejemplos de escenarios en donde las podemos utilizar. Un ejemplo es el que acabamos de ver aquí, que tenemos en un mismo modelo muchas variantes que estarían presentando multicolinealidad o que son altamente correlacionadas. Y cuando tengo multicolinearidad, que es la correlación entre X, aplico BCAA. El otro escenario es cuando tengo más columnas en filas. Lo normal es que tenga más filas y columnas, pero cuando tengo este escenario de más columnas que filas, también me sirve PSA para reducir esta dimensión. Entonces, reduzco dimensión porque se excede la cantidad de elementos de mi dimensión, o reduzco dimensión porque entre ellos están correlacionadas, y no necesariamente por la cantidad de elementos, sino por la correlación de elementos. Entonces son dos objetivos supermercados. Para nosotros necesita reducir la dimensión. ¿Sí? ¿Es en pleno estos dos escenarios? Entonces, en algunos ejercicios no se les va a decir directamente apliquen PCA. A veces se les da el modelo y ustedes toman la decisión si primero se requiere PCA o no. La reducción de dimensiones no es obligatoria. Depende de lo que ustedes decían, si es que tienen algunos de estos escenarios.
+01:21:57 Speaker 3: por automatrices
+01:22:16 Speaker: Voy a poner un ejemplo de 2 y 2. Por ejemplo, si tenemos X y Y. Perdón, por X1 y X2. En este caso estamos teniendo dos observaciones. Ya son los 12 puntos que están aquí y queremos reducir estas dos variables, por ejemplo, a una sola. Este ejemplo de dos variables a una es bastante interesante porque lo que nosotros vamos a querer hacer es, cuando queremos reducir de dos a una, dijimos que no significa de las dos elegir una, ¿cierto? Sino crear una nueva que no existía antes, usando esas dos. Entonces, esas dos las fusiono y creo una nueva variable. Similar a lo que hacemos en regresión. Acá fusiono estas tres y creo una nueva variable. Cierto. En una regresión yo fusiono tres, estas, y creo una nueva. Algo similar acá. Fusiono estas dos y creo una nueva. Y la mejor forma de fusionar dos variables para crear una nueva, en nuestro caso, era una regresión. ¿De acuerdo? ¿Cómo encontraría regresión? ¿Cuál era la idea para encontrar una regresión? ¿Qué
+01:23:50 Speaker: es lo que hicimos para encontrar regresión? La reina. Recuerda que estas tres llegan a ser una mediante una asociación entre ellas para construir la final. ¿Se acuerdan cuál era la razón de ser de crear una regresión? ¿Cómo le podríamos ver?
+01:24:25 Speaker 2: La regresión, lo que nos dice es la
+01:24:28 Speaker 1: asociación lineal entre
+01:24:29 Speaker 3: apas, ¿cierto? Y la regresión, ¿se acuerdan de la estructura que les puse la vez pasada? El valor real de Y es igual a esta combinación lineal más un error, ¿se acuerdan? Esta combinación lineal me genera una predicción. El valor real es igual a la predicción más el error. Y la predicción la genera la regresión. Entonces, lo que nosotros estamos viendo aquí, ¿qué viene a ser? Acá tengo 10, acá tengo 10. Acá tengo 12, acá tengo 12. 11 acá, 11 acá. ¿Qué es lo que estoy viendo entonces? Distancias. Distancias.
+01:25:30 Speaker 1: Entonces, esa es la razón de nuestra relación.
+01:25:33 Speaker 2: Entonces, lo que vamos a querer hacer es identificar cuál sería la mejor asociación entre ellas. Cuando se refiere a qué ángulo es el ideal, a qué se está refiriendo. Cuando hacíamos esa simulación, ¿se acuerdan?
+01:25:48 Speaker 1: No es la recta que tienen los errores.
+01:25:51 Speaker 3: Se vuelve a seguir a la relación. A eso
+01:25:54 Speaker 2: se refiere a cuál sería el ángulo. de esta dimensión fantástica, de las nuevas que se había enfrentado por una regresión lineal anterior. Entonces, ¿se acuerdan que les había repasado un poco
+01:26:07 Speaker 1: las definiciones de o varianza o
+01:26:12 Speaker 2: relación?
+01:26:15 Speaker 1: ¿Se acuerdan? Covarianza y correlación. ¿Se acuerdan de su curso de probabilidad y estadística? De cómo se medía el
+01:26:24 Speaker 2: buen ajuste de una relación lineal.
+01:26:30 Speaker 3: ¿Por qué? ¿Con la correlación? El coeficiente
+01:26:33 Speaker 2: de correlación me mide la asociación lineal de dos.
+01:26:38 Speaker 1: Pero cuando ya tengo un modelo de reversión lineal, cuál sería la
+01:26:42 Speaker 2: métrica que te mide el buen
+01:26:44 Speaker 1: ajuste de una reversión lineal. Y estaría dentro de las métricas de buen ajuste de los modelos. ¿Cuál sería? La métrica de buen ajuste de una reversión lineal.
+01:27:06 Speaker 3: Simple o simple. Al R cuadrado.
+01:27:23 Speaker 1: ¿Se acuerda? ¿Qué me decía el R cuadrado?
+01:27:30 Speaker 3: ¿Cómo lo leía? Ya,
+01:27:43 Speaker 1: como la variante, ¿cierto? Porque la variante es como calculamos. Todos los elementos ahí, la media y cada uno, pero esa es la variante. Entonces, cuando nosotros tenemos esa
+01:27:56 Speaker 2: expresión de Y igual a la
+01:27:58 Speaker 1: combinación lineal con el error,
+01:28:01 Speaker 2: ¿se acuerdan qué se generaba ahí? La pasada también les decía, todo está conectado.
+01:28:11 Speaker 3: Nada llevado por los pies. Te sí, te sí.
+01:28:28 Speaker 2: La relación se ve así, ¿cierto? Y, la estimación de Y, la estimación de A, de B y de X. Pero eso estaba dentro de
+01:28:36 Speaker 1: una recta completa.
+01:28:38 Speaker 3: Aquí.
+01:28:41 Speaker 2: Similar a lo que vemos en esa marcoción.
+01:28:43 Speaker 1: La gráfica es muy difícil.
+01:28:46 Speaker 2: Esta es la gráfica de la relación. ¿Qué es lo que va a cambiar aquí? Este es el pie verdadero, que es este punto. El error es la diferencia, pero... ¿Qué es lo que vamos a ver nosotros aquí? Cuando nosotros estimamos A y estimamos B con la recta, podemos encontrar un Y estimado, ¿se acuerdan?
+01:29:10 Speaker 1: Que es la predicción. Cuando ya le colocamos un sombrerito a
+01:29:17 Speaker 3: cada una,
+01:29:19 Speaker 1: este sombrerito significa estimación, la estimación
+01:29:21 Speaker 3: de Y usando el A estimado y el D estimado.
+01:29:24 Speaker 2: ¿Se acuerdan cómo estimamos A y B?
+01:29:32 Speaker 3: ¿Se acuerdan?
+01:29:35 Speaker 1: ¿Cómo estimábamos A y B de una regresión simple? Esa es una regresión simple. Si quieres, es muy diferente. ¿Se acuerdan cómo estimábamos A y B?
+01:29:51 Speaker 3: Bueno, había unas fórmulas para calcularlas y cuando
+01:29:55 Speaker 1: aplicaba su lista en Moodle, en software ya les daba el valor del intercepto y el valor del beta1,
+01:30:05 Speaker 3: ¿cierto? Entiendo.
+01:30:08 Speaker 1: El valor de cada uno de ellos. Entonces, al final,
+01:30:10 Speaker 2: tenemos los coeficientes. Entonces, esa estructura completa se escribe así. Está relacionada con los
+01:30:17 Speaker 3: coeficientes.
+01:30:23 Speaker 1: Está relacionado con lo siguiente.
+01:30:26 Speaker 2: El modelo por default, ¿cómo sería? Tengo el Y real, tengo el A, tengo el B, tengo el X, tengo el R. Entonces, una vez que yo estimo, una vez que yo estimo los valores, esto que está aquí adentro,
+01:30:54 Speaker 3: me
+01:30:56 Speaker 2: va a generar el Y estimado.
+01:31:01 Speaker 3: Esto que está aquí va
+01:31:02 Speaker 2: a generar un y
+01:31:04 Speaker 3: estimado.
+01:31:05 Speaker 2: Entonces al final voy a tener el y predicho es igual al y estimado más el error de ese mismo individuo. Entonces este pedacito que está aquí, esa igualdad es,
+01:31:20 Speaker 3: esto de acá me
+01:31:22 Speaker 2: genera una predicción. La predicción es esto,
+01:31:25 Speaker 3: no el de aquí, el de aquí es el y rodadero.
+01:31:28 Speaker 2: El Y verdadero es la predicción más menos
+01:31:31 Speaker 1: el error, porque el error a veces es positivo o es negativo. ¿Cierto? Esa es la ecuación general.
+01:31:38 Speaker 2: La predicción es solo un pedazo que
+01:31:40 Speaker 3: es parte del verdadero, del total.
+01:31:43 Speaker 2: Entonces, esta relación es la que se ve al costado, que es la que vamos
+01:31:48 Speaker 3: a necesitar para los componentes principales. Esta.
+01:31:53 Speaker 1: El coeficiente de determinación era el r cuadrado, ¿cierto? El r mayúscula, cuadrado. El coeficiente de determinación que me dice que tan bueno, mal último de la reversión.
+01:32:03 Speaker 2: Entonces,
+01:32:04 Speaker 1: notan este y.
+01:32:06 Speaker 2: Este y que está aquí es el y verdadero. El y con sombrerito es el y estimado. Y esta diferencia es el verdadero menos el estimado. Si el estimado yo lo paso para allá, tengo el verdadero menos el estimado. ¿Y eso qué me da? El error.
+01:32:26 Speaker 3: Entonces aquí yo tengo error.
+01:32:28 Speaker 1: Ahora, ¿se acuerdan la fórmula de la varianza? La fórmula de la varianza era cada valor menos la media al cuadrado entre n.
+01:32:40 Speaker 2: Entonces, ¿estas estructuras que ven en la parte superior tienen forma de varianza? Este sería el numerador de la varianza de qué?
+01:32:53 Speaker 3: La definición activa.
+01:33:00 Speaker 1: Según la fórmula de la varianza. La fórmula de la varianza era cada y menos su media elevada al cuadrado entre y. La suma.
+01:33:14 Speaker 2: Si es así, este es el numerador de y. La fórmula como era de
+01:33:29 Speaker 1: la varianza de Y era la sumatoria de cada Y
+01:33:33 Speaker 2: menos Y medios al cuadrado entre
+01:33:37 Speaker 1: N o entre N. ¿Se
+01:33:40 Speaker 2: acuerdan? Esa es la varianza.
+01:33:43 Speaker 1: ¿Esa estructura no es la que tengo ahí?
+01:33:46 Speaker 3: ¿Acá?
+01:33:47 Speaker 1: Solamente me faltaría dividirlo entre N. Pero si esto también lo divide entre N y eso también lo divide entre N, ¿qué tendría ahí?
+01:33:55 Speaker 3: Puras varianzas. Puras varianzas.
+01:33:57 Speaker 2: Si nosotros tenemos fracciones que tienen el mismo denominador, me basta comparar los numeradores para saber cuál es mayor, cuál es menor, ¿cierto?
+01:34:07 Speaker 1: Asumamos eso, que todas tienen entre n, entre n, entre n, entonces yo me puedo quedar, puedo
+01:34:12 Speaker 3: simplificar y puedo quedarme solo con
+01:34:13 Speaker 1: los numeradores, ¿cierto?
+01:34:16 Speaker 2: Ya. Entonces, al final lo que estamos teniendo
+01:34:19 Speaker 1: son varianzas y qué tipo yo tengo. La varianza total, o sea, la varianza del Y verdadero,
+01:34:25 Speaker 3: va
+01:34:26 Speaker 1: a ser igual a la varianza de mi predicción más la varianza del error.
+01:34:32 Speaker 3: ¿Cierto? Entonces,
+01:34:34 Speaker 1: la variabilidad de todo mi
+01:34:35 Speaker 2: Y original,
+01:34:37 Speaker 1: el verdadero, va a ser igual a
+01:34:40 Speaker 2: la variabilidad de la predicción que encuentro con mi predicción más la variabilidad del error.
+01:34:48 Speaker 3: Eso tiene sentido, ¿cierto?
+01:34:51 Speaker 2: Es como que este es mi 100% y mi 100% está fraccionado en todos. A veces aquí puede haber más porcentaje, a veces aquí puede haber más porcentaje. Pero siempre
+01:35:01 Speaker 1: los dos me van a sumar el 100,
+01:35:03 Speaker 3: ¿cierto?
+01:35:04 Speaker 2: Ahora, ¿tiene sentido hacer esta división? ¿Qué es lo que hace esta división? Divide la variabilidad de la
+01:35:11 Speaker 1: predicción del modelo entre el
+01:35:14 Speaker 3: total como referencia.
+01:35:16 Speaker 2: ¿Qué es lo que me interesaría medir acá? ¿Qué pasa si mi modelo es perfecto? ¿Cuánto me tendría que dar esta división si el modelo es perfecto? Si el modelo es perfecto, ¿cuánto le queda el error? C. Entonces, ¿esta división cuánto
+01:35:31 Speaker 3: me daría? Uno. El R
+01:35:34 Speaker 2: cuadrado como máximo, ¿cuánto puede valer?
+01:35:38 Speaker 3: Uno.
+01:35:39 Speaker 2: Porque cuando es perfecta, esto me va a dar uno. Caso contrario, si todo se lo lleva el error y no me queda nada aquí, ¿cuánto me va a dar esta división? C. ¿El valor mínimo debe haber? Esa es la razón de estar entre los
+01:35:55 Speaker 3: límites del R al cuadrado.
+01:35:57 Speaker 2: Entonces, ¿cómo se interpreta esto? Es la variabilidad que explica el modelo respecto a la variabilidad total.
+01:36:05 Speaker 1: Al ver este resultado, estoy diciendo implícitamente
+01:36:08 Speaker 3: cuál es el error, ¿cierto? Porque si yo
+01:36:11 Speaker 2: digo que mi modelo explica el 70%, implícitamente estoy diciendo que el error es de 30. ¿Cierto? Si digo que mi modelo explica el 50, digo que el error es 50. Y así. Y al final, ¿qué es lo que busco? El R al cuadrado más alto.
+01:36:27 Speaker 1: El modelo que explica la mayor variabilidad.
+01:36:29 Speaker 3: ¿Cierto?
+01:36:31 Speaker 2: Entonces, esa es la razón de ser de la variabilidad de cuando combino unas... tengo una combinación lineal para
+01:36:39 Speaker 3: generar una nueva.
+01:36:41 Speaker 2: Esta idea, ¿por qué se las he
+01:36:44 Speaker 3: mencionado otra vez? No, porque me gusta la cosa aparte.
+01:36:47 Speaker 1: Pero, porque también sirve para entenderlo en componentes principales, porque componentes principales es una combinación lineal también. Entonces,
+01:36:56 Speaker 2: les voy a decir, la interpretación de esto es, por ejemplo, si me sale 70%, ¿cierto? El 70% de la variabilidad de Y real es explicada por la realización lineal.
+01:37:09 Speaker 1: Esa misma idea la vamos a
+01:37:11 Speaker 2: trasladar a PSA.
+01:37:21 Speaker 3: que buscamos con PCA?
+01:37:23 Speaker 1: Buscamos recoger la máxima
+01:37:25 Speaker 2: variabilidad de ambas variables, definidas como la suma de la varianza de ambas.
+01:37:32 Speaker 1: ¿Les suena suma de varianzas ahora? De las X. Entonces queremos
+01:37:37 Speaker 2: la máxima variabilidad que me generan ambas al combinarse en una sola. Quiero la máxima variabilidad. Ya. Se puede mostrar que esto ocurre cuando la recta del rojo, esta rojita que está acá, atraviesa la nube de puntos como le haría una regresión, lo
+01:37:58 Speaker 1: que acabamos de ver a su manera.
+01:38:01 Speaker 2: En este caso particular. Entonces, si asumimos que esta es una regresión, vamos a encontrar la máxima variabilidad cuando efectivamente yo haya encontrado los betas.
+01:38:14 Speaker 1: que minimizan el error y, por ende, me dan los valores de alfa y
+01:38:18 Speaker 2: de beta que generan la regresión.
+01:38:20 Speaker 1: ¿Cierto? Cuando yo encuentro el alfa y el beta, significa que he minimizado los errores, por eso he encontrado alfa y beta. ¿Se acuerdan del método para encontrar alfa y beta? El error de mínimos cuadrados.
+01:38:33 Speaker 3: ¿Se acuerdan?
+01:38:40 Speaker 2: ¿Se dan cuenta por qué todo está conectado? No
+01:38:42 Speaker 1: es que vamos a la oscura para entender la base de los poderes.
+01:38:46 Speaker 2: Porque yo sé que empecé a lo abusado ya,
+01:38:49 Speaker 1: pero ahorita lo que queremos ver es entender qué es lo que pasa por debajo.
+01:38:54 Speaker 2: Entonces... ¿Cuándo se crea una reversión? Cuando encuentro alfa y beta.
+01:39:03 Speaker 1: ¿Cuándo encuentro alfa y beta?
+01:39:05 Speaker 2: Cuando reduzco los errores. ¿Se acuerdan que les había mencionado una especie de similación? Fíjense que está en puntos y que el rojito todavía no está. Entonces yo puedo encontrar N
+01:39:16 Speaker 3: rectas, ¿cierto?
+01:39:18 Speaker 2: N rectas, pero esta recta es lo que voy a calcular, los errores. Grafico
+01:39:24 Speaker 1: una recta y calculo todos los errores, los elevo
+01:39:26 Speaker 2: al cuadrado y los sumo. Voy a tener una meta.
+01:39:29 Speaker 1: Otra recta, los errores, al cuadrado y los sumo. Imagínate que no existe todavía el medio rojito y yo calculo una recta así.
+01:39:38 Speaker 2: Calculo los errores y me sale 700. El error es al cuadrado y me sale 700.
+01:39:44 Speaker 1: Ya, la giro,
+01:39:45 Speaker 2: calculo y me sale 500.
+01:39:47 Speaker 1: ¿Ha mejorado o ha disminuido los errores?
+01:39:50 Speaker 2: Ha disminuido. Ha disminuido y ha mejorado. Sí, por favor. Ya. Entonces, sigo moviendo. Y ahora me sale 300. Está bien. Sigo moviendo y me
+01:40:01 Speaker 1: sale 550.
+01:40:05 Speaker 2: Ha empeorado, ¿cierto? Regreso. Me sale 430. Pero ya que he encontrado 300, ¿cierto? Regreso. Y encuentro 270. Y sigo moviendo hasta que el mínimo que encontré fue 150. Ahí me tendría que quedar, ¿cierto? Porque esa es la recta que me da los errores más chiquitos.
+01:40:25 Speaker 1: Entonces, congelo la recta I, cuando me quedo cerca
+01:40:28 Speaker 2: el rojito, congelo la recta I y veo cuál
+01:40:31 Speaker 1: sería el alfa y el beta que me genera esa recta que me ha dado los errores más chiquitos.
+01:40:37 Speaker 2: Entonces, lo que yo busco es encontrar el alfa y beta que
+01:40:42 Speaker 1: minimicen los errores.
+01:40:44 Speaker 2: Eso, cuando vieron Pro, la ley estadística se llama... Método por mínimos cuadrados ordinarios. Método de reducción por mínimos cuadrados. ¿Por qué? Busco los errores más chiquitos,
+01:41:00 Speaker 3: elevando
+01:41:02 Speaker 2: los errores al cuadrado y minimizando. Cuando vi un cálculo hace dos años,
+01:41:06 Speaker 3: ¿cómo minimizan una función? La gradiente
+01:41:10 Speaker 2: derivada. Derivada. Entonces, la expresión de los errores al cuadrado se deriva.
+01:41:17 Speaker 1: respecto a alfa y respecto a beta, que
+01:41:20 Speaker 2: salen sus derivadas parciales, y los resultados de esas derivadas parciales igualadas a cero, me salen los valores de alfa y beta.
+01:41:29 Speaker 1: Eso es minimizar errores.
+01:41:33 Speaker 3: ¿Sí? ¿Más o menos? Ya.
+01:41:38 Speaker 1: ¿Para qué nos hemos ido hacia atrás? Para encontrar sentido
+01:41:41 Speaker 2: de que realmente todo lo que está arriba ocurre cuando encontramos una regresión. ¿Por qué? Porque la recta de regresión es aquella que minimiza los errores, por ende me da el alto y el menos óptimo, que maximiza la variabilidad, la
+01:41:54 Speaker 1: información que yo capturo de mis dos variables al mismo tiempo, en una sola.
+01:42:02 Speaker 2: Ya. ¿Qué más? A esta nueva dimensión que estamos generando, o sea, a esta recta, a
+01:42:12 Speaker 3: esta nueva
+01:42:13 Speaker 2: dimensión que extraerá la máxima varianza de los datos, se denomina componentes principales. ¿Por qué máxima varianza de los datos? Porque cuando tengo regresión, pasa la
+01:42:25 Speaker 1: estructura que nos trae cerrado. maximizo la variabilidad cuando me busco
+01:42:29 Speaker 2: errores, y esa variabilidad detiene
+01:42:32 Speaker 3: toda la información de mis datos originales. ¿Sí?
+01:42:36 Speaker 2: Más o menos los de María María.
+01:42:40 Speaker 3: ¿Es el cuarto, cierto? Sí.
+01:42:44 Speaker 1: Entonces, ¿cuántas dimensiones puedo obtener?
+01:42:50 Speaker 2: En sí, siempre puedo tener la misma
+01:42:52 Speaker 1: cantidad de dimensiones como
+01:42:54 Speaker 2: variables tengo. Si tengo 10 variables, si tengo 80 variables, por ejemplo aquí, podría obtener
+01:42:59 Speaker 1: como máximo 80 dimensiones. Pero como estoy reduciendo la dimensionalidad, no me compré en 80, sino siempre voy a tener que
+01:43:06 Speaker 3: diminuir. ¿Cierto?
+01:43:09 Speaker 2: ¿Cuál es la lógica de estas dimensiones? Una que puedo tener tantas
+01:43:14 Speaker 3: dimensiones como variables tenga.
+01:43:19 Speaker 2: Pero como mi objetivo es reducir la dimensionalidad, tengo que ir disminuyendo y esa disminución va a ser progresiva.
+01:43:28 Speaker 1: ¿Qué me dice por aquí?
+01:43:30 Speaker 2: Para maximizar la extracción de información, la segunda componente principal debe estar no correlacionada con la primera. ¿Por qué esto es importante? Porque si estas estaban correlacionadas, ¿se acuerdan? Y esta es la general de la de acá. ¿Qué pasa si yo de estas hubiera generado dos? X4A y X4B. Aquí me dice que la segunda no podría estar correlacionada con la primera porque
+01:43:58 Speaker 1: si no vuelvo al problema que está aquí arriba. Entonces, todas las componentes que me van a salir aquí siempre van a estar no correlacionadas con las anteriores.
+01:44:07 Speaker 3: Siempre.
+01:44:09 Speaker 2: Porque si no regresaría y tendría un bucle
+01:44:11 Speaker 1: infinito, ¿cierto? Porque vuelvo a tener correlación, vuelvo a reducir otra vez correlación y nunca tengo.
+01:44:17 Speaker 2: Entonces, lo que me asegura de componentes principales es que la siguiente, en este caso la segunda, no esté correlacionada y así sucesivamente con las demás.
+01:44:25 Speaker 1: Todas las mismas no van a ser correlacionadas.
+01:44:30 Speaker 2: Ya, los datos pueden ser representados en los nuevos datos cartesianos por las nuevas dimensiones. ¿Por qué tendría aquí dos dimensiones nuevas? Porque he partido de X1 y X2
+01:44:40 Speaker 1: originales, ¿cierto? A
+01:44:43 Speaker 2: lo mucho puedo tener la misma cantidad de dimensiones. Si he utilizado 2X, no puedo llegar
+01:44:48 Speaker 1: a tres dimensiones.
+01:44:51 Speaker 3: ¿Sí, señora?
+01:44:53 Speaker 2: Ok, entonces lo que voy a tener aquí serían igual dos, pero
+01:44:56 Speaker 1: no van a ser las mismas anteriores, sino son transformaciones. Y se verían más o menos así.
+01:45:02 Speaker 2: Las originales serían los ejes típicos y las transformaciones que hemos encontrado serían, esta sería x1 y esta otra sería x2. Y entre ellos son perpendiculares, ¿cierto? ¿Por qué? Porque no están correlacionadas. Eso es lo que me aseguran las nuevas variables
+01:45:23 Speaker 1: que vamos a obtener, que no estarían correlacionadas antes.
+01:45:28 Speaker 2: ¿Qué más? Luego vienen estos términos de autovectores y autovalores.
+01:45:34 Speaker 1: No sé si los han escuchado antes. Autovectores, autovalores, ¿los han escuchado?
+01:45:41 Speaker 3: Son las matrices para obtener, creo que, el resultado de haber rotado las variables. Ajá, sí.
+01:45:47 Speaker 1: Lo que me interesa, o sea, lo que nos interesaría de ahí serían
+01:45:51 Speaker 2: los autovalores. Los autovectores son los que nos
+01:45:56 Speaker 1: dicen la dirección en
+01:45:58 Speaker 2: la que estaría el eje. Por ejemplo, este eje está en esta dirección, este otro eje está en esta otra dirección. Entonces, el autovector me habla de la dirección, pero el autovalor, que no sé si está por aquí,
+01:46:12 Speaker 3: está en la siguiente.
+01:46:13 Speaker 2: ¿Autovalor? En la siguiente lámina vamos a tener los valores de la variabilidad que explica cada una de ellas. Entonces,
+01:46:22 Speaker 1: ¿por qué era importante lo que vimos hace un rato? Porque vamos a tener algo más o menos así.
+01:46:27 Speaker 2: Imagínense que esta era mi combinación de las
+01:46:31 Speaker 1: variables anteriores. Imagínense que... Esta combinación lineal.
+01:46:48 Speaker 2: Habíamos dicho que
+01:46:49 Speaker 1: puedo utilizar, por ejemplo,
+01:46:53 Speaker 2: estas 80 variables.
+01:46:55 Speaker 1: ¿Cierto? Con estas 80 variables puedo generar 80 dimensiones nuevas.
+01:47:01 Speaker 2: Imagínense que estas 80 variables están aquí. Y con estas 80, que serían
+01:47:07 Speaker 1: mi 100% de información, similar al coeficiente de determinación, Las 80 representan el 100% de mi información.
+01:47:15 Speaker 2: Esos 100% se van a redistribuir en las nuevas 80 dimensiones que yo tengo. Pero el total de las 80 originales
+01:47:23 Speaker 1: es el 100% que se le ha representado acá. Entonces,
+01:47:27 Speaker 2: cada componente va a tener un
+01:47:29 Speaker 3: porcentaje de mi 100% total,
+01:47:32 Speaker 1: similar al coeficiente de determinación.
+01:47:34 Speaker 2: Y lo que nos asegura componentes principales es que la
+01:47:37 Speaker 1: primera represente más valor, más costos
+01:47:40 Speaker 2: de ventajas de 100, la segunda en segundo lugar y así sucesivamente. Pero la suma de todas tiene que darme el 100% de 100 de las 80 originales, por ejemplo.
+01:47:52 Speaker 1: Entonces, la variabilidad total la podemos acumular aquí, similar a un coeficiente de determinación del r cuadrado. Y el resto serían las x' que serían las componentes.
+01:48:03 Speaker 2: creadas, que van a representar un
+01:48:06 Speaker 3: porcentaje del total.
+01:48:08 Speaker 2: Entonces, ¿qué es lo que puedo hablar? Variabilidad de cada una respecto a la variabilidad total.
+01:48:14 Speaker 3: ¿Entienden la idea?
+01:48:16 Speaker 1: Esta es mi variabilidad total de los datos, es como el 100% de mi información. Ese 100% va a estar distribuido
+01:48:23 Speaker 2: en cada una de las componentes
+01:48:25 Speaker 3: principales que nacen de mi reducción de difusión.
+01:48:30 Speaker 1: Por eso es que si
+01:48:32 Speaker 2: yo tomo las 80, voy a
+01:48:35 Speaker 1: dar el 50%. Pero si tomo las
+01:48:37 Speaker 3: 60 primeras, tengo
+01:48:40 Speaker 1: que ver qué porcentaje del
+01:48:41 Speaker 2: 100 me estaría quedando. Si tomo las 5 primeras, tengo
+01:48:47 Speaker 1: que ver qué porcentaje del 100% me
+01:48:50 Speaker 3: estaría quedando aquí.
+01:48:52 Speaker 1: ¿Quién me da ese porcentaje del 100? El autovalor.
+01:49:00 Speaker 2: que van a ser nuestras manos de la diosa psicobalante, que están en la siguiente línea.
+01:49:10 Speaker 3: Gracias. Gracias.
+01:49:35 Speaker 1: De las transformadas.
+01:49:37 Speaker 2: Y esto es
+01:49:38 Speaker 1: la transformación.
+01:49:40 Speaker 3: ¿Sí? ¿Se nota que no me nota?
+01:49:42 Speaker 2: Este sería el componente que ha salido. Decíamos,
+01:49:46 Speaker 1: si yo trabajo con dos variables originales, máximo me va a generar dos componentes. Aquí, ¿cuáles son mis variables? La variable X y
+01:49:56 Speaker 2: la variable Y. ¿Y cuáles son
+01:49:58 Speaker 1: los componentes que he generado? Componente 1 y componente 2.
+01:50:04 Speaker 2: ¿Sí? Entonces, yo ingreso dos variables y obtengo dos componentes.
+01:50:09 Speaker 1: Igual acá. He ingresado dos variables y obtengo dos componentes que no son
+01:50:15 Speaker 3: los mismos, como ya se va. ¿Sí?
+01:50:18 Speaker 1: Hasta ahí estamos claros de que no son los mismos. Ahora, cuando yo sumo la variabilidad de los dos, como solo son dos, todo esto me va a dar el 100
+01:50:27 Speaker 2: % de la información de mi tabla. ¿Cierto? ¿Sí? Todo eso me da un 100%.
+01:50:34 Speaker 1: Es como si fuera Y. Y ese 100% va a estar distribuido entre, esto también es la variabilidad, pero que es el otro valor. ¿La variabilidad de qué? De las nuevas componentes principales. ¿Qué
+01:50:47 Speaker 2: serían las pseudo X y Y? Las nuevas.
+01:50:52 Speaker 1: Porque es como si fuera un mismo E que solo
+01:50:54 Speaker 3: lo ha rotado, ¿cierto? Entonces...
+01:50:58 Speaker 1: La variabilidad total va a estar distribuida un poquito aquí y el complemento aquí. Siempre la variabilidad de las
+01:51:06 Speaker 2: nuevas componentes tiene que sumarme el 100% de la variabilidad de todos los datos. ¿Cuál es la lógica o qué es lo que nos ofrece como beneficio el PSA? ¿Por qué nos convence utilizarlo?
+01:51:20 Speaker 1: Porque, por ejemplo, de manera original, de repente aquí tenían 50% de información
+01:51:25 Speaker 2: y aquí 50%, ¿cierto? Puede ser. Pero el beneficio que nos ofrece
+01:51:31 Speaker 1: PCA para comenzarnos a usarlo es que hace unas transformaciones lineales de tal manera que
+01:51:39 Speaker 2: la primera componente nos va a asegurar sí o sí la máxima variabilidad acumulada.
+01:51:46 Speaker 1: Por ejemplo, de manera individual y original podría tener 50% o 50%. El componente principal me consigue una combinación lineal en el
+01:51:58 Speaker 2: primer componente que me asegura un 85
+01:52:00 Speaker 3: % de información, por ejemplo.
+01:52:05 Speaker 1: Y el resto se lo
+01:52:06 Speaker 2: deja al segundo componente porque igual debe sumar 100.
+01:52:10 Speaker 1: O de repente, si es muy bueno en la sucesión, me
+01:52:13 Speaker 2: acumula aquí el 95% de información. Si ya tengo el 95,
+01:52:18 Speaker 1: puedo eliminar esto, ¿cierto? Porque prácticamente aquí tengo un montón de información del total solo con una dimensión. En cambio aquí yo necesitaba dos para acumular
+01:52:30 Speaker 2: el 100% porque tenía 50-50. En
+01:52:33 Speaker 1: cambio con estas transformaciones, aquí
+01:52:35 Speaker 2: yo estoy sumando el 95%. Entonces como ya tengo 95, puedo darme el lujo de eliminar eso.
+01:52:43 Speaker 1: Y de esa manera que estoy haciendo, reduzco dimensiones.
+01:52:46 Speaker 2: D2, puedo elegir.
+01:52:49 Speaker 3: Sí.
+01:52:50 Speaker 1: Entonces, ese es el beneficio que me da con poderes principales. Me permite unas transformaciones lineales. que el 100% de mi probabilidad lo resume y siempre le va a dar más
+01:53:03 Speaker 2: carga a la primera componente, en segundo lugar a la segunda componente y así. De tal manera
+01:53:08 Speaker 1: que me va a dar más facilidad de yo poder empezar a reducir dimensiones y con las que
+01:53:14 Speaker 2: tienen menos variabilidad y me quedo con las que tienen menos variabilidad. Por eso es que puede eliminar dimensiones. porque siempre la mayor variabilidad va
+01:53:25 Speaker 1: a estar acumulada en las primeras, y las últimas puedo eliminarlas tranquilamente. Eso es cuando mi PCA está bien hecho, o tiene sustancia para acumular. Si mis variables no presentan colinealidad, no están asociadas, por más que yo haya intentado hacer un PCA óptimo, puede que aquí tenga 50-50, ¿cierto? Y aquí a lo mucho logre 60-40. ¿Ha mejorado mi variabilidad?
+01:53:54 Speaker 3: Poquito,
+01:53:55 Speaker 1: pero si quito esta última me quedo con 60. Daba igual a que yo no me esfuerce más alerta y solo yo me quedo con 50. Entonces, ahí no hay
+01:54:05 Speaker 3: un muy, muy fuerte, ¿cierto?
+01:54:08 Speaker 1: Ahí no me conviene hacer todo este de chamba para al final hacer mucha variabilidad. ¿Qué es lo que se busca? Yo me quedo con un PCA alto cuando el primer componente que he encontrado me aseguró una alta variabilidad. Si sucede esto, está bien hecho mi PCA y está justificado de utilizarlo ahí. Si no sucede esto, mejor que el gasto se pago y sigo con mi vía tranquila. Y el PCA no me suena. Solo me va a sumar el PSA cuando yo reduzco y este primer componente se dispara. Si pasa eso, procedo. Si el primer componente no se dispara, es una señal de que por ahí no se trabaja.
+01:54:47 Speaker 3: ¿Sí?
+01:54:50 Speaker 1: ¿No, pero?
+01:54:52 Speaker 2: Ok. Entonces, esta A también es variabilidad, solo que del componente. También es variabilidad, solo del componente. ¿Cuál es la diferencia? Las transformaciones ya no tienen
+01:55:05 Speaker 3: dimensiones. Y
+01:55:07 Speaker 1: otra cosa necesaria es que para PCA se necesita estandarizar variables. Necesitamos escandalizar variables porque, como ven, trabajamos con distancias. Entonces, si las variables no están escandalizadas,
+01:55:20 Speaker 3: se va a asustar los resultados.
+01:55:23 Speaker 1: Entonces, necesitamos escandalizar porque es un algoritmo de distancias.
+01:55:40 Speaker 2: Ah, antes de eso,
+01:55:43 Speaker 3: antes de pasar,
+01:55:45 Speaker 2: lo que trata de explicar este gráfico es la variabilidad que
+01:55:52 Speaker 1: se encuentra resumida en cada componente nuevo.
+01:55:55 Speaker 2: Dijimos que es el X1 y este es el X2. componente 1 y este componente 2.
+01:56:05 Speaker 1: Dijimos que variabilidad es dispersión, ¿cierto? Entonces, aquí se puede ver que el componente 1
+01:56:11 Speaker 2: está ampliamente disperso, tiene bastante variabilidad de información, y el componente 2 es la segunda variabilidad más importante de las dos. Entonces, el componente 1 siempre tiene más variabilidad y el componente 2 menos variabilidad.
+01:56:25 Speaker 1: De tal manera que yo puedo quedarnos solo con uno para tener
+01:56:28 Speaker 3: más información de los datos. ¿Cuál
+01:56:46 Speaker 2: es la correlación en cada una? En componentes principales.
+01:57:00 Speaker 3: En la derecha, ¿cierto?
+01:57:02 Speaker 1: Porque sabemos que para que haya componentes principales,
+01:57:05 Speaker 2: uno tiene que estar más marcado que el otro. En la izquierda no logramos ninguna diferencia.
+01:57:11 Speaker 1: Y podríamos intentar componentes principales, pero nos va a salir 50-50 o 55.
+01:57:35 Speaker: Si la matriz de correlaciones es la matriz identidad, el PSA es inviable. ¿Se acuerda cómo era la matriz de correlaciones? Vimos que correlación es lo que estaba ya. Correlación es la solución de variables. Una matriz de correlaciones, ¿cómo sería?
+01:57:57 Speaker: Correlacionar cada una de las variables con sus pares, con todos los pares posibles. ¿Qué significaría que esa matriz me salga una matriz identidad?
+01:58:09 Speaker 3: Que no hay dependencia entre variables. Que no hay dependencia
+01:58:13 Speaker 2: entre variables, ¿verdad? ¿Por qué me sale la identidad? Porque solo en la diagonal sería 1.
+01:58:18 Speaker 3: Y
+01:58:19 Speaker 1: el resto sería 0.
+01:58:21 Speaker 2: 0 significa que no hay relación entre ellas. Si no hay relación entre ellas, no puedo hacer componentes principales.
+01:58:28 Speaker 3: ¿Cierto?
+01:58:29 Speaker 2: Eso es lo que nos dice esto de otra manera. Entonces necesito correlación para poder proceder con componentes, si no, no estaría justificado mismo componentes principales.
+01:58:39 Speaker 1: Ahora, ¿cómo es que puedo saber con cuántos componentes me quedo? Hay varios criterios.
+01:58:46 Speaker 2: Uno con los que nos podemos quedar podría ser la
+01:58:50 Speaker 1: prueba de Barlet.
+01:58:56 Speaker: Esta prueba de Barlet me va a permitir poder identificar con cuántos componentes como máximo nos deberíamos quedar. ¿Por qué? Esto nos sirve cuando tenemos, por ejemplo, 80. Si yo tengo 80 componentes, ¿cómo sé si me conviene 50, 30, 2 o 1? Entonces, una forma es la prueba de Butler, que es mi prueba de especificidad, que lo vamos a ver en nuestro noto, las hipótesis, porque es una prueba de hipótesis. La prueba de especificidad es una prueba de hipótesis que asume una nula y una alternativa, que lo vamos a ver en el noto también.
+01:59:50 Speaker: La proporción suficiente de variabilidad. Este de aquí se relaciona con el gráfico de... ¿Se acuerdan el gráfico del codo? ¿Qué es lo que se busca en el gráfico de todo? Voy graficando, en el eje Y tengo la variabilidad de cada componente. ¿Cierto? Cada componente va a tener variabilidad. Entonces, en el eje Y va la variabilidad y en el eje X cada uno de mis componentes. ¿Qué es lo que busco? Una diferencia pronunciada. El primero empieza súper alto. y vaya bajando drásticamente. Donde se da la caída más fuerte, significa que ahí me conviene cortar. Porque las otras componentes ya no me van a dar mucha variabilidad. Entonces mi gráfico del codo siempre espero que empiece con un ciclo súper alto y baja rápidamente. Si no veo ese gráfico, no es un componente principal importante. El gráfico está por aquí. Aquí. ¿Le suena? ¿Qué es lo que nosotros vamos a ver?
+02:01:19 Speaker: Va a tener el valor más alto que dijimos que el PSA nos ha prometido, que siempre se va a tener lo máximo que podamos acumular la variabilidad. Luego va a tener el segundo, siempre vamos a buscar una caída gráfica. En el segundo punto de febre, ahí es nuestra cantidad óptima de paga de los dos. Es uno de los criterios.
+02:01:46 Speaker: Uno de los criterios para elegir el código. Luego, cuando analizamos con... Cuando cambiamos nuestro FG, también hay otro criterio adicional que aparte del punto de infección me dice que me quedo con valores hasta tomar uno en autorector, en autovalor. Solamente me quedo por segundo y menos de uno no lo tomo. Pero podemos usar como referencia esto del punto de infección del COVID. Y luego poder probar otras opciones también. Entonces esto es para elegir la cantidad de infección.
+02:02:35 Speaker: Bueno, lo que dice por aquí abajo. Esto que hemos hecho aquí, hemos tratado de hacerlo arriba. Esto es importante. La reducción de dimensiones implica pérdida de información. Y por tanto, un menor poder predictivo. O sea, un menor R cuadrado de mi regresión, si es que he eliminado variables. ¿Por qué implica pérdida de información? Sobre todo aquí. Porque imagínense que corto en este lado, ¿cierto? Corto en este lado y estoy eliminando estas dimensiones. Entonces solamente me voy quedando con dos, cuatro. Cuatro dimensiones. De un total de cuántas? Veinticinco.
+02:03:16 Speaker 1: Entonces, yo lo que tendría que esperar y confiar, obviamente y verificar, es que todas las que estoy votando, no vote ¿cuánto? Más de... ¿Cuántos aceptarían eliminar de variabilidad? Similar a los porcentajes de vacíos, ¿cuántos vacíos aceptan eliminar como máximo? ¿Cuánto porcentaje de vacíos
+02:03:39 Speaker 3: aceptan eliminar como máximo?
+02:03:42 Speaker 2: 10%. Acá también. De la variabilidad total del 100%, ¿cuánta
+02:03:46 Speaker 1: variabilidad se estarían perdiendo?
+02:03:48 Speaker 3: Aprovo.
+02:03:50 Speaker 1: 5% ya. ¿Como máximo cuánto se estarían perdiendo?
+02:03:56 Speaker 3: 15. 15 también. Igual
+02:03:59 Speaker 2: es acá. Tenemos que verificar que
+02:04:01 Speaker 3: si bien el punto de infección me dice hasta cuándo contar,
+02:04:04 Speaker 1: puedo contar ahí, pero tengo que verificar con
+02:04:07 Speaker 2: cuánta variabilidad me quedo y cuánta variabilidad estoy eliminando. Porque por más que me dé el punto de infección aquí, pero me dice que elimino 60% de variabilidad,
+02:04:18 Speaker 3: no recibo ya.
+02:04:20 Speaker 2: Entonces tengo que verificar cuánta pérdida de información estoy teniendo. Eso es lo que me dice esta
+02:04:26 Speaker 3: alerta de acuerdo.
+02:04:29 Speaker 2: es algo que siempre voy a implicar tarde a la información lo que se espera es que se vea una
+02:04:35 Speaker 1: problemática y no una problemática y no una problemática eso lo tenemos que verificar cuando se
+02:04:44 Speaker 2: trabaja con los agent values se toma como punto de referencia el 1 y nos quedamos con todos los componentes que tienen agent values arriba de 1 y Y el resto se limita. También viene una explicación y todo eso.
+02:05:03 Speaker 3: Aquí.
+02:05:05 Speaker 1: Pero ya no vamos a entrar mucho a eso
+02:05:07 Speaker 2: porque no sé si lo estoy volviendo con datos.
+02:05:12 Speaker 1: Ya. Hasta aquí sería nuestra... Nuestro
+02:05:18 Speaker 2: tema de reducción con PCA. El output para este paso, si es que llegamos a aplicar reducción de dimensiones con nuestros datos, ¿qué sería? Un archivo de datos con los tres componentes principales identificados.
+02:05:34 Speaker 1: ¿Entienden esto? ¿Cuál sería nuestro output si es que hemos elegido transformar? Las variables que quedan, ¿cierto? Sobre todo en los componentes, porque ahora ya han perdido interpretabilidad. Imagínense que tenían un comentario. Eran, o sea, años, soles, y todos tenían su tipo de... Pero
+02:05:59 Speaker 2: cuando ya las he transformado a componentes y
+02:06:01 Speaker 1: me quedo con cinco componentes, esas cinco son las que ingresan como X y todas las otras ya no entrarían. Entonces, solo me estaría quedando con estas cinco. Ahora, cabe hacer un paréntesis. Cuando voy a aplicar reducción de dimensiones, no tengo por qué aplicar reducción de dimensiones sobre toda mi matriz de variables. Yo puedo, y es más, y lo que se suele hacer es, de todas las matrices de variables, yo identifico un grupo, que yo veo que están muy correlacionadas, y solamente sobre ellos reduzco dimensiones. No toco el resto de columnas. Entonces, reduzco dimensiones sobre
+02:06:38 Speaker 2: las que yo considero, extraigo sus componentes y
+02:06:42 Speaker 1: esos nuevos componentes los pego al
+02:06:44 Speaker 3: resto de variables que no toquen. Y
+02:06:46 Speaker 2: esa sería mi matriz para entrenar
+02:06:48 Speaker 1: en el siguiente paso siguiente.
+02:06:51 Speaker 3: ¿Entienden?
+02:06:52 Speaker 2: Entonces, esta idea del output es porque voy
+02:06:57 Speaker 1: a
+02:06:57 Speaker 2: generar, voy a
+02:06:59 Speaker 1: exportar. exportar los componentes que he generado porque las variables que han entrado para crear estas no van a entrar a mi siguiente modelo. Esto es importante considerar que ha pasado proyectos en donde
+02:07:14 Speaker 2: tienen las variables, no sé, de la 1 a la 80, ¿cierto? Y luego utilizan desde la variable, desde la 1 hasta la 10, para reducir dimensiones. Y de estas variables generan dos, componente 1 y componente 2. Entonces, lo correcto es, si yo ya utilicé estas 10 para crear mis componentes, al momento de entrenar, yo tengo la 10 a otra al final. Al momento de entrenar, si todas estas variables han sido usadas para los componentes, Este output significa que estas variables las anulo,
+02:07:59 Speaker 3: estas
+02:08:01 Speaker 2: ingresan y se unen con las que no había tocado
+02:08:04 Speaker 3: antes.
+02:08:06 Speaker 2: Entonces al final mis variables del output son las que no entraron a los componentes principales,
+02:08:13 Speaker 3: estas que no toqué,
+02:08:15 Speaker 2: y el resultado de componentes principales. Pero las que se usaron para crear los componentes
+02:08:21 Speaker 1: ya no tienen que volver a entrar. Ha pasado algunos proyectos que hacen los pedidos curados y crean los componentes muy bien, pero al momento de
+02:08:31 Speaker 2: entrenar ingresan componentes, ingresan variables que
+02:08:34 Speaker 1: usaron para crear componentes y las variables que no tocan.
+02:08:36 Speaker 2: Y con todo entrenan el
+02:08:38 Speaker 3: modelo. Y eso está malo. ¿Por qué? Porque estos componentes han
+02:08:42 Speaker 2: sido creados con estas secas. Es como que usen Y y X para entrenar algo.
+02:08:48 Speaker 3: Cierto.
+02:08:49 Speaker 1: No tendría sentido. Hay redundancia. Lo mismo pasa acá. Esta es como si fuera la Y que ha sido creada con estas X. Entonces, si ya usé estas X para crear estas Y, las X las hay.
+02:09:01 Speaker 2: Y solamente este archivo de output hace las veces de este pedacito. Asumiendo que el input no se usa y el output sí se usa para unirlo con el resto. Esa es la idea de generar este output.
+02:09:17 Speaker 3: ¿Sí?
+02:09:19 Speaker 1: ¿Está claro hasta ahí?
+02:09:20 Speaker 3: Yo solo hago más preguntas. ¿Solo se puede cambiar la dimensionalidad de variables cuantitativas nada más?
+02:09:27 Speaker 2: Hay algoritmos que sí me
+02:09:29 Speaker 1: permitan reducir en qualis también. O hay, no sé,
+02:09:33 Speaker 2: no sé si en manual de artificios, pero
+02:09:36 Speaker 1: las qualis solemos transformarlas a ordinales para simularlas aquí, o solemos cambiarlas a cualitativas para ingresarlas aquí. Pero... Existe reducción de componentes para Qualys también. Algoritmos que se
+02:09:51 Speaker 2: especializan en Qualys. Como lo que vimos,
+02:09:54 Speaker 1: trabajamos distancias. Hay algoritmos que trabajan distancias en Qualys, porque hay métricos para distancias de Qualys. Pero si
+02:10:02 Speaker 2: queremos usar estos, los transformamos en
+02:10:04 Speaker 1: ordinales o en 0 y 1.
+02:10:14 Speaker 3: ¿Hasta aquí estamos, queridos?
+02:10:17 Speaker 1: Sí, ya. Entonces, lo que seguiría para nosotros sería nuestro archivo de transformaciones. Estamos en el tiempo exacto.
+02:10:29 Speaker 2: No sé si nos va a dar tiempo de explicarles,
+02:10:35 Speaker 3: creo que... Código. Pero si no, igual les puedo pasar la diapositiva sobre...
+02:10:44 Speaker 2: Esta era la explicación de
+02:10:46 Speaker 3: los
+02:10:50 Speaker 1: real y los fake.
+02:10:53 Speaker 2: Ahí está la foto de ellos. De arriba son los de abajo y los fake eran los de arriba. ¿Cuál es la idea de eso? El análisis
+02:11:02 Speaker 3: factorial exploratorio.
+02:11:06 Speaker 2: Entonces, solamente para mostrarles la gráfica, incluso la
+02:11:11 Speaker 1: final es esta.
+02:11:18 Speaker 2: La diferencia vemos conceptualmente entre PSA y...
+02:11:22 Speaker 1: es lo que acabamos de ver, y el análisis factorial y curatorial. No es para irnos con la diferencia, porque uno es el fake y porque uno es el otro.
+02:11:32 Speaker 2: Esto es lo que
+02:11:33 Speaker 1: acabamos de ver, ¿cierto? Ingresan todas mis variables originales, en este caso 8, se combinan linealmente y generan... Por ejemplo, aquí dos componentes, pero ya sabemos que
+02:11:45 Speaker 2: en total, ¿cuántos componentes lo puede generar? Si entra en 8. Acá me están mostrando
+02:11:52 Speaker 1: 2, pero pueden dar 2. ¿Qué es lo que pasa aquí, en el análisis factorial?
+02:11:57 Speaker 3: Voy a tener
+02:11:58 Speaker 1: igual mis variables, 8. Voy a tener variables externas que pueden explicar o relacionarse con cada una de ellas, pero igualmente.
+02:12:11 Speaker 2: Pero miren lo que pasa aquí. ¿Cuál es el sentido de la flecha acá y cuál es el sentido de la flecha acá?
+02:12:19 Speaker 1: En el caso de factorial, yo parto al revés.
+02:12:23 Speaker 2: Yo parto de que existe de manera latente
+02:12:28 Speaker 1: dos factores que no puedo ver, que no sé cuáles son, pero que existen. Dos variables, que en el caso de psicología tienen más
+02:12:35 Speaker 2: sentido porque son variables latentes, que tienen una definición. pero que no se pueden medir directamente, pero que
+02:12:43 Speaker 1: yo sé que las puedo encontrar al combinar linealmente mis otros componentes. Por ejemplo, quiero medir, no sé, el grado de, ¿qué puede ser? No sé, el grado de felicidad de los
+02:12:56 Speaker 2: estudiantes de análisis de datos. Yo directamente no puedo medir eso,
+02:13:01 Speaker 1: pero puedo preguntarles, no sé, ¿cuántos veces se han medido hoy? ¿Cuántos dulces comieron ayer? No sé. ¿Cuántas veces abrazaron a su mejor amigo o su mejor amiga? Y si el chico le decía que le gusta,
+02:13:14 Speaker 2: les escribió. Y cosas así. Entonces
+02:13:17 Speaker 1: yo puedo utilizar diferentes variables y yo puedo tratar de encontrar esta relación,
+02:13:23 Speaker 2: pero partiendo de que existen
+02:13:26 Speaker 1: estos factores latentes. Entonces la relación de análisis
+02:13:30 Speaker 3: es al revés. Aquí
+02:13:32 Speaker 1: yo parto de variables y encuentro estos latentes,
+02:13:35 Speaker 2: pseudo-latentes. En cambio aquí
+02:13:37 Speaker 1: yo sé que existen, están definidos. Y voy a partir de estos otros para poder construirlos.
+02:13:46 Speaker 2: En otras palabras, las variables me permiten construir componentes. Aquí los factores los descompongo en las variables. Y también tengo pesos diferenciados.
+02:13:59 Speaker 1: Y aparte tengo información extra
+02:14:01 Speaker 3: que va alimentando. Más
+02:14:04 Speaker 1: o menos esta es como nuestra idea conceptual de la diferencia entre las dos. Se
+02:14:08 Speaker 3: aparecen en algo,
+02:14:11 Speaker 2: pero no son lo mismo.
+02:14:13 Speaker 1: El que nació primero fue el factorial.
+02:14:16 Speaker 2: Luego se usó la idea del factorial para simplificarlo
+02:14:19 Speaker 1: y poder generalizarlo y utilizarlo un poco más. Pero el que nació primero fue el doctoriano. Ese fue nuestro día y eso es como que el doctoriano. No es perfecto, que igual nos sirve un montón. Tampoco le vamos a desperdiciar. con ser un montón de utilizantes. Entonces, si se viene
+02:14:35 Speaker 2: a estar contigo, hay un poco de explicación de eso.
+02:14:40 Speaker 1: Igual se lo pueden compartir para que lo tengan. Es de...
+02:14:44 Speaker 2: Sí, igual
+02:14:46 Speaker 3: se lo pueden compartir.
+02:14:48 Speaker 1: Para que lo tengan, pues si quieren curiosidad, si nos sobra tiempo, conversamos un poco de eso y si no, igual se lo sube.
+02:14:54 Speaker 2: La siguiente clase tendríamos que...
+02:14:57 Speaker 1: que va a haber el notebook de transformación y terminando ese notebook de transformación estamos listos para terminar la parte de colegio. Yo estaba conversando con la institución que nos va a dar los datos, parece que a ellos primero nos va a interesar que apliquemos modelos no supervisados y después en una segunda,
+02:15:21 Speaker 2: como en un segundo nivel de importancia, de prioridad.
+02:15:31 Speaker 1: Entonces, nosotros vamos a tener que arrancar en el paso
+02:15:35 Speaker 2: 5, 6 y 7 por los no supervisados.
+02:15:38 Speaker 1: Lo cual es curioso y va a ser interesante porque generalmente en este curso, ¿quién se deja no supervisar?
+02:15:47 Speaker 3: ¿Por qué? Bueno, porque a veces a los chicos les gusta más los
+02:15:49 Speaker 2: supervisados, más interesante parece. Pero va a ser interesante darle vuelta,
+02:15:55 Speaker 1: ¿por qué? Porque a mí me gusta transmitir en este curso algo que a veces, siento que no se dice mucho, por ejemplo, algo que se suele decir es, los no supervisados no tienen forma de validarse, ¿cierto? En el caso de los supervisados sí puedo validar porque tengo el valor real y
+02:16:13 Speaker 3: puedo contestar.
+02:16:13 Speaker 2: Y los no supervisados se dice
+02:16:15 Speaker 1: que no se pueden validar. Pero cuando yo llevé mi summer camp de la Universidad de Washington, ellos en esa parte de los no supervisados nos mostraron opciones para validar los no supervisados.
+02:16:29 Speaker 2: Incluso hay bibliografía, incluso un trabajo
+02:16:32 Speaker 1: de uno de los profes de ahí que está dando propuestas para validar los no supervisados. Entonces va a ser interesante arrancar por ahí para de frente entrar a eso y no dejarnos tranquilo. Y sobre todo ver si con los datos de la institución podemos aplicar alguna de las condiciones que existen y que ya estamos. ¿Sí? ¿Hasta ahí? ¿Estamos bien? ¿Todos tranquilos? ¿Todos en eso? Ya chicos, entonces nos podemos
+02:16:54 Speaker 2: quedar ahí.
+  
