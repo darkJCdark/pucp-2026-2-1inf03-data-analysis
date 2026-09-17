@@ -1,11 +1,9 @@
-. {
-	. {
-		. 
+. CODIGO{
+	. Estandarizamos para que las variables con rangos mas altos tengan ventaja
+	. PCA{
+		. Cargas en un componente: De todas las varaibles, cual tiene mas importancia
 	}
-}
-
-. {
-	. {
-		. 
+	. EFA{
+		. Factores latentes: No los puedo medir, pero existen y mantienen cohesionadas a mis variables
 	}
 }
