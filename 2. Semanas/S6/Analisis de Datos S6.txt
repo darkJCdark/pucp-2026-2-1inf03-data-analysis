@@ -1,0 +1,560 @@
+# Analisis
+
+  Meeting started: 23/9/2026, 6:39:07 p. m.
+  Duration: 123 minutes
+  Participants: Speaker, Speaker 1, Speaker 2
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/9qZrhONyt1ZdpIWIC6Xu?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Speaker 1: ¿Cambiando solamente el enlace o cambiando la
+00:02 Speaker 2: forma de volver?
+00:05 Speaker 1: ¿Por qué los ensambles están
+00:07 Speaker 2: en
+00:23 Speaker 1: otra rama?
+00:24 Speaker 2: Porque van a encontrar algoritmos que hacen modelos de ensamble, que son algoritmos que están construidos, Bien para regresión o para clasificación. O sea, mis
+00:36 Speaker 1: modelos de ensamble pueden funcionar para ambos. En cambio, los de regresión son solo regresión, clasificación son solo con
+00:42 Speaker 2: clasificación, o sea, Y
+00:44 Speaker 1: cualitativa, Y claterórica. Los algoritmos de ensamble aceptan, o se
+00:50 Speaker 2: adaptan mejor dicho, se adaptan para ambos. Yo puedo utilizar un modelo de ensamble que se adapte,
+00:55 Speaker 1: adapte mi Y para cuál y para cuál. Luego vamos a entrar un poquito más a detalle con los predictivos. En uno que tengo mi variable a predecir en el otro no depende. En predictivo sí tengo una Y, en respectivo no tengo una Y y todas deberían ser E. Y bueno, luego tenemos también las opciones, los algoritmos de optimización. La idea de optimización... ¿Qué es lo que quisiéramos buscar? Vamos a leer el blog. Por ejemplo, que permite encontrar alternativas de rendimiento más rentables o alcanzables. Bajo algunas restricciones. Maximizando los factores deseados y minimizando los factores deseados. Entonces, la organización, no es como si mismo un hombre lo dice, lo que vamos a buscar va a ser cuál sería la alternativa. O sea, en la organización tenemos varios caminos. Entonces, optimización lo que me va a permitir es encontrar cuál es el camino más viable considerando
+01:56 Speaker 2: restricciones.
+01:59 Speaker 1: Entonces, esas restricciones pueden ser maximizar o minimizar. ¿Qué quiero maximizar? Lo que me conviene. Por ejemplo, si yo quiero tomar el camino, el mejor camino, ¿cierto? Lo que hace, bueno, toma el camino óptimo. ¿Cuáles serían sus restricciones por el camino óptimo? Menos tiempo principal, ¿cierto? ¿Cuál sería otro camino óptimo? Menos distancia o menos tráfico, menos densidad poblacional o de autos en ese momento. Entonces, ¿ahí qué se salía? Ahí estaríamos minimizando los variables. ¿Y qué quisiéramos maximizar? La velocidad. Maximizar velocidad de llegada. ¿Qué sería reducir el tiempo en realidad?
+02:45 Speaker 2: ¿Cierto?
+02:47 Speaker 1: ¿Habría reducir el tiempo en realidad? ¿Cierto? ¿Habría reducir el tiempo en realidad? ¿Cierto? ¿Habría reducir el tiempo en realidad? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto?
+02:52 Speaker 2: ¿Cierto?
+02:55 Speaker 1: ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto? ¿Cierto Por ejemplo, un caso típico, en el entorno
+03:10 Speaker 2: de acusaciones de datos no se usa, pero es
+03:13 Speaker 1: un caso típico que sí se usa en las redes estadísticas. Por ejemplo, esto de optimización se suele ser bastante, no bastante, pero un ejemplo que se me quedó grabado para siempre es... La profesora nos planteó en el curso utilizar modelos de optimización para mejorar el estado de salud de las vacas, de un establo, considerando diferentes
+03:36 Speaker 2: restricciones. ¿Cuáles
+03:38 Speaker 1: serían las restricciones? Los precios de las diferentes comidas que tiene la comida. Porque hay diferentes tipos de comida y cada comida tiene un costo diferente. Luego, las otras restricciones son restricciones nutricionales de la vaca. La vaca no puede consumir mucho de acá, pero sí necesita más de acá. El tema del agua. Entonces, hay muchas restricciones nutricionales. Me acuerdo mucho de las nutricionales y otros temas de dinero. Entonces, había muchos tipos de dietas
+04:10 Speaker 2: para los animales.
+04:12 Speaker 1: ¿Cómo elegíamos la mejor combinación de las dietas? Reduciendo costos, ¿cierto? Y maximizando los indicadores nutricionales de la salud. Entonces, hay algunos modelos, hay algunos casos en donde queremos maximizar unas cosas y minimizar otras, pero hay otros que solo nos interesa minimizar y otros que solamente nos interesa más. Entonces, ¿por qué es importante saber esto? Si bien este bloque no entra en el curso, ¿hay algunos otros cursos de optimización?
+04:52 Speaker 2: Debería. No, es un curso de maestría normalmente, de matemática todavía. ¿Saca matemática? No, al menos en pregrado no, tal vez en posgrado también, pero ahorita no vamos a buscar un curso. Por ejemplo, le he colocado acá porque es bueno
+05:12 Speaker 1: saber que existe optimización porque
+05:15 Speaker 2: a veces llega
+05:16 Speaker 1: un problema a nosotros y nos dicen ya, analiza y saca un modelo. Y cuando intentamos con lo típico que es predictivo o descriptivo, no encontramos solución. ¿Por qué? Porque a veces la solución es la optimización. Y eso nos pasó, por
+05:33 Speaker 2: ejemplo, en... En uno de los casos, en el
+05:38 Speaker 1: equipo de ciencia y datos de SUNAT, era como un
+05:42 Speaker 2: grupo de gente que te soluciona los problemas. Entonces tú llegabas de
+05:45 Speaker 1: otra área con tus datos y pedías que te solucionen. Entonces llegó un momento en donde vino un área con un problema.
+05:54 Speaker 2: Y
+05:55 Speaker 1: nos dio los datos y claro, como ellos habían escuchado que esa área construye modelos, generalmente
+06:00 Speaker 2: de clasificación o predictivo, estaban
+06:02 Speaker 1: esperando que se les entregue un modelo también. Llegaron como de representar el modelo predictivo para ellos. Entonces, tratando de darle el enfoque del predictivo, no salía solución por ningún lado. No tenía forma de solución. Y cuando nos estuvimos bien a conversar y preguntamos al final, y como que entendimos mejor de lo que estaban buscando, se solucionaba como optimización. ¿Por qué ellos tenían tantas restricciones? Porque esas restricciones no eran necesarias considerarlas como X o Y, sino como restricciones para solucionar el problema y encontrar el mejor camino. Y en este caso se les propuso un modelo de optimización, que fue algo diferente a lo que usualmente hacían. Por eso es que considero necesario
+06:44 Speaker 2: que en este árbol,
+06:46 Speaker 1: si bien las ramas de
+06:48 Speaker 2: utilización no están incluidas en la construcción,
+06:50 Speaker 1: las contemplemos como que
+06:51 Speaker 2: las tres coexisten. Como que las tres coexisten, porque no
+06:56 Speaker 1: siempre se va a antojar en estos bloques, a veces
+06:58 Speaker 2: se va a antojar solamente en optimización.
+07:01 Speaker 1: Entonces, el paso cinco consiste en elegir cuál de mis tres ganas es la que voy a desarrollar.
+07:09 Speaker 2: Con optimización entiendo que se refiere a reducir el costo tal vez del algoritmo. Claro, es como encontrar la mejor ruta, la mejor combinación, la mejor de opciones. O sea, en optimización me dan opciones y me dicen
+07:26 Speaker 1: cuál elijo.
+07:28 Speaker 2: Claro. Y entonces
+07:30 Speaker 1: para saber cuál elijo me dan
+07:32 Speaker 2: restricciones. Me dicen cómo el gubernamental disminuye el tiempo, disminuye distancia, disminuye tráfico, aumenta, cosas así.
+07:45 Speaker 1: Entonces optimización, me dan opciones y yo tengo que elegir cuál minimizando
+07:50 Speaker 2: o maximizando restricciones.
+07:53 Speaker 1: Esa es la idea de optimización. Entonces tendría que hacerse selectivo, efectivo, optimización. Por ejemplo, lo que hicimos una vez fue un algoritmo, utilizamos algoritmos genéticos para optimizar su distribución
+08:11 Speaker 2: de infectores.
+08:16 Speaker 1: Auditoría
+08:17 Speaker 2: Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría
+08:27 Speaker 1: Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría Auditoría
+08:35 Speaker 2: Auditoría
+08:39 Speaker 1: Auditoría Auditoría
+08:42 Speaker 2: Auditor Tenían una cantidad de fiscalizadores
+08:54 Speaker 1: y
+08:55 Speaker 2: la cantidad de fiscalizadores la tenían distribuida
+08:57 Speaker 1: por departamentos. Entonces, ¿qué es lo que pasaba? A nivel nacional existe un listado de los contribuyentes más riesgosos de acuerdo a diferentes categorías. Entonces ellos decían, tengo este listado.
+09:11 Speaker 2: Quiero saber dos cosas. ¿A quiénes tengo que ir primero?
+09:16 Speaker 1: Pero considerando que tengo tantos fiscalizadores por distrito, que cada uno le toma tanto tiempo fiscalizar
+09:24 Speaker 2: a una persona y diferentes características.
+09:27 Speaker 1: Entonces, en ese caso se optó por un algoritmo general. Otra cosa que se suele preguntar aquí es sobre el supervisado. Cuando tenemos la presencia de un target de una variable Y y no supervisado, cuando solamente queremos encontrar patrones sin tener esa
+10:07 Speaker 2: guía de nuestra variable Y. Ahora vamos.
+10:11 Speaker 1: Si entramos dentro del supervisado y no supervisado, tenemos estos bloques similares a lo anterior. Dentro del supervisado tenemos clasificación y regresión, y en la lámina anterior teníamos los ensambles, que podríamos llamar clasificación y regresión. Y dentro del no supervisado, los clasering, los típicos, la reducción de dimensiones que ya hemos visto en el sketch
+10:32 Speaker 2: 4, ¿cierto? Y luego
+10:34 Speaker 1: también tenemos reglas de asociación. que podría ser interesante identificar. Estas reglas de asociación se suelen ver en los ejemplos de sistemas de recomendaciones, ¿se acuerdan?
+11:08 Speaker 2: Hay un curso. Solo el solete. La atención va cambiando sus valores según lo que uno quiere lograr. Y en mi caso, por ejemplo, el trabajo académico era un carrito de mariolos que tenía que comenzar la ruta. Entonces ahí teníamos que cambiar las condiciones porque si es que pasada por la meta, tomaba muchos puntos. Pero lo que hacía el carro era darse la vuelta para llegar a la meta. No deberíamos ir ajustando esa función porque teníamos que ir a caer en la vuelta. Pero tampoco que se metan por lo nuevo. Por fuera de la mesa. Hay varias cosas que se tienen que cambiar. Me señalan varios métodos. Dependiendo del reparto. También lo utilizan bastante. Hay algunos cursos que se relacionan. No sé si este día en donde viene el juego. ¿Teoría de juegos? No hay... ¿Teoría de juegos no? ¿Teoría son más probabilidades? Sí, sí. ¿Hay otro que es sobre... bueno, no pasa bien, pero es algo como creación de faios o algo así? Sí, ¿no? No creo, no creo. ¿Es similar también a... pero en este curso, por ejemplo, el algoritmo que utilizan las
+12:38 Speaker 1: copas, las espiradoras, los K-202?
+12:47 Speaker 2: Esos se nos explicaron en mí, creo. Agentes, agentes, ¿no? Claro, agentes. Los
+12:58 Speaker 1: agentes entrenan de esa manera también.
+13:01 Speaker 2: Sí. Entonces, un ejemplo, el momento de recompensas.
+13:07 Speaker 1: También suele ser los algoritmos
+13:09 Speaker 2: que tienen dentro de los robots de aspiradoras. Por ejemplo, yo he visto dos tipos. Claro, antes de llevar el curso sobre eso, no me hubiera dado cuenta. Pero alguien que me di cuenta, por ejemplo,
+13:24 Speaker 1: viendo dos tipos de aspiradoras. Una, que es la que yo tengo,
+13:28 Speaker 2: que limpia siempre súper ordenada, y tiene
+13:30 Speaker 1: un algoritmo perfecto, que así me quedo mirándole, y es para acá. O sea, se nota que tiene un algoritmo ordenado internamente. Pero vi una aspiradora de otra persona que le da calera porque la enciende y hace lo que cosa, la máquina. O sea, es que limpia porque va a ver, pero si no, o sea, si tú te quedas tirando, le anotas que hay una zona donde no ha pasado y su movimiento pareciera aleatorio. Pero eso que me hace pensar a mí, que esa otra máquina... El algoritmo que le han metido para que pueda hacer una limpieza no está tan optimizado, ¿cierto? O sea, han hecho un algoritmo y ya el que salió lo pusieron y lo instalaron. Entonces me ha quedado pensando un poco de eso sobre las máquinas, ¿no?
+14:21 Speaker 2: Me
+14:21 Speaker 1: recuerda un poco a eso, ¿no?
+14:24 Speaker 2: Ok, entonces tenemos ese otro blog que también es bastante interesante, que es aparte,
+14:29 Speaker 1: pero vamos a colocarle por ahí lo que decíamos allá. y luego hay muchos nombres de los diferentes tipos de learning los
+14:39 Speaker 2: típicos que hemos visto son poquitos
+14:42 Speaker 1: honestos pero también hay diferentes
+14:44 Speaker 2: tipos de learning y hay diferentes
+14:47 Speaker 1: nombres y libros también para cada uno de ellos tenemos los híbridos que son servis supervisados transfer
+14:56 Speaker 2: learning servis supervisados ¿Cómo podemos decidir qué modelo
+15:21 Speaker 1: queremos? El paso
+15:23 Speaker 2: 5 de la TKD nos dice ya, ¿decido si es predictivo, despectivo o optimización?
+15:29 Speaker 1: Pero una vez que entro a la rama, por ejemplo, si entro a la rama de predictivo, que estaría aquí, la siguiente pregunta que sería el paso 6 es, una vez que entro a la rama de predictivo, ¿cuál es el que voy a utilizar? ¿Cuál tendrita voy a utilizar? Entonces, una vez entro al task y una vez que entro al task, elijo el algoritmo. Entonces, de los dos que hemos visto hace un rato, tenemos los profesores y el supervisado dentro del clasico. Entonces, el paso 6 es, una vez que entro a la rama del supervisado, elijo cuál técnica quiero modelar. En este paso seis, yo les recomiendo siempre elegir mínimo
+16:20 Speaker 2: tres algoritmos. Nunca voy con nada.
+16:23 Speaker 1: Mínimo tres para comparar los tres algoritmos. Y
+16:26 Speaker 2: obviamente dentro de cada algoritmo vamos a generar escenarios. Y al final no van a poder comparar más con ellos.
+16:32 Speaker 1: Entonces, paso seis, entro a la rama, ya sea de supervisado o no supervisado, y elijo qué técnicas voy a decidir.
+16:42 Speaker 2: Por
+16:43 Speaker 1: acá está el PCA que hemos visto. Por acá están los otros tipos de clustering, vamos a tener el alternativo, el CAMIS y los difusos también los tenemos por aquí. Vamos a arrancar nosotros por los de no supervisados y luego vamos a entrar a los supervisados, ya que los datos que nos están dando de la institución pinta a primer intentar no supervisados. Entonces, con el dato vamos a arrancar con los no supervisados. Y luego, viendo ya el perfil de lo que tenemos, podemos
+17:15 Speaker 2: probar algo muy supervisado para la tienda.
+17:19 Speaker 1: Entonces, paso 6, elegir la técnica. Bueno, creo que hay una simulación de conferencia para poder decidir cuál técnica me confía, pero también es lo que quiero hacer. Si quiero creer sus valores, si quiero descubrir sus usuras. ¿Qué más? Si quieres dar información, bueno, está tarde ya.
+17:40 Speaker 2: Algunas preguntas
+17:41 Speaker 1: como para saber diferentes opciones
+17:47 Speaker 2: a elegir.
+17:49 Speaker 1: Otra cosa que debemos tener en cuenta es el tipo de variable. El tipo de variable. De acuerdo, si tengo mi variable categórica o mi variable negra, tengo diferentes opciones de algoritmo. ¿Algunas? Funciones se adaptan, algunas funciones adaptan métodos ya sea para si le doy numéricas o cualitativas, pero según como yo lo veo es necesario nosotros mismos definir y no solamente esperanzamos en que el algoritmo va a saber identificarlo y va a desarrollarse bien. Entonces mejor nosotros tenemos que decidir cuál es y nosotros tomar la decisión consciente de qué algoritmo sería el mejor para nosotros. Ya, sería dentro de los supervisados y los no supervisados, por ejemplo, para
+18:37 Speaker 2: categorías tenemos algunas opciones y
+18:40 Speaker 1: para las continuas también tenemos otras comunidades. En los no-book les voy a dar también opciones para soloméricas, opciones para categorías y opciones para híbridas, para que tengamos opciones de cada ojo y luego van a experimentar. Estos son otros métodos más utilizados de acuerdo al input y de acuerdo al output. De acuerdo a la información que tengo del input y de
+19:05 Speaker 2: acuerdo a la información que tengo del input. Por ejemplo,
+19:08 Speaker 1: acá. Si necesito mejorar alguna característica, alguna salida, necesito hacer optimización. Si necesito evitar problemas, las decisiones normales. Si mi auto del modelo es numérico, tengo que utilizar alguna regresión o método que se va a hacer la regresión.
+19:35 Speaker 2: Ya, entonces eso de manera general, respecto
+19:37 Speaker 1: al paso 5 y 6, y como ven solamente es tomar decisiones de registrar lo que se decía. Una vez que hemos decidido qué es lo que vamos a
+19:44 Speaker 2: realizar, empezamos
+19:48 Speaker 1: a entrenar los coloridos.
+19:51 Speaker 2: Entonces les
+19:54 Speaker 1: decía que vamos a bajar por los puntos de seguridad que vimos.
+19:58 Speaker 2: Y por aquí tengo diferencias positivas
+20:01 Speaker 1: con datos... Es importante es recordar
+20:05 Speaker 2: antes de pasar esto. Antes de pasar esto. análisis conglomerados Bueno, por acá, un fruto.
+20:50 Speaker: Pero aquí hay algunos elementos de conglomerados. Conglomerados de estrellas, conglomerados de pausas. Por ejemplo, conglomerados de estrellas... ¿Cómo se entendería? Se identifican cúmulos de estrellas en función de su distancia respecto a un punto central común en el espacio. ¿Cómo determinamos esos cúmulos de estrellas con distancias? ¿Cierto? Luego, con un grado de fauna. Un tipo particular de fauna puede encontrarse concentrado en algunas regiones debido al hábitat favorable. Entonces, lo que vamos a ver en ellos va a ser temas de distancias principalmente para encontrar las aglomeraciones. Ahora. Las distancias se pueden considerar de dos maneras.
+21:37 Speaker: Las distancias típicas que vemos, cuando yo calculo la distancia de una variable con otra, que hago solo la diferencia, pero también existe una distancia multivariada, que con esa distancia multivariada yo puedo también encontrar atípicos, por distancias multivariadas. ¿Han escuchado la parábola? ¿Han decidido la música? Ya. Entonces, nuestro objetivo es, como dijimos hace un rato, agrupar. ¿Agrupar qué observación? El objetivo o lo esperado es que esas observaciones sean grupos homogéneos internamente y heterogéneos respecto a lo de afuera. ¿Cierto? Pues no hay cúmulos como las estrellas. Son homogéneos internamente, pero cuando comparo cláster con cláster, entre ellos son diferentes. Entonces, homogéneos internamente, heterogéneos externamente. Es importante, ¿por qué? Porque también existe lo otro. Existe lo contrario, que es heterogéneos internamente y homogéneos externamente. También existe, que es justo un tipo de mostreo. Que los mostreos existen de los dos tipos. Entonces, es importante, pero es un poco redundante esto, pero es un poco de referencia. Si no, no sería gratis. Por ejemplo, yo tengo dos preguntas, ¿no?
+23:10 Speaker: Para que sean homogéneos internamente, ¿qué es lo que tendría que tener? Por ejemplo, todos acá son triados. Y acá todos son cuadrados. ¿Cierto? Aquí yo tengo homogéneos internamente y heterogéneos entre ellos. Pero para que sea el caso contrario, ¿qué es lo que yo tendría que tener? Tendría triángulo cuadrado, triángulo cuadrado. Y acá también debería tener triángulo cuadrado, triángulo cuadrado. Si de repente acá hay un círculo, acá también hay un círculo. Entonces, ¿qué es lo que tenemos? Aquí tenemos heterogéneos internamente, pero homogéneos cuando se compara entre ellos. Este escenario no es clustering. Este escenario sí es clustering. En clustering queremos reducir la distancia de cada elemento respecto a algún centro o algún punto de referencia. Entonces, como quiero reducir la distancia, necesito que sean homogéneos, porque si son heterogéneos, internamente van a ser súper separados.
+24:13 Speaker: Ahora, esto sí existe. Y existe un tipo de mostreo para encontrar grupos de este tipo, otro tipo de mostreo para este tipo. Por eso les he dejado la referencia. Pero esto es lo que nosotros buscamos para el clase. Para nuestro análisis de complemento. Entonces, como nosotros nos vamos a basar en distancias, debemos recordar que existen diferentes tipos de distancias. Acá les he colocado algunos nombres. Diferentes medidas. Ahora, están los nombres ahí, pero acá están las ecuaciones. Por ejemplo, la primera que utilizamos es la cliviana. ¿Cierto? La distancia cliviana es la que más utilizamos. Han escuchado de repente estas otras. La de Magenta la han escuchado. ¿Cuál era la característica? ¿Se acuerdan?
+25:05 Speaker: Como bloques, ¿cierto? Como bloques, siguiendo el patrón de la ciudad. ¿Cuál de esos otros han escuchado? La de Chiviche. ¿La de Chiviche? ¿Sí?
+25:24 Speaker 1: Son diferentes métricas de distancia. Por acá hay algunos gráficos. La euclidiana es el punto, la distancia más cercana de un punto a otro, ¿cierto? La línea recta. Esa es la euclidiana, la línea recta. La fórmula es... La raíz cuadrada de las distancias al cuadrado. Esa es la frontera. Es importante recordarlo porque luego hay una métrica que es la parte interna de la euclideana. Que no es la euclideana sino lo interno, o sea, sin la raíz cuadrada. Es una métrica. Entonces, la euclideana es las distancias al cuadrado en suma y raíz cuadrada de ellos. Que se ve así, la línea recta entre dos puntos. La Manhattan, la que decían es, sería esta verde, ¿cierto? La primera es la azul, o la morada, no sé qué quiere decir, y la Manhattan sería la verde, siguiendo bloques. Y la estructura es de esa manera, con varios aspectos de las distancias. Luego, tenemos la de Bill Kowski, que también es muy diferente, no sé si llega a ver ahí, pero hay algo mucho mejor. Tenemos nuestro valor de P, que es el valor de la raíz aquí y del exponente, de este otro lado. Y según se va moviendo P, ahí va desde, por ejemplo, P0,25 y este último es por P al infinito. Acá sería P4. Entonces, según se va abriendo nuestro valor de P, la distancia que vamos a ver, ¿qué estaría pasando con esa distancia? Si la tratas de calcular desde aquí hasta aquí. Por ejemplo, si comparamos la primera con esta. ¿Cuál es menor? ¿La de P1 o la de P025? Si lo vemos con dos, uno y dos. Si tengo esas distancias, ¿qué pasa si lo dejo con acá uno, uno, uno, uno, uno? ¿Y qué pasa si le pongo dos? ¿Dónde sería mayor? ¿En uno o en dos?
+27:58 Speaker 2: En dos,
+27:59 Speaker 1: ¿verdad? Entonces va aumentando. Cuando ya tenemos este valor del infinito, este valor del infinito, bueno, ya eso es el
+28:12 Speaker 2: extremo. No lo tendríamos, no tendríamos el exceso.
+28:17 Speaker 1: Yo nos he colocado aquí para cuándo utilizamos mil cosas y yo no recuerdo haberlo utilizado,
+28:23 Speaker 2: o sea, como cultura general, conociendo de qué
+28:25 Speaker 1: va a ser el final y de ser el mismo.
+28:36 Speaker 2: Esto es solamente para recordar un poco las
+28:38 Speaker 1: distancias. Ahora, voy a compartir otra lámina un poco más grande con otros tipos de distancias, porque de los que tenemos aquí, esta distancia de over es la que nos va a ayudar para calcular cuánto tenemos variables nominales.
+28:55 Speaker 2: ¿Por qué es importante esto? Que les voy a hacer énfasis, por eso es que a clustering le quiero dar como tres, no solo dos, sino tres clases
+29:01 Speaker 1: y se puede más. ¿Por qué? Porque, claro, generalmente por practicidad decimos, nos cuidamos con las variables numéricas y
+29:10 Speaker 2: aplicamos nuestros algoritmos. Quiero decir que siempre las cuantic, cuando las quali las discriminamos, ¿cierto? Y las rezamos aparte o las convertimos a danos. Y
+29:19 Speaker 1: las forzamos a entrar como cero y cero. Pero... Existen funciones, en este caso cálculos para la distancia, que me permite hacer calcular
+29:28 Speaker 2: distancias de nominales, por ejemplo. Manteniéndoles como nominales. Entonces,
+29:33 Speaker 1: este tipo de opciones para trabajar con nominales u ordinales también nos va a servir mucho. ¿Por qué? Porque como
+29:41 Speaker 2: podrán ver, los datos que tenemos de la TA son con varios nominales. Entonces nos va a servir
+29:50 Speaker 1: mucho, en esta ocasión, probar algoritmos y distancias para nominales. Nominales u ordinales. Ya. Ok, entonces ya vamos a
+30:02 Speaker 2: llevar a este tipo de aportos.
+30:04 Speaker 1: ¿Qué más? Luego, dentro de nuestras opciones
+30:10 Speaker 2: de
+30:11 Speaker 1: clase en general, tendríamos dos hitos. dentro de los métodos de
+30:17 Speaker 2: aglomerado.
+30:19 Speaker 1: Tendríamos métodos jerárquicos y métodos no jerárquicos, o métodos de aglomeración.
+30:27 Speaker 2: Ambos son para hacer cláster. Ahora, ¿por qué les damos énfasis? No
+30:32 Speaker 1: siempre se utiliza, pero es importante conocerlo, porque algunas veces sí queremos llegar a los aglomerados siguiendo
+30:39 Speaker 2: cierta jerarquía.
+30:40 Speaker 1: Por ejemplo, en el caso de datos de tipo biológico
+30:46 Speaker 2: o temas de biología, en biología ustedes saben que existen los reinos, ¿cierto? Los reinos, los subreinos y todas esas cosas.
+30:54 Speaker 1: Entonces, algunas veces, si queremos hacer clustering en temas de... de biología, por ejemplo, necesitamos considerar las
+31:05 Speaker 2: agrupaciones o jerarquías ya existentes,
+31:08 Speaker 1: tendríamos que hacer, no un placer típico de los que conocemos, sino considerar el método jerárquico. Porque si hacemos uno de los típicos que hemos visto, vamos a mezclar cualquier cosa y a veces es importante la metodología jerárquica. Entonces,
+31:24 Speaker 2: cosas
+31:25 Speaker 1: importantes de los métodos jerárquicos. Una es la mejor representación de un método jerárquico de agrupación. ¿Qué más? Y bueno, se mantienen las jerarquías ya existentes en
+31:57 Speaker 2: nuestros datos.
+32:00 Speaker 1: Además, hay bien en los tipos, los métodos jerárquicos, los algoritmos aglomerativos y tenemos los
+32:05 Speaker 2: algoritmos dinámicos.
+32:07 Speaker 1: Entonces, si bien principales los métodos jerárquicos mantienen algunas jerarquías ya existentes, y los tienen ya existentes. Y la gráfica de representación para ellos es un entorama, que ahora vamos
+32:20 Speaker 2: a ver que es una especie de árbol.
+32:23 Speaker 1: Y existen dos tipos de jerárquicos, los jerárquicos agromerativos y los jerárquicos divisivos, que ya por el mismo nombre ya se pueden imaginar que es lo que hagan, ¿cierto? Esta es la estructura del programa. Como podemos ver, se ve efectivamente como un árbol,
+32:43 Speaker 2: ¿cierto? Pero la diferencia es que mantengo la
+32:47 Speaker 1: idea de agrupar por distancias. Entonces, no significa que las observaciones que están a la izquierda... estén ordenadas por algún motivo en particular. O sea, por ejemplo, no es que estén en orden alfabético o nada de eso. O sea, no por una sola variable me refiero, sino que se muestran en la parte izquierda debido a las distancias que habrían entre ellas. Por ejemplo, si estas dos... Se parecen y tienen que estar juntas, en el diagrama van a
+33:22 Speaker 2: aparecer aquí y no es que hay un árbol que va a aparecer a viva,
+33:25 Speaker 1: la otra abajo, y les voy a ir con una venta, no. Estas uniones de los árboles no son por casualidad o por detalle del cerebro. Las observaciones en la parte izquierda se ordenan por distancia, las más cercanas van juntas, y como pueden ver, siempre el diagrama tiene una rama inicial. Es la primera composición. Entonces, este endograma tiene una primera composición. Como pueden ver aquí, ¿qué es lo que podemos cumplir? Generalizamos el endograma desde arriba.
+33:57 Speaker 2: Tengo que hacer una primera discriminación. En este caso, el endograma estrella.
+34:02 Speaker 1: Si tengo que hacer una primera discriminación, quien sale primero es esa primera vez de X aquí. Como pueden ver, todas las demás están abarcadas en este gráfico.
+34:12 Speaker 2: ¿Verdad?
+34:14 Speaker 1: Entonces, ¿qué nos puede decir nuestra estrella?
+34:20 Speaker 2: No necesariamente ser más grande. Más grande si es que consiga una variable,
+34:26 Speaker 1: ¿cierto? O más
+34:28 Speaker 2: grande si hablamos
+34:39 Speaker 1: de los cúmulos de estrellas.
+34:49 Speaker: Cada brazo vendría a ser una agrupación. Mi primer corte me genera dos brazos. Mi primer brazo está constituido por una sola estrella y el segundo es el brazo por toda la estrella que está debajo. ¿Eso qué significa? Si yo hago un plaza, en una me sale una estrella y en el otro todas las demás. ¿Qué puedo describir de esa estrella que está de abajo? Que tiene...
+35:19 Speaker: No necesariamente porque consideramos la estrella como un individuo. ¿Cierto? Pónganse que en lugar de estrellas son personas. Entonces me ha salido un clúster de una persona. Y en este otro clúster hay más personas. Entonces este es un clúster de una sola estrella. Es como la más diferente. La más diferente, exacto. La más diferente pero ya no por una sola variable. si no, de manera multivariada, de todas las variantes que se consideran. Entonces, este endograma me puede servir para encontrar atípicos, como por ejemplo aquí, que hay este tipo de escenarios, pero si el endograma de arranque empieza con una partición, así, y acá yo me eco varias ramas, y acá también tengo varias ramas, ahí puedo decir que me encontré atípicos, ¿cierto? o al menos clústeres atípicos, porque para típicos y típicos ya usarían clústeres. Pero al menos clústeres atípicos. Pero si tengo en la primera producción ya un clúster de uno solo, ya eso significa que es tan diferente que hace el grupo con ella misma. ¿Cierto? Entonces, la forma de analizar o interpretar estos ordenogramas es haciendo cortes. Por ejemplo, haciendo cortes en las líneas verticales. Por ejemplo, un primer corte que podemos hacer es aquí.
+36:47 Speaker: Corto esta línea y veo, estas se abren dos. Eso significa que hay dos clásteres a esta altura. Si yo cojo otra línea, por ejemplo, aquí. Aquí hago un corte y arriba hago otros más cortes. Entonces desde esa línea hacia abajo, ¿cuántas ramas se abren? Acá hay una.
+37:08 Speaker: Dos, tres, cuatro, cinco. Entonces, si hago un corte en este punto, encuentro cinco clases. Y así, sencillamente. Entonces, donde yo realice el corte, bueno, acá va a ser más difícil cortar. Si hago el corte a esta altura, si hago el corte aquí, estaría encontrando...
+37:32 Speaker: Sí, si hago el corte, o sea, a lo que voy es, el corte se hace en mi línea, bueno, es así, se ve horizontal, pero si tengo el diagrama de esta manera, sería la recta. Entonces, en cada uno de las líneas de los palitos hago el corte, antes de una horizontal, antes de que se abra. Entonces, es una forma de interpretar. Hago un corte y luego analizo cuántos clústeres estarían siendo conformados. ¿Por qué esto es bueno? ¿Cuáles son las ventajas de un demograma? Que el demograma le da la flexibilidad al investigador a, de acuerdo a diferentes factores, tomar 5 clústeres, 10 clústeres, 2 clústeres. ¿O no hay clases? Este delograma me da esa parte. Flexibilidad. ¿Por qué? Porque nosotros las clases que hemos visto, nosotros les decimos que tenemos 5, ¿no es cierto? Si me genera 5, ya los tengo. En cambio, el delograma me da la flexibilidad de si quiero más granularidad o menos granularidad. Esta es la idea de lograr. Ahora, hay unos gráficos que se llaman biogenéticos. Si lo pueden buscar ahí, que también pueden usar biogenéticos. A ver si es que les sale. Tenía algo que ver con biogenia.
+38:53 Speaker: Ya. Esos, por ejemplo, esos tipos de gráficos son bastante usados en biología. Lo que hacen ahí es agrupar por diferentes características de los organismos vivos, armas, gráficos, filogenéticos. Entonces, los de biología fijo tienen que agrupar por jerarquías. No pueden agrupar sin jerarquías. Siempre por jerarquías. Y obviamente considerando diferentes características. Hay algunos, por ejemplo, hay una ocasión que era entre todos, imagínense que tienen a todos, en vez de que son estrellas, acá tienen todos los animales, las especies, en algún gran nivel. Entonces podríamos unirlos dependiendo, viendo quién es más parecido a quién. Y de repente les sorprendería encontrar quién es más parecido a nuestra rama. aparte de los tipos de pacientes que se parecen, podremos encontrar cual de todos los otros animales que son súper diferentes, tienen más en común con nuestra rama primate que otro. Entonces ahí se encuentran también agrupaciones con diferentes características. Un poco como un jugador dijo una, en donde me parecía que nosotros, una de las especies cercanas era, más recuerdo eran las aves. Y hacían, por ejemplo, ¿ustedes se acuerdan? ¿Han visto alguna vez una radiografía de un ala?
+40:22 Speaker: Radiografía del ala. ¿Han visto alguna vez una radiografía de un ala? Radiografía del ala del ala. Entonces yo me acuerdo que explicaban que en el arco de la filogenia, los humanos con las... Una de las cosas que tenemos en común sería que cuando creamos el escaneo del... el ala de un ave eso se parece un poco de alguna manera a nuestras manos a la estructura de las manos luego la estructura de la cabeza hay varias cosas que toman un poco pero me parece muy loco que digan que la estructura en sí de las alas Porque claro, hay algunos en las alas solamente tienen una silla, pero hay algunos que antes de las plumas de las alas tienen una estructura chiquita de huesitos, dependiendo de la especie. Entonces era muy loco considerar eso, entonces ver un dentro drama de este tipo y hacer un poco, que si yo quiero tres clases, ¿a quién le parezco? Y empezamos a ver a quién le parezco.
+41:26 Speaker: Eh, ya. Entonces, estas son características de nuestra lectura. La importante ahí es saber interpretar. Formas de concluir eso. Primero, tenemos que calcular las distancias entre todos los distintos objetos. Distancias dependiendo del criterio. Entonces, necesitamos fijo una matriz de distancias. Más de estas distancias, puede ser, tenemos un solo de una sola artícula pública o dependiendo de los criterios que hemos estudiado.
+41:57 Speaker: Luego, el arranque es considerar que cada objeto tendría que ser un placer. Cada objeto sería un placer. Y luego empezamos a agrupar los objetos más próximos. Los dos más próximos, los dos más próximos. Y considerar a este par como un solo objeto. Luego vamos repitiendo el paso y vamos agrupando desde, considerando que cada individuo su plaza hasta que tengamos las agrupaciones más grandes. Entonces, abarcamos desde mi y vamos subiendo. Si lo analizamos de esta manera, el del dobleado se vería como un algoritmo agrooperativo, ¿cierto? Porque partimos desde la unidad hasta desde el dobleado. Y más, en uno de los textos, el poder de la cocina del equipo, el poder de la educación, el poder de la educación.
+42:51 Speaker: Ok, entonces esto sería respecto a nuestro endograma, ¿no? Vamos a construir el mundo. Eh, luego, ¿cómo podemos elegir el número de clases? Cuando... No, por ejemplo, en el caso del endograma no es necesario elegirlo para construirlo, lo construimos y ya está. Podemos elegir el número de clases para exportarlo, pero al menos ya tenemos el valor final, el resultado final de nuestro endograma. Eh... ¿Cómo elegimos? La elección del número de clases es subjetiva a no ser que se utilicen métodos estadísticos como el análisis de clases latentes. Los que vimos clases latentes eran análisis factoriales, por favor. O clases de apariencia. Es el primer experto, externo, perdón, para el número de edificios, dado por el contexto de literatura subjetiva. Y mirar en el caso de acá, de Estrella, o sea, nosotros no podríamos determinar, habría que haber algún motivo o alguien que diga que son de una especie o de una especie, igual en la parte de biología. No hay un criterio como el de todo, por ejemplo, que es por experiencia.
+44:09 Speaker: Ya, por acá. La mayor parte de las investigaciones de mercados distinguen entre 3 a 10 niveles de consumidores y socios. De acuerdo al tipo de rubro, ya se tiene la cantidad de intereses que se podría dar.
+44:26 Speaker: Esto implica que el número de clases de estatal que se tengan suficientes observaciones al interior de cada uno. Estos se parecen bastante a los criterios de árbol. Como a quien me ha escuchado aquí, los criterios de árbol deben irse a la poda de los árboles, ¿cierto? Entonces, los árboles tienen que abrirse, abrirse, abrirse, pero no hasta llegar a un solo individuo. Entonces, aquí también, al momento de cortarle clases, tenemos un corte, asegurándonos que la mayoría de clases no sean punas a la persona, no son individuos, sino diferentes. Entonces, son diferentes criterios, incluso no hay muchos criterios para cortar en el lugar, depende del curso de cuál es el lugar. Contextos especiales, para diferentes tipos de instancias, lo mismo que yo decía. Dependiendo del tipo de nicho, si estoy viendo psicología, ciencias autónomicas o administrativas, puedo cambiar mi tipo, mi método, mi método que hemos aplicado por el niño.
+45:37 Speaker: Deseamos a ocupar la empresa de acuerdo a su tamaño. Bueno, creo que todo esto es redundancia a todo lo que yo deseo. O sea, dependiendo del dicho, tomo diferentes consideraciones. Resulta ver que la distancia filiana daría mucho peso a los activos dados fiscal. Cada dicho sabe cómo se comportan sus datos y, por ejemplo, si alguna distancia les conviene respecto a otras. Por eso existen diferentes tipos de distancia. Eso es lo que nos quiere decir esta lámina. A veces, dependiendo del nicho, algunas cosas no son tan obvias. Los especialistas pueden incluir diferentes tipos
+46:16 Speaker 2: de distancias o cantidad de clase. Esa realización ya la vimos antes.
+46:46 Speaker: ¿Se acuerda que cuando veíamos transformaciones? Dijimos que existen diferentes tipos, ¿cierto? De generalización, normalización. Y una de las cosas que habíamos dicho ahí es, cuando estemos trabajando con algoritmos que se basan en distancias, sí o sí tenemos que transformar la variable y quitar las unidades de medida. Entonces, esta lámina, ¿qué es lo que nos dice? Que es que tengo normalmente diferentes unidades de medida. Lo ideal es estandarizar mínimas variables. para quitarles las unidades de medida y poder compararlas y encontrarlas en cien. Eso es respecto a la estandarización o a cómo utilizarían mis datos para estos tipos de aglomeraciones. Todos estos tipos de aglomeraciones trabajan en distancia. Eso significa que para todos necesitamos estandarizados. Para todos los servicios que utilicen.
+47:46 Speaker: Ya. En los hidráulicos, luego tenemos algunos tipos de distancias. Estas distancias ya las hemos visto hace un ratito. Yo creo que esto no te habría mucho que entrar en detalle. De repente después... Cuando abramos algún algoritmo de los jerárquicos, podemos utilizar, por ejemplo, ver cuál sería nuestro beneficio de utilizar un método como el de Warp. Este método de Warp vamos a utilizarlo, vamos a ver de qué se trata y para qué se diría cuando probamos algoritmos jerárquicos.
+48:25 Speaker: Eh, sí, luego dicen, son tipos de links, creo que después pueden encontrar un comparación con la novia que estamos usando, pero se relaciona bastante a las distancias, a las distintas similaridades que vamos a encontrar. Ahora, dentro de los jerárquicos, decimos que existen dos tipos, los numerativos y los, voy a la otra palabra,
+48:49 Speaker: divisivos. La idea es similar a lo que habíamos visto en el programa.
+48:58 Speaker: Aglomerativos, por ejemplo, uno de los aglomerativos jerárquicos se llama ACNES. El algoritmo se llama así. Es el algoritmo ACNES, que es el aglomerativo. ¿Y cuál sería la idea del aglomerativo? Pasar de grupos con poquitos individuos, y liderando, y llegar a los clases más grandes posibles. Obviamente vamos a tener consideraciones, ¿cierto? Por ejemplo, un coeficiente de aglomeración. De repente en otros algoritmos se han visto que existen coeficientes unípticas que existen como topes, ¿cierto? Para no seguir, porque si yo sigo aglomerando, aglomerando, aglomerando, voy a aglomerar el 100%. Entonces, solemos tener topes coeficientes de aglomeración en este caso para poder saber hasta dónde nos quedamos. Entonces, el aglomerativo, el algoritmo que se llama ACNES, va a ir desde los individuales hasta el grupo más grande posible.
+50:01 Speaker 1: Tenemos características de ACNES, pero las vamos a utilizar cuando les utilicemos un poco, todavía no vamos a ejecutar todavía, vamos a empezar por los más teráticos. Entonces, si ACNES era un algoritmo aglomerativo, tenemos el otro algoritmo que se llama DIANA, que es un individuo. Y
+50:20 Speaker 2: es el paso opuesto.
+50:21 Speaker 1: Igual, partimos desde el 100% de grupos mucho más grandes y vamos dividiendo hasta, obviamente,
+50:28 Speaker 2: no llegar a grupos de un solo individuo.
+50:30 Speaker 1: También acá tenemos otro coeficiente para saber el momento del paro. Una métrica para poder retenernos en la división. Entonces, estos son los números que se suelen utilizar. Asnos
+50:42 Speaker 2: para el nativo y Diana para el división.
+50:45 Speaker 1: Ambos están dentro de los algoritmos que han hecho. Y la referencia de jerárquicos para nosotros es el de endogramas. Ya. Ok. Entonces ya lo tenemos ahí. Ahora podemos pasar a los no jerárquicos. Este
+51:02 Speaker 2: es como el resumen de los jerárquicos.
+51:04 Speaker 1: Jerárquicos, endogramas, el grupo divisivo y el grupo. Pero dentro de los no jerárquicos ya estarían los que de repente hemos escuchado más seguido.
+51:17 Speaker 2: Donde...
+51:18 Speaker 1: Ya podemos saber, a veces a priori, la cantidad de grupos de comprometidos a los que vamos a querer llegar o encontrar. Tenemos aquí un criterio de varada, similar al anterior y similar en árboles también se tienen así. Y vamos a tener una métrica, que es la suma de cuadrados dentro de los comprometidos para mejorar. Esta suma de cuadrados... Esta es la suma de distancias al cuadrado.
+51:48 Speaker 2: ¿Se acuerdan que nos dije la fórmula de la euclidiana? Que era distancias al cuadrado y raíz cuadrada de eso.
+51:57 Speaker 1: Nuestra métrica para identificar si paramos o no, si están bien o no, va a ser la suma de los cuadrados. Pero la suma de las distancias al cuadrado, es la raíz de la euclidiana. ¿Qué
+52:09 Speaker 2: ahora sentamos hoy?
+52:23 Speaker 1: ¿Cuáles son las características primero del cambio? Debemos especificar la cantidad de K que queremos construir. A la diferencia de los no jerárquicos, en los no jerárquicos no tenemos un K. El objetivo es minimizar la disimularidad de los elementos dentro de un numerado, o sea, disminuir estas distancias y maximizar las distancias de los elementos fuera, lo que os había dicho aquí. Minimizar internamente y maximizar distancias de un elemento de un cláster con el otro elemento de un cláster. Eso tiene que ser internamente son mínimos. ¿Qué más? No sé si voy a decir definición global. Ya, solamente me va a dar óptimo local. Ya, es una definición extra. Luego, el algoritmo de Cummings es convencionalmente rápido, por eso es uno de los más utilizados, pero es sensible a la elección de desempleo inicial. Eso significa que si no elegí bien mis valores iniciales, puedo llegar a resultados diferentes. Y obviamente también es sensible a los
+53:30 Speaker 2: atípicos. Acá es comillas. ¿Por qué sería sensible a los atípicos?
+54:02 Speaker 1: También es sensible a la elección de los centroides. Por eso es que si mirara... Recuerdo que cuando entrenamos los algoritmos...
+54:15 Speaker 2: Hace una variación, ¿se acuerda? Es la idea de es sensible a centroides, ¿qué significa? Que si yo elijo mal mis centroides iniciales, que suelen ser random, si yo los elijo mal, mi resultado final va a ser muy diferente.
+54:35 Speaker 1: ¿Cuál sería entonces una opción válida
+54:38 Speaker 2: para disminuir este error?
+54:44 Speaker 1: Poder elegir diferente un grupo, ¿cierto? Y como que entrenar el modelo con diferentes valores iniciales. Porque puede que uno me dé un óptimo, como dice por arriba, un óptimo local. Pero si pruebo diferentes algoritmos, de repente puedo llegar al óptimo comparando los excepcionales. Entonces,
+55:02 Speaker 2: ¿cuál es la idea que está detrás? Inicialmente tengo la nube de puntos, es más, ahí no se ve, hay un trato más grande.
+55:10 Speaker 1: Está en la línea final. Acá están los pasos. El primer paso, seleccionar
+55:20 Speaker 2: centrares iniciales
+55:22 Speaker 1: de los tácticos operados. Si quieres elegir cada
+55:26 Speaker 2: 5, elijo 5 iniciales, 5 valores iniciales. Luego,
+55:32 Speaker 1: asignar cada valor al conglomerado cuyos vectores son más cerrados. Tengo 5, tengo mi nube de puntos. Y establezco 5 rasgos.
+55:46 Speaker 2: Y o sea, empiezo a calcular la distancia de
+55:49 Speaker 1: cada punto con los 5. Y donde esté más cerca, lo junto. Y así cada punto con los 5 y el que les dé
+55:56 Speaker 2: la distancia más cerca, lo uno de aquí.
+55:58 Speaker 1: Esto va a dar un segundo punto. Luego, para cada uno de los enumerados, una vez que ya los tenemos armados, se recalcula el centro. basado en los elementos que he agrupado. Ya los he agrupado, entre ese mismo grupo vuelvo a recalcular el centroide, que sería como que usted cree más o algo así, y actualizo el centroide. Ya no sería el random que encontré al inicio, sino ahora sería el recalculado con los elementos que he
+56:25 Speaker 2: agrupado en una primera instancia.
+56:28 Speaker 1: Y luego, ¿qué es lo primero que hacer? Regreso al paso 2 hasta que consiga una convergencia. El centroide en este caso es calculado como el vector de las medias. Entonces, ¿cómo se vería en el algoritmo? Tengo la nube de puntos. Por ejemplo, tengo la nube de puntos y para un K igual a 2 necesito elegir K centroides aleatorios.
+56:52 Speaker 2: Entonces, por acá estamos eligiendo estos dos rojos.
+56:55 Speaker 1: La nube de puntos es así, elegimos aleatoriamente estos dos.
+56:59 Speaker 2: ¿Qué es lo que hacemos en el siguiente paso? Calculamos esta distancia de cada punto con el rojo. Esto con el rojo, esto con el rojo, esto con el rojo, esto con el rojo. Por ejemplo, aquí, elijo este
+57:11 Speaker 1: punto. Los centroides son de los centros.
+57:14 Speaker 2: Este punto lo resto con el centroide 1 y
+57:18 Speaker 1: lo resto con el centroide 2.
+57:20 Speaker 2: Y según lo que vemos acá, ha salido más cerca al centroide 1. ¿Cierto? Entonces este lo pinto como el grupo 1. El siguiente, este bloque, este punto, lo diferencio con el centroide 1, lo diferencio con el centroide 2. ¿A dónde está más cerca? Al 2. Entonces este se agrupa en
+57:37 Speaker 1: el bloque 2, en el
+57:39 Speaker 2: clasado. Y así diferenciamos todos. Este lo
+57:42 Speaker 1: diferencio con el centroide 1, con el centroide 2,
+57:45 Speaker 2: está más cerca del 1, se queda en el grupo 1.
+57:48 Speaker 1: Entonces hacemos eso con todos los centroides y tenemos un primer agrupamiento.
+57:53 Speaker 2: Una vez que ya los tengo agrupados, Dentro de estos mismos grupos, dentro de estos mismos grupos, voy a calcular, recalcular mi punto central entre todos los puntos que lo conforman. Este nuevo punto, nuevo central, vendría a ser el vector de medias de los elementos que contienen en ese claro. Igual acá, el vector de medias de los elementos se contiene y se contiene. Y el vector de medias también viene a ser como mi punto,
+58:30 Speaker 1: mi centro de gravedad, mi centro de masa
+58:31 Speaker 2: del globo. Entonces tengo un nuevo centroide. ¿Qué es lo que hacemos? Otra vez empezamos a calcular la distancia de cada elemento con el número de uno, cada elemento con el número de dos. De todos los elementos. Por ejemplo aquí. Este, cuando lo diferencia con el 1 y lo diferencia con el 2, ahora va a ser más cerca del 1. Entonces, se vuelve a reacupar. Este está en el 1, ahora pertenece al 2.
+58:58 Speaker 1: Y así sucesivamente.
+59:00 Speaker 2: Entonces, otra vez, tengo nuevos grupos, vuelvo a calcular cinco veces y se vuelve a hacer el mismo proceso de recalculamiento
+59:08 Speaker 1: hasta que lleguemos a nuestro topo, a nuestro criterio de parada. Y el criterio de red puede estar relacionado con las distancias. Puede ser que yo calcione las distancias promedio al cuadrado y yo diga yo quiero detenerme hasta que las distancias al cuadrado sean menores a tal valor.
+59:29 Speaker 2: Y también es un criterio para daño. Y así, entonces por eso estoy muy bien.
+59:37 Speaker 1: Hasta que llego al tope, a mi primera parada y me detengo y ya quedarían mis cambios finales.
+59:45 Speaker 2: ¿Sí?
+59:51 Speaker 1: Ahora, tenemos nuestro criterio de silueta. Este criterio de silueta tiene su fórmula de construcción. ¿Cuál es la idea de silueta? Este valor de silueta va a ser una técnica que va a tomar valores desde menos uno hasta uno. Se acuerdan que la correlación también toma valores desde menos uno hasta uno. La silueta va a tomar valores diferentes, no está uno.
+01:00:20 Speaker 2: Y lo que yo voy a querer van a ser
+01:00:23 Speaker 1: valores lo más grandes posible
+01:00:28 Speaker 2: para
+01:00:31 Speaker 1: decir que el conglomerado es bueno. Porque las distancias más
+01:00:37 Speaker 2: grandes, ¿qué es lo que me van a decir?
+01:00:41 Speaker 1: Las distancias más grandes, en el caso de Silberta, si yo también
+01:00:45 Speaker 2: hablo, ¿por qué busco distancias más grandes? Porque busco la
+01:00:47 Speaker 1: distancia entre un elemento y
+01:00:51 Speaker 2: su distancia promedio con los de otros lados,
+01:00:53 Speaker 1: con los de otros lados. Entonces, yo quiero que sea máximo para decir que este elemento, si digo que está bien agrupado, sería que está más lejos posible de todos los demás que están afuera de su curso. Entonces, por eso es que el silueta hay que lo busco el máximo. Porque eso significaría que la distancia de cada elemento, la distancia promedio de un elemento de un clave, cuando está afuera, si es máximo es porque está bien separado.
+01:01:19 Speaker 2: Si las distancias son pequeñas entre todos, significa que esos textos no están muy bien separados.
+01:01:27 Speaker 1: Esta sería
+01:01:27 Speaker 2: la forma de interpretar nuestra métrica de ciberio.
+01:01:33 Speaker 1: ¿Qué más? Y luego tenemos otros algoritmos, aparte del caminos. Caminos, caminos, caminos. Tenemos otro que es el MAC. Incluso acá en el sur le va a ser una lamina de cada
+01:01:47 Speaker 2: uno. Cada dos días es fórmula. No
+01:01:50 Speaker 1: sé si la vamos a llegar a contribuir, pero les he colocado
+01:01:52 Speaker 2: con el algoritmo y no sé. Entonces, sí.
+01:01:55 Speaker 1: Aparte de los cambios, tenemos PAM, que es por particiones, pero utiliza medoyes. ¿Les suena algo medoyes? Esto está acá. ¿Estás escuchando el término de Midoyez? En este caso podemos decir que este PAM ya no es sensible a típicos. ¿Eso qué significa aquí?
+01:02:33 Speaker 2: El capi era sensible a típicos.
+01:02:37 Speaker 1: Pero PAM es sensible a típicos.
+01:02:40 Speaker 2: ¿Cuál sería el capi?
+01:02:46 Speaker 1: Por eso es que los centros ya no se llaman centroides, sino se llaman medolles. En el caso de Camí, los centros se llaman centroides. En el caso de Pam, se llaman meloides. ¿Por qué? Porque voy a utilizar las medianas. Las medianas de mis datos. Por eso es que algunos de estos que estamos viendo aquí, solamente se trabajan
+01:03:10 Speaker 2: con datos numéricos. Pero vamos a ver una opción también con categóricos.
+01:03:16 Speaker 1: Como estos son numéricos, la de nosotros va a coger a medias y estos son medianos. La idea es la misma. Encontramos, queremos encontrar la menor distancia entre las medianas
+01:03:29 Speaker 2: de
+01:03:33 Speaker 1: nuestros centroides. Vamos a calcular ya distancias entre medianas ya no serían entre nuestros centroides. el algoritmo para consumirlos y entonces
+01:03:48 Speaker 2: va la característica diferente y luego
+01:03:53 Speaker 1: tenemos a Clara. Características de Clara es que la vamos a agregar para cuando tengamos conjuntos de datos grandes. No, al revés, perdón. A ver, a ver, a ver, ya no se acuerda. El algoritmo PAN necesita construir la matriz de disminaridades completa. Ya. Por lo que para el conjunto de datos grandes se puede volver impacto y práctico. Tanto PAM como K-Means trabaja mediante matriz de distancia, ¿se acuerdan?
+01:04:25 Speaker 2: En el caso incluso del endograma, para el endograma también necesitamos la matriz de distancia.
+01:04:31 Speaker 1: Entonces, Chiara sale como una solución para cuando tenemos tantos datos que la matriz de distancia se va a volver computada o pesada. Entonces, para evitar ese problema se produjo el metodismo Chiara, que no considera la matriz de desimilaridades completa.
+01:04:50 Speaker 2: Tiene también su propio algoritmo.
+01:04:56 Speaker 1: El Clara utiliza como bloques de pan. Utiliza como
+01:05:04 Speaker 2: pan, pero en bloques más chiquitos. El Clara es como varios pan juntos. Como si fuera un cajol, más o menos, para siempre, pero de pan.
+01:05:15 Speaker 1: Y luego tenemos los discursos, que son
+01:05:18 Speaker 2: los algoritmos PAN.
+01:05:20 Speaker 1: ¿Cuál es la idea de PAN? Los algoritmos PAN y Clara asignan cada observación a un único conglomerado. Esa es la palabra clave. PAN y Clara, incluso Kamins, asignan cada observación a un único conglomerado. Por ejemplo, nuestro paciente que esté exactamente en cada conglomerado será asignada
+01:05:39 Speaker 2: solamente a uno. Pero...
+01:05:43 Speaker 1: Sin embargo, es acá. El método FANI, los difusos, divide cada objeto entre los conglomerados. Esta idea está implementada en la lógica del FANI. Entonces, este FANI utiliza lógica difusa internamente.
+01:06:02 Speaker 2: ¿Qué es lo que va a hacer? No necesariamente va a asignarle una observación
+01:06:08 Speaker 1: a un solo conglomerado.
+01:06:11 Speaker 2: Podría trabajarse con la probabilidad de que entre a uno o al otro. Se podría trabajar con
+01:06:16 Speaker 1: ambas, con las dos informaciones. Entonces esa es la característica de FANI. En FANI ya no, cada observación ya no pertenece únicamente a un solo
+01:06:27 Speaker 2: individuo. Podría pertenecer a dos o más.
+01:06:29 Speaker 1: Esa es la diferencia con FANI, que utiliza el análisis. Ya, y tiene también sus propias técnicas, su propio algoritmo. Y ya vamos a entrar. Igual se coloca acá más detalles porque quieren profundizar, pero solamente es necesario saberlo más.
+01:06:53 Speaker 2: Entonces,
+01:06:54 Speaker 1: sabiendo esto, vamos a arrancar
+01:06:56 Speaker 2: con nuestro break, ¿cierto? Ya.
+01:07:01 Speaker 1: Entonces, en relación con el
+01:07:03 Speaker 2: break, entramos al break. diana diana Necesitamos trabajar solamente algoritmos para elementos. Ahora, respecto a transformación de datos, ¿qué habíamos mencionado? ¿Se acuerdan? La transformación principal.
+01:20:29 Speaker 1: No pueden entrar variables así como están. Y tendríamos que transformarlas. ¿Qué es lo que tendríamos que hacer?
+01:20:39 Speaker 2: ¿Esta medización? De todas las transformaciones que hemos visto, ¿cuál se
+01:20:52 Speaker 1: ajusta mejor?
+01:21:03 Speaker 2: La robusta por diatípicos, correcto. Y la
+01:21:08 Speaker 1: otra pregunta sería, ¿a todos nos conviene hacer
+01:21:12 Speaker 2: robusta o a todos nos conviene transformar? Más el promedio, ¿no? El resto ya está como en porcentaje, entonces de 0 a 100.
+01:21:23 Speaker 1: Exacto. Todas las otras variables están con porcentajes.
+01:21:28 Speaker 2: O sea, son valores de 0 a 100. 0 a 100, 0 a 100, 0 a 100.
+01:21:33 Speaker 1: Y esta variable, el promedio de hogares, es un promedio de hogares, no tiene ese valor en ese valor 100.
+01:21:40 Speaker 2: Entonces, ¿qué es lo que nos convendría hacer? Para que todas sean comparables y poder sacar una métrica de distancia entre ellas. Estén en el mismo rango, ¿no?
+01:21:53 Speaker 1: Estaría para que estén todas en el mismo rango y se puedan comparar.
+01:21:56 Speaker 2: ¿Qué tendríamos que hacer con ese?
+01:21:59 Speaker 1: O con todas. Habría varias opciones, por ejemplo. ¿Cuál podría ser una de esas opciones?
+01:22:05 Speaker 2: Escalar el promedio de hogares hacia rango. ¿Escalar el promedio de hogares? Escalar el promedio de hogares.
+01:22:12 Speaker 1: Escalar el promedio de hogares hacia...
+01:22:14 Speaker 2: ¿Con qué tipo de transformación escalaríamos?
+01:22:18 Speaker 1: De los que hemos visto tres.
+01:22:21 Speaker 2: Este
+01:22:39 Speaker: es un caso en el que no aplica una transformación masiva. ¿Por qué? Porque tengo datos híbridos, ¿se podría decir? Sí, porque algunos son en escala de porcentaje y otros en una escala normal de valores de conteos. Entonces, aplicar aquí una transformación masiva, por ejemplo, como una transformación Z, no sería lo más adecuado. Entonces, ¿cuál sería nuestro camino?
+01:23:22 Speaker: Ideas. Bueno, a ver varias soluciones. ¿Normalizar? ¿Normalizar ya? ¿Qué normalizaríamos? ¿Esta? ¿O todas?
+01:23:44 Speaker: ¿Esta nada más? ¿Ya? Ok, entonces normalizamos y me va a dar valores desde el 0 al 1. Entonces, ¿qué tendríamos que hacer con eso?
+01:24:10 Speaker: Sí, en teoría no debería tener atípicos. Al menos por lo que vimos arriba, esta no presentaba atípicos muy marcados. Mil maxi,
+01:24:24 Speaker 2: sobre todo porque la necesitamos como mil maxi. por cómo están mis variables, mis demás variables. Porque las demás ya están en esa escala de mínimo a máximo. Entonces las demás ya están siempre en un porcentaje y el porcentaje sí o sí tiene 0 y 100 como niveles. Eso me da ideas del min max,
+01:24:43 Speaker 1: solo que está en porcentajes. Entonces, como la mayoría manda, la mayoría las tengo en min max, pero de 0 al 100, entonces esta me correspondería a min max. Si es que tiene atípicos,
+01:24:56 Speaker 2: y esos atípicos no se tienen que excluir,
+01:24:59 Speaker 1: igual tengo que ser un IMAX porque es mi única solución, porque las demás ya están en IMAX. ¿Por qué? Porque las demás yo no las puedo transformar con Z. ¿Por qué? ¿Qué puede pasar si yo las transformo con Z? O sea, numéricamente en código sí me va a correr. Pero ¿qué va a pasar si yo las transformo a Z? Por ejemplo, una variable, vamos a ver la última.
+01:25:23 Speaker 2: Esta de acá.
+01:25:26 Speaker 1: Esa de acá, ¿no? ¿Cuál era su mil
+01:25:28 Speaker 2: más? ¿Cuál era su mil más? ¿Cuál era su mil más?
+01:25:35 Speaker 1: Esta de acá, ¿no? Ya vamos a ver la primera. La segunda. La segunda toma valores desde 5 hasta 100. Alguna que tome menos. Esa de acá, más chiquita, una diferencia más gráfica. Esta de aquí toma valores desde un mínimo de 1.
+01:26:01 Speaker 2: Desde 1% hasta 40%. Entonces, si nosotros le aplicamos 1000 más, ¿qué es lo que va a pasar?
+01:26:09 Speaker 1: Vamos a transformar ese 1.
+01:26:16 Speaker 2: Ese va desde 1 hasta
+01:26:19 Speaker 1: 40. Si nosotros le transformamos en 1000 más, ¿qué va a pasar? Este 1 se va a volver 0. Y este 40 se va a volver 1.
+01:26:31 Speaker 2: ¿Cierto?
+01:26:32 Speaker 1: Entonces voy a analizar mis distancias porcentuales entre un valor y otro valor. Se van a reescalar y mi 0 va a representar 1 y
+01:26:46 Speaker 2: mi 1, 40. Pero si yo con la otra variable,
+01:26:50 Speaker 1: como por ejemplo esta que está aquí, que va desde 0, 6.
+01:26:57 Speaker 2: Hasta 100.
+01:26:59 Speaker 1: La rescalo. Este sería 0 y este sería 1.
+01:27:06 Speaker 2: ¿Cierto?
+01:27:07 Speaker 1: Entonces, ¿cuánto distancia de acá hasta acá?
+01:27:11 Speaker 2: Prácticamente 100.
+01:27:13 Speaker 1: En puntos porcentuales. Pero de acá hasta acá, ¿cuánto hay?
+01:27:20 Speaker 2: 39
+01:27:21 Speaker 1: en puntos porcentuales. Cuando yo las paso todas a una escala de 0 y 1 y de 0 y 1,
+01:27:27 Speaker 2: yo estoy diciendo que esta distancia va a ser la misma que la de acá.
+01:27:32 Speaker 1: Y como son porcentajes, no es lo mismo.
+01:27:36 Speaker 2: ¿Cierto?
+01:27:37 Speaker 1: Entonces, como son porcentajes, yo tengo que metirlos igual en el mismo porcentaje. Y
+01:27:42 Speaker 2: me va a convenir mantenerlos, no transformarlas, sino mantenerlas porque esta tiene valor de 1.
+01:27:48 Speaker 1: pero ya tenía un tope cero, y del cero no va a bajar. Entonces, esta distancia del cero al uno me dice algo. Igual, este es su máximo, en esta observación es 40, pero su máximo en real sí existe, y es 100, y ese es su tope, y ahí no va a subir. Y esta información, esta diferencia me da la información. Ahora, ¿cuál es el otro motivo por el cual no me convendría hacer el minmax aquí? ¿Qué pasa si, bueno, ahorita estamos haciendo clase, pero ¿qué pasa si quiero hacer un modelo de clasificación?
+01:28:24 Speaker 2: Y yo tengo mis variables de esa manera.
+01:28:27 Speaker 1: Si es que yo le aplico mi max,
+01:28:28 Speaker 2: yo voy a decir que mi
+01:28:30 Speaker 1: 1 es mi nuevo 0 y 40 es mi nuevo 100. Si es que yo quiero predecir que en el futuro viene un distrito, por ejemplo,
+01:28:41 Speaker 2: su máximo en esta variable no
+01:28:43 Speaker 1: era 40, sino era 53. va a estar fuera de rango y
+01:28:48 Speaker 2: no lo voy a poder predecir.
+01:28:49 Speaker 1: Y eso no tendría sentido, ¿cierto? Porque es un porcentaje de un distrito y el porcentaje siempre va a poder, o sea, un valor de 54
+01:29:00 Speaker 2: es válido. Entonces, si yo mantengo, si yo escalo...
+01:29:08 Speaker 1: numéricamente me va a correr y todo va a funcionar, pero
+01:29:10 Speaker 2: estoy alterando la interpretabilidad de mis distancias. Y en este caso es muy importante mantener las distancias para comparar. Entonces, ¿qué es lo que me conviene? La otra variable que era un ponteo, llevarla a una escala también del
+01:29:23 Speaker 1: 1 hasta el 100, que sería lo más rápido. Y
+01:29:26 Speaker 2: después de 1 hasta el 100, recién dividir entre
+01:29:28 Speaker 1: 100, o ya todos dividirlos entre 100. Y ya las tendrías desde cero a cero. Y al conocer al mundo pueden entrar y son comparables todos.
+01:29:37 Speaker 2: ¿Sí? Entonces, este es un ejemplo que nos recuerda que no siempre una
+01:29:44 Speaker 1: transformación se tiene que aplicar de manera masiva. A veces las transformaciones tienen que ser
+01:29:49 Speaker 2: personalizadas de acuerdo a los datos que estamos viviendo. Ya.
+01:29:53 Speaker 1: Entonces, eso es lo que tenemos que hacer.
+01:30:03 Speaker 2: Ya, entonces acá tenemos el BIMAX, ¿cierto? En este caso estamos
+01:30:09 Speaker 1: aplicando el BIMAX para todos,
+01:30:12 Speaker 2: en este bloque, ¿cierto? Eso es lo que se
+01:30:15 Speaker 1: me sale. Ya conversamos desde
+01:30:17 Speaker 2: antes que todo lo que está aquí no es que está correcto, porque lo ponemos a propósito para los que no repasen y no hacen.
+01:30:26 Speaker 1: Entonces, la hemos colocado así, asumiendo
+01:30:29 Speaker 2: de que se tendría una transformación masiva, pero ya vimos que en realidad no es así siempre. A veces funciona, a veces no. Entonces, este enigma tendría que funcionarme, tendría que aplicarlo solamente para
+01:30:41 Speaker 1: el promedio global. ¿Verdad?
+01:30:46 Speaker 2: Vamos a ver, como pusimos, lo vamos a mantener, lo vamos a mantener aplicado. Ya, entonces ya vimos que la ruta correcta
+01:30:54 Speaker 1: cuál es. Solamente esa columna la aplicó 1000 más. Y una vez que está 1000 más y ya todos andan 0-0.000. Y dividiría entre 100 y ya quedó la razón.
+01:31:08 Speaker 2: ¿Sí? Así estaría quedando.
+01:31:10 Speaker 1: Tarea, volver a correr con
+01:31:12 Speaker 2: la corrupción. ¿Qué más?
+01:31:19 Speaker 1: ¿Qué más?
+01:31:42 Speaker: Ya tenemos. Bueno, tampoco es que sea yo el experto en esto, pero al menos el entendimiento que tengo de esto es que este tipo de elemento funciona muy bien con algoritmos, con modelos.
+01:32:03 Speaker: ¿Por qué? Porque no sé muy bien cuál es la estructura interna del tipo, pero según lo que sé, es como que conversa bien y se permite jalar y adaptarse a un modelo futuro. Sobre todo cuando vas a ser 5-9. Haces un file de documento, construís un modelo acá, y cuando vas a predecir ese mismo file, tienes que utilizarlo para los datos que tienes que enviar para el cliente de los modelos. Tengo un entendimiento también con el grupo de pesadillas, es que conversas muy bien con modelos. O sea, no puedes jalar bien, no tiene conflictos. Claro, no tiene nada de eso. Ahora te va a ver otra explicación más profunda y más informática.
+01:32:49 Speaker: Ok, entonces acá tenemos la copia del archivo. Por aquí estaríamos haciendo... La división entre sí que mencionaba hace un rato, pero claro, sabemos que tenemos que hacerla solamente dividiendo todo, pero arriba el paso del escalamiento era solamente a una variante, no a todos. Y la división sí se puede hacer a todos. Si hacemos esta división, entiendo que aquí no estamos colocando el promedio. Solamente entraría en las que son dos centrales.
+01:34:05 Speaker: en esta promedio. Claro, sí, porque este ya me va a dar valores desde el 0 al 1, sí. ¿Cómo? Máximo 10, ¿por qué creas? Sí, sí, parece que sí. Entonces, ahí tendríamos ya todos en escala, en valores desde el 0 hasta el 1. Acabamos mínimo y máximo.
+01:34:40 Speaker: Ahora, punto, hasta el comentario importante. Claro, acá hemos hecho la transformación del promedio de hogares con un min-max directamente. O sea, lo que voy a decir es que hemos hecho un min-max, ¿cómo se dice? Al podido, no sé, sino como un min-max teórico por defecto. Pero cabe hacer la acotación. Que si yo sé, si yo sé que esa variable en promedio de hogares, yo en mis datos la tengo, fue la misma dimensión, 4 y 10, me decía. Un dato importante, porque algo que no siempre se aplica lo mismo.
+01:35:37 Speaker: 1 y 6. ¿Cierto? 1 y 6 ya. Por ejemplo aquí, mi variable va desde 1 hasta 6. Entonces, si yo le aplico un min max, solamente considerando del 1 hasta el 6, ¿qué significa? Bueno, es un modelo predictivo, pero vamos a generalizar. Si es que yo haría un modelo predictivo y luego viene un distrito que tiene 12, se va. ¿Y tiene sentido?
+01:36:04 Speaker: Entonces... Cuando yo voy a hacer transformaciones, es una buena práctica preguntarme no solamente lo que estoy mirando, sino el comportamiento general de mi variable, si asumo que hay una población más grande donde ha venido esta muerte. Entonces, si yo veo que esta variable en la muerte que estoy observando va del 1 al 6. Pero si yo veo que en realidad en la población los valores suelen ir, no sé, de 1 hasta 15 como máximo, y yo sé que no voy a encontrarnos de 15, hago mi transformación de mil más, pero no con este mínimo y máximo, sino con el de la población. Para poder dejar como los límites, los umbrales libres, para que venga una nueva muestra para la predicción, sobre todo en temas de predicción. ¿Sí? Entonces, claro, eso por ejemplo no es algo teórico, pero es una buena práctica. ¿Por qué? Porque si no luego me limita. En ese momento no me doy cuenta, pero si en el momento que voy a predecir, ahí es donde a veces los modelos sería cortos, si es que no tenemos en consideración cositas como esta. Entonces, misma sirve, teóricamente, si me voy a quedar ahí, pero si quiero mirar al futuro, tengo que ir un poquito más arriba y ver cuál es el comportamiento de la población de desarrollar. Ya no le transformo según la muestra, sino le transformo según la posición. Ahora, si esa es mi población y ya no voy a tener otra más, ya de repente tomo decisiones ahí. Porque acá estamos viendo que esto no implica, que más de uno hay. Entonces tiene sentido. Pero lo otro también es importante comentar. Ya, ok. Entonces, seguimos avanzando, ya transformamos todo. ... ... ... ... ...
+01:38:11 Speaker: Ahora, de frente les estoy colocando este Glypsearch. La idea de este Glypsearch es... generar o probar diferentes modelos con diferentes hiperparámetros para decidir cuáles serían los mejores hiperparámetros para mi modelo,
+01:38:33 Speaker 1: ¿cierto? Entonces, esto también tiene que tener en consideración establecer los hiperparámetros que quiero probar y darles, dar algún vector de valores. En este caso, vamos a dar algunos valores rando. Pero a veces ha pasado que cuando le doy un vector muy amplio de ranos,
+01:38:53 Speaker 2: demora mucho. Entonces a veces es buena idea darle un vector de solo tres valores, por ejemplo,
+01:38:58 Speaker 1: que yo pensaría que son buenos. Dependiendo, ahí vamos adaptando esto de
+01:39:03 Speaker 2: acuerdo a la capacidad de ejecución de nuestra mano.
+01:39:07 Speaker 1: Características principales del clúster de Cummings es la cantidad de clústeres, sobre el cual les vamos a hacer,
+01:39:14 Speaker 2: les voy a decir que prevé desde 1 hasta 10 clústeres.
+01:39:17 Speaker 1: Luego la cantidad máxima de
+01:39:18 Speaker 2: interacciones.
+01:39:21 Speaker 1: Y luego la cantidad de observaciones para una inundación. La cantidad de observaciones para
+01:39:28 Speaker 2: iniciar nuestro interacciones.
+01:39:31 Speaker 1: Bueno, luego ya tiene estructuras propias del modelo que hemos tenido aquí. Lo único que ha necesitado a priori es una semilla aleatoria. Y luego vamos a probar su preparación. Vamos a probarlo con unas particiones de 10
+01:39:49 Speaker 2: para nuestro research.
+01:39:51 Speaker 1: Y los valores finales óptimos que nos estarían seguidos, que sería máximo de iteraciones, 260. La cantidad de clases nos recomienda 8,
+01:40:00 Speaker 2: pero ya que lo vamos a verificar.
+01:40:03 Speaker 1: Y esos serían nuestros valores iniciales, el parámetro de observaciones y finales.
+01:40:13 Speaker 2: Ya, este es el mismo. Ahora,
+01:40:16 Speaker 1: acá nos da la recomendación de 8, pero podemos verificarlo con dos cosas. Uno es el gráfico del codo y el otro es el de silueta. Vamos a ver el del codo por aquí. La idea del codo era similar a lo que habíamos visto con BCA, como el tutorial también, el punto de inflexión.
+01:40:46 Speaker 2: La
+01:40:47 Speaker 1: distancia cuadrática media entre cada instancia y el centroide más etal. Distancia cuadrática media... distancia cuántica media entre cada instancia y el centroide más cercano. Esta sería cada observación y el centroide más cercano sería su centroide, su métrica, su punto docente.
+01:41:16 Speaker 2: Básico,
+01:41:17 Speaker 1: el algoritmo Camines se ejecuta en tantas veces y se pone el modelo con el menor valor del nivel. Usualmente el error del modelo sigue la vida de mayores o mejores. Por este motivo se maneja un valor
+01:41:34 Speaker 2: negativo de inercia. Ahora,
+01:41:36 Speaker 1: este valor de inercia se calcula de manera diferente para el
+01:41:42 Speaker 2: gráfico de silueta que lo vamos a tener más abajo y
+01:41:44 Speaker 1: el de codo que tenemos. Entonces, la inercia la tendríamos aquí. Si analizamos... y el mismo inercia como la distancia cuadrática media entre cada observación y el centraído más cercano,
+01:41:59 Speaker 2: es lo que buscaríamos,
+01:42:01 Speaker 1: mayor inercia o menor inercia. La primera es la distancia cuadratica media de cada observación,
+01:42:17 Speaker 2: de
+01:42:19 Speaker 1: cada instancia, de cada puntito, al centroide más cercano.
+01:42:23 Speaker 2: ¿La menor?
+01:42:24 Speaker 1: La menor, ¿cierto? Porque es cada uno de estos puntitos, cada uno con su centroide.
+01:42:31 Speaker 2: ¿Cómo? Sí, exacto. Porque
+01:42:38 Speaker 1: sería cada uno con su propio valor central. Y cada uno de ellos, o sea, es un promedio de todos. No es un promedio de las distancias internas, pero de todos, de mi grupo total. En cambio en la silueta tenemos ese valor global, pero también por clase. Acá lo tenemos de manera global. Pero en el otro gráfico de silueta tenemos esa métrica promedio global y la métrica promedio por clase.
+01:43:03 Speaker 2: Por eso es que no da como que una herramienta más para decir.
+01:43:06 Speaker 1: Entonces, punto de inflexión aquí, ¿cuál les convence? Ninguno.
+01:43:14 Speaker 2: Este, en el caso.
+01:43:17 Speaker 1: Eso podría ser. Según el research, no sería otro. Pero dudaría del otro, me parece mucho. Según la caída. Acá ve una
+01:43:27 Speaker 2: fiebre, por acá otra.
+01:43:30 Speaker 1: Y esto podría ser, pero hasta ahí me quedaría.
+01:43:34 Speaker 2: Entonces,
+01:43:35 Speaker 1: no es tan claro, ¿cierto? No es tan claro. Necesitamos alguna herramienta adicional. Por acá estamos imprimiendo las inercias.
+01:43:45 Speaker 2: Ahora,
+01:43:47 Speaker 1: el gráfico de silueta para tener una herramienta extra. También es para elegir el caos. ¿Qué necesitamos de silueta? Necesitamos... que es nuestra matriz, la matriz que está entrando para el modelo, y estos model labels, ¿qué
+01:44:07 Speaker 2: deberían hacer?
+01:44:10 Speaker 1: Las etiquetas que el modelo ha obtenido para cada individuo, ¿cierto? Este sería el clúster 1, y este es clúster 1, acá le voy a dar etiqueta clúster 1, clúster 1, clúster 1, clúster 2,
+01:44:23 Speaker 2: clúster 2.
+01:44:24 Speaker 1: Entonces lo que tengo es mi matriz escalada que está entrando al modelo y estas etiquetas tendrían a ser como el output del modelo, ¿cierto? Tendrían ser como el output. Entonces la silueta utiliza eso. Y lo que va a hacer es como tengo diferentes, va a probar diferentes valores
+01:44:42 Speaker 2: de K, diferentes
+01:44:46 Speaker 1: valores de K y nos va a mostrar el resultado.
+01:44:49 Speaker 2: Entonces, por ejemplo, aquí le vamos a dar para valores de K desde 2 hasta 5.
+01:44:55 Speaker 1: Vamos a probar K, 2, 3, 4 y 5. Y ahora tiene el algoritmo más grande, obviamente no tendría sentido interpretar todas las líneas del algoritmo, pero vamos a interpretar las salidas. Vamos a ver primero de 2 en 2. Estos dos primeros bloques vendrían a ser el gráfico de silueta para cada dos, dos clases y tres clases.
+01:45:19 Speaker 2: ¿Cierto? ¿Cierto?
+01:45:20 Speaker 1: Entonces lo que decíamos es, el gráfico de silueta es que aparte de darnos una métrica igual, como arriba del todo, nos va a dar una métrica por clase. Entonces, es otra anginométrica un poco diferente porque es el coeficiente de silueta. Viva la inercia, aquí es el coeficiente de
+01:45:42 Speaker 2: silueta, que también tiene su fórmula. ¿Qué es lo que vamos a comparar? Vamos a tener en cuenta tres cosas.
+01:45:50 Speaker 1: Una de ellas es esta línea puteada que está por aquí. Viene a ser como el
+01:45:55 Speaker 2: coeficiente de silueta global.
+01:45:59 Speaker 1: Y cada uno, la altura, bueno, no se llama altura, sino como que el ancho
+01:46:03 Speaker 2: de la silueta vendría a ser como su coeficiente de silueta individual.
+01:46:09 Speaker 1: Entonces tenemos el global y tenemos el individual. Bien, ¿cuáles serían las otras cosas que debemos considerar? Creo que tenemos para 4 y 5,
+01:46:18 Speaker 2: ¿cierto?
+01:46:19 Speaker 1: Igual, tenemos el global, tenemos el individual. No sé si las de arriba están en el mismo rango.
+01:46:28 Speaker 2: Son comparables, tienen las mismas,
+01:46:30 Speaker 1: las mismas cortes, para saber cuál va antes, por ejemplo, esto está más a la derecha, esto está más a la izquierda, esto está más homogéneo. Ya, entonces para esto les he colocado cosas
+01:46:39 Speaker 2: que se deben tener en cuenta. Uno,
+01:46:41 Speaker 1: los tamaños de silueta por cláster deben ser lo más homogéneos posibles.
+01:46:46 Speaker 2: ¿Cómo se entiende eso? Que cuando veas silueta, por
+01:46:50 Speaker 1: ejemplo, no pase esto. Esta es más heterogéneo y los de acá podrían ser un poco más homogéneos. Acá también veo un poco más heterogéneo. Entonces lo que gustaría serían que
+01:47:03 Speaker 2: todos tengan amplitud, se puede llamar un ancho similar,
+01:47:09 Speaker 1: en ambos sentidos, tanto a nivel de silueta como a nivel de
+01:47:14 Speaker 2: cantidad de
+01:47:16 Speaker 1: individuos en el cláster. Entonces queremos que el ancho de la silueta sea homogéneo. Por ejemplo, aquí tenemos
+01:47:24 Speaker 2: pláceres súper grandes y unos chiquitos. Si bien es algo deseable, no es algo
+01:47:30 Speaker 1: estrictamente necesario para tomar una decisión. No hay un criterio.
+01:47:36 Speaker 2: Otra cosa.
+01:47:38 Speaker 1: No presenciar muchos valores hacia negativos, hacia los negativos. Por eso los negativos son las colitas de la izquierda.
+01:47:47 Speaker 2: Eso significa algo
+01:47:49 Speaker 1: así
+01:47:50 Speaker 2: como el mis-classification.
+01:47:52 Speaker 1: Cuando se
+01:47:54 Speaker 2: le ha asignado ese
+01:47:56 Speaker 1: clúster, pero es posible que sea un error y que en realidad pertenezca otro. Pero de acuerdo a las métricas y al criterio de parada, se ha quedado en el amarillo, por ejemplo, pero puede que en realidad pertenezca otro.
+01:48:10 Speaker 2: Los negativos pueden ser sospechas de mis-classification. No siempre, pero a veces. Y lo último es que el escorte silueta promedio, buscamos el escorte silueta promedio mayor respecto a otros campos. ¿Cuál es el escorte silueta? La línea rojita.
+01:48:31 Speaker 1: Entonces buscamos el escorte que sea más alto, que sea mucho más a la derecha entre todos.
+01:48:36 Speaker 2: Así como está, al menos por ejemplo entre
+01:48:38 Speaker 1: 4 y 5, ¿cuál le pones más? Al menos por criterio de Cigata Global, este salía un poquito más en la derecha, sería un poquito mayor que este, ¿cierto? Por ahí podría ganar esta. Negativos,
+01:49:02 Speaker 2: tiene
+01:49:04 Speaker 1: más el de 5, creo. Se llamaría y no me deja ver bien.
+01:49:08 Speaker 2: Podría ser.
+01:49:11 Speaker 1: Ya, y si comparamos arriba los de 2 y 3. El de dos se ve bien. El de dos
+01:49:20 Speaker 2: se ve más homogéneo.
+01:49:22 Speaker 1: Y el de dos tiene una silueta global mayor, casi
+01:49:28 Speaker 2: 0.4. En cambio el de tres es menor
+01:49:31 Speaker 1: a 0.3. El de dos estaría ganando. Entonces el de dos tiene una silueta global de 0.4, son más homogéneos. Parece que
+01:49:39 Speaker 2: hay por aquí unos negativos, pero no se ven bien. Y el de cuatro quería ver. No, el de cuatro está más a la izquierda.
+01:49:47 Speaker 1: Y entonces por filiota global podría ganar el dos. Incluso el de tres podría ser,
+01:49:55 Speaker 2: por ejemplo, el de tres, ¿por qué podría ser una opción?
+01:49:58 Speaker 1: Porque pierdo un poco el global, pero gano tres segmentos. ¿Cuánto me convendría el de tres?
+01:50:05 Speaker 2: Si de repente yo quiero
+01:50:07 Speaker 1: forzar, que mis
+01:50:10 Speaker 2: inscritos tengan
+01:50:11 Speaker 1: tres categorías. Porque para mí me ha extendido tres categorías y
+01:50:16 Speaker 2: tengo tres políticas diferentes a dar lugar.
+01:50:20 Speaker 1: Entonces en ese sentido no me conviene mucho el dos porque yo quiero diferenciarlos en tres. Porque sé que existen tres grupos. Entonces nos vamos por ahí.
+01:50:30 Speaker 2: Nos vamos por ahí.
+01:50:34 Speaker 1: En el caso de estos datos
+01:50:36 Speaker 2: que se trabajaron con el virus, entonces lo que ellos ven son poblaciones vulnerables y
+01:50:42 Speaker 1: en este caso se querían encontrar clústeres para encontrar cuál clúster estaría asociado mucho más
+01:50:47 Speaker 2: a indicadores de pobreza extrema.
+01:50:50 Speaker 1: Si encontramos tres clústeres podría ser uno pobreza extrema, uno pobreza y el otro, no me acuerdo cómo se llama, la otra característica. No nos vamos a llamar a otra característica. Creo que
+01:51:02 Speaker 2: ya tenían cuatro clases de vacaciones. Ya.
+01:51:06 Speaker 1: Ok, entonces esas serían cosas que tendríamos que ver en el gráfico de silueta y como vemos silueta con codos complementarios. Luego, si ya decidimos que, por ejemplo, aquí estamos entrenando con cables. Aquí estamos entrenando con cables, pero si hemos decidido que no, que solamente
+01:51:26 Speaker 2: queremos dos, entrenamos con dos.
+01:51:29 Speaker 1: Entonces, entrenamos con tres, con los mismos superparamentos que quedaron bien arriba. Incluso acá hay unos pruebas diferentes. Ya, entrenamos el modelo y en teoría lo predecimos por el otro dato para generar la etiqueta, para generar nuestra etiqueta nueva. Entonces,
+01:51:52 Speaker 2: tenemos aquí los
+01:51:53 Speaker 1: datos y la etiqueta del cláster, alguien pertenecería y estaría a la derecha. de los tres que hemos encontrado. Ya entonces tenemos cada uno a cual clase proponente y podemos empezar a visualizar estos resultados. Por ejemplo aquí, que estamos viendo, las diferentes clases, los tres clusters, comparando si no tiene agua, la proporción de personas que no tienen agua con las que no tienen los agua. Para poder ver... Hay una discriminación.
+01:52:30 Speaker 2: Ahora,
+01:52:32 Speaker 1: estos grupos serían los clusters. Y nosotros hemos seleccionado solamente dos variables. Pero claro, la... La relación entre esos individuos no se basa solamente en dos variables. O sea, con dos variables yo puedo discriminar algo, ¿cierto? Veo verde, veo en el centro rojo y en el
+01:52:55 Speaker 2: segundo.
+01:52:56 Speaker 1: Por acá se han sentado verdes,
+01:52:58 Speaker 2: por acá los oscuros.
+01:53:00 Speaker 1: Pero como que en grandes rasgos vería algo,
+01:53:03 Speaker 2: ¿cierto? Si es que yo le agrego una variable más y lo giro, ¿podría ser que discrimine mejor?
+01:53:11 Speaker 1: No lo sabría. Entonces, por ejemplo, un comentario interesante acá es, si bien mi objetivo es los
+01:53:17 Speaker 2: glasters y ya los encontré, a veces yo puedo recubrir a PCA, por ejemplo, solamente para encontrar los dos componentes mejor, los mejores dos componentes,
+01:53:29 Speaker 1: solamente y exclusivamente para la gráfica.
+01:53:33 Speaker 2: Eso también es algo que se suele hacer. Entonces,
+01:53:36 Speaker 1: yo he entrenado mi modelo de glastering
+01:53:38 Speaker 2: con las monedas que he visto hace un rato. Y no las he reducido, ¿cierto? Solo las he usado y construí. Y ya encontré este resultado, ya lo tengo ahí.
+01:53:46 Speaker 1: Pero ahora, de repente, graficarlos de esta manera no es tan claro. ¿Qué
+01:53:52 Speaker 2: es lo que puedo hacer? Regreso mi matriz
+01:53:54 Speaker 1: con la que he entrenado el modelo,
+01:53:56 Speaker 2: el material con el que he entrenado, y puedo aplicar PCA. Aplico PCA y voy a encontrar los dos componentes mejores. ¿Cierto? Los dos componentes principales.
+01:54:07 Speaker 1: Y los puedo utilizar solamente para
+01:54:09 Speaker 2: graficar. Porque son las mismas variables. Son los mismos datos. No he cambiado nada, solamente
+01:54:15 Speaker 1: los estoy agrupando, reduciendo
+01:54:17 Speaker 2: las dimensiones para el gráfico. Entonces es algo válido. A veces hacer el gráfico con los componentes de un análisis
+01:54:25 Speaker 1: de componentes principales me aclara bastante la parte visual.
+01:54:31 Speaker 2: Sí, esa es la idea. Entonces, a lo que voy es
+01:54:34 Speaker 1: pudo aplicar PCA no como un objetivo final del modelamiento, pero sí como un objetivo para la visualización. Y me va a ayudar. Claro, dependiendo de los datos, ¿no? Pero sí,
+01:54:45 Speaker 2: sí me ayuda. A ver, lo
+01:54:48 Speaker 1: que estamos viendo son tratando de buscar si puede ser el mejor par de variables para discriminar los datos. Por ejemplo, este es otro par. ¿Qué opinan de aquí respecto al anterior? Creo que este es
+01:55:02 Speaker 2: mejor, ¿cierto? Estas son,
+01:55:04 Speaker 1: no tiene agua, no tiene desagüe, y esta es, no tiene agua y rural.
+01:55:12 Speaker 2: Pero siguen siendo solo dos variables, arriba siguen siendo dos. Si yo utilizo PCA, ¿qué pasaría? Tengo dos componentes, pero cada componente pide un montón de información de todas las áreas.
+01:55:48 Speaker 1: Sí, eso puede que podamos explicar a ver qué fenómeno es ese. Porque ese no tiene agua y no tiene desagüe. ¿Qué significa? Tenemos todos los valores en...
+01:56:04 Speaker 2: El desagüe está en Y. Este sería desagüe y este de acá sería agua.
+01:56:12 Speaker 1: Entonces, para valores altos de agua, no hay personas, no hay población con desagüe. ¿Qué nombre es desagüe? ¿Cierto?
+01:56:25 Speaker 2: Son profesionales. Ajá.
+01:56:29 Speaker: ¿Cierto? Por eso se ve este tipo de reflexión. En cambio abajo, tenemos porcentaje de población rural que sería llega. Y ahí tenemos... O sea, por ejemplo, ahí no se ve necesariamente una tendencia lineal.
+01:56:45 Speaker: Se ve como que a lo largo de todo el porcentaje de Y, sigo observando, es algo raro también, porque claro, tengo en la parte superior rojos y verdes, pero en la inferior solamente azules, o más azules, arriba más verdes podría ser, y en el centro rojos. Entonces sería el comportamiento del porcentaje a lo real. Igual, el porcentaje de no agua sería de izquierda a azul, es la de derecha a azul. Entonces, ¿qué significa? Que el grupo 1 estaría conformado por hogares o por distritos que tienen porcentajes bajos de agua. ¿Cierto? Porcentajes bajos de personas que no tienen agua. Y los distintos de color verde serían distritos que tienen porcentajes altos de agua o de no agua. No tiene agua. Estos serían visillos con más eficiencia de agua y estos con menos eficiencia de agua. Y estos serían como los intermedios. Entonces ahí podemos ir sacando interpretación. La idea final es que para cada uno de los clústeres describamos. Entonces el bloque final de clústering para nosotros va a ser describir los clústeres. ¿Cómo describimos una de esas ideas usando el Sprite? Tengo solo los clases rojos y saco un perfil de cómo se comportan sus variables. Obviamente no todas, son muchas, pero puedo sacar las manos acá. En esta variable tienen un valor muy extremo y en la otra no, y cosas así. Entonces, el último punto de la realidad es escribir los clases. Para describir los clases, ahí es una forma de mis herramientas, para usar indicaciones fuera de gráfica o las descriptivas, las métricas descriptivas que hemos visto. Igual para el azul. Esa es la idea de nuestro descriptivo.
+01:58:41 Speaker: Ok, entonces, esto sería como una lista general de cómo arrancamos con datos. Lo pasamos por clustering, obtenemos un resultado y sí o sí el resultado debe terminar en un dispositivo. Obviamente acá se puede desarrollar más, interpretar los resultados que han salido, interpretar los gráficos y experimentar con lo que les mencionaba. Probar PCA y ver si con PCA podemos obtener mejores gráficos. Y si queremos factoriar, podríamos hacerlo, asumiendo que habría un variable en la tendencia detrás. Y tendríamos que interpretar esa variable en la tendencia y podemos ver cuál de las variables está asociada más con una de ellas, con una de las tendencias, y cuál de las variables con la otra. Y podemos decir que variables que tengan que ver con los vías de la persona, como se contiene a la cualidad de uno, o variables que tengan que ver con el listón. Podrían ser dos controles diferentes. Entonces, ahí podemos implementar, sobre todo para, ya no para cerrar nuevos gatos, sino solamente para, eh, cómo poder sacar conclusiones con los múltiples.
+01:59:47 Speaker: Entonces, eh, la siguiente clase, eh, preguntaríamos a nuestros clientes del modelo del campo total. ¿Has escuchado del campo total? ¿No lo leo también quizás? No. Ya, entonces en la siguiente clase vemos tanto lugar. Nos va a servir un montón porque, porque les adelanto, porque hasta este punto hemos utilizado variables puramente numerosas, ¿cierto? Pero como ya les mostré al inicio, los datos que nos está dando la institución son numéricos, pero también categóricos. Y dentro de los categóricos tenemos nominales y ordinales. Entonces, nosotros vamos a necesitar modelos. que no distribuyen al Squally. Porque si usaron modelos que distribuyen al Squally, en la TEA no vamos a crear contenido variable. Entonces, necesitamos modelos inclusivos, ¿cierto? Modelos que me acepten numéricas de Squally. Y eso es lo que vamos a ver. CapRotonex es uno de ellos. Y eso lo vamos a ver en la siguiente clase. Compartamos un corte. Hasta aquí. Muchos comentarios.
+02:01:01 Speaker: Ahora, un dato extra. Por temas laborales, yo sé que la mayoría no puede entrar en horarios fuera de clase. Hoy día se desarrolló la primera reunión de la entrega de los datos. Hemos grabado la sesión, la vamos a subir, y les adelanto, según lo que se han conversado, que es el siguiente semana a la misma hora. Sería la segunda reunión para la entrega del segundo bloqueo. Ahora nos han entregado unos datos que son los de la ficha administraria. Entonces con esto ya está en el país de ahí y los vamos a poder superar. En el video está la explicación, que es una de las representantes del bloqueo. Ha explicado qué significa cada columna para poder entender y ir analizando, que es el definitivo de ello. Entonces, la siguiente semana... Si todo sale bien, el mismo día y la misma hora tendríamos que tener los datos de noticia. Y vamos a ver si ese mismo día descubrían también los datos de salud o si sería la siguiente semana. Entonces, con los datos que ya están entregados en Paideia, la idea es que vayan haciendo los primeros pasos de cada edad con estos datos.
+02:02:17 Speaker: Son datos reales, no están perfectos. Algunos van a tener que homogeneizarlos, no están limpios. Y las variables fecha, les comentaba que voy a ir yo a verificar con ellos qué ha pasado porque ellos están cargando así. Les decía que puede ser un formato. Estas veo que se han cargado bien y las otras no. Entonces es posible que no tengan un formato validado y por eso se está cargando así. Voy a ir allá para ver si lo podemos recuperar porque no va a servir. Las
+02:02:47 Speaker 1: que son fechas estarían por actualizarse, pero pueden ir interpretando el resto de variables.
+02:03:17 Speaker 2: Ya, voy a cierro y la mano unida.
+  

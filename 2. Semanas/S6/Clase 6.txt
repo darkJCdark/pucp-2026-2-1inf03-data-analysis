@@ -1,11 +1,97 @@
-. {
-	. {
-		. 
+STEP 5: DATA MINING TASK - ¿Escoger cuál es la mejor opción?{
+	. Predictiva{
+		. Debe tener un variable específicos del conjuntos de datos para predecir valores desconocidos o futuros de determinada variable o variable de interés
+		
+		. classification
+		. regression
+		. classifier ensemble
+	}
+	. Descriptiva{
+		. Cuantificar relaciones entre los datos, analizando eventos pasados en losada datos para obtener información sobre cómo abordar eventos futuros
+		
+		. association mining
+		. clustering
+		. anomaly detection
+		. rough sets analysis
+	}
+	. Optimización{
+		. Proceso que permite encontrar alternativas de rendimiento más rentables o alcanzables, bajo algunas restricciones: maximizando los factores deseados y minimizando los no deseados
+		
+		. heuristi approach
+		. meta-heuristic approach{
+			. swarm-based algortim
+			. Trajectory-based algorithm
+			. evolution algorithm
+		}
 	}
 }
 
-. {
-	. {
-		. 
+STEP 6{
+	. ¿Qué algoritmo se debe escoger?
+	. Métodos más utilizados según tipo de variable
+	. Métodos más utilizados según output
+}
+
+. ANALISIS DE CONGLOMERADOS{
+	. Objetivo: agrupar observaciones
+	. Clustering{
+		. Queremos reducir la distancia entre un conjunto homogeneo interno
+		
+		. Homogeneo internamente
+		. Heterogeneo externamente
+	}
+	. Otros muestreos{
+		. Homogeneo externamente
+		. Heterogeneo internamente
+	}
+	
+	. DISTANCIAS{
+		. Euclidiana: Minima
+		. Manhattan: Bloques
+		. Minkowski: Segun se abre el valor de 'p'
+	}
+	. METODOS JERARQUICOS{
+		. DENDOGRAMA: Sirve para  encontrar atipicos
+		. ANALISIS DE CONGLOMERADOS - JERARQUICOS{
+			. Se hace un corte para ver la cantidad de clusters
+			. El dendograma te da la facilidad de tomar la cantidad de clusters
+		}
+		. Arboles filogeneticos: agrupan por jerarquia
+	
+		. Cluster latente
+		
+		. Aglomerativos{
+			. AGNES: Agrupo individualmente y asi seguido
+		}
+		. Divisivos{
+			. DIANA: Agrupo en grande y divido
+		}
+	}
+	. METODOS NO JERARQUICOS{
+		. Suma de distancias al cuadrado
+		
+		. k-medias{
+			. Es sencible a los atipicos por las distancias
+			. Tmb, es sencible a los centroides
+			
+			. Vector de medias del centro del cluster
+			
+			. Criterio de parada: Las distancias al cuadrado son menores a tal valor
+			. Sus centro se llama centroide
+		}
+		. silueta
+		. PAM{
+			. Otro algoritmo
+			. No es sencible a atipicos porque trabaja con la mediana
+			. Sus centro se llama medoides
+		}
+		. CLARA{
+			. Otro algoritmo
+			
+			. Utiliza bloques de PAM
+		}
+		. FANNY{
+			. Utiliza logica difusa
+		}
 	}
 }
