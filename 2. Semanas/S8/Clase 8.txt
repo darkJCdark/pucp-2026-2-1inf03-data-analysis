@@ -1,11 +1,3 @@
-. {
-	. {
-		. 
-	}
-}
+Link de clase: https://pucp.zoom.us/rec/play/dLuexz8U1yyPbc4oE02_THs_Hh8pRBhEPfAjLyOlf_dY4tT7I5uftl3YS7X4waLEFGMhdBAlfwmWd4lw.yTkISnh73EuEoAM-?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&oldStyle=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fpucp.zoom.us%2Frec%2Fshare%2Fv5c7V-3X7uqROB-JJwGSgkH_c5q6Ck-ghHb2Y4miJ3XUV4j_nCKiiTnZ_1PRMJ3q.DWHCqZDioeDuGFwY
 
-. {
-	. {
-		. 
-	}
-}
+codigo: 1INF03#2026
