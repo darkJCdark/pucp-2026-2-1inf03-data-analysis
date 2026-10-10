@@ -1,0 +1,489 @@
+# Video
+
+  Meeting started: 10/10/2026, 6:05:02 p. m.
+  Duration: 143 minutes
+  Participants: Speaker 1, Speaker 2
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/owCHKTBIXstXV35mOEGY?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Speaker 1: Ya, ok. Entonces,
+00:02 Speaker 2: lo que les quería comentar hoy eran previamente dos cosas. Uno sobre los datos adicionales, los datos que van a complementar a los que ya tenemos de la tarea académica y luego ver algunos modelos para datos mixtos también relacionados a la tarea académica, pero ya de nuestro tema que son los modelos de clustering, pero para mixtos. Entonces, arrancando por la parte de la TEA. En la versión, el archivo que tienen actualmente cargado, que se llama ficha nominal consolidado, imagino que ya lo han ido viendo, lo tienen en Excel, ¿cierto? Yo voy abriendo los archivos, espero que no se vaya a lajear esto y se me queme algún otro componente en la computadora como hace rato. Ya, por ejemplo, en el archivo que ustedes tienen, tiene prácticamente los mismos datos. La única diferencia es que las fechas estaban como
+00:58 Speaker 1: en
+01:01 Speaker 2: un formato incorrecto. Habían hecho la prueba de hacer la conversión del tipo de fecha mediante Drive o mediante otra forma. Me habían comentado algunos que pudieron recuperarlo, pero la duda era de si se había recuperado bien. Porque claro, se mostraba una fecha, pero la duda que quedaba es si esa había sido la fecha original. Entonces, por precaución, hemos vuelto a ver las fuentes de la institución y hemos extraído como texto, como pueden ver acá las comillas, como texto todas las columnas, por precaución, para que salgan las fechas como texto y los demás como texto. Los que son texto normal, pero sobre todo las fechas. Entonces, este sería como... la versión de la cual si quieren solamente pueden reemplazar las columnas de fechas porque las demás son igualitas, los códigos también todo. Entonces van a ver que hay algunas fechas que efectivamente tienen un formato, otras que tienen otro. Entonces esta es exactamente el formato en el que está el
+02:08 Speaker 1: archivo original.
+02:10 Speaker 2: Entonces así tal cual se ha extraído y esta sería la versión que les voy a cargar.
+02:15 Speaker 1: Ahora.
+02:16 Speaker 2: Esta es la versión en Excel, pero también por precaución, ustedes igual saben más de esto que yo, pero por precaución hemos generado el archivo TXT, por si de repente quieren compararlo o al momento, porque según lo que estaba viendo al momento de convertirlo a Excel, Excel tiene unas cosas que le cambia el tipo de dato, asume... Asume cosas que no está bien asumir a veces Excel. Entonces, por precaución, la misma idea en texto, pero en archivo TXT. Entonces van a tener los dos archivos, tienen supuestamente la misma información,
+03:00 Speaker 1: pero se
+03:02 Speaker 2: tienen los dos formatos. Entonces esa sería la variación, que ahora la fecha está con comillas. Y ya la tendrían que extraer, homogeneizar en formato y recién ahí hacer las diferencias de fechas para empezar a obtener tiempo, ¿cierto? Tiempo de ingreso, tiempo en edad, tiempo del proceso contencioso y tiempos podemos sacar con las fechas.
+03:30 Speaker 1: Entonces,
+03:31 Speaker 2: ese sería respecto al archivo que ya nos habían brindado la vez anterior. Y solamente se estaría actualizando la columna fechas. Ahora, los nuevos archivos son todos los que están aquí. Igual nos faltaría coordinar una reunión con la encargada de nutrición para que nos explique un poco los detalles. Pero igual ya desde hoy los van a poder ir viendo los archivos. Entonces, por ejemplo, vamos a abrir uno. ¿Se acuerdan que les había adelantado de la estructura?
+04:06 Speaker 1: Un poco.
+04:07 Speaker 2: La estructura de los archivos. Entonces, este, no sé si llegan a ver, se ve, creo que se ve,
+04:14 Speaker 1: ya, ahora sí.
+04:18 Speaker 2: el archivo así así lo maneja entonces tiene las hojas
+04:25 Speaker 1: su
+04:26 Speaker 2: excel tiene hojas estos nombres que están aquí miguel echinique infantes tomás valle son nombres de las casas Nos ha faltado mostrarles un poco de repente fotos de cómo se distribuye el puricultorio. Quizás en la reunión con el especialista de nutrición nos pueda dar esa vista, ese panorama. Pero les cuento, los niños, niñas y adolescentes
+04:54 Speaker 1: se
+04:56 Speaker 2: encuentran distribuidos dentro del puricultorio por casas. Y así los llevan, los registran en temas de salud, temas de nutrición. Por casas hay niños y niñas. Ahora, dentro de cada casa,
+05:11 Speaker 1: o
+05:15 Speaker 2: dentro de cada grupo de casas, no sé muy bien cómo es, porque dentro de cada casa vuelven a tener casas, como subgrupos de los niños, que imagino que debe haber algún motivo por el cual los vuelven a agrupar. Entonces, lo que se busca es que esta etiqueta de como de la macro casa y de la casa, se mantenga para el individuo en caso sea importante, en caso nos sume algo, nos diga algo, o esa separación implique algo en particular. Los individuos, los niños, los ID's, vendrían a ser estos que están aquí, que harían match con la tabla principal que han recibido la vez pasada.
+06:00 Speaker 1: Esos serían los ID's.
+06:03 Speaker 2: Y esta es la información que registran para el periodo específico. Por ejemplo, este archivo es enero del 26. Entonces, para enero del 26, estos niños han registrado, bueno, les han registrado esta edad, peso, talla, índice de masa corporal. Y luego, lo que nos mencionó el especialista, que se llama Malú, es que tienen dos formas. de registrar esta información según un percentil y según una tabla de diagnóstico rápido. Me ha dado unos PDFs para complementar el entendimiento de estas dos variables, que en teoría parecen las mismas, pero me dice que la referencia es diferente. Ella debe ser la más indicada para explicarnos esto. Pero la diferencia que me dijo es que uno de ellos está basado en la OMS y el otro está basado en tablas ajustadas a la realidad del Perú. Pero ella tiene en cuenta ambos, porque me dice, por ejemplo, aquí, para este niño o niña, sale como talla baja con estos estándares, pero para este otro estándar sale como riesgo de talla baja. Entonces... en algunas veces cambia la categoría, porque hay diferentes referencias. Entonces, en los PDFs que ella ha dado, que son un par de PDFs nada más, están como los puntos, los límites, ¿cómo los llamaríamos? No sé si han visto alguna vez estas tablas de crecimiento de los niños y niñas. No sé si han tenido algún primito, hermanito. Pero hay unas tablas de crecimiento, de la curva de crecimiento. Entonces se ve, de acuerdo a la talla que tiene el niño, qué peso debe tener. Y así. Y ahí van sacando algunos indicadores. Igual, para estos datos, o sea, para el entendimiento de estos datos, ella va a ser la más indicada. Esperaríamos tener con ella reunión. ¿Cuándo tendríamos con ella reunión? Voy a preguntarle si se puede... En estos días grabamos aunque sea la reunión si no pueden para que ya tengan el entendimiento, pero independientemente de eso, lo que sí se puede ir avanzando es estructurando estos archivos. Porque como ven, así no se pueden analizar y se tendría que estructurar y mantener las columnas, la información que necesitamos como estructura de tabla,
+08:29 Speaker 1: que es la que solemos ver.
+08:31 Speaker 2: Y no todas las tablas tienen el mismo formato. Y no todas tienen los mismos títulos. Entonces eso, por ejemplo, va a ser un reto ahí. Ahora, lo que estaba viendo es, dependiendo de los perfiles, porque no todos los equipos están conformados por el mismo mix de perfiles, si llega un punto en que de repente para algún equipo o para varios equipos se les dificulta estructurarlo, estructurar estos datos, ya tendría que ser un trabajo del aula en sí. O sea, tendría que sumar fuerzas todo el aula para estructurar este archivo, o estos archivos, y una vez que estén estructurados, ya todos puedan trabajar de repente con el mismo archivo. Va a depender de ustedes, de qué tan cómodos se sientan. Como les digo, ustedes son más expertos en esto que yo, pero este es un ejemplo de la realidad, de cómo están los datos. No siempre están ya listos para analizar. Entonces, por ejemplo, este es un archivo, les decía de enero, tenemos febrero, marzo, hay algunos meses que no nos han dado, según lo que nos dice la especialista es que no es necesario, o al menos lo que yo entendí, que no es necesario registrarlos todos los meses, como que ellos tienen unos tiempos o meses en los que le toman las métricas, como que no tiene que ser necesariamente todos los meses. Bueno, entonces en este año tenemos en febrero, marzo, abril, mayo no, junio sí, julio no, agosto sí. Septiembre todavía no lo ingresan. Trabajaríamos con eso.
+10:17 Speaker 1: Sí, entonces,
+10:18 Speaker 2: como pueden ver, la estructura de los datos,
+10:24 Speaker 1: la
+10:25 Speaker 2: temática de los datos y el objetivo de la institución apunta hacia modelos. no supervisados, esencialmente, porque hasta este momento, a menos que Malú nos diga algo adicional, no veo yo una variable objetivo propiamente aquí.
+10:46 Speaker 1: A
+10:47 Speaker 2: menos que ustedes sí lleguen a proponer alguna, a lanzar alguna propuesta con alguna variable objetivo. Pero así como está con esta revisión general, No llegaría a haber alguna variable objetivo Y,
+11:00 Speaker 1: como puede decir.
+11:03 Speaker 2: Pero igual, estos archivos se los voy a subir, se los voy a cargar en Paideia para que ya los puedan tener.
+11:11 Speaker 1: Y
+11:11 Speaker 2: también si tienen dudas, se vayan registrando y aprovechemos la reunión que se tenga. Hasta este punto, no sé si hay alguna duda, comentario sobre los archivos.
+11:27 Speaker 1: Venezuela, yo tengo una pregunta. Sí, sí que te escucho. En el caso de que un chico ingrese entre los dos periodos en los que se toman las medidas, ¿no va a salir hasta que tenga, hasta que se tome la siguiente? ¿O cómo se hace en ese caso?
+11:45 Speaker 2: En el caso, allá, un chico ingrese, te refieres en un mes, ¿no va a salir? No te entendí lo del ingreso y la salida. O sea, por ejemplo acá, enero y agosto.
+12:02 Speaker 1: No, profesora, a lo que me refiero es que, en el caso, un chico ingrese al orfanato. Ah, ahorita. Pero en un periodo, digamos, ellos toman las medidas en enero, luego en abril. Si ingresan en marzo, ese chico no va a figurar hasta abril. Sí, correcto. Es lo que entendería.
+12:22 Speaker 2: Sí, solo que la característica particular de este pericultorio es que no están recibiendo ingresos desde hace un tiempo. Entonces, ahorita solamente están trabajando con los niños que ya tienen desde hace un tiempo y ya no están recibiendo nuevos ingresos. Entonces, por ejemplo, aquí los niños que vamos a tener entre los de nutrición y los del consolidado de la fecha nominal
+12:49 Speaker 1: son
+12:52 Speaker 2: la mayoría. Es más, todos los que están en nutrición se encuentran en la ficha nominal. Hay algunos de ficha nominal que no están en nutrición, imagino que ya se fueron, no sé por qué no están acá, pero todos los que están en nutrición sí están en nominal. Entonces, por ejemplo, pueden haber niños que estén en enero, pero que ya no estén en el resto de meses. Entonces, esa métrica que vamos a encontrar en enero la guardaríamos como que su métrica del 2026. Igual puede que hayan niños que están, no sé, en marzo y no está en enero, febrero ni en el resto. Entonces sería su métrica de lo que va el 2026. Entonces tendríamos que ver una forma de mantener la información
+13:37 Speaker 1: y
+13:40 Speaker 2: hacerla homogénea para todos. Hacerlo homogéneo para todos. Como que la misma forma, la misma manera de resumirla. Podría ser como que una métrica por año o una métrica cada dos meses, dependiendo qué tan frecuentemente encuentren a los niños en este periodo de tiempo. Sí, en ese sentido era tu pregunta, Flavio.
+14:13 Speaker 1: Sí, profesora, más o menos que ya entendí un poco más el proceso.
+14:19 Speaker 2: Sí, bueno, nuevos ingresos no hay, según lo que me han comentado desde hace un tiempo. Entonces, todos los niños que están en ficha nominal estarían acá en nutrición. Y nuevos niños no esperaríamos, incluso después de que se entreguen estos resultados, todavía no esperarían nuevos niños, según lo que comentaron. Hasta que haya un trámite
+14:42 Speaker 1: y no sé qué más.
+14:44 Speaker 2: Pero sí, ingresos nuevos no habría. Y de repente, como no habrían ingresos nuevos, una predicción como para poblaciones futuras, al menos en esta primera etapa, parece que no buscan. Sí, por eso es que podríamos concentrarnos en los no supervisados. ¿Sí? ¿Más comentarios?
+15:16 Speaker 1: ¿Consultas? Profesora, en caso se encuentre una variable objetivo, ¿se tiene que comentarle a usted o sería parte de nuestra investigación? ¿Se comentaría al resto de grupos también?
+15:37 Speaker 2: Como ustedes prefieran. O
+15:38 Speaker 1: sea, si quieren...
+15:45 Speaker 2: O sea, el objetivo principal va a ser el clase. A veces sí o sí lo tienen que hacer todo. Ahora, si van a sacar una variable objetivo y la van a lanzar como experimentación, puede ser una propuesta del equipo. Pero si ven que es un modelo sí o sí
+16:03 Speaker 1: que...
+16:06 Speaker 2: Que no sé, que valdría la pena que lo intenten todos para hacer una prueba y que salga. O sea, igual el equipo que propone tiene su puntaje por proponer la idea, ¿no?
+16:20 Speaker 1: Y
+16:20 Speaker 2: si proponen la idea y entre todos intentan alguna combinación y ya sale el mejor equipo, el mejor modelo en otro equipo, o sea, igual el que propuso la idea del modelo de Y, o sea, igual tiene su puntaje por la propuesta. Entonces, ¿por qué? Porque la idea es tratar de sacar el mejor modelo, los mejores modelos para la institución. Entonces, si bien cada equipo va a tener que
+16:46 Speaker 1: hacer
+16:48 Speaker 2: lo mejor posible para su propia nota de equipo individual, también tenemos que buscar la mejor forma de darle el mejor modelo, mejores modelos a la institución, porque recuerden que lo que se va a llevar la institución va a ser como el... En nombre de todo, ¿cierto? En nombre de todos los estudiantes del curso. Entonces,
+17:08 Speaker 1: sí,
+17:11 Speaker 2: se puede manejar de ambas maneras, ¿no? O sea, por propuesta, si queda, igual tiene su puntaje por la propuesta y se puede hacer, lo pueden desarrollar todos los equipos con la finalidad de encontrar, de repente, la mejor combinación o el mejor modelo. Podría manejarse así también. Ah, otra cosa también que les iba a mencionar, creo que eso todavía no lo he subido. Hay un montón de cosas pendientes, chicos. Creo que por eso se me ha quemado esto de la lauta, porque estoy como con muchas cosas al mismo tiempo. Ya, algo que tengo pendiente de subirles es la lista de JPs asignados por equipo. Porque cada equipo va a tener dos JPs de dos perfiles diferentes. Un JP del perfil de Analytics de la parte de estadística y un JP del perfil de informática. Van a tener de ambos. Para que también los JPs sean como
+18:18 Speaker 1: una
+18:21 Speaker 2: guía más, ¿cierto? Más ojos, más... Cerebro pensando lo mismo para que puedan también, si desean, debatir algunas ideas con ellos. Igual conmigo
+18:31 Speaker 1: también podemos programar reuniones.
+18:33 Speaker 2: Entonces me falta subirles la lista para que sepan cuáles son los dos JPs que tienen asignados a sus equipos también. Eso. Eso lo voy a apuntar porque si no, se me va a ir. Ya. ¿Más dudas, chicos? ¿Comentarios si se entendió más o menos cómo ven esto de estructurar? ¿Ven que sí se va a poder o lo ven del 1 al 10? ¿Cómo lo ven? Ahora voy a dejar de compartir para leer sus
+19:14 Speaker 1: chats.
+19:17 Speaker 2: Del 1 al 10, ¿cómo ven esto de estructurar los archivos que les he mostrado? Sin miedo, no los voy a juzgar ni les voy a decir, tú me dijiste 5. Solamente como para yo tener una idea de cómo lo están viendo ustedes con sus ojos de la
+19:41 Speaker 1: carrera.
+19:44 Speaker 2: Pueden mandarme en privado si quieren que no llegue el mensaje para todos, pero al menos quiero como un sondeo para saber del 1 al 10 qué tan factible ven la estructuración de estos datos.
+20:07 Speaker 1: Ya, ok.
+20:09 Speaker 2: Claro, sí, sí, sí. Sí pueden utilizar. O sea, para desarrollar su TA tienen todas las herramientas que existen en el mundo. Porque no lo dan en entorno
+20:19 Speaker 1: de examen. Entonces, ya, a ver. Ok.
+20:35 Speaker 2: y ya entonces pinta como que como que hay esperanzas ya ok entonces intentamos ya chicos gracias por sus
+20:45 Speaker 1: comentarios ok
+20:48 Speaker 2: entonces igual lo que yo esperaría es si en algún momento o sea por ejemplo ahora yo les voy a cargar el archivo los archivos Si en un momento un equipo ya logra estructurarlo, sería ideal si me puede avisar, al menos para saber que ya lo lograron estructurar y normal siguen avanzando, pero al menos para saber que ya lo lograron estructurar. Porque si les va a tomar dos semanas estructurarlo y no van a avanzar, tenemos que tomar otra
+21:19 Speaker 1: decisión.
+21:21 Speaker 2: Entonces si en algún momento alguno ya lo estructura, algún equipo me avisa solo para saber que
+21:27 Speaker 1: van por buen camino.
+21:30 Speaker 2: ok entonces eso fue respecto a la tarea académica y ahora respecto a los notebooks que se los he pasado
+21:37 Speaker 1: al notebook los voy a convertir por aquí
+22:16 Speaker 2: Ya, entonces la idea es complementar lo que ya hemos visto la clase pasada. La clase pasada hemos visto, esta sería como nuestra tercera clase sobre los no supervisados. La primera clase tuvimos algunos algoritmos, uno vimos Camin, que era como el solo para numéricos, habíamos visto... Kprototypes, que vendría a ser como para el mixto, ¿cierto? Que me aceptaba numéricos y categóricos. Y habíamos visto... Voy a minimizar esto. Ya. Y habíamos visto jerárquico. Jerárquico, que era como el... Como el complemento, ¿cierto? Porque teníamos los jerárquicos y los no jerárquicos. Entonces vimos un jerárquico, un Kmin solo para numérico y un Kprototype mixto. Entonces, eso fue el primer notebook. El segundo notebook fue el de validación.
+23:19 Speaker 1: Es más, voy a abrirlo acá. Drive,
+23:24 Speaker 2: el de ustedes está aquí.
+23:28 Speaker 1: Proyectos.
+23:30 Speaker 2: Está aquí, ¿cierto? Por fecha, por nombre. Acá tenemos el de clustering y tenemos el de validación. Entonces serían tres notebooks. El de clustering, el de validación y ahora el mixtos. Entonces,
+23:51 Speaker 1: la
+23:54 Speaker 2: idea era que... En el de clustering tuvimos tres, uno de cada tipo, como de manera general, son los numéricos, el jerárquico y los K-protocols. En el de validación habíamos visto
+24:07 Speaker 1: la
+24:10 Speaker 2: idea de, sobre todo, analizar estabilidad. Estabilidad
+24:15 Speaker 1: y
+24:16 Speaker 2: probar en un dataset. de test, particionando. No sé si esta parte había quedado clara la vez pasada. La mencionamos porque ambas son como propuestas. No he visto que estén ampliamente ampliamente ¿cómo
+24:36 Speaker 1: se diría?
+24:39 Speaker 2: ampliamente expresadas, ampliamente difundidas. No lo he visto muy comúnmente. Entonces, se está planteando aquí como propuestas para que al momento que apliquen esto en su proyecto, prueben una de estas dos o si quieren prueban las dos. La idea del primero de validar mediante datos de test, como la idea del algoritmo de los pasos que se tendrían que hacer, les había explicado por aquí. ¿Se acuerdan? Lo de hacer el partición, training y test, entrenar con el entrenamiento, predecir las categorías sobre el test, hacer un modelo predictivo y luego con el modelo predictivo verificar el buen ajuste de las etiquetas y considerar nuestras métricas, especialmente la de Ari. Entonces, estaba como propuesta aquí, ¿no? Y en el caso de validar estabilidad, la idea principal eran las perturbaciones. ¿Se acuerdan? Habíamos hablado de perturbaciones, habían diferentes tipos, diferentes propuestas que se habían realizado, se podía perturbar cosas en el algoritmo de entrenamiento y se podían perturbar a los datos también. Se pueden perturbar datos o parámetros del algoritmo, o de repente los valores de inicialización, cositas así, se podrían probar. Por acá les coloque un ejemplo, solamente de manera experimental, no sería parte del curso, solo como para complementar. Entonces, la parte de validación... vendría como propuesta para que la puedan aplicar con datos de la TA, para ver si les sirve
+26:20 Speaker 1: para
+26:22 Speaker 2: fundamentar los resultados que están encontrando. Al finalizar el notebook de clustering también habíamos agregado un poco de comparación de estabilidad. Habíamos hablado de las métricas, de la inercia, de silueta, pero... En este Notebook 3, la idea, lo que les quiero transmitir o como que dar más herramientas era sobre todo con el uso de la matriz de GoWare. ¿Se acuerdan que les había comentado que
+26:55 Speaker 1: GoWare
+26:56 Speaker 2: lo que nos permite realizar es encontrar nuestra matriz de distancias utilizando las métricas de distancia adecuadas de acuerdo al tipo de variable? Entonces, GoWare... sabe que si tengo numéricas voy a utilizar determinada métrica, si tengo categóricas, incluso si tengo ordinales también tiene otra forma de cálculo. Y si tengo dicotómicas o bivariadas, bivariadas no, dicotómicas o variable de dos categorías, también sabe qué hacer. Entonces, la propuesta aquí
+27:32 Speaker 1: es considerar
+27:36 Speaker 2: y comparar Métodos solamente mixtos, porque en un primer momento habíamos visto
+27:43 Speaker 1: K
+27:45 Speaker 2: -Prototex como mixtos, jerárquico que podía ser mixtos como que no, y K-Means que era solamente para numéricos. Entonces la propuesta del tercer notebook es comparar, acá tenemos tres, cuatro, cinco, cinco modelos para mixtos. trabajándolos para datos mixtos, que es al final el escenario de nuestro proyecto. Y el complemento era que estos dos modelos que están por aquí, que de repente también los han escuchado, que es el de Debescan y el H de Debescan,
+28:22 Speaker 1: tienen
+28:25 Speaker 2: como característica particular que no asumen esfericidad. ¿Se acuerdan que les había mencionado la vez pasada que los modelos,
+28:35 Speaker 1: generalmente
+28:38 Speaker 2: los modelos basados en distancias, una de sus características era que asumía esfericidad? ¿A qué nos referíamos con esfericidad? A que los clusters, la verdad acá tengo mi lapicito y no lo estoy usando, a que los clusters podrían ser circulares. Vamos a abrir un
+28:56 Speaker 1: paint.
+28:59 Speaker 2: porque donde más les puedo escribir antes había una pizarra misma acá o la pizarra del mismo
+29:05 Speaker 1: donde
+29:13 Speaker 2: abro la pizarra
+29:32 Speaker 1: Ahí le pasé un link también que puede abrirlo, ahí sirve de pizarra. No necesita crearse cuenta ni nada. A ver, ahorita lo chequeo, gracias. Dibuja, crea, comparte. A ver, vamos a ver. Ya, aquí.
+29:57 Speaker 2: Está en lápiz. Ya, y si quiero descargarlo, ¿me va a permitir? O sea, para pasarles, digo.
+30:13 Speaker 1: En guardar, exportar.
+30:19 Speaker 2: Ya, imagino que sí iba a dejar, ¿cierto? Sí.
+30:25 Speaker 1: Ya, confío, vamos.
+30:28 Speaker 2: Ya, ¿qué les decía? Ah, ya, les decía que hay unos modelos,
+30:32 Speaker 1: cuando
+30:34 Speaker 2: hacemos este tema de graficarlos, ¿se acuerdan que decimos, había veces en donde un modelo, podemos asumir que un modelo, no asumir, sino hay algunos algoritmos que asumen, O tienen como supuesto que los clusters son, tienen estructura como de esfera. Estructura circular tienen, ¿cuál palabra les había dicho? Propiedad, bueno, de una distribución como de esfera, ¿cierto? ¿Por qué? Porque tienen el centroide y obviamente si yo calculo la distancia desde el centroide a mis elementos, en teoría se van a distribuir de esta manera, ¿cierto? Entonces tiene sentido que tengan
+31:14 Speaker 1: una, que
+31:16 Speaker 2: tengan esfericidad.
+31:18 Speaker 1: mis prototides,
+31:21 Speaker 2: las masas. Pero hay otros algoritmos como los que tenemos aquí, estos dos, que de repente también los han escuchado,
+31:31 Speaker 1: que no
+31:33 Speaker 2: asumen una distribución en particular si no es arbitrario, o sea, es como que no tienen esa restricción y son un poquito más libres. para asumir que pueden existir agrupaciones no necesariamente esféricas. Luego hay otros algoritmos que asumen
+31:53 Speaker 1: formas
+31:56 Speaker 2: particulares, como, no sé, medialunas o... Había otro, no me acuerdo si es
+32:02 Speaker 1: cilindro, no me acuerdo muy bien
+32:05 Speaker 2: los nombres adicionales, pero lo bueno de estos dos algoritmos, de Debescan y el HDbescan, es que... Se libera un poco en esa restricción y como que me acepta todas las combinaciones que puedo utilizar. ¿Por qué? Porque DBSCAN y HDBSCAN se basan en la densidad, en la densidad de la masa y no en la propiedad de esfericidad de ella. Entonces eso se va a ver en los gráficos que vamos a tener por aquí. Habíamos visto PAM, ¿se acuerdan? PAM lo habíamos visto dentro de los modelos jerárquicos.
+32:44 Speaker 1: Y
+32:45 Speaker 2: este PAM también se suele comparar
+32:51 Speaker 1: con
+32:51 Speaker 2: algún modelo como el K-Means, pero con K-Medoits, que los Medoits utilizarían las medianas. utilizarían las medianas. Entonces, la característica de este Pan Medoids es que al utilizar medianas, mi valor central, mi puntito que está aquí, ya no vendría a ser, este valor ya no vendría a ser ni un random, ni el promedio de todos, sino este punto viene a ser un dato real. Porque acuérdense que la mediana era el punto, el valor exactamente, que divide en 50%. Y 50%. Y es un valor. Y es un valor. Entonces, esta es la mediana. Ese es el beneficio o el extra, el dato adicional o particular de las cameoides. Que utilizan las medianas y entonces sus centroides es un dato que existe. Ya. Entonces, para el K-prototypes ya no lo he vuelto a ejecutar. Solamente les coloco que revisen el anterior porque ya lo teníamos. Ahora, sí les recomendaría que aquí agreguen un espacio y vuelvan a ejecutar uno un poquito más limpio con menos pasos porque en el otro notebook mezclamos un montón de cosas. Entonces yo sí les recomendaría que lo vuelvan a aplicar aquí y que consideren esto que está aquí. Tener en cuenta que el Cap Prototypes no utilizo directamente
+34:21 Speaker 1: D, que
+34:22 Speaker 2: es nuestra matriz de distancias que vamos a ver abajo, porque el K-Prototype necesita la matriz original de los datos, de las variables. Entonces, ¿qué significa esto? Que los datos, los modelos que están hacia abajo, sí me van a pedir una matriz de distancias. D es la matriz de distancias. Pero esa matriz de distancias nace de la matriz original, de variables. Entonces Kprototypes necesita las originales porque internamente Kprototypes calcula el D. Entonces yo les recomiendo que aquí ejecutemos un Kprototypes para verificar que en todo el menjón que hicimos acá, porque mezclamos un montón de cosas, luego se acuerdan que salió un error porque corrimos arriba, abajo, bueno, varias cosas pasaron extrañas aquí. Entonces la recomendación es... correr este Kprototypes ya en limpio, como debe ser en este bloque, y verificar que entrenemos Kprototypes con la matriz original y que no hayamos metido por error la matriz de distancias. Ese sería un primer dato, para luego hacerla comparable con los demás modelos. Entonces, dato particular, este Kprototypes, a diferencia de los demás, necesita la matriz... ¿De variables originales por qué? Porque se acuerdan que Kprototypes necesitaba adicionalmente el vector de posiciones de las categóricas. Entonces, por eso necesita la variable original y Kprototypes ya se encarga de las diferencias. No nos pide las diferencias. Ya, esa es la idea de nuestro Kprototype. Entonces, acá les dejo el espacio para que se realice. Ahora,
+36:07 Speaker 1: una
+36:09 Speaker 2: siguiente propuesta es... utilizar nuestro jerárquico como lo hemos utilizado en el anterior, en este modelo 3, solo que en este modelo 3, no sé si se acuerdan, pero habíamos utilizado solamente las numéricas, por ejemplo aquí. Solamente eran numéricas, todas eran numéricas porque era una matriz que provenía de arriba, de nuestro modelo anterior que era el K-means, que solo aceptan numéricas.
+36:35 Speaker 1: Vamos a esconder los gatitos un ratito, ya.
+36:38 Speaker 2: Entonces, el CAMIN solamente aceptaba numéricas y, por ende, este jerárquico se hizo con numéricas. Entonces, la propuesta aquí es trabajarlo para los mixtos. Acuérdense que todos estos modelos los estamos trabajando para datos mixtos. Entonces, igual, el jerárquico queremos trabajarlo con datos mixtos
+36:55 Speaker 1: y al
+36:59 Speaker 2: ser mixtos vimos que el jerárquico trabaja con matriz de distancias. Trabaja con nuestra matriz D. Entonces, vamos a tener que calcular nuestra matriz de distancias de los datos originales,
+37:14 Speaker 1: pero
+37:15 Speaker 2: adicionalmente el jerárquico, solamente el jerárquico, a diferencia de los demás, el jerárquico necesita una matriz que se le llama matriz de distancias condensadas. Estas distancias condensadas No son otra cosa. Suena como leche condensada, pero no. O sea, la característica de esto es que no es redundante. Es la misma matriz de distancias, no cambia. Lo único es que no es redundante. Entonces, nos va a dar la información de los pares. Por acá les coloqué una anotación. Aquí. Por ejemplo, quería colocarles como ejemplos. De repente, si le dan doble clic, se ve mejor.
+38:00 Speaker 1: Ahí está.
+38:02 Speaker 2: Una matriz normal de distancia sería n por n, ¿cierto? Si yo tengo n variables, que de repente podría ser k mejor, k variables, mi matriz de distancia va a ser esas variables versus sí mismas,
+38:19 Speaker 1: ¿cierto?
+38:19 Speaker 2: Y cuando hagamos el versus de ellas mismas versus ellas mismas, vamos a tener una matriz diagonal, donde la diagonal... de nuestras distancias, sería 0,
+38:31 Speaker 1: ¿cierto? Y
+38:34 Speaker 2: va a ser una matriz cuadrada. Esa sería mi primera matriz D. Una matriz de distancias cuadrada. Luego, de esta matriz se obtiene la matriz condensada. Entonces, esta matriz condensada es la anterior, pero sin redundancia, y se puede ver como un vector de distancias. Y le llaman así, en formato condensado. O sea, al final es un vector. Lo que adquiere una matriz, acá se hace un vector. Ejemplo, les puse para cada uno chiquito.
+39:06 Speaker 1: Un vector
+39:07 Speaker 2: de 2, 4, 6 valores. ¿Cómo se interpreta esto? El primer valor es la variable A menos la variable B. Luego, esperen. Estoy mezclando las cosas. Esto de aquí no es variables. Esto es N de tamaño de muestra. Estoy mezclando, estoy mezclando. Este es el N que es el tamaño de muestra, la cantidad de individuos. Entonces aquí estas diferencias son las diferencias de los individuos. Pero estoy diciendo variables. No, esa es otra cosa. Es ese PCI cuando hacemos distancias. Pero aquí es... Individuos versus individuos. Entonces, la distancia es de todos los individuos versus todos los individuos,
+39:56 Speaker 1: ¿cierto?
+39:57 Speaker 2: Que aquí se vería como...
+40:00 Speaker 1: ¿Dónde
+40:02 Speaker 2: le cambio? Bueno, ya. ¿Aquí? No. ¡Ay! Dios mío, la curva de aprendizaje aquí.
+40:19 Speaker 1: Ya. Ya creo que ya.
+40:34 Speaker 2: ¿Qué les decía? El todos versus todos. Entonces, tendríamos una especie de matriz así. Tengo mi individuo A, mi individuo B. Todas serían personas. Bueno, en este caso serían los niños. Ya proyectándolo en nuestra tarea académica, serían los niños. Todos versus todos. Entonces tendríamos una distancia, la distancia de A con A obviamente va a ser 0, voy a tener 0 por acá, y luego acá tendría la distancia de A con B. Entonces imagínense que la distancia de A con B, de A hacia B, si son numéricas y están estandarizadas, de A hacia B imagínense que hay, no sé, dos puntos, dos centímetros, dos algo,
+41:22 Speaker 1: dos puntos.
+41:25 Speaker 2: Obviamente de A con este B también van a ser dos la distancia. Simplificando, ¿cierto? Porque hemos visto que hay fórmulas de distancia, algunos al cuadrado, si utilizamos la euclidiana, es como que al cuadrado y luego una raíz cuadrada, luego hay otras que tienen valor absoluto. Simplificando, imaginemos que nos sale 2, 2 y 2 acá. Entonces, esto lo podríamos considerar redundancia porque A con B es lo mismo que este A con este B. Entonces, este 2 con este 2 es redundante. Entonces, esta matriz D esa matriz de distancias tiene información redundante, tiene la diagonal que no me dice nada porque es obvia, y la repetición del triangular superior con el triangular inferior. Entonces lo que hace la condensada es quedarme prácticamente con una de las triangulares y simplificarlo en un vector. Entonces aquí analizamos que este 0,2, este 0,2 vendría a ser la diferencia de A con B, Y luego A con C y A con todos, ¿no? A con C y luego A con D. Si acaba A, arranca B. B con C, B con D y así hasta el último, en ese orden. En ese orden se va escribiendo la matriz condensada. Por eso es que aquí arriba la vemos así, vemos un solo vector. Si bien es matriz condensada, vemos un solo vector porque se analiza de esa manera. El primero versus todos, el segundo versus todos y así sucesivamente. Entonces, el jerárquico utiliza eso. No me basta con la matriz de distancias, sino me necesito la condensada.
+43:12 Speaker 1: Y tampoco
+43:14 Speaker 2: la condensada es el último paso, porque el siguiente paso es encontrar nuestra matriz de linkage. ¿Se acuerdan que habíamos visto también fórmulas para nuestro linkage? Habíamos visto también la vez anterior, por aquí creo que tengo todavía los gráficos, habíamos hecho un versus en el jerárquico bien bacán, este por ejemplo. Aquí habíamos hecho el versus de los tres tipos de métodos. Les había colocado algunas definiciones de métodos, por si quieren probar algunos otros para la tarea académica. Y habíamos hecho el versus del single, decíamos que su característica es que puede generar cadenas. Y las cadenas ya nos cortan ese tema de poder podar el árbol, ¿cierto? Podar el árbol o cortar el árbol para la cantidad K que deseemos. En el single habíamos dicho que toma la distancia mínima entre elementos. En el complete habíamos dicho que toma la distancia máxima para saber si tengo que unir o no grupos. Y el average dijimos que era como que el más sobrio porque considera la distancia promedio de cada punto respecto a su centroide. De cada punto respecto al centroide. Entonces es distancia promedio. Habíamos hecho esta comparativa. Entonces, por ejemplo aquí, para esta matriz de linkage, utilizando la condensada, estamos proponiendo un average. Claro que aquí se está ejecutando uno solo, pero si desean experimentar, podrían probar también otros métodos y ver si alguno se ajusta mejor a
+44:57 Speaker 1: los datos.
+44:59 Speaker 2: Entonces, aquí estamos construyendo nuestro linkage, nuestra matriz de linkage, y recién esta matriz
+45:06 Speaker 1: Z
+45:07 Speaker 2: vendría a ser la que podemos utilizar
+45:10 Speaker 1: para
+45:11 Speaker 2: plotear Para hacer nuestro gráfico y luego para generar las etiquetas también. Entonces, primero para hacer el gráfico. Ya tenemos nuestros Zetas.
+45:23 Speaker 1: Ahora,
+45:24 Speaker 2: antes de avanzar, ¿se acuerdan o cómo podrían decir con sus propias palabras qué es lo que hace el linkage? Por acá está la pista, creo. ¿Se acuerdan qué es lo que habíamos dicho que hace el linkage? Porque claro, D es distancias. que ya vimos, independientemente de la forma en la que se calcula la distancia, es distancia de un punto con otro punto, un punto con otro punto, y así, distancia de un individuo hacia otro, o sea, un punto respecto a otro.
+45:53 Speaker 1: Eso se dé.
+45:55 Speaker 2: Condensado no es otra cosa que lo mismo, pero tomando una triangular y ordenándolo de manera, no sé, desde el primero individuo hasta el último. Ya, pero
+46:05 Speaker 1: linkage,
+46:06 Speaker 2: ¿qué vendría a ser? ¿Se acuerdan que era lo que habíamos dicho? ¿Se acuerdan de qué manera lo expresamos? ¿Alguien se acuerda? No sé si están escribiendo en el chat, no tengo chat al hablando.
+46:38 Speaker 1: ¿Alguien se acuerda?
+46:39 Speaker 2: Nadie. Con sus propias palabras o algo. ¿Qué era lo que hacía el linkage? A diferencia de la distancia. Porque si ya tengo la matriz de distancia, ¿qué más necesitaría? Si ya tengo las distancias ahí. ¿Qué me faltaría hacer? ¿Qué me aporta el linkage?
+46:58 Speaker 1: Si ya tengo distancia.
+47:12 Speaker 2: ¿Qué dicen? ¿Nada? ¿Se durmeron? ¿Qué creen que me faltaría? O sea, ya tengo las distancias, supuestamente el endograma se construye con distancias. Entonces, ¿qué más me estaría faltando si ya tengo las distancias punto a punto? ¿Se acuerdan que decíamos, habíamos hecho un ejemplo en clase? ¿Qué pasa si habían, en un kinder, tengo diferentes grupos de niños, clusters de niños, ¿cierto? Cada niño puede ser considerado un cluster, pero yo puedo ir agrupando. Así como las gotas de agua en una hoja, las gotas de rocío en una hojita, podía yo unir... Las gotitas que están más cerca las uno, ¿cierto? Y una vez que ya están unidas, puedo buscar la siguiente gotita más cercana y así sucesivamente. Entonces,
+48:14 Speaker 1: la
+48:15 Speaker 2: matriz de distancias, que es la primera, lo que nos da vendría a ser la distancia punto a punto.
+48:22 Speaker 1: Y ya está ahí,
+48:23 Speaker 2: punto a punto, individuo versus individuo, nada más. La condensada ya es el vector de una de las triangulares. Y el linkage, lo adicional, y por eso necesito un método, es porque ahora me calcula las distancias respecto a
+48:41 Speaker 1: grupos.
+48:42 Speaker 2: O sea, puede ser grupo respecto a individuo o grupo respecto a grupo. Entonces, son diferentes distancias que ya no es individuo a individuo, sino individuo a grupo puede ser, por ejemplo. Entonces, ahí se necesitarían otros criterios diferentes. ¿Cómo yo considero? ¿Cómo yo sé si un individuo nuevo va a entrar a este grupo? ¿Qué distancia calculo de este individuo respecto a quién? Para saber si le toca ingresar al grupo A o al grupo B. Ahí no estoy escribiendo. Por ejemplo acá. ¿Cómo lo entenderíamos? ¿Qué pasa si yo tengo el clúster? Tengo un clúster así, ¿cierto? Tengo tres. Tengo tres clústers. Y luego viene un individuo nuevo. Por aquí. Entonces, este individuo ya llega, es uno solo, pero este clúster tiene más individuos. Y este también.
+49:49 Speaker 1: Y así.
+49:51 Speaker 2: Entonces, yo para empezar a agrupar, debería considerar si este clúster, este puntito, perdón, debo unirlo aquí. agruparlo para acá, o unirlo a este otro lado, o unirlo a este otro lado, o en todo caso dejarlo como un nuevo clúster solito, separado. Entonces, si yo quiero medir la distancia entre mi punto de observación y todo un clúster, teníamos diferentes métodos, ahí entran los métodos. El primer método del singular era
+50:28 Speaker 1: la
+50:30 Speaker 2: distancia más cercana, o sea, este punto respecto al más cercano que tiene. Este al más cercano y este al más cercano. Ese era el single. Luego podía elegir el complete. Para el complete decíamos que era el punto más lejano. ¿Cierto? Entonces ese punto versus el más lejano de acá. Versus el más lejano de acá. Y versus el más lejano de acá.
+50:54 Speaker 1: Y ese era otro.
+50:56 Speaker 2: Y el otro, el más equilibrado, decíamos que era el promedio. Entonces tengo varios puntos. El promedio entre ellos. que podría ser como el centroide quizás, ese promedio entre ellos es el que recién se diferencia respecto al Y,
+51:14 Speaker 1: a
+51:18 Speaker 2: la observación nueva. Entonces esta observación nueva o una observación que quiero ver si entra a nuestro precio o no,
+51:25 Speaker 1: puedo
+51:26 Speaker 2: diferenciarla respecto a los grupos utilizando el método, variando los métodos de mi función linkage. Sí, entonces eso es lo que hace este
+51:37 Speaker 1: Z, este Z linkage.
+51:38 Speaker 2: Y bueno, estábamos diciendo que elegimos average. Ahora,
+51:43 Speaker 1: lo
+51:45 Speaker 2: que hacemos por aquí es graficar ese Z y decimos que el beneficio del jerárquico es que
+51:53 Speaker 1: no
+51:54 Speaker 2: me obliga a cortar antes de tiempo el clúster. Entonces yo puedo mirar. al 100% cómo se comporta el fenómeno, de acuerdo a la métrica que he resumido, al average en este caso. Entonces, por ejemplo, ahí al ojo, ustedes podrían decir, o yo podría decir, ¿cuántos clusters veo? Podrían ser dos acá, dos acá, de repente acá hay un rojo, un quinto, y por acá hay uno medio verde, limón, o verde algo. Podría ser... Sexto, pero ya es tan chiquito que no sé si dejarlo como error de un clúster o mandarlo como un clúster nuevo. Pero podemos probar después. Entonces, ya ahí al ojo me puede dar ideas de cuántos clústeres quisieran. Por ejemplo, si corto aquí en tres,
+52:47 Speaker 1: si
+52:49 Speaker 2: corto aquí, en esta línea yo tendría un clúster, dos, que sería solo este chiquito que está acá. Y el tercero sería este grandote. Sí, eso sería si es que hago el corte en este línea. Pero, bueno, no sabríamos a ciencia cierta cuál es el verdadero y tendríamos que cruzar o comparar con los demás. Entonces ahí tenemos una primera vista. Luego. Ya, les había estado explicando la parte de la condensada. Ah, y acá está también la Z. Les decía que la Z, esta Z es la matriz que guarda, la matriz de link generada a partir de las distancias, pero estas son distancias de punto respecto a individuo o de punto respecto a grupo también, considero así.
+53:45 Speaker 1: Ya está. Ahora,
+53:49 Speaker 2: una vez que hemos graficado y que tenemos todos los clústeres específicos, posibles para nuestra población, lo que corresponde es nosotros decidir el valor de K. Entonces, aquí ya estamos decidiendo directamente un valor 4 de K, pero obviamente para elegir este valor K pudimos haber utilizado otras herramientas. ¿Se acuerdan cómo se llamaban las herramientas que vimos para utilizar K?
+54:23 Speaker 1: ¿Se acuerdan?
+54:25 Speaker 2: ¿Qué hacíamos o qué calculábamos para determinar el valor de K óptimo?
+54:42 Speaker 1: ¿Se refiere al grid search?
+54:46 Speaker 2: Ya, podría ser una forma. Sí, el grid search podría ser una forma. Otras formas que habíamos visto también de encontrar K óptimo, había un par más.
+55:15 Speaker 1: Hacíamos un gráfico donde se ponía la línea e íbamos viendo... Había un gráfico con colas, creo, ¿no? Sí, era algo...
+55:29 Speaker 2: Lo habíamos visto, por ejemplo, este era uno, el de Silveta. Acá no está como gráfico. Creo que el gráfico lo hicimos en Camines. En Kmin decidimos y luego ese valor de K lo replicamos para todos los demás.
+55:46 Speaker 1: Acá está.
+55:47 Speaker 2: El gráfico de codo y el gráfico de silueta. Es para seleccionar el K óptimo. Y después que ya seleccionamos el K óptimo, recién con ese K decidido empezamos a construir modelo 1, modelo 3 y modelo 4. Habiendo construido previamente el gráfico de silueta y el gráfico del codo. Y decíamos que se complementan. Entonces, en este punto estamos decidiendo ya un K igual 4,
+56:14 Speaker 1: pero si
+56:15 Speaker 2: quisiéramos ser más formales, aquí tendríamos que probar algunos de estos gráficos. Y ver si efectivamente nos inclinamos por
+56:25 Speaker 1: 4.
+56:27 Speaker 2: Entonces, aquí estamos utilizando K4. Al utilizar K4 significa que cortamos el clúster en cuatro bloques.
+56:38 Speaker 1: Ahora, vamos
+56:41 Speaker 2: a ejecutar o voy a mostrarles qué pasa con los datos tal cual como está y luego voy a hacer unas variaciones y van a ver cómo va a cambiar el resultado final. Vamos a dejarlo aquí con K igual a 4. Entonces, al hacer el corte de K igual a 4,
+56:56 Speaker 1: mi
+57:00 Speaker 2: modelo... el modelo jerárquico, puede predecir o proyectar las etiquetas según esta partición, que sería de mi Z, de mi matriz de linkage, particionado por K4. Y el criterio, bueno, estos criterios creo que también habíamos comentado la vez pasada que existen otras opciones, que podríamos probar algunas. otros valores para criterio. Creo que ya esa falta nos ha faltado ver o profundizar. Entonces, aquí se está guardando la etiqueta predicha o la etiqueta proyectada por el modelo. Y abajo se puede ver al final se están teniendo cuatro categorías. Estamos cortando cada igual a cuatro y por ende estamos teniendo cuatro categorías.
+57:57 Speaker 1: Ya. Ahora,
+58:00 Speaker 2: por ejemplo, aquí, ¿qué es lo que estaríamos graficando? Si hasta este punto nosotros ya hemos construido nuestro modelo de clustering jerárquico y hemos decidido cortar en el valor de 4 por n factores, por el codo, por la silueta que ya hicimos antes,
+58:18 Speaker 1: estas
+58:21 Speaker 2: etiquetas que se estarían guardando de nuestro modelo de clustering Obviamente podemos guardarlas en nuestro archivo original. Acá se están guardando en un vector nada más porque luego los vamos a llamar. Pero sería buena práctica que lo guardemos como columnas nuevas de mi archivo. De mi archivo original. Entonces, teniendo ya las etiquetas, que serían cuatro etiquetas, lo que podemos hacer es plotearlo. Ahora, esta propuesta que está aquí ha sido, o sea... La idea es darles varias herramientas para que experimenten. Yo les había adelantado que todo lo que es clustering es prácticamente experimentación. Entonces, la vez pasada ya les había pasado, habíamos visto reducción de dimensiones con PCA, ¿se acuerdan? Vimos reducción de dimensiones con PCA, reducción de dimensiones con análisis factorial. Entonces, en este caso estamos viendo una opción más de reducción de dimensiones, solo como de manera experimental,
+59:20 Speaker 1: con...
+59:22 Speaker 2: Se me fue el nombre. ¿Cómo se dice MDS en español? No le he puesto por acá. La D es de multidimensional. Escalamiento multidimensional está. La D es de multidimensional y la D
+59:39 Speaker 1: multidimensional.
+59:41 Speaker 2: Escalamiento multidimensional. Es otro modelo, otra forma que existe para reducir dimensiones. ¿Se acuerdan que
+59:54 Speaker 1: PCA
+59:55 Speaker 2: trabaja solo con numéricas?
+59:58 Speaker 1: ¿Se acuerdan?
+59:59 Speaker 2: Entonces, si nosotros hubiéramos querido hacer PCA aquí, estaba medio tranca porque PCA solo es con numéricas y nuestro dataset del proyecto trabaja con numéricas y categóricas porque este es
+01:00:12 Speaker 1: notebook de
+01:00:14 Speaker 2: mixtos. Entonces, para mixtos la propuesta es que incluso la reducción de dimensiones sea para datos mixtos también, o sea, sea un algoritmo adaptado o especialista en datos mixtos. Y este escalamiento multidimensional está construido para aceptarme datos categóricos. Entonces, por eso es que sale como una propuesta aquí. Claro que las líneas están arriba, súper rápido, son unas cuantas y se acabó, pero después en el proyecto pueden obviamente investigar un poco más, complementar y probar algunos otros hiperparameltos aquí también. En las disimilaridades él coloca esta opción del pre-computer porque ya estamos jalando nuestra matriz de densidades construidas, o sea, ya la hemos construido arriba. Si es que no la hubiéramos construido y aquí... Y aquí recién se va a construir, ahí sí tendríamos que cambiar la opción de disimilaridad. Pero como ya están ingresando transformadas, diferenciadas y todo, ya le colocamos como que ya ha sido trabajado. Entonces, la propuesta gráfica aquí
+01:01:21 Speaker 1: es,
+01:01:23 Speaker 2: como en PCI, plotear solamente dos dimensiones, o si queremos tres, hacemos tres, dos dimensiones de... De mi conjunto de variables. Y encima. Etiquetar el clúster. Por ejemplo. Acá sale este. Tenemos estas líneas de código. Pero. Yo incluso lo seguiría modificando. Porque no me gusta esta leyenda del color. Me parece no adecuada. Pero ya igual no podía. No podía. O sea yo. No sé si les he contado, ¿cierto? Que yo soy media loca de escenarios. Yo pruebo, pruebo, pregunto una cosa, me pasan las horas, los días, los siglos, y no me doy cuenta que se me está pasando la hora probando y probando y probando cosas. Entonces, acá me podía pasar experimentando cosas y probando, cambiando, pero bueno, se los dejo a ustedes. Esta parte, por ejemplo, esta leyenda, a mí me hace ruido, no me gusta. Porque mi clúster es una categórica, ¿cierto? Mi clúster es clúster 1, clúster 2, clúster 3. Entonces, un clúster 3,5 no tiene sentido. Y obviamente ese color no existe acá, porque el 3,5 no tiene sentido. Entonces, esto de acá me hace ruido, no está bien. Esto no está bien. Habría que colocar una leyenda
+01:02:35 Speaker 1: adecuada
+01:02:36 Speaker 2: para el tipo de variable. Por eso hemos visto tipos de variable al inicio del curso. Entonces, ¿qué es lo que estamos viendo aquí? Acuérdense que nuestro clúster jerárquico ha particionado cuatro. Cuatro etiquetas tiene el final. Y esas cuatro etiquetas estarían acá.
+01:03:02 Speaker 1: Voy a desplazar este menú.
+01:03:04 Speaker 2: Creo que ustedes no ven este menú, pero me hace ruido. Ya, entonces esas etiquetas serían las que aquí se verían más o menos así. Este 1 sería el celeste. El 2 sería este como rojo. El 3 viene a ser este rosado. Y el 4 entiendo que sería un turquesita que está por acá. Que solamente hay uno. Y esos serían nuestros clusters. Solamente son cuatro colores, por más que acá aparezca como diez. Son solo cuatro colores, cuatro etiquetas de cluster.
+01:03:37 Speaker 1: Ahora,
+01:03:38 Speaker 2: hay algo importante mencionar. Les menciono esto y los puedo dejar ir a break. Hay algo importante mencionar, ya que estamos viendo este primer gráfico con escalamiento multidimensional. Cuando reducimos dimensiones, como aquí o en PCA o en factorial, y hacemos el gráfico, una de las cosas que esperamos es que mi segmentación mejore, ¿cierto? Que mi partición de los grupos mejore.
+01:04:07 Speaker 1: Pero eso
+01:04:09 Speaker 2: no significa que la partición que yo obtenga de la reducción de dimensiones tenga que coincidir con la partición de colores que yo obtenga de mi algoritmo. de mi algoritmo de clustering.
+01:04:24 Speaker 1: Por ejemplo, aquí vemos
+01:04:27 Speaker 2: varios grupitos, ¿cierto? Tenemos un grupo por este lado. ¿Se ve mi cursor? Creo que se ve, ¿no? Mi cursor no sé si está bien. Sí, se ve.
+01:04:39 Speaker 1: Sí, allá. Gracias.
+01:04:41 Speaker 2: Por ejemplo, acá yo podría decir, acá hay un grupo, pero este es otro grupo, el que está aquí abajo. Y de repente este es otro. Y bueno, acá está bien, pero este rosado, ¿por qué sale del mismo color? Sí, este podría ser un clúster y el que está arriba otro clúster a pesar de que es rosado. Eso podría ser una idea natural, ¿cierto? Que es lo que estamos viendo, pero lo que debemos resaltar es que la reducción de dimensiones, o sea, la proyección o la gráfica que yo observo al zipear mis dimensiones no es... no sé, diría directamente proporcional, pero no es o no hace match con lo que yo obtengo mediante mi modelo de clustering, porque los algoritmos que se usan son diferentes. No trabajan hacia lo mismo. Entonces, la recomendación es, a pesar de que yo reduzco dimensiones para graficar, mi interpretación no debe ir ligada
+01:05:43 Speaker 1: al
+01:05:44 Speaker 2: grupo en sí. o sea, esta partición. Debe ir ligada más a los colores, porque los colores son los que me denominan la etiqueta, el clúster. En todo caso, si se tiene un clúster de este tipo, como aquí el rosado, que se ve el rosado partido en dos, que podría ser etiqueta arriba, etiqueta abajo, o sea, diferentes. Lo que tendríamos que decir aquí es, si bien con el modelo de clustering, Se identificó un solo clúster. La reducción de dimensiones me muestra una estructura diferente,
+01:06:24 Speaker 1: pero esa
+01:06:26 Speaker 2: estructura diferente no implica una partición de mi clúster original. A lo que voy es, si mi clúster me dice que este rosado es un solo bloque, por más que yo lo vea aquí partido, Esta partición no significa que no es un solo bloque, porque esto solamente es una visualización cipiada, resumida, con pérdida de información de mi universo. Entonces, el cluster se lo creo solamente al modelo. La reducción de dimensiones a veces me da claridad, pero no significa que la reducción de dimensiones me genere clusters, porque acordémonos que el objetivo de la reducción de dimensiones es... agrupar las variables, más no los individuos.
+01:07:13 Speaker 1: Eso es
+01:07:13 Speaker 2: súper importante recordar. Cuando hacemos PCA, por ejemplo, PCA, y acá hacemos clustering. Entonces, si yo tengo mi tabla de esta manera, tengo variable 1, variable 2,
+01:07:30 Speaker 1: variable 3.
+01:07:31 Speaker 2: Entonces, con PCA yo agrupo columnas y genero una nueva. ¿Cierto? En cambio, con clustering, yo tengo individuos, A, B, C, D. Entonces, yo agrupo individuos y genero nuevos grupos. Entonces, acá genero una nueva variable 1 y acá genero un nuevo individuo 1, por ejemplo. O cluster en este caso, pues, ¿no? No es un individuo, sino es una masa, un cluster. Entonces, los objetivos son diferentes. Por ende, la interpretación de mis gráficos, por más que se parezcan y me den masitas, la interpretación no es igual. Solamente el clustering, cualquier algoritmo de clustering, me da el derecho, digámoslo así, de hablar de que efectivamente veo segmentos de mi población, de la nube de la población. En cambio, si un PCI... Me muestra pseudo segmentos. No puedo decir necesariamente que están particionados de esa manera. Puedo tratar de interpretarlos por cercanías y cosas así, pero siempre en términos de las variables. En cambio, aquí sí puedo hablar de categoría 1, categoría 2, de los individuos. De los individuos. Entonces acá es individuos y aquí son variables. Esa es la característica principal cuando comparamos o cuando vamos a interpretar, porque a veces se suele confundir un poco las particiones. Hasta aquí alguna pregunta sobre escalamiento multidimensional o su mix o su match, no, como se diría, su mezcla con clustering. ¿Todo bien hasta aquí? ¿Está claro? ¿Se está entendiendo? ¿Acá hay un
+01:09:28 Speaker 1: mensaje? Sí, ok.
+01:09:31 Speaker 2: Ya, ya chicos, entonces les doy break
+01:09:34 Speaker 1: ahora en
+01:09:36 Speaker 2: este momento y regresamos con los otros algoritmos para comparar las gráficas que estamos obteniendo y para ver qué pasa cuando altero mis cortes. Cuando altero mis cortes y hago la comparación de los modelos obtengo otras cosas también. Entonces, este script que les paso ahorita con mixtos me va a permitir hacer experimentos. Ahora les muestro la forma de experimentar. Ya, chicos. Entonces, tomamos su break ahora y regresamos para continuar.
+01:24:56 Speaker 1: Ya, chicos. Entonces, retomamos. Retomamos donde nos quedamos. Por aquí.
+01:25:12 Speaker 2: Entonces nos habíamos quedado en la expresión gráfica de nuestros clusters encontrados con el primer, el segundo modelo en realidad, el jerárquico con
+01:25:26 Speaker 1: las
+01:25:28 Speaker 2: distancias de la palabra
+01:25:32 Speaker 1: Gower.
+01:25:35 Speaker 2: Antes de esto lo
+01:25:37 Speaker 1: cargué por aquí.
+01:25:39 Speaker 2: En esta parte, antes de K-Prototypes, la excusa de esta parte no la llegué a tocar, pero está antes de K-Prototypes, me la salté. Antes de este K-Prototypes se genera la distancia de Google, porque claro,
+01:25:51 Speaker 1: cuando
+01:25:52 Speaker 2: arrancamos, ya K-Prototypes no lo hemos corrido, cuando arrancamos aquí el D condensado, de frente jalamos a D, ¿cierto? Y ese D estaba construido un poquito arriba, unas cuantas líneas arriba, que era jalando nuestro archivo de datos. Este archivo de datos es el que construimos en el notebook anterior, después de la parte de preprocesamiento, transformación de datos, aquí justo antes de modelar, los datos que transformamos, esos datos son los que estamos jalando aquí, con la variable categórica última, para poder aplicar GoWare y todas las formas mixtas. Entonces, una de las cosas que necesitábamos era separar en categóricas y numéricas, Y luego,
+01:26:40 Speaker 1: esta
+01:26:44 Speaker 2: separación de categóricas y numéricas era porque Kprototex nos va a pedir la ubicación de las categóricas. Entonces, por eso separamos nuestro archivo. ¿Qué más? Y aquí empezamos a construir nuestra matriz de distancias. Primero necesitamos a X como una matriz.
+01:27:07 Speaker 1: ¿Cierto?
+01:27:08 Speaker 2: Necesitamos a nuestro X, que vendrían a ser todas las variables que están aquí, pero ya no con estructura de data frame, sino como una matriz. Y tendríamos las numéricas y la categórica la última. Entonces,
+01:27:21 Speaker 1: Gower lo
+01:27:22 Speaker 2: que va a hacer es va a tomar esa matriz y con las métricas adecuadas para cada par que va a identificar, calcula la matriz de distancias. Entonces aquí recién se genera D con Gower. Y esa D mediante GoWare es la que se va a ir llamando en todos los otros modelos. Entonces ya acabamos de ejecutar el de GoWare con jerárquico. Terminamos en este plot final. Vimos que incluso, por ejemplo, cuatro clusters nos podría hacer un poco de ruido. ¿Por qué? Porque el cuarto cluster no está ni siquiera bien representado. El cuarto cluster prácticamente es este punto. No está bien representado. Eso significa que de repente 4 no nos conviene y podríamos bajar a 3 o de repente probar con 5. Eso lo vamos a experimentar de aquí en un rato. Ah, pero acá les coloqué texto. A ver, tener en cuenta que al reducir tanta información a solamente dos dimensiones, esto es sobre el escalamiento multidimensional, ese escalamiento puede crear separaciones visuales que no representan necesariamente clusters estadísticamente definidos. ya lo que hablamos hace un rato, eso significa que, aunque visualmente parecen dos grupos, como por ejemplo el rosado, que parecen dos grupos, con el criterio del modelo de clustering no existe suficiente evidencia para considerar los dos clusters separados. Y luego, una forma de escribirlo. La representación bidimensional mediante escalamiento multidimensional muestra cierta estructura visual en los datos, o sea, me muestra algún patrón. Sin embargo, el modelo, en este caso el jerárquico,
+01:29:02 Speaker 1: utilizando
+01:29:05 Speaker 2: nuestras distancias de GoWare, no identificó dichas regiones lo suficientemente diferenciadas. bajo los parámetros que utilizó este modelo jerárquico. Entonces, en otras palabras, el MDS identificó estos dos como bloques súper amplios, súper diferentes, pero el clustering, que es el que manda, dijo que no había una diferencia significativa entre ellos. Eso es lo que nos dice esta interpretación. Luego, tenemos otra opción. para construir también con nuestra matriz de Gower, pero les decía que la variación con K-medoids es que el punto central ya no vendría a ser la media, cierto, de K-min, sino vendría a ser la mediana. Ese sería el dato adicional de
+01:29:55 Speaker 1: K
+01:29:58 Speaker 2: -medoids.
+01:29:58 Speaker 1: Ahora,
+01:30:00 Speaker 2: aquí estamos asumiendo también Estamos jalando el valor desde arriba, el valor de K desde arriba. Acá estamos colocando 3, ¿por qué? Porque cuando estábamos viendo esta partición decimos, este cuarto clúster no es mucho en realidad, no valdría la pena separarlo por un punto. Entonces podríamos dejarlo en tres clústeres nada más, el de color rojo, el rosa y el azul. Entonces aquí se evidenciaría 3 y por eso acá estamos probando con K3. Entonces construimos con K3, por aquí salen las etiquetas y nuestras cantidades.
+01:30:38 Speaker 1: Ahora,
+01:30:39 Speaker 2: el gráfico que podemos hacer también con Gower, con Kamedoids, también podemos plotearlo sobre la reducción de dimensiones.
+01:30:53 Speaker 1: Esta
+01:30:54 Speaker 2: reducción de dimensiones les decía que está como de manera experimental propuesta. Si quieren probar alguna otra forma de reducción de dimensiones, también lo pueden hacer. La cosa es que sea la misma reducción de dimensiones para todos, para todos los gráficos. Y lo único que cambie es el color de la etiqueta, pero el gráfico de la reducción siempre tendría que ser el mismo. Y por ejemplo aquí, en el caso de medianas, la partición me parece un poco más limpia, ¿cierto? Y con cierto patrón
+01:31:25 Speaker 1: aquí
+01:31:25 Speaker 2: predominante, porque en este caso el patrón no estaba tan marcado, al menos pasando de una masa de puntos hacia la otra. Sí, no sé si se llega a ver. Por ejemplo, este bloque de rojitos parece que estuviera saliendo como del centro de las dos rosadas.
+01:31:46 Speaker 1: Pero...
+01:31:47 Speaker 2: En el caso de medoides, cuando los centroides son unidades reales, vemos esta otra partición, igual con tres categorías, pero diferente,
+01:32:00 Speaker 1: ¿cierto?
+01:32:01 Speaker 2: Diferente patrón.
+01:32:05 Speaker 1: Ya,
+01:32:06 Speaker 2: ok, tenemos eso. Ahora, estos vendrían a ser como los modelos clásicos, modelos conocidos, cameoides, que es como el camispero variado, el jerárquico y el capprototypes vendrían a ser como ya los modelos normales o conocidos. Ahora, podemos probar otras dos opciones de modelos que les decía que... ya no tienen el supuesto de esfericidad. Y estas modelos nos aceptan agrupaciones por densidad, por variabilidad, en otras palabras. Entonces, estos modelos de Debescan tienen que trabajar en base a la variabilidad que existe dentro de mi nube de puntos. Ya no respecto a la media como los de arriba, sino esto es respecto a la variabilidad. Y el dato interesante también es que este Debescan nos ayuda a identificar atípicos. porque aparte de los clusters que nosotros le vamos a pedir, nos va a brindar una etiqueta adicional, que es el menos uno, que vendrían a ser los atípicos. Entonces, está bacán, porque ya no confunde los atípicos con un cluster, o sea, me refiero mezclado con otros valores que no son atípicos, sino aquí identifica los atípicos propiamente, y nosotros tenemos la opción. de decidir si los dejamos como una etiqueta más, como un placer más, o si los excluimos como parte de la limpieza de los datos. Entonces, ese es el beneficio de este EBSCAM. Quiero bajar este brío, pero no funciona. Creo que muchas cosas de mis máquinas se han quemado. Ya después les hago el update de qué fue, pero no me funcionan. Y el volumen sí me funciona, pero el brillo no.
+01:34:11 Speaker 1: Bueno,
+01:34:13 Speaker 2: ya, les decía que este DBSCAN tiene esta etiqueta, que ahora la vamos a ver cómo se vería, cómo la veríamos. Por ejemplo, ya, por ejemplo, ¿qué estamos haciendo aquí? Aquí estamos probando un DBSCAN, un modelo DBSCAN, con estos valores de los parámetros. Esta de precomputer, Van a ver que en todos los algoritmos lo hemos dejado así. ¿Por qué? Porque la matriz de densidades, esta D, nosotros la hemos construido al inicio. Entonces, como la hemos construido al inicio, ya no tenemos que volver a calcularla acá. Entonces, ya viene calculada y eso significa que la D solo la recibe y no le haga nada, porque ya es mi matriz de distancias. Y los parámetros, por ejemplo, para el Debescan vendrían a ser estos dos. Tiene más, pero esos podrían ser los principales con los que podríamos experimentar. tenemos este EPS, que suena a EPS, y la cantidad mínima de elementos para los clusters. Entonces, jugando entre estos dos parámetros, podemos encontrar a nuestro conjunto de parámetros ideales. Podríamos utilizar Grid Search, pero en este punto la experimentación manual me parece divertida. Entonces, vamos a ver un poquito qué es lo que ha salido experimentando de esa manera. Entonces, aquí estamos utilizando un EPS de 0,3, que ahora vamos a ver en qué valores podríamos tomar, y un mínimo de elementos de 5 por clase. Ya, y si hacemos esto, ¿qué es lo que obtenemos? Prácticamente todos los individuos están entrando de esta manera, todos los individuos estarían entrando en un solo clase. en el clúster 0, por ejemplo. Y esta sería la cantidad de individuos en ese clúster,
+01:36:05 Speaker 1: 1847.
+01:36:08 Speaker 2: Si queremos sacarlos atípicos, no hay, porque todo lo está agrupando en una etiqueta de 0. ¿Por qué? Eso se puede deber, o se debe, mejor dicho, a los valores de los parámetros que estamos utilizando. Entonces vamos a probar otras opciones. Por ejemplo aquí. Entonces, si me está saliendo así el clustering todo raro, todo feo, entonces ¿cómo puedo elegir sobre todo el EPS? Porque claro, la cantidad de elementos mínimos ya lo entiendo y puedo manejarlo. Más o menos sé a qué se refiere si la voy cambiando. Este EPS,
+01:36:47 Speaker 1: ¿cómo
+01:36:50 Speaker 2: lo podríamos elegir? Entonces acá tenemos un gráfico que nos va a ayudar. que vendría a ser algo así como la distribución de distancias de cada observación a sus vecinos. Así han llamado a este gráfico. Distribución de distancias de cada observación a sus vecinos. Entonces, ¿cómo es que miramos
+01:37:13 Speaker 1: el
+01:37:15 Speaker 2: gráfico? Bien distribuido de esta manera. Entonces, lo que vamos a buscar aquí, similar que en las anteriores, es... una especie de codo. Codo en alguna parte de la curva. Aquí podríamos pensar que el codo está en esta parte, en la parte derecha, inferior derecha. No sabríamos exactamente qué valor tomar,
+01:37:43 Speaker 1: pero si
+01:37:44 Speaker 2: nos acercamos al codo yo creo que vamos a estar bien, ya que no tenemos un dato exacto. Entonces yo pensaría que... el codo, el punto y flexión de esta curva estaría en 0.10, por ejemplo. O podría pensar que el codo está un poquito más acá y está en 0.95. 0.095. Entonces, si buscamos aproximadamente el codo de la curva, este valor puede servir como EPS. Entonces, vamos a construir un nuevo DBSCAN, pero ahora con los parámetros que ya se podrían ajustar un poquito más a la realidad de lo que queremos estudiar. Por ejemplo, podemos decir que el mínimo de elementos en un clúster que construya DBSCAN tiene que ser de 50 elementos, por ejemplo. Un clúster, para que sea clúster, mínimo tiene que tener 50 elementos. Si hay algún clúster de 20, de 30, no podría existir.
+01:38:52 Speaker 1: Ya.
+01:38:53 Speaker 2: Y ahora, este EPS, por ejemplo, que le he colocado es 0,097, asumiendo que está por aquí. ¿Cómo me podría dar cuenta si funciona o no funciona, si está bien o no está bien? Porque ahí, claro, yo le puedo dar cualquier valor. Podría darle 1,2, qué sabe, no sé, cualquier valor. Entonces... Vamos a ir por este valor de 0,097 y vamos a ver qué pasaba abajo. El gráfico que vamos a tener sería más o menos de esta manera.
+01:39:33 Speaker 1: Ahora,
+01:39:34 Speaker 2: acá hemos hecho algún corte adicional. Tenemos esta matriz. Ah, ya, ya, me estaba olvidando esta parte. En este bloque estamos guardando las etiquetas al final. Estamos guardando las etiquetas en esta parte. Una característica de DevScan es que nosotros no le tenemos que decir cuántas etiquetas seleccionar o mostrarnos, sino que ya de frente nos va a decir. Y justo por ese mismo motivo es que nosotros podemos ajustar los hiperparámetros para que la cantidad de individuos que... o la cantidad de clusters que encuentre este algoritmo, no sea muy amplia, ¿no? Tenemos que encontrar un equilibrio para que no sea ni tan amplia ni tan pequeñita. Entonces, vamos a probar con ese valor. Ya, por ejemplo, aquí estaríamos teniendo, ¿cuántos? Dos, tres, cuatro, cinco,
+01:40:32 Speaker 1: seis, ¿cierto? 3 es un solo. 3, 4, 5. Yo veo un 6. 1, 2, 3, 4, 5, 6.
+01:40:45 Speaker 2: Por ejemplo, no sé si llegan a ver que hay unos puntitos de este color. ¿Qué color será este? El 1 me parece que es. Del color 1 que están como que alrededor de todo. No sé si lo notan. Están como que cubriendo todo. Parado alrededor de todo.
+01:41:06 Speaker 1: ¿Profesora, no es un menos uno? Ah, sí, tienes razón.
+01:41:11 Speaker 2: Tienes razón, el uno está acá. Este es el menos uno. Tienes razón. Sí, gracias. Claro, este menos uno es el que tiene esta característica de estar en los alrededores, ¿cierto? Es el único que está más disperso que los demás. Y habíamos visto que el menos uno para nosotros viene a ser los atípicos, el grupo de atípicos. Entonces, bueno, ese es el que está siendo pintado como atípicos, no como atípicos en un solo punto, sino parece como que alrededor de todos, ¿no? Y eso, que el Debescan se caracteriza por no necesariamente tener una estructura esférica, sino por las densidades, las dispersiones de las variables. Sí, entonces todo esto que estaría azulito alrededor vendría a ser para nosotros los menos uno atípicos. Entonces hay una opción en donde nosotros podemos quitar esos atípicos si es que no queremos que sea una etiqueta. Entonces tiene como un dos en uno, detección de anomalías
+01:42:14 Speaker 1: y
+01:42:16 Speaker 2: clustering. A menos que quiera que la anomalía sea un clustering. Ya, entonces tenemos esto por aquí. Aquí hay otro gráfico, estaba buscando, suelen existir gráficos típicos de Debeska, porque yo he visto otros tipos de gráficos también, de repente ustedes también deben haberlos visto, unos donde las áreas van creciendo, se van achicando, parecen como cardúmenes de pescados. Entonces, una típica muestra de Debeska
+01:42:50 Speaker 1: suele...
+01:42:52 Speaker 2: Además de darle un color diferente a los atípicos, suele marcarlos diferente. Como por ejemplo aquí. Los atípicos están como X. Entonces esto nos dice al ojo que
+01:43:05 Speaker 1: tienen
+01:43:06 Speaker 2: una característica adicional aparte de ser un clúster. Que no son un clúster cualquiera, sino que para nosotros vendrían a ser atípicos.
+01:43:15 Speaker 1: Ya. Y vemos que están en todo este bloquecito.
+01:43:19 Speaker 2: Y después... Tenemos una variación con este H que parece HD. Parece como el Debescan HD. Es muy interesante porque puede encontrar clúster con diferentes densidades.
+01:43:43 Speaker 1: Ahora,
+01:43:45 Speaker 2: por ejemplo aquí. A diferencia de hace un ratito que nos pedía el valor de... Nos pedía dos cosas. De EPS. Acá. Nos pedía EPS y nos pedía la cantidad mínima de samples. En el HDBSCAN.
+01:44:06 Speaker 1: nos pide la
+01:44:09 Speaker 2: cantidad del
+01:44:11 Speaker 1: tamaño
+01:44:12 Speaker 2: de nuestro size, o sea, el tamaño al final, pero ya no nos piden los EPS, las distancias. Entonces, no nos piden las distancias y nos dan, por ejemplo, aquí nos están dando cuatro clusters y un menos uno y un negativo. En el caso de... no sean impresos los valores de la...
+01:44:38 Speaker 1: no, no están impresos qué raro bueno creo que no están impresos pero
+01:44:51 Speaker 2: podemos imprimirlos vamos a imprimirlos con esta línea quiero ver cuántos han salido por ejemplo estos son los clústeres que han salido en debescan serían 2, 4, 5 y el sexto sería el
+01:45:04 Speaker 1: histograma
+01:45:09 Speaker 2: esto quiero hacerlo aquí
+01:45:11 Speaker 1: mismo en H en
+01:45:15 Speaker 2: el debescan normal
+01:45:22 Speaker 1: Debescam está aquí y acá. Bueno, ¿qué hice?
+01:45:36 Speaker 2: He copiado toda la celda, ¿no? Sí. Ya. Estoy imprimiendo bien. Este de aquí es el de Debescam.
+01:46:07 Speaker 1: Debescam, sí.
+01:46:08 Speaker 2: Acá también están saliendo 4, 5 y
+01:46:12 Speaker 1: la etiqueta, ¿cierto?
+01:46:14 Speaker 2: 5 y la etiqueta con esos parámetros. Para el caso del H Debescam. nos están saliendo también 5 etiquetas y un atípico y lo que está por la derecha vendría a ser como las cantidades de elementos para cada uno de los clases
+01:46:38 Speaker 1: en
+01:46:42 Speaker 2: este caso tenemos 264 atípicos
+01:46:45 Speaker 1: y
+01:46:48 Speaker 2: podemos ver nuestro grafico por ejemplo aquí no se le está dando la etiqueta de raros o de atípicos y se ve como algo normalito, pero ya cuando tiene la etiqueta como de X, no sé, siento que transmite un poquito más la idea de atípico. Y bueno, por aquí teníamos esta recomendación de que si con puntos muy grandes se ve todo demasiado abrumado, teníamos las versiones más light. Entonces, hasta ahí tenemos... Entrenamientos de modelos, de algoritmos, con nuestras datas mixtas, con las matrices de distancias que ya tenemos y ya. Entonces, luego de eso podemos hacer dos cosas. Podemos comparar resultados y podemos evaluar los clusters mediante silueta, por ejemplo. Entonces,
+01:47:46 Speaker 1: para
+01:47:48 Speaker 2: esta comparación de... clústeres o de algoritmos de clustering, vamos a utilizar o vamos a comparar solamente PAM jerárquico y las dos versiones de DevEscan. ¿Por qué? Porque, y por eso lo he dejado así comentado aquí, porque este Kprototypes
+01:48:09 Speaker 1: vimos
+01:48:11 Speaker 2: que se ha construido sobre la matriz original de los datos. En cambio, El resto de algoritmos se ha construido en base a la variable escalada o la distancia de la variable escalada. Entonces Prototype trabaja la variable escalada original y los otros adicionales trabajan distancias con la escalada. Esa es la razón por la cual tiene más sentido comparar estos cuatro resultados que comparar los cinco con Caprototype.
+01:48:50 Speaker 1: Ya, entonces,
+01:48:51 Speaker 2: como una vista previa nada más de que efectivamente existe el cambio de etiqueta que habíamos conversado hace un rato. O que habíamos conversado la vez anterior, la clase anterior.
+01:49:01 Speaker 1: Ahora,
+01:49:02 Speaker 2: esta parte que está por aquí se ve bastante interesante. ¿Por qué? Porque en este bloque nos van a salir cuántos clusters y cuántos grupos o cuántos individuos por cluster tenemos. Lo cual es importante porque... Miren este resultado de debescan. Acá me sale desde menos 1, que es atípico,
+01:49:23 Speaker 1: hasta el
+01:49:26 Speaker 2: 4, ¿cierto? ¿Qué pasa si yo el debescan lo cambio?
+01:49:33 Speaker 1: Aquí. Acá está el debescan.
+01:49:45 Speaker 2: ya acá yo estoy decidiendo el valor del codo entonces qué pasa si yo acá le coloco 0,6
+01:49:57 Speaker 1: y
+01:49:59 Speaker 2: acá a veces 50 le pongo 5 Ya miren cuántos clusters me da.
+01:50:12 Speaker 1: Me da
+01:50:13 Speaker 2: 11, 14 clusters y un grupo de atípicos. Pero si vemos a la derecha, el cluster 13 tiene solamente 3 individuos. Y el 12 tiene 4 individuos, entonces... Ah, no. Estoy, estoy, estoy bien. Yo dije, estoy mezclando. El clase A13, que es el último, tiene tres individuos más o menos. Está bien, porque ese es vector de aquí. Sí, no sé si se llega a ver esta parte. La idea es que los hiperparámetros de TVSTON y, bueno, los otros parámetros de los otros modelos también, me van a alterar un montón la selección de mis... clústeres entonces si yo cambio esta parte y ejecuto todas hacia abajo puedo hacer mi comparación
+01:51:05 Speaker 1: ejecutar celda y las de abajo puedo
+01:51:09 Speaker 2: hacer mi comparación acá
+01:51:13 Speaker 1: voy
+01:51:19 Speaker 2: a cipiar esto porque me mareo con el scroll de una pantalla tan chiquita Ya, esta tablita es la que quiero ver que termine de ejecutarse. ¿Por qué? Porque esta tablita, así como está resumida y como que en paralelo, ayuda un montón a ajustar los hiperparámetros. Si de repente no tengo un grid search para hacerlo o si tengo duda por algún motivo por la naturaleza de la variable o si de repente no conozco bien las variables, puedo hacer eso. Puedo ir comparando.
+01:51:55 Speaker 1: Puedo ir
+01:51:56 Speaker 2: comparando mis resultados y ir viendo si tiene sentido que tenga cuatro características o que tenga cinco. Por ejemplo, otra cosa que quería cambiar para mostrarles es lo que les dije al inicio.
+01:52:16 Speaker 1: de aquí, el jerárquico.
+01:52:19 Speaker 2: Por ejemplo, aquí estamos haciendo el jerárquico para cuatro categorías, ¿cierto? Acá lo estamos cortando en K4. K4, tenemos cuatro categorías desde el 1 hasta el 4. Pero, ¿qué pasa con la tabla final de ese jerárquico? Esta tablita que está aquí al final me ayuda a saber si tiene sentido. Mirá lo que hacíamos con Silueta, igual lo mostré abajo, pero si mirá lo que hacíamos con Silueta es ver el tamaño de los clústeres. Si yo particiono en cuatro clústeres, pero veo que uno de ellos es demasiado pequeñito y que más va a ser el esfuerzo de llenar y todo que... No, de llenarlo. Más va a ser el esfuerzo de construirlo, pero si el cláster es muy chiquitito, de repente no tiene razón de ser, de existir por sí solo y convendría que se agrupe con algún otro cláster. Y eso se ve en esta tabla, pero ¿qué es lo que se está demorando mucho?
+01:53:32 Speaker 1: Al gráfico. Pero eso... No sé.
+01:53:51 Speaker 2: Lo hubiera guardado ahí. Ya. De repente esa imagen la he agregado al final porque cuando estaba haciendo experimentos me corría todo y podía scrollear rápido a ver el resultado del experimento. Es una gráfica adicional, ¿no? Sí, gráfico típico del DevScan. Ah, este es el que tenía los asteriscos.
+01:54:26 Speaker 1: ¿Lo corto? Gráfico también. No, eso tiene por otro, no parece. Bueno, igual se refiere que ya lo vemos.
+01:55:53 Speaker 2: Por ejemplo aquí, esto es algo que tenemos que tener en cuenta para tomar decisiones e ir ajustando algoritmos, muy aparte de si usamos un grid search o no. Por ejemplo, el jerárquico hemos dicho ya, lo cortamos en cuatro valores, ¿cierto? Y lo que vemos es que la etiqueta 4 tiene un valor alto. Perdón, la etiqueta 4 tiene un solo valor. La etiqueta 3 tiene un valor alto, pero la 4, la 4 tiene un solo elemento. Entonces, la etiqueta 4, el clúster 4, no tiene razón de ser. Y eso significaría que yo debería generar este clúster jerárquico en solamente tres categorías. Y tendría que volver a entrenar. El PAM se ha distribuido más o menos homogéneamente. Ahora, con DevScan se están generando 13 grupos, 13 clusters, pero vemos que los últimos...
+01:56:53 Speaker 1: Son demasiado chiquitos, ¿cierto?
+01:56:56 Speaker 2: Los últimos son demasiado chiquitos. Eso significa que de repente me conviene separar hasta...
+01:57:01 Speaker 1: ¿Qué ponemos?
+01:57:06 Speaker 2: Hasta cinco clusters podría ser. De repente este décimo se llena con algo de parado. Bueno, no sé.
+01:57:16 Speaker 1: No, no, no...
+01:57:18 Speaker 2: Sí, por ejemplo, no sabría
+01:57:21 Speaker 1: ahí, bueno,
+01:57:25 Speaker 2: lo malo del virtual es que no los veo, no sé qué opinan, no sé si les,
+01:57:29 Speaker 1: sí,
+01:57:30 Speaker 2: porque a veces me gusta escucharlos, ¿no? Yo puedo decir algo, pero me gusta escuchar cuando dicen, no, profe, yo pienso de esta cosa o yo pienso que mejor tal cosa.
+01:57:38 Speaker 1: Profesor, sí, yo considero que hasta tres. O sea, teniendo cuatro clusters, ¿sería sustancial? También lo vimos en los gráficos.
+01:57:49 Speaker 2: Hasta tres, considerando... Ya, pero considerando el cero sería este.
+01:57:54 Speaker 1: No, no, no. Por eso dije cuatro clusters, considerando hasta el tres. Hasta aquí. Ajá. Sí, porque ahí es diez, ¿no? Tal vez ahí empieza a bajar mucho.
+01:58:05 Speaker 2: Esto se podría regrupar. Y incluso este que es atípico, también como que hace ruido porque es bien grande.
+01:58:11 Speaker 1: ¿Cierto?
+01:58:13 Speaker 2: El atípico, por ejemplo, con los atípicos, cuando el Debescan encuentra atípicos, una decisión que se tiene que tomar es lo dejo como etiqueta o lo saco y hago un estudio sin atípicos. Eso también se tiene que decidir. No es como que obligado a sacarlo, pero se tiene que decir. ¿Y cómo se decide? Sacando las métricas de resumen. Las métricas de resumen de este grupo, para ver si efectivamente sus métricas de resumen son valores muy extremos y no tiene sentido que estén ahí, o si solamente su etiqueta es clúster extremo y se queda ahí. Con tantos atípicos podría ser mejor mantenerlos. Sí, exacto. Porque ya es como que tantos atípicos que ya hacen su propia nación, ¿cierto? Ya tienen peso, ya no son minoría. ¿Cierto? Sí, es un buen grupo, se podría mantener. Exacto. Y ya estos son muy chiquitos. Entonces, por ejemplo, el tema con Debesca es que nosotros no cortamos. Por ejemplo, imagínense que decidimos quedarnos con hasta aquí, hasta este 3, sería 1, 2, 4 grupos y el atípico. Que el atípico va a estar ahí siempre o sale automático. Entonces, 4 grupos. Si nosotros regresamos a entrenar el debescan, no hay una forma de decirle construye 4.
+01:59:47 Speaker 1: Este está aquí. Este.
+01:59:54 Speaker 2: Ya, por ejemplo aquí, no hay una forma de decirle construye 4, lo único que podemos hacer es cambiar los hiperparámetros. Acá le había colocado 97 creo,
+02:00:04 Speaker 1: 97,
+02:00:05 Speaker 2: no, 0,97. Porque hasta aquí yo decía de repente por aquí hay un 0,97, porque si le ponía 1 aumentaba. Por ejemplo, le voy a dejar en 0,97 y luego le probamos en 1. En 0,97 ya por ejemplo aquí nos quedamos con 4. Cuatro y el atípico. Y estas son las distribuciones, las particiones. Y acá sigue saliendo chiquito este último clúster. Entonces tiene razón lo que estaba diciendo Julián, creo que también escuché. Julián, creo que comentaste que parece que tres. Porque sí, mira, si colocamos cuatro, este cuarto clúster podría salir muy chiquito. Más chiquito que los atípicos incluso. Pero claro, no podemos cortarlo acá y decir cuatro. O 3. Entonces solo tenemos que mover y prepararlo. ¿Qué pasa si aquí lo cambio a 1? 0,1 que vendría a ser este límite de acá. Aunque el codo no creo que está ahí. Creo que el codo está más abajo. Pero imaginemos que lo cambiamos así.
+02:01:08 Speaker 1: ¿Qué pasa?
+02:01:10 Speaker 2: Se mantiene. A ver, ¿habrá cambiado
+02:01:12 Speaker 1: algo acá? 97.
+02:01:17 Speaker 2: 1, 3, 8. Bueno, cambia un poquito. 8, 8, 5.
+02:01:21 Speaker 1: Otra vez. Sí,
+02:01:26 Speaker 2: acá 8, 8, 8. Cerrato era 8, 8, 5. Cambia ligeramente, pero no es un cambio muy drástico porque el cuarto grupo o la etiqueta 4 sigue siendo 64. ¿Pero qué pasa si cambio acá de 50 a 30? Ya acá cambió de 80, 88, 8, 90, pero como que sigue quedando en 4, ¿cierto? No baja. Si aumenta el tamaño, de repente sí. Claro, pero imagínense que yo coloco 60. Esto está en el grupo, 64 está dentro de 60. Pero ya si coloco 70, en teoría debería desaparecer ese. claro ya no lo acepto como un grupo porque yo estoy colocando que el mínimo sea 70 pero si coloco que el mínimo es 60 si
+02:02:19 Speaker 1: lo aceptan
+02:02:21 Speaker 2: Eso podría significar que de repente este tendría razón de ser para existir. Y ahí tendríamos que empezar a sacar descriptivos para ver si tiene sentido o no. Porque esta sería la etiqueta 4 y nuestro gráfico de Debescan es el que se demora en ejecutarse.
+02:02:44 Speaker 1: Por aquí. 1, 2. 4 5 tiene
+02:02:57 Speaker 2: sentido que en 5 porque
+02:03:00 Speaker 1: tengo 2 4
+02:03:05 Speaker 2: 5 y
+02:03:06 Speaker 1: los típicos si
+02:03:09 Speaker 2: tiene sentido que hay 1 2
+02:03:11 Speaker 1: 3 el rojito 4 5 y las etiquetas y los típicos pues también
+02:03:23 Speaker 2: Sí, cinco parece que convence. Porque, claro, para forzarlo a que se reduzca uno más, tendríamos que aumentar el tamaño de la muestra mínimo del sample. Y eso podría ser un poco forzado, quizás. Ya no le estamos dando tanta libertad a que se agrupe como mejor le parece. Que le estamos dando restricciones. Entonces, parece... Incluso haciendo esta segmentación... de colores coincide con la segmentación que hace la reducción de dimensiones. ¿Cierto? Que esto no estaba pasando en los otros grupos, en los otros escenarios. En los otros escenarios la pintada es diferente. Por ejemplo aquí, esto los pinta de uno solo a pesar que están separados
+02:04:13 Speaker 1: en este elemento multidimensional.
+02:04:16 Speaker 2: Pero aquí coincide. El Debescan con el multidimensional. No coincide al 100%, los atípicos no, pero el resto sí. Los pinta aquí otro color, los que están al frente otro color, y esto es rojito otro color. Entonces, esa parte está interesante, por ejemplo. ¿Por qué? Porque el Debescan es más
+02:04:36 Speaker 1: flexible
+02:04:37 Speaker 2: a estas densidades.
+02:04:43 Speaker 1: Entonces,
+02:04:44 Speaker 2: el otro gráfico, esto era de... No sé si ustedes están mareando con mi scroll, porque yo me estoy mareando con mi scroll. Este era el mismo, creo, claro.
+02:05:00 Speaker 1: Yo quiero ver el gráfico del H, el HD. Lo cortamos.
+02:05:08 Speaker 2: Bueno, la idea aquí es ir iterando, haciéndolo manualmente, se vuelve un experimento como pueden verlo. Pueden encontrar obviamente la forma de automatizarlo para encontrar como los valores óptimos también, también es válido obviamente, pero haciéndolo así manualmente como que tiene esa... esa vibra de experimentación y del poder de decisión sobre los cortes o sobre los parámetros.
+02:05:54 Speaker 1: Y ahora sí.
+02:05:55 Speaker 2: Hemos cortado hasta el debescan
+02:05:58 Speaker 1: de cinco
+02:06:01 Speaker 2: etiquetas y el atípico. Este atípico está más chiquito y este debescan
+02:06:05 Speaker 1: con HD tiene las
+02:06:10 Speaker 2: etiquetas atípicas un poquito más grandes. A pesar que también tenemos cuatro etiquetas, perdón, cinco etiquetas en total desde cero al cuatro. Desde cero al cuatro. El último grupo es pequeñito, o sea que tiene razón de existir, pero aquí los atípicos son mucho más grandes.
+02:06:31 Speaker 1: Son mucho más grandes.
+02:06:33 Speaker 2: Vamos a correr silbeta acá y luego dejamos corriendo el gráfico que puede que se demore.
+02:06:42 Speaker 1: Y ya se está rápido.
+02:06:44 Speaker 2: Este es el dbscan de HHH.
+02:06:50 Speaker 1: 1, 2, 3, 4, 5. Ya, bueno. y eso es el que se demoraba más
+02:06:58 Speaker 2: bueno la cosa es que en nuestro segundo nuestro segundo de vez que nos está mostrando muchos atípicos y ahí podríamos entrar a ver si tiene sentido no que sea tan grande aquí se ve un poco un poco más extraño no es el doble pero igual este aquí me dice que si debe quedarse que no debe agruparse porque ya sea en debes que un hdscan igual se observa Y otra cosa que se puede comparar viene a ser nuestros valores de silueta.
+02:07:34 Speaker 1: Estamos
+02:07:35 Speaker 2: calculando las siluetas para los algoritmos, para todos los algoritmos,
+02:07:40 Speaker 1: y
+02:07:42 Speaker 2: sucede lo mismo que arriba con K-Prototypes, porque K-Prototypes ha sido construido con la matriz original. Y aquí estamos viendo que estamos construyendo silueta con solamente la D, la matriz de distancias. Entonces,
+02:08:00 Speaker 1: por
+02:08:02 Speaker 2: ejemplo, ahí algo que se recomienda es decidir qué es lo que quiero comparar. Creo que la clase pasada lo conversamos también. Puede que yo quiera comparar cómo se desempeñan los algoritmos, por ejemplo, en este caso. ¿Cómo se desempeñan los algoritmos al particionar mi matriz de distancias? Ahí sería manteniendo la distancia constante, como aquí. O otra cosa podría ser, de otra manera podría ser, ¿cómo es que, si es que cambio mis distancias, mis matrices de distancias? Si es que el algoritmo llega a detectar la misma estructura de partición o no. Dependiendo de cada uno de esos objetivos, tendría sentido que yo utilice
+02:08:56 Speaker 1: solamente
+02:08:58 Speaker 2: estos algoritmos con la distancia, o que yo agregue, no sé si acá le he agregado el... No, no le he agregado. El K-Prototypes. ¿Qué les he colocado por aquí? A ver, aunque Capra Autotypes utiliza una función de disimilitud propia para la construcción de los clusters, la evaluación comparativa de las soluciones se puede realizar mediante el coeficiente de silueta calculado sobre la materia de distancias de Google, con el propósito de emplear un criterio de evaluación común para todos los métodos de clustering aplicados a los datos mixtos. O sea, si nosotros queremos... Como objetivo,
+02:09:38 Speaker 1: evaluar,
+02:09:42 Speaker 2: evaluar. Los métodos en sí, los algoritmos, podríamos mantener los mismos datos, nuestra misma matriz de distancias, pero,
+02:09:56 Speaker 1: ¿cómo
+02:09:58 Speaker 2: se diría ahí? Como que resaltando que, claro, estoy forzando a mi Kprototypes a mostrarme un resultado con D, porque tendría que homogenizar D, pero al mismo tiempo... Tendría que decir que sería como algo experimental porque K prototypes, al no haber sido entrenado con D, la métrica de silueta que estoy obteniendo no vendría a ser como un indicador de su buen ajuste. Solamente sería un valor referencial para compararlo y para ver cómo funciona el algoritmo y así, manteniendo la distancia, la matriz de constante, pero no sería comparable. Por eso es que me he limitado solamente aquí. hacer la comparación de silueta entre los que sí han utilizado la matriz D, porque realizarlo con K-Prototypes podría ser un poco confuso. A pesar que sí lo recomiendan y como dicen sí, se puede sí tener cuidado, me he preferido mejor solamente comparar aquellos que sí utilizan nuestra matriz D. Eso no significa que el K-Prototypes quedaría descartado por ser diferente. No, igual se puede construir, igual se puede construir y se puede comparar,
+02:11:12 Speaker 1: sobre
+02:11:14 Speaker 2: todo como para ver si estamos obteniendo los mismos resultados. Ya en este punto, después de haber construido todos estos modelos, por ejemplo, lo que se podría hacer sería alguno de los métodos de validación que tenemos como propuestas en esta otra LAMI. Entonces, lo que quisiéramos hacer podría ser utilizar una de nuestras métricas, esta que está por aquí, el ARI, que conversábamos la vez pasada, utilizar nuestra métrica ARI para verificar
+02:11:55 Speaker 1: si
+02:11:57 Speaker 2: coincidimos o no, si los resultados coinciden o no coinciden entre ellos. ¿Qué es lo que pasaría si es que... Yo comparo entre estos cuatro y elijo el mejor. Por ejemplo, entre estos cuatro, nosotros sabemos que el mejor de todos va a ser aquel que tenga el silueta más alto. ¿Verdad? Eso no hemos conversado, pero lo pasamos de largo. Si estamos evaluando silueta, nosotros lo que veíamos en los algoritmos anteriores, cuando veíamos por acá el gráfico de silueta,
+02:12:27 Speaker 1: decíamos
+02:12:31 Speaker 2: que nos quedamos...
+02:12:34 Speaker 1: ¿Dónde está el gráfico de silueta?
+02:12:43 Speaker 2: Decíamos que nos quedamos con los valores altos, ¿se acuerdan? Cuanto más alto esté, más hacia la derecha esté la recta, la punteada, más alto es el coeficiente de silueta global o
+02:12:54 Speaker 1: grupal.
+02:12:56 Speaker 2: Entonces, siempre buscamos un silueta, un valor de silueta alto. Entonces, cuando estamos por aquí y hemos ejecutado silueta para todos los grupos, los clusters, los algoritmos de clusters que hemos entrenado, buscaríamos efectivamente la silueta más alta. Entonces, la silueta más alta que estamos obteniendo vendría a ser la de HDB-Scan,
+02:13:18 Speaker 1: pero si
+02:13:19 Speaker 2: bien es la más alta, no es muy muy diferente a la de HDB-Scan. ¿Eso qué podría significar? Que quizás los datos que estamos analizando tengan esa característica de que no asuman esfericidad. en los clusters, sino diferentes dispersiones. Y al tener diferentes dispersiones, de diferentes densidades, perdón, al tener diferentes densidades, mis modelos de DevScan, que están entrenados para eso, les va mejor. Les va mejor. Entonces, eso es lo que podríamos intuir de aquí, ¿no? Igual acá, por ejemplo, acá se ve más bonito. Si quiero comparar el silueta, el silueta más grande que tenemos es este que está aquí. el HDB. Igual, digo, no es muy alto la diferencia, pero bueno, es como que, si lo vieramos gráficamente, ese 0.4 se vería por aquí. O sea, no es un súper alto valor,
+02:14:23 Speaker 1: pero bueno,
+02:14:25 Speaker 2: sería el valor que veríamos por aquí. ¿Qué más les iba a decir? Antes de retomar lo de Silveta estaba mencionando algo.
+02:14:43 Speaker 1: Ahí se me fue. Antes de regresar lo de Silveta.
+02:14:50 Speaker 2: Porque acá estamos decidiendo qué nos quedamos con este, por ejemplo, con el DBSCAN. Hemos comparado cuatro algoritmos aquí.
+02:14:59 Speaker 1: ¿Qué le estaba diciendo? Quería darles un dato más. Se me quedó en blanco. No, no me acuerdo.
+02:15:15 Speaker 2: No me acuerdo. O alguna pregunta, alguna pregunta, de repente con las preguntas me sale el dato extra que les iba a decir. Lo corté para regresar a describir Silveta
+02:15:24 Speaker 1: y ya no me acuerdo qué estamos conversando.
+02:15:30 Speaker 2: O sea, la idea sería que con los datos que tenemos del proyecto y ahora que van a crecer las variables, empecemos a hacer pruebas con los códigos que estamos teniendo aquí. Entonces, para el caso de nuestros datos mixtos, podemos construir los cuatro que están aquí más el Kprototypes, que también lo tenemos. Y si bien esta métrica de silueta es un indicador de buen ajuste, no es el único. A lo que iba es que, claro, si yo veo que aquí me sale un 0,4, ese 0,4 es el mejor respecto a los demás, eso es cierto, pero dentro del entorno silueta tampoco es que sea un valor perfecto. ¿Cierto? Sería equivalente al que está por aquí. Y a lo que iba es que silueta no es el único indicador y no es el definitivo. Entonces, por aquí podemos decir ya ese es el mejor o estos dos son los mejores. Estos dos de repente son los mejores. Podemos complementar esa conclusión realizando la validación. La validación... Particionando en entrenamiento y test o validación con ruido, generando ruido. En el caso de nuestro dataset del proyecto, como son pocos individuos, es muy posible que de repente la partición en entrenamiento y test sea complicada. Si lo logran hacer, va acá. Pero como según lo que estaba viendo, son pocos individuos y la partición va a ser muy chiquita. Sí, o sea, particionar entrenamiento y test va a reducir mucho más mi universo y al reducirlo mucho más podemos hacer overfitting si es muy chiquito. Entonces, de repente, en este escenario del proyecto, en lugar de hacer entrenamiento y test, de repente les puede convenir probar algo de estabilidad agregando ruido. Y ya ustedes eligen el ruido que... prueban y quieren experimentar. Eso sería lo que seguiría acá. Entonces, silueta no es que ya salió silueta y acá me quedé y tomé la decisión. Es un indicador, pero podemos seguir validando y probando cosas. Sí, esa sería la idea al final. Entonces, lo que tenemos en este notebook... No es como un pipeline obligado de inicio a fin y que inicia ahí, termina ahí, se acabó todo. No, solamente son bloques de código, ideas de análisis, de cómo ir tomando una decisión, regresar, cambiar la decisión y así. Y la idea es que se complementen estos tres notebooks. El primero de clustering, el de validación con las propuestas y el de mixtos. Esa sería la idea, que utilicen los tres y obviamente más, investiguen más cosas para poder empezar a tener resultados con el proyecto.
+02:18:53 Speaker 1: Hasta ahí,
+02:18:54 Speaker 2: comentarios, preguntas, dudas, sugerencias,
+02:18:58 Speaker 1: ideas. Profesora, usted dijo que nos podía ofrecer horarios de asesorías en conforme a la TEA,
+02:19:11 Speaker 2: ¿cierto? Sí, claro. Sí, podemos programar, o sea, cuadramos disponibilidad de ambos, de ustedes y mía, y si coincidimos ese día en esa hora en la universidad, nos juntamos presencial, y si se dificulta presencial, podemos hacerlo por Zoom también. Puede ser conmigo, y también si quiere, igual les voy a subir la lista de los JPs para que vean los perfiles que tienen. Y según el perfil, ellos les pueden dar también algunas ideas extras. Porque ustedes saben que cada uno ha tenido experiencias diferentes. Entonces, las diferentes perspectivas suman también. Entonces, yo voy a subirle la lista y también son libres de, si quieren también coordinar con ellos, ver qué piensan, qué opinan, también les pueden solicitar y ellos también les van a dar disponibilidad. Entonces, sí, ambos estamos, todos estamos disponibles para reunir. Coordinamos, cuadramos fechas y
+02:20:02 Speaker 1: generamos. Muchas gracias. ok chicos más preguntas
+02:20:32 Speaker 2: dudas comentarios está todo bien
+02:20:35 Speaker 1: a
+02:20:36 Speaker 2: los que para los chicos que no han podido conectarse por favor pasen en la voz que los datos de la tea y los datos complementarios los voy a subir hoy mismo para que ya los tengan y puedan ir avanzando recuerden que tendríamos La exposición, las exposiciones en la semana 11. En la semana 11 tendríamos exposiciones. Y las exposiciones serían hasta mínimo hasta el step 4.
+02:21:15 Speaker 1: No,
+02:21:16 Speaker 2: sí, hasta el step 4 como mínimo, si ya pueden tener algunos resultados de clustering, muchísimo mejor. Entonces, vayan avanzando y nos vamos reuniendo si tienen dudas. si chicos hasta ahí estamos bien ok todo bien todo bien Ya, entonces si no tienen más dudas, consultas, no hay comentarios, yo sé que por Zoom se siente todo más distante, ya no los veo, no sé qué están haciendo, no sé si están ahí o no, pero bueno, ya al menos la idea de este notebook es complementar los anteriores, solo para tener más herramientas, yo sé que igual pueden seguir investigando y complementando más, pero solamente dar ideas de cositas que se pueden ir haciendo. Entonces lo dejamos ahí. Repito, voy a subir los notebooks,
+02:22:21 Speaker 1: los
+02:22:23 Speaker 2: documentos para la TEA y también la lista de JPs para que puedan ir coordinando con quiénes son sus dos JPs encargados. Lo repito, siempre van a tener un perfil de
+02:22:36 Speaker 1: la parte, puede
+02:22:39 Speaker 2: ser como analítica o de estadística y un perfil de informática.
+02:22:48 Speaker 1: Ya,
+02:22:49 Speaker 2: chicos, entonces, si no hay preguntas, lo dejamos ahí. Yo guardo esta sesión y también les subo el link de la grabación en ambos horarios.
+02:23:00 Speaker 1: Muchas gracias, profesora. Hasta luego.
+02:23:02 Speaker 2: Gracias, chicos. Nos estamos viendo, entonces.
+  
